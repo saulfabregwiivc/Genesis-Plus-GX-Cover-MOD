@@ -52,6 +52,7 @@
 #include "Browser_dir_png.h"
 #include "Snap_empty_png.h"
 #include "Cart_md_png.h"
+#include "Cart_cd_png.h"
 #include "Cart_ms_png.h"
 #include "Cart_gg_png.h"
 #include "Cart_sg_png.h"
@@ -112,19 +113,19 @@ static gui_image bg_filesel[14] =
   {NULL,Main_logo_png,IMAGE_VISIBLE,466,40,152,44,255},
   {NULL,Frame_s1_png,IMAGE_VISIBLE,8,70,372,336,152},
   {NULL,Frame_s2_png,0,384,264,248,140,152},
-  {NULL,Snap_empty_png,IMAGE_VISIBLE,424,148,160,112,255},
-  {NULL,NULL,0,424,148,160,112,255},
-  {NULL,NULL,0,388,147,240,152,255},
-  {NULL,NULL,0,388,147,240,152,255},
-  {NULL,NULL,0,392,118,232,148,255},
-  {NULL,NULL,0,414,116,184,188,255},
-  {NULL,NULL,0,416,144,180,228,255}
+  {NULL,Snap_empty_png,IMAGE_VISIBLE,387,140,170,234,255},
+  {NULL,NULL,0,387,140,170,234,255},
+  {NULL,NULL,0,387,133,248,248,255},
+  {NULL,NULL,0,387,133,248,248,255},
+  {NULL,NULL,0,387,133,248,248,255},
+  {NULL,NULL,0,387,133,248,248,255},
+  {NULL,NULL,0,387,133,248,248,255}
 };
 
 static const u8 *Cart_png[FILETYPE_MAX] =
 {
   Cart_md_png,
-  Cart_md_png,
+  Cart_cd_png,
   Cart_ms_png,
   Cart_gg_png,
   Cart_sg_png
