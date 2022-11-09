@@ -96,6 +96,7 @@ Genesis Plus GX 1.7.5 (xx/xx/xxxx) (Eke-Eke)
 ---------------
 * added support for new SMS Power Korean dumps (Star Soldier & Pippols)
 * added support for SG-1000 II clone hardware (2KB RAM + integrated VDP/PSG chip 315-5066)
+* added support for SG-1000 II hardware with 8KB RAM extension adapter
 * fixed SG-1000 internal RAM size (1KB instead of 2KB)
 * fixed savestates for games using external RAM
 * restored SG-1000 Pause button support
@@ -172,8 +173,11 @@ Genesis Plus GX 1.7.5 (xx/xx/xxxx) (Eke-Eke)
 * added configurable NTSC filter
 * added configurable FPS display & toggleable fast-forward key combo
   (HOME + MINUS with Wii controllers or R TRIGGER + START with Gamecube controller)
+* added configurable menu key combo
 * added 50hz progressive mode (576p) support for emulation
 * added WiiU GamePad Controller support on vWii (Fix94)
+* added support for Sega CD / Mega-CD PRG-RAM and Word-RAM cheat codes
+* added configurable overclock setting for M68K, S68K and Z80 CPUs
 * reduced SRAM files size
 * improved A/V Sync: when VSYNC is enabled, audio resampler output rate is now adjusted (+/-0,1 %)
   to always keep audio & video synchronized and input lag is reduced by one frame.
