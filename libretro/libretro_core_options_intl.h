@@ -7529,10 +7529,10 @@ struct retro_core_options_v2 options_cht = {
 #define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_CS "Změní osu-Y vstupního zařízení MD myši."
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_CS "Odstranění Limitu Spritu na Řádek"
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_CS "Odstraní původní hardwarový limit sprite-per-scanline. Tím se sníží blikání, ale může to způsobit vizuální závady, protože některé hry využívají hardwarový limit ke generování speciálních efektů."
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_CS NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_CS NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_CS NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CS NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_CS "Vylepšené vertikální posouvání po dlaždici"
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_CS "Umožňuje posouvat každou jednotlivou buňku svisle místo 16px dvoubuněk zprůměrováním s hodnotou vertikálního posouvání sousední buňky. Tento hack platí pouze pro několik her, které používají režim vertikálního posouvání po 2 buňkách."
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_CS "Vylepšený limit vertikálního posouvání na dlaždici"
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CS "Pouze když je povoleno vylepšení vertikálního posouvání na dlaždici. Upravuje limit vylepšení vertikálního posouvání. Pokud je rozdíl vscroll mezi sousedními dlaždicemi větší než tento limit, je vylepšení zakázáno."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_CS "Rychlost CPU"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_CS "Přetaktování emulovaného procesoru. Může snížit zpomalení, ale může způsobit závady."
 #define OPTION_VAL_100_CS NULL
@@ -7544,8 +7544,8 @@ struct retro_core_options_v2 options_cht = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_CS "Emulace zablokování systému, ke kterému dochází na skutečném hardwaru při provádění nelegálního přístupu k adrese. Tato funkce by měla být vypnuta pouze při přehrávání některých dem a homebrew, které se spoléhají na nelegální chování pro správnou funkci."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_CS "Chyba v Adrese 68K"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_CS "Hlavní procesor Mega Drive/Genesis (Motorola 68000) generuje při pokusu o nezarovnaný přístup do paměti výjimku Chyba Adresy (Výpadek). Povolením této funkce se toto chování simuluje. Měla by být vypnuta pouze při přehrávání hacků ROM, protože ty jsou obvykle vyvíjeny pomocí méně přesných emulátorů a mohou se spoléhat na neplatný přístup do RAM pro správnou funkci."
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_CS NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_CS NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_CS "Doba přístupu na CD"
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_CS "Simulace původního hardwarového zpoždění disku CD při zahájení čtení nebo vyhledávání určitého místa na nahraném disku. To je vyžadováno několika hrami na CD, které padají, pokud jsou data na CD dostupná příliš brzy, a také to řeší problémy s desynchronizací zvuku CD v některých hrách. Vypnutí této funkce může být užitečné u her s MSU-MD, protože díky ní jsou smyčky zvukových stop CD plynulejší."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_CS "Zobrazit Pokročilé Nastavení Hlasitosti Zvuku (Znovu otevře Menu)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_CS "Povolení konfigurace parametrů nízkoúrovňového zvukového kanálu. POZNÁMKA: Aby se toto nastavení projevilo, musí být přepnuta rychlá nabídka."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_CS "Tónový Kanál PSG 0 Hlasitost %"
@@ -11973,7 +11973,7 @@ struct retro_core_options_v2 options_da = {
 #define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_DE "Die Lautstärke des PSG-Tonkanals 1 reduzieren."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_DE "PSG-Tonkanal 2 Lautstärke %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_DE "Die Lautstärke des PSG-Tonkanals 2 reduzieren."
-#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_DE "PSG-Tonkanal 3 Lautstärke %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_DE "PSG Rauschkanal 3 Lautstärke %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_DE "Die Lautstärke des PSG-Rauschkanals 3 reduzieren."
 #define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_DE "Mega Drive / Genesis FM Kanal 0 Lautstärke %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_DE "Die Lautstärke des Mega Drive / Genesis FM Kanal 0 reduzieren. Funktioniert nur mit MAME FM-Emulatoren."
@@ -28042,7 +28042,7 @@ struct retro_core_options_v2 options_hr = {
 #define OPTION_VAL_AUTO_HU "Automatikus"
 #define OPTION_VAL_SG_1000_HU NULL
 #define OPTION_VAL_SG_1000_II_HU NULL
-#define OPTION_VAL_SG_1000_II_RAM_EXT_HU NULL
+#define OPTION_VAL_SG_1000_II_RAM_EXT_HU "SG-1000 II + RAM bőv."
 #define OPTION_VAL_MARK_III_HU NULL
 #define OPTION_VAL_MASTER_SYSTEM_HU NULL
 #define OPTION_VAL_MASTER_SYSTEM_II_HU NULL
@@ -28151,10 +28151,10 @@ struct retro_core_options_v2 options_hr = {
 #define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_HU "Megfordítja az MD Mouse bemeneti eszköz Y tengelyének irányát."
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_HU "Soronkénti sprite korlátozás eltávolítása"
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_HU "Megszünteti a hardver soronkénti sprite maximum korlátozását. Csökkenti a villódzást, de grafikai hibákat okozhat, mivel néhány játék a hardverkorlátozást speciális effektekhez használja fel."
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_HU NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_HU NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_HU NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_HU NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_HU "Feljavított függőleges görgetés csempénként"
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_HU "A 16 pixeles kétcellás görgetés helyett minden cella egyesével görgethető függőlegesen, a szomszéd cellák átlagolásával. Csak azon pár játékra van hatással, amelyek a kétcellás függőleges görgetést használják."
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_HU "Feljavított függőleges görgetés korlátja"
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_HU "Csak ha a feljavított függőleges görgetés engedélyezve van. A függőleges görgetés feljavításának határértéke, amikor ennél az értéknél nagyobb az eltérés a szomszédos cellák közt, a feljavítás kikapcsol."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_HU "CPU sebesség"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_HU "Az emulált CPU túlhajtása. Csökkentheti a belassulást, de hibákat okozhat."
 #define OPTION_VAL_100_HU NULL
@@ -28166,8 +28166,8 @@ struct retro_core_options_v2 options_hr = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_HU "Az eredeti gépen illegális címhez hozzáféréskor bekövetkező lefagyás emulálása. Csak olyan demók és homebrew programok lejátszásakor kapcsoljuk ki, amik csak ezzel a helytelen viselkedéssel működnek jól."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_HU NULL
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_HU "A Mega Drive / Genesis fő CPU-ja (Motorola 68000) egy Address Error megszakítást (összeomlást) generál nem jól pozicionált memóriahozzáféréskor. Ezzel az opcióval ez emulálható. Csak ROM hackek lejátszásakor kapcsoljuk ki, mivel ezek tipikusan kevésbé pontos emulátorokon voltak fejlesztve és elvárhatják az érvénytelen RAM hozzáférést a helyes működéshez."
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_HU NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_HU NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_HU "CD hozzáférés ideje"
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_HU "Az eredeti CD hardver késleltetésének szimulációja a betöltött lemez olvasásakor vagy pozícióváltásakor. Néhány CD játék igényli, amelyek összeomlanak, ha a CD adat túl hamar érhető el, és néhány játék CD hang szinkronproblémáit is megoldja. Az MSU-MD játékoknál érdemes kikapcsolni, mivel a CD hangsávok hurkolása így folyamatosabb."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_HU "A hangerő haladó beállításai (újra meg kell nyitni a menüt)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_HU "A hangcsatornák alacsonyszintű paramétereinek beállításai. Figyelem: ennek a beállításnak az aktiválásához ki-be kell kapcsolni a gyorsmenüt."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_HU "PSG Tone 0. csatorna hangerő %"
@@ -33934,7 +33934,7 @@ struct retro_core_options_v2 options_ja = {
 #define OPTION_VAL_AUTO_KO "자동"
 #define OPTION_VAL_SG_1000_KO NULL
 #define OPTION_VAL_SG_1000_II_KO NULL
-#define OPTION_VAL_SG_1000_II_RAM_EXT_KO NULL
+#define OPTION_VAL_SG_1000_II_RAM_EXT_KO "SG-1000 II + 램확장팩"
 #define OPTION_VAL_MARK_III_KO NULL
 #define OPTION_VAL_MASTER_SYSTEM_KO NULL
 #define OPTION_VAL_MASTER_SYSTEM_II_KO NULL
@@ -34043,10 +34043,10 @@ struct retro_core_options_v2 options_ja = {
 #define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_KO "MD Mouse 등의 입력 장치를 사용할 때 Y축 입력을 반전시킵니다."
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_KO "스캔라인 당 스프라이트 제한 제거"
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_KO "원본 하드웨어에 존재하는 스캔라인 당 스프라이트 제한을 제거합니다. 깜빡임을 줄여주지만 이러한 제한을 활용해 특별한 효과를 만들어내는 게임에서는 그래픽 오류가 일어날 수 있습니다."
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_KO NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_KO NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_KO NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_KO NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_KO "타일 수직 스크롤 향상"
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_KO "16픽셀 2셀 대신 인접한 셀의 세로 스크롤 값을 평균내어 각각의 개별 셀이 수직 스크롤 되도록 해줍니다. 이 핵은 2셀 세로 스크롤 모드를 사용하는 소수의 게임에만 적용됩니다."
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_KO "타일 수직 스크롤 향상 제한"
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_KO "타일 수직 스크롤 향상이 활성화된 경우에만 적용됩니다. 수직 스크롤 향상값의 한계를 조정합니다. 인접한 타일 간의 수직 스크롤 차이가 제한 값 보다 크면 향상이 비활성화됩니다."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_KO "CPU 속도"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_KO "에뮬레이트되는 CPU를 오버클럭합니다. 느려지는 현상을 줄일 수 있지만 버그가 발생할 수 있습니다."
 #define OPTION_VAL_100_KO NULL
@@ -34058,8 +34058,8 @@ struct retro_core_options_v2 options_ja = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_KO "실제 하드웨어에서 잘못된 주소에 접근 시 발생하는 시스템 중단을 구현합니다. 이러한 미정의 행동을 올바르게 활용하는 일부 데모 또는 홈브루를 구동할 때만 비활성화되어야 합니다."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_KO "68K 주소 오류"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_KO "Mega Drive/Genesis의 주 CPU(Motorola 68000)는 정렬되지 않은 메모리 접근을 수행할 경우 주소 오류 예외(크래시)를 발생시킵니다. 이 옵션을 활성화하면 이 동작이 구현됩니다. 부정확한 에뮬레이터에서 개발되어 잘못된 메모리 접근을 활용하는 일부 ROM 핵을 구동할 때만 비활성화되어야 합니다."
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_KO NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_KO NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_KO "CD 액세스 시간"
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_KO "읽기를 시작하거나 불러온 디스크의 특정 위치를 찾을 때 원본 CD 하드웨어 대기 시간을 시뮬레이션합니다. CD 데이터를 너무 빨리 불러와서 충돌이 발생하는 일부 CD 게임에 필요하며 또한 CD 오디오 비동기화 문제도 수정합니다. 이 기능을 비활성화하면 CD 오디오 트랙이 더 매끄럽게 반복되므로 MSU-MD 게임에 유용할 수 있습니다."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_KO "고급 오디오 볼륨 설정 표시 (메뉴 다시 열기 필요)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_KO "저수준 오디오 채널 변수 설정을 활성화합니다. 주의: 이 설정은 빠른 메뉴를 껐다 켜야 반영됩니다."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_KO "PSG 소리 채널 0 볼륨 %"
@@ -42896,8 +42896,8 @@ struct retro_core_options_v2 options_pl = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_PT_BR "Emula os travamentos originais do sistema que ocorrem num hardware real ao executar um acesso ilegal aos endereços. Isso só deve ser desativado ao reproduzir certas demos e homebrews que dependem do comportamento ilegal para a correta operação."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_PT_BR "Erro de endereçamento do 68K"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_PT_BR "A CPU do Mega Drive (o Motorola 68000) produz um erro de endereçamento (falha) ao tentar acessar a memória não alinhada. A ativação do 'Erro de endereçamento do 68K' simula este comportamento. Ele deve ser desativado apenas durante a execução de ROMs modificadas, pois geralmente são desenvolvidas usando emuladores menos precisos e podem contar com acesso inválido à RAM para a correta operação."
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_PT_BR NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_PT_BR NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_PT_BR "Intervalo de leitura do CD"
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_PT_BR "Simula a latência de hardware original do CD ao iniciar a leitura ou a busca para um local específico do disco. É obrigatorio em alguns jogos que travam quando a informação é liberada muito rápida e também corrige erros de sicronização de áudio. A desativação pode ser útil em jogos de MSU-MD, pois os loops das faixas de áudio ficam mais contínuos."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_PT_BR "Mostrar configurações avançadas de volume de áudio (reabrir menu)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_PT_BR "Ativa a configuração dos parâmetros do canal de áudio de baixo nível. NOTA: É necessário sair e entrar novamente no 'Menu rápido' para que a mudança tenha efeito."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_PT_BR "Volume do canal de tom 0 do PSG (%)"
@@ -48647,7 +48647,7 @@ struct retro_core_options_v2 options_si = {
 
 /* RETRO_LANGUAGE_SK */
 
-#define CATEGORY_SYSTEM_LABEL_SK NULL
+#define CATEGORY_SYSTEM_LABEL_SK "Systém"
 #define CATEGORY_SYSTEM_INFO_0_SK NULL
 #define CATEGORY_VIDEO_LABEL_SK NULL
 #define CATEGORY_VIDEO_INFO_0_SK NULL
@@ -48679,8 +48679,8 @@ struct retro_core_options_v2 options_si = {
 #define GENESIS_PLUS_GX_BIOS_INFO_0_SK NULL
 #define GENESIS_PLUS_GX_BRAM_LABEL_SK NULL
 #define GENESIS_PLUS_GX_BRAM_INFO_0_SK NULL
-#define OPTION_VAL_PER_BIOS_SK NULL
-#define OPTION_VAL_PER_GAME_SK NULL
+#define OPTION_VAL_PER_BIOS_SK "Podľa BIOSu"
+#define OPTION_VAL_PER_GAME_SK "Podľa hry"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_SK NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_SK NULL
 #define OPTION_VAL_SEGA_MEGA_CD_SK NULL
@@ -48697,11 +48697,11 @@ struct retro_core_options_v2 options_si = {
 #define OPTION_VAL_PAL_PAR_SK NULL
 #define OPTION_VAL_4_3_SK NULL
 #define OPTION_VAL_UNCORRECTED_SK NULL
-#define GENESIS_PLUS_GX_OVERSCAN_LABEL_SK NULL
+#define GENESIS_PLUS_GX_OVERSCAN_LABEL_SK "Okraje"
 #define GENESIS_PLUS_GX_OVERSCAN_INFO_0_SK NULL
-#define OPTION_VAL_TOP_BOTTOM_SK NULL
+#define OPTION_VAL_TOP_BOTTOM_SK "Hore/dolu"
 #define OPTION_VAL_LEFT_RIGHT_SK NULL
-#define OPTION_VAL_FULL_SK NULL
+#define OPTION_VAL_FULL_SK "Plné"
 #define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_SK NULL
 #define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_SK NULL
 #define OPTION_VAL_LEFT_BORDER_SK NULL
@@ -48722,7 +48722,7 @@ struct retro_core_options_v2 options_si = {
 #define OPTION_VAL_DOUBLE_FIELD_SK NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_SK NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_SK NULL
-#define OPTION_VAL_MANUAL_SK NULL
+#define OPTION_VAL_MANUAL_SK "Ručne"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_SK NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_SK "Ak je 'Preskočenie snímkov' nastavené na 'Ručne', určuje obsadenosť zvukového zásobníka (v percentách) pod ktorou budú snímky preskočené. Vyššie hodnoty znižujú riziko praskania za cenu zahodenia snímkov častejšie."
 #define GENESIS_PLUS_GX_YM2413_LABEL_SK NULL
@@ -48739,7 +48739,7 @@ struct retro_core_options_v2 options_si = {
 #define OPTION_VAL_MAME_ENHANCED_YM3438_SK NULL
 #define OPTION_VAL_NUKED_YM2612_SK NULL
 #define OPTION_VAL_NUKED_YM3438_SK NULL
-#define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_SK NULL
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_SK "Zvukový výstup"
 #define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_SK NULL
 #define OPTION_VAL_STEREO_SK NULL
 #define OPTION_VAL_MONO_SK NULL
