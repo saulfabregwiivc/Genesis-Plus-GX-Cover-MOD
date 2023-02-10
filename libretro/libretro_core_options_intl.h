@@ -6007,7 +6007,7 @@ struct retro_core_options_v2 options_chs = {
 #define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_CHT "設定跳幀用以避免音訊緩衝區不足(產生破音)。用影像流暢度為代價提高效能。\n設定 <自動> 由前端系統控制跳幀。設定 <手動> 由「跳幀上限 (%)」控制跳幀。"
 #define OPTION_VAL_MANUAL_CHT "手動"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_CHT "跳幀上限 (%)"
-#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_CHT "設定「跳幀」為 <手動> 時音頻緩衝區使用上限(%)，低於上限的影格將被跳過。設定過高會導致頻繁丟失影格，過低則是出現破音。"
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_CHT "設定「跳幀」為<手動>時音頻緩衝區使用上限(%)。\n低於上限的影格將被跳過, 設定過高會導致頻繁丟失影格, 過低則是出現破音。"
 #define GENESIS_PLUS_GX_YM2413_LABEL_CHT NULL
 #define GENESIS_PLUS_GX_YM2413_INFO_0_CHT NULL
 #define GENESIS_PLUS_GX_YM2413_CORE_LABEL_CHT "Master System FM (YM2413) 核心"
