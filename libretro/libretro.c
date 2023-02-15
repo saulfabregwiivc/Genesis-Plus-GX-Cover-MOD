@@ -1909,16 +1909,7 @@ static void check_variables(bool first_run)
   var.key = "genesis_plus_gx_overclock";
   environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
   {
-    if (!var.value || !strcmp(var.value, "100%"))
-      config.overclock = 100;
-    else if (var.value && !strcmp(var.value, "125%"))
-      config.overclock = 125;
-    else if (var.value && !strcmp(var.value, "150%"))
-      config.overclock = 150;
-    else if (var.value && !strcmp(var.value, "175%"))
-      config.overclock = 175;
-    else if (var.value && !strcmp(var.value, "200%"))
-      config.overclock = 200;
+    config.overclock = (!var.value) ? 100 : atoi(var.value);
 
     if (system_hw)
       update_overclock();
