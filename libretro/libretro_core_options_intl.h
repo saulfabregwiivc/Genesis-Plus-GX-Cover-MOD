@@ -6182,7 +6182,7 @@ struct retro_core_options_v2 options_chs = {
 #define GENESIS_PLUS_GX_CD_LATENCY_LABEL_CHT NULL
 #define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_CHT NULL
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_CHT "顯示音量進階設定 (需要重開選單)"
-#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_CHT "開啟低階音訊通道參數的設定, 此選項變更時需要重新開啟選單才能生效。"
+#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_CHT "開啟低階音訊通道參數的設定。\n注意: 此選項變更時需要重新進入核心選項才能生效。"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_CHT "PSG聲道0 (方波) 音量 %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_CHT "設定PSG聲道0的音量。"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_CHT "PSG聲道1 (方波) 音量 %"
@@ -6191,17 +6191,17 @@ struct retro_core_options_v2 options_chs = {
 #define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_CHT "設定PSG聲道2的音量。"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_CHT "PSG聲道3 (雜訊) 音量 %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_CHT "設定PSG聲道3的音量。"
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_CHT NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_CHT "Mega Drive/Genesis 調頻通道 0 音量 %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_CHT NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_CHT NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_CHT "Mega Drive/Genesis 調頻通道 1 音量 %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_CHT NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_CHT NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_CHT "Mega Drive/Genesis 調頻通道 2 音量 %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_CHT NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_CHT NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_CHT "Mega Drive/Genesis 調頻通道 3 音量 %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_CHT NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_CHT NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_CHT "Mega Drive/Genesis 調頻通道 4 音量 %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_CHT NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_CHT NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_CHT "Mega Drive/Genesis 調頻通道 5 音量 %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_CHT NULL
 #define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_CHT NULL
 #define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_CHT NULL
@@ -21013,7 +21013,7 @@ struct retro_core_options_v2 options_fa = {
 #define OPTION_VAL_AUTO_FI "Automaattinen"
 #define OPTION_VAL_SG_1000_FI NULL
 #define OPTION_VAL_SG_1000_II_FI NULL
-#define OPTION_VAL_SG_1000_II_RAM_EXT_FI NULL
+#define OPTION_VAL_SG_1000_II_RAM_EXT_FI "SG-1000 II + Lisä-RAM-moduuli"
 #define OPTION_VAL_MARK_III_FI NULL
 #define OPTION_VAL_MASTER_SYSTEM_FI NULL
 #define OPTION_VAL_MASTER_SYSTEM_II_FI NULL
@@ -21025,46 +21025,46 @@ struct retro_core_options_v2 options_fa = {
 #define OPTION_VAL_PAL_FI NULL
 #define OPTION_VAL_NTSC_J_FI NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_FI "Järjestelmän käynnistys ROM"
-#define GENESIS_PLUS_GX_BIOS_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_FI NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_FI NULL
-#define OPTION_VAL_PER_BIOS_FI NULL
-#define OPTION_VAL_PER_GAME_FI NULL
-#define GENESIS_PLUS_GX_ADD_ON_LABEL_FI NULL
-#define GENESIS_PLUS_GX_ADD_ON_INFO_0_FI NULL
-#define OPTION_VAL_SEGA_MEGA_CD_FI NULL
+#define GENESIS_PLUS_GX_BIOS_INFO_0_FI "Käytä virallista BIOS/bootloader-ohjelmaa emuloiduille laitteelle, jos sellainen löytyy RetroArchin järjestelmäkansiosta. Näyttää konsolikohtaisen käynnistyslatauksen/animaation ja ajaa sitten ladatun sisällön."
+#define GENESIS_PLUS_GX_BRAM_LABEL_FI "CD-järjestelmän BRAM"
+#define GENESIS_PLUS_GX_BRAM_INFO_0_FI "Määrittää Sega CD- ja Mega-CD:n sisältöä ajettaessa, jaetaanko yksi tallennustiedoston tietyn alueen kaikkien pelien välillä (BIOS-kohtainen) vai luodaanko jokaiselle pelille erillinen tallennustiedosto (Pelikohtainen). Huomaa, että Sega CD/Mega-CD:llä on rajallinen sisäinen tallennustila, riittäen vain muutamiin peleihin. Jotta tallennustila ei loppuisi, suositellaan \"Pelikohtainen\" asetusta."
+#define OPTION_VAL_PER_BIOS_FI "BIOS-kohtainen"
+#define OPTION_VAL_PER_GAME_FI "Pelikohtainen"
+#define GENESIS_PLUS_GX_ADD_ON_LABEL_FI "CD-lisäosa (MD-tila) (vaatii uudelleenkäynnistyksen)"
+#define GENESIS_PLUS_GX_ADD_ON_INFO_0_FI "Märittelee, mitä lisäosaa käytetään CD:n audio toistamiseen tuetuilla Mega Drive/Genesis -peleillä."
+#define OPTION_VAL_SEGA_MEGA_CD_FI "Sega/Mega-CD"
 #define OPTION_VAL_MEGASD_FI NULL
 #define OPTION_VAL_NONE_FI "Ei mitään"
-#define GENESIS_PLUS_GX_LOCK_ON_LABEL_FI NULL
-#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_LOCK_ON_LABEL_FI "Lock-On -kasetti"
+#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_FI "Lock-On Technology on Mega Drive/Genesis -toiminto, joka sallii vanhemman pelin muodostaa yhteyden erityisen kasetin läpikulkuporttiin laajennettua tai muutettua pelattavuutta varten. Tämä valinta määrittelee, minkä tyyppistä '\"lock-on\" kasettia emuloidaan. Vastaavan bios-tiedoston on oltava RetroArchin järjestelmäkansiossa."
 #define OPTION_VAL_GAME_GENIE_FI NULL
 #define OPTION_VAL_ACTION_REPLAY_PRO_FI NULL
 #define OPTION_VAL_SONIC_KNUCKLES_FI NULL
 #define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_FI "Ytimen määrittämä kuvasuhde"
-#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_FI "Valitse haluamasi sisällön kuvasuhde. Tämä pätee vain kun RetroArchin kuvasuhde on asetettu videoasetuksissa \"Ytimen asettama\"."
 #define OPTION_VAL_NTSC_PAR_FI NULL
 #define OPTION_VAL_PAL_PAR_FI NULL
 #define OPTION_VAL_4_3_FI NULL
 #define OPTION_VAL_UNCORRECTED_FI "Ei korjattu"
 #define GENESIS_PLUS_GX_OVERSCAN_LABEL_FI "Reunukset"
-#define GENESIS_PLUS_GX_OVERSCAN_INFO_0_FI NULL
-#define OPTION_VAL_TOP_BOTTOM_FI NULL
+#define GENESIS_PLUS_GX_OVERSCAN_INFO_0_FI "Ota tämä käyttöön näyttääksesi näytön ylä-, ala- ja/tai vasemman/oikeanpuoleiset yliskannauksen alueet. Tavallisesti ne on piilossa keyksissä, joka on standardin mukaan määritellyn television reunan takana."
+#define OPTION_VAL_TOP_BOTTOM_FI "Ylä/Ala"
 #define OPTION_VAL_LEFT_RIGHT_FI "Vasen/Oikea"
 #define OPTION_VAL_FULL_FI "Täysi"
 #define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_FI "Piilota Master Systemin sivurajat"
-#define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_FI "Leikkaa 8 pikseliä näytön vasemmalta puolelta tai vasemmalta että oikealta puolelta, kun ajetaan Master System -pelejä."
 #define OPTION_VAL_LEFT_BORDER_FI "Vain vasen reuna"
 #define OPTION_VAL_LEFT_RIGHT_BORDERS_FI "Vasen ja oikea reuna"
-#define GENESIS_PLUS_GX_GG_EXTRA_LABEL_FI NULL
-#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_GG_EXTRA_LABEL_FI "Game Gear laajennettu näyttö"
+#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_FI "Pakottaa Game Gear pelit ajettavaksi SMS-tilassa, lisääntyneellä 256 x 192 resoluutiolla. Saattaa näyttää ylimääräistä sisältöä, mutta usein näyttää vain rajan korruptoituneita/ei-toivottuja kuvatietoja."
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_FI "Blargg NTSC suodatin"
-#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_FI "Käytä videosuodatinta erilaisten NTSC TV-signaalien jäljittelemiseen."
 #define OPTION_VAL_MONOCHROME_FI "Yksivärinen"
 #define OPTION_VAL_COMPOSITE_FI "Komposiitti"
 #define OPTION_VAL_SVIDEO_FI NULL
 #define OPTION_VAL_RGB_FI NULL
-#define GENESIS_PLUS_GX_LCD_FILTER_LABEL_FI NULL
-#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_LCD_FILTER_LABEL_FI "LCD Ghosting -suodatin"
+#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_FI "Käytä \"ghosting\" kuva suodatinta jäljittelemään Game Gear ja Genesis Nomad LCD-näyttöpaneelien ominaisuuksia."
 #define GENESIS_PLUS_GX_RENDER_LABEL_FI NULL
 #define GENESIS_PLUS_GX_RENDER_INFO_0_FI NULL
 #define OPTION_VAL_SINGLE_FIELD_FI NULL
@@ -21089,7 +21089,7 @@ struct retro_core_options_v2 options_fa = {
 #define OPTION_VAL_NUKED_YM2612_FI NULL
 #define OPTION_VAL_NUKED_YM3438_FI NULL
 #define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_FI "Äänen ulostulo"
-#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_FI "Valitse stereo- tai monoäänen toisto."
 #define OPTION_VAL_STEREO_FI NULL
 #define OPTION_VAL_MONO_FI NULL
 #define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_FI "Äänisuodatin"
@@ -21133,19 +21133,19 @@ struct retro_core_options_v2 options_fa = {
 #define OPTION_VAL_150_FI "150 %"
 #define OPTION_VAL_175_FI "175 %"
 #define OPTION_VAL_200_FI "200 %"
-#define OPTION_VAL_225_FI NULL
+#define OPTION_VAL_225_FI "225 %"
 #define OPTION_VAL_250_FI "250 %"
-#define OPTION_VAL_275_FI NULL
+#define OPTION_VAL_275_FI "275 %"
 #define OPTION_VAL_300_FI "300 %"
-#define OPTION_VAL_325_FI NULL
+#define OPTION_VAL_325_FI "325 %"
 #define OPTION_VAL_350_FI "350 %"
-#define OPTION_VAL_375_FI NULL
+#define OPTION_VAL_375_FI "375 %"
 #define OPTION_VAL_400_FI "400 %"
-#define OPTION_VAL_425_FI NULL
+#define OPTION_VAL_425_FI "425 %"
 #define OPTION_VAL_450_FI "450 %"
-#define OPTION_VAL_475_FI NULL
+#define OPTION_VAL_475_FI "475 %"
 #define OPTION_VAL_500_FI "500 %"
-#define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_FI NULL
+#define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_FI "Järjestelmän lukkiutumiset"
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_FI NULL
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_FI "68K-osoitevirhe"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_FI NULL
