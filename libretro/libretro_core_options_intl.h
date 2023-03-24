@@ -43515,7 +43515,7 @@ struct retro_core_options_v2 options_pt_pt = {
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_RU "NTSC-фильтр Blargg'а"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_RU "Применяет видеофильтр для имитации различных сигналов NTSC ТВ."
 #define OPTION_VAL_MONOCHROME_RU "Монохромный"
-#define OPTION_VAL_COMPOSITE_RU "Композитный"
+#define OPTION_VAL_COMPOSITE_RU "Композит"
 #define OPTION_VAL_SVIDEO_RU NULL
 #define OPTION_VAL_RGB_RU NULL
 #define GENESIS_PLUS_GX_LCD_FILTER_LABEL_RU "Ghosting-фильтр LCD"
