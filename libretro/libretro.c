@@ -1327,7 +1327,7 @@ static void check_variables(bool first_run)
   bool update_frameskip     = false;
   struct retro_variable var = {0};
 
-  var.key = "genesis_plus_gx_bram";
+  var.key = "genesis_plus_gx_system_bram";
   environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
   {
    if (!var.value || !strcmp(var.value, "per bios"))
@@ -1344,6 +1344,22 @@ static void check_variables(bool first_run)
      strlcpy(CD_BRAM_EU, newpath, sizeof(CD_BRAM_EU));
      strlcpy(CD_BRAM_US, newpath, sizeof(CD_BRAM_US));
      strlcpy(CD_BRAM_JP, newpath, sizeof(CD_BRAM_JP));
+   }
+  }
+
+  var.key = "genesis_plus_gx_cart_bram";
+  environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
+  {
+   if (!var.value || !strcmp(var.value, "per cart"))
+   {
+     fill_pathname_join(CART_BRAM, save_dir, "cart.brm", sizeof(CART_BRAM));
+   }
+   else
+   {
+     char newpath[4096];
+     fill_pathname_join(newpath, save_dir, g_rom_name, sizeof(newpath));
+     strlcat(newpath, "_cart.brm", sizeof(newpath));
+     strlcpy(CART_BRAM, newpath, sizeof(CART_BRAM));
    }
   }
 
@@ -3275,8 +3291,7 @@ bool retro_load_game(const struct retro_game_info *info)
    fill_pathname_join(CD_BIOS_EU, dir, "bios_CD_E.bin", sizeof(CD_BIOS_EU));
    fill_pathname_join(CD_BIOS_US, dir, "bios_CD_U.bin", sizeof(CD_BIOS_US));
    fill_pathname_join(CD_BIOS_JP, dir, "bios_CD_J.bin", sizeof(CD_BIOS_JP));
-   fill_pathname_join(CART_BRAM,  dir, "cart.brm",      sizeof(CART_BRAM));
-
+ 
    check_variables(true);
 
    if (log_cb)
