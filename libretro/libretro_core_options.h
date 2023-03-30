@@ -147,7 +147,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
    },
    {
       "genesis_plus_gx_system_bram",
-      "CD System BRAM",
+      "CD System BRAM (Requires Restart)",
       NULL,
       "When running Sega CD/Mega-CD content, specifies whether to share a single save file between all games from a specific region (Per-BIOS) or to create a separate save file for each game (Per-Game). Note that the Sega CD/Mega-CD has limited internal storage, sufficient only for a handful of titles. To avoid running out of space, the 'Per-Game' setting is recommended.",
       NULL,
@@ -161,7 +161,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
    },
    {
       "genesis_plus_gx_cart_bram",
-      "CD Backup Cart BRAM",
+      "CD Backup Cart BRAM (Requires Restart)",
       NULL,
       "When running Sega CD/Mega-CD content, specifies whether to share a single backup ram cart for all games (Per-Cart) or to create a separate backup ram cart for each game (Per-Game).",
       NULL,
@@ -172,6 +172,25 @@ struct retro_core_option_v2_definition option_defs_us[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      "CD Backup Cart BRAM Size (Requires Restart)",
+      NULL,
+      "Sets the backup ram cart size when running Sega CD/Mega-CD content. Useful when setting the backup ram cart to Per-Game to avoid multiple larger cart sizes.",
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     "128Kbit"  },
+         { "256k",     "256Kbit"  },
+         { "512k",     "512Kbit"  },
+         { "1meg",     "1Mbit"    },
+         { "2meg",     "2Mbit"    },
+         { "4meg",     "4Mbit"    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
