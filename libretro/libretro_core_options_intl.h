@@ -68,10 +68,13 @@ extern "C" {
 #define OPTION_VAL_NTSC_J_AR NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_AR NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_AR NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_AR NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_AR NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_AR NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_AR NULL
 #define OPTION_VAL_PER_BIOS_AR NULL
 #define OPTION_VAL_PER_GAME_AR NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_AR NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_AR NULL
+#define OPTION_VAL_PER_CART_AR NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_AR NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_AR NULL
 #define OPTION_VAL_SEGA_MEGA_CD_AR NULL
@@ -320,10 +323,10 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_AR,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_AR,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_AR,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_AR,
       NULL,
       "system",
       {
@@ -332,6 +335,20 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_AR,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_AR,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_AR },
+         { "per game", OPTION_VAL_PER_GAME_AR },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -1565,10 +1582,13 @@ struct retro_core_options_v2 options_ar = {
 #define OPTION_VAL_NTSC_J_AST NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_AST NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_AST NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_AST NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_AST NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_AST NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_AST NULL
 #define OPTION_VAL_PER_BIOS_AST NULL
 #define OPTION_VAL_PER_GAME_AST NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_AST NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_AST NULL
+#define OPTION_VAL_PER_CART_AST NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_AST NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_AST NULL
 #define OPTION_VAL_SEGA_MEGA_CD_AST NULL
@@ -1817,10 +1837,10 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_AST,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_AST,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_AST,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_AST,
       NULL,
       "system",
       {
@@ -1829,6 +1849,20 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_AST,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_AST,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_AST },
+         { "per game", OPTION_VAL_PER_GAME_AST },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -3030,6 +3064,1520 @@ struct retro_core_options_v2 options_ast = {
    option_defs_ast
 };
 
+/* RETRO_LANGUAGE_BE */
+
+#define CATEGORY_SYSTEM_LABEL_BE NULL
+#define CATEGORY_SYSTEM_INFO_0_BE NULL
+#define CATEGORY_VIDEO_LABEL_BE NULL
+#define CATEGORY_VIDEO_INFO_0_BE NULL
+#define CATEGORY_AUDIO_LABEL_BE NULL
+#define CATEGORY_AUDIO_INFO_0_BE NULL
+#define CATEGORY_INPUT_LABEL_BE NULL
+#define CATEGORY_INPUT_INFO_0_BE NULL
+#define CATEGORY_HACKS_LABEL_BE NULL
+#define CATEGORY_HACKS_INFO_0_BE NULL
+#define CATEGORY_CHANNEL_VOLUME_LABEL_BE NULL
+#define CATEGORY_CHANNEL_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_BE NULL
+#define OPTION_VAL_AUTO_BE NULL
+#define OPTION_VAL_SG_1000_BE NULL
+#define OPTION_VAL_SG_1000_II_BE NULL
+#define OPTION_VAL_SG_1000_II_RAM_EXT_BE NULL
+#define OPTION_VAL_MARK_III_BE NULL
+#define OPTION_VAL_MASTER_SYSTEM_BE NULL
+#define OPTION_VAL_MASTER_SYSTEM_II_BE NULL
+#define OPTION_VAL_GAME_GEAR_BE NULL
+#define OPTION_VAL_MEGA_DRIVE_GENESIS_BE NULL
+#define GENESIS_PLUS_GX_REGION_DETECT_LABEL_BE NULL
+#define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_BE NULL
+#define OPTION_VAL_NTSC_U_BE NULL
+#define OPTION_VAL_PAL_BE NULL
+#define OPTION_VAL_NTSC_J_BE NULL
+#define GENESIS_PLUS_GX_BIOS_LABEL_BE NULL
+#define GENESIS_PLUS_GX_BIOS_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_BE NULL
+#define OPTION_VAL_PER_BIOS_BE NULL
+#define OPTION_VAL_PER_GAME_BE NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_BE NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_BE NULL
+#define OPTION_VAL_PER_CART_BE NULL
+#define GENESIS_PLUS_GX_ADD_ON_LABEL_BE NULL
+#define GENESIS_PLUS_GX_ADD_ON_INFO_0_BE NULL
+#define OPTION_VAL_SEGA_MEGA_CD_BE NULL
+#define OPTION_VAL_MEGASD_BE NULL
+#define OPTION_VAL_NONE_BE NULL
+#define GENESIS_PLUS_GX_LOCK_ON_LABEL_BE NULL
+#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_BE NULL
+#define OPTION_VAL_GAME_GENIE_BE NULL
+#define OPTION_VAL_ACTION_REPLAY_PRO_BE NULL
+#define OPTION_VAL_SONIC_KNUCKLES_BE NULL
+#define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_BE NULL
+#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_BE NULL
+#define OPTION_VAL_NTSC_PAR_BE NULL
+#define OPTION_VAL_PAL_PAR_BE NULL
+#define OPTION_VAL_4_3_BE NULL
+#define OPTION_VAL_UNCORRECTED_BE NULL
+#define GENESIS_PLUS_GX_OVERSCAN_LABEL_BE NULL
+#define GENESIS_PLUS_GX_OVERSCAN_INFO_0_BE NULL
+#define OPTION_VAL_TOP_BOTTOM_BE NULL
+#define OPTION_VAL_LEFT_RIGHT_BE NULL
+#define OPTION_VAL_FULL_BE NULL
+#define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_BE NULL
+#define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_BE NULL
+#define OPTION_VAL_LEFT_BORDER_BE NULL
+#define OPTION_VAL_LEFT_RIGHT_BORDERS_BE NULL
+#define GENESIS_PLUS_GX_GG_EXTRA_LABEL_BE NULL
+#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_BE NULL
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_BE NULL
+#define OPTION_VAL_MONOCHROME_BE NULL
+#define OPTION_VAL_COMPOSITE_BE NULL
+#define OPTION_VAL_SVIDEO_BE NULL
+#define OPTION_VAL_RGB_BE NULL
+#define GENESIS_PLUS_GX_LCD_FILTER_LABEL_BE NULL
+#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_RENDER_LABEL_BE NULL
+#define GENESIS_PLUS_GX_RENDER_INFO_0_BE NULL
+#define OPTION_VAL_SINGLE_FIELD_BE NULL
+#define OPTION_VAL_DOUBLE_FIELD_BE NULL
+#define GENESIS_PLUS_GX_FRAMESKIP_LABEL_BE NULL
+#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_BE NULL
+#define OPTION_VAL_MANUAL_BE NULL
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_BE NULL
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_YM2413_LABEL_BE NULL
+#define GENESIS_PLUS_GX_YM2413_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_YM2413_CORE_LABEL_BE NULL
+#define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_BE NULL
+#define OPTION_VAL_MAME_BE NULL
+#define OPTION_VAL_NUKED_BE NULL
+#define GENESIS_PLUS_GX_YM2612_LABEL_BE NULL
+#define GENESIS_PLUS_GX_YM2612_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_YM2612_INFO_1_BE NULL
+#define OPTION_VAL_MAME_YM2612_BE NULL
+#define OPTION_VAL_MAME_ASIC_YM3438_BE NULL
+#define OPTION_VAL_MAME_ENHANCED_YM3438_BE NULL
+#define OPTION_VAL_NUKED_YM2612_BE NULL
+#define OPTION_VAL_NUKED_YM3438_BE NULL
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_BE NULL
+#define OPTION_VAL_STEREO_BE NULL
+#define OPTION_VAL_MONO_BE NULL
+#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_BE NULL
+#define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_BE NULL
+#define OPTION_VAL_LOW_PASS_BE NULL
+#define OPTION_VAL_EQ_BE NULL
+#define GENESIS_PLUS_GX_LOWPASS_RANGE_LABEL_BE NULL
+#define GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_PSG_PREAMP_LABEL_BE NULL
+#define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_FM_PREAMP_LABEL_BE NULL
+#define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_BE NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_MID_LABEL_BE NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_MID_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_LABEL_BE NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_GUN_INPUT_LABEL_BE NULL
+#define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_BE NULL
+#define OPTION_VAL_LIGHTGUN_BE NULL
+#define OPTION_VAL_TOUCHSCREEN_BE NULL
+#define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_BE NULL
+#define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_BE NULL
+#define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_BE NULL
+#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_BE NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_BE NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_OVERCLOCK_LABEL_BE NULL
+#define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_BE NULL
+#define OPTION_VAL_100_BE NULL
+#define OPTION_VAL_125_BE NULL
+#define OPTION_VAL_150_BE NULL
+#define OPTION_VAL_175_BE NULL
+#define OPTION_VAL_200_BE NULL
+#define OPTION_VAL_225_BE NULL
+#define OPTION_VAL_250_BE NULL
+#define OPTION_VAL_275_BE NULL
+#define OPTION_VAL_300_BE NULL
+#define OPTION_VAL_325_BE NULL
+#define OPTION_VAL_350_BE NULL
+#define OPTION_VAL_375_BE NULL
+#define OPTION_VAL_400_BE NULL
+#define OPTION_VAL_425_BE NULL
+#define OPTION_VAL_450_BE NULL
+#define OPTION_VAL_475_BE NULL
+#define OPTION_VAL_500_BE NULL
+#define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_BE NULL
+#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_BE NULL
+#define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_BE NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_BE NULL
+
+struct retro_core_option_v2_category option_cats_be[] = {
+   {
+      "system",
+      CATEGORY_SYSTEM_LABEL_BE,
+      CATEGORY_SYSTEM_INFO_0_BE
+   },
+   {
+      "video",
+      CATEGORY_VIDEO_LABEL_BE,
+      CATEGORY_VIDEO_INFO_0_BE
+   },
+   {
+      "audio",
+      CATEGORY_AUDIO_LABEL_BE,
+      CATEGORY_AUDIO_INFO_0_BE
+   },
+   {
+      "input",
+      CATEGORY_INPUT_LABEL_BE,
+      CATEGORY_INPUT_INFO_0_BE
+   },
+   {
+      "hacks",
+      CATEGORY_HACKS_LABEL_BE,
+      CATEGORY_HACKS_INFO_0_BE
+   },
+   {
+      "channel_volume",
+      CATEGORY_CHANNEL_VOLUME_LABEL_BE,
+      CATEGORY_CHANNEL_VOLUME_INFO_0_BE
+   },
+   { NULL, NULL, NULL },
+};
+struct retro_core_option_v2_definition option_defs_be[] = {
+   {
+      "genesis_plus_gx_system_hw",
+      GENESIS_PLUS_GX_SYSTEM_HW_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_BE,
+      NULL,
+      "system",
+      {
+         { "auto",                 OPTION_VAL_AUTO_BE                 },
+         { "sg-1000",              OPTION_VAL_SG_1000_BE              },
+         { "sg-1000 II",           OPTION_VAL_SG_1000_II_BE           },
+         { "sg-1000 II + ram ext.",OPTION_VAL_SG_1000_II_RAM_EXT_BE},
+         { "mark-III",             OPTION_VAL_MARK_III_BE             },
+         { "master system",        OPTION_VAL_MASTER_SYSTEM_BE        },
+         { "master system II",     OPTION_VAL_MASTER_SYSTEM_II_BE     },
+         { "game gear",            OPTION_VAL_GAME_GEAR_BE            },
+         { "mega drive / genesis", OPTION_VAL_MEGA_DRIVE_GENESIS_BE   },
+         { NULL, NULL },
+      },
+      "auto"
+   },
+   {
+      "genesis_plus_gx_region_detect",
+      GENESIS_PLUS_GX_REGION_DETECT_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_REGION_DETECT_INFO_0_BE,
+      NULL,
+      "system",
+      {
+         { "auto",    OPTION_VAL_AUTO_BE   },
+         { "ntsc-u",  OPTION_VAL_NTSC_U_BE },
+         { "pal",     OPTION_VAL_PAL_BE    },
+         { "ntsc-j",  OPTION_VAL_NTSC_J_BE },
+         { NULL, NULL },
+      },
+      "auto"
+   },
+   {
+      "genesis_plus_gx_bios",
+      GENESIS_PLUS_GX_BIOS_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_BIOS_INFO_0_BE,
+      NULL,
+      "system",
+      {
+         { "disabled", NULL },
+         { "enabled",  NULL },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_BE,
+      NULL,
+      "system",
+      {
+         { "per bios", OPTION_VAL_PER_BIOS_BE },
+         { "per game", OPTION_VAL_PER_GAME_BE },
+         { NULL, NULL },
+      },
+      "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_BE,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_BE },
+         { "per game", OPTION_VAL_PER_GAME_BE },
+         { NULL, NULL },
+      },
+      "per cart"
+   },
+   {
+      "genesis_plus_gx_add_on",
+      GENESIS_PLUS_GX_ADD_ON_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_ADD_ON_INFO_0_BE,
+      NULL,
+      "system",
+      {
+         { "auto",         OPTION_VAL_AUTO_BE },
+         { "sega/mega cd", OPTION_VAL_SEGA_MEGA_CD_BE },
+         { "megasd",       OPTION_VAL_MEGASD_BE },
+         { "none",         OPTION_VAL_NONE_BE },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_lock_on",
+      GENESIS_PLUS_GX_LOCK_ON_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_LOCK_ON_INFO_0_BE,
+      NULL,
+      "system",
+      {
+         { "disabled",            NULL },
+         { "game genie",          OPTION_VAL_GAME_GENIE_BE },
+         { "action replay (pro)", OPTION_VAL_ACTION_REPLAY_PRO_BE },
+         { "sonic & knuckles",    OPTION_VAL_SONIC_KNUCKLES_BE },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_aspect_ratio",
+      GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_BE,
+      NULL,
+      "video",
+      {
+         { "auto",     OPTION_VAL_AUTO_BE },
+         { "NTSC PAR", OPTION_VAL_NTSC_PAR_BE },
+         { "PAL PAR",  OPTION_VAL_PAL_PAR_BE },
+         { "4:3",  OPTION_VAL_4_3_BE },
+         { "Uncorrected",  OPTION_VAL_UNCORRECTED_BE },
+      },
+      "auto"
+   },
+   {
+      "genesis_plus_gx_overscan",
+      GENESIS_PLUS_GX_OVERSCAN_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_OVERSCAN_INFO_0_BE,
+      NULL,
+      "video",
+      {
+         { "disabled",   NULL },
+         { "top/bottom", OPTION_VAL_TOP_BOTTOM_BE },
+         { "left/right", OPTION_VAL_LEFT_RIGHT_BE },
+         { "full",       OPTION_VAL_FULL_BE },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_left_border",
+      GENESIS_PLUS_GX_LEFT_BORDER_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_BE,
+      NULL,
+      "video",
+      {
+         { "disabled", NULL },
+         { "left border", OPTION_VAL_LEFT_BORDER_BE },
+         { "left & right borders", OPTION_VAL_LEFT_RIGHT_BORDERS_BE },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_gg_extra",
+      GENESIS_PLUS_GX_GG_EXTRA_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_GG_EXTRA_INFO_0_BE,
+      NULL,
+      "video",
+      {
+         { "disabled", NULL },
+         { "enabled",  NULL },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_blargg_ntsc_filter",
+      GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_BE,
+      NULL,
+      "video",
+      {
+         { "disabled",   NULL },
+         { "monochrome", OPTION_VAL_MONOCHROME_BE },
+         { "composite",  OPTION_VAL_COMPOSITE_BE },
+         { "svideo",     OPTION_VAL_SVIDEO_BE },
+         { "rgb",        OPTION_VAL_RGB_BE },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_lcd_filter",
+      GENESIS_PLUS_GX_LCD_FILTER_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_LCD_FILTER_INFO_0_BE,
+      NULL,
+      "video",
+      {
+         { "disabled", NULL },
+         { "enabled",  NULL },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_render",
+      GENESIS_PLUS_GX_RENDER_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_RENDER_INFO_0_BE,
+      NULL,
+      "video",
+      {
+         { "single field", OPTION_VAL_SINGLE_FIELD_BE },
+         { "double field", OPTION_VAL_DOUBLE_FIELD_BE },
+         { NULL, NULL },
+      },
+      "single field"
+   },
+   {
+      "genesis_plus_gx_frameskip",
+      GENESIS_PLUS_GX_FRAMESKIP_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_FRAMESKIP_INFO_0_BE,
+      NULL,
+      "video",
+      {
+         { "disabled", NULL },
+         { "auto",     OPTION_VAL_AUTO_BE },
+         { "manual",   OPTION_VAL_MANUAL_BE },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_frameskip_threshold",
+      GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_BE,
+      NULL,
+      "video",
+      {
+         { "15", NULL },
+         { "18", NULL },
+         { "21", NULL },
+         { "24", NULL },
+         { "27", NULL },
+         { "30", NULL },
+         { "33", NULL },
+         { "36", NULL },
+         { "39", NULL },
+         { "42", NULL },
+         { "45", NULL },
+         { "48", NULL },
+         { "51", NULL },
+         { "54", NULL },
+         { "57", NULL },
+         { "60", NULL },
+         { NULL, NULL },
+      },
+      "33"
+   },
+   {
+      "genesis_plus_gx_ym2413",
+      GENESIS_PLUS_GX_YM2413_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_YM2413_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "auto",     OPTION_VAL_AUTO_BE },
+         { "disabled", NULL },
+         { "enabled",  NULL },
+         { NULL, NULL },
+      },
+      "auto"
+   },
+#ifdef HAVE_OPLL_CORE
+   {
+      "genesis_plus_gx_ym2413_core",
+      GENESIS_PLUS_GX_YM2413_CORE_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_YM2413_CORE_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "mame",  OPTION_VAL_MAME_BE },
+         { "nuked", OPTION_VAL_NUKED_BE },
+         { NULL, NULL },
+      },
+      "mame"
+   },
+#endif
+   {
+      "genesis_plus_gx_ym2612",
+      GENESIS_PLUS_GX_YM2612_LABEL_BE,
+      NULL,
+#ifdef HAVE_YM3438_CORE
+      GENESIS_PLUS_GX_YM2612_INFO_0_BE,
+#else
+      GENESIS_PLUS_GX_YM2612_INFO_1_BE,
+#endif
+      NULL,
+      "audio",
+      {
+         { "mame (ym2612)",          OPTION_VAL_MAME_YM2612_BE },
+         { "mame (asic ym3438)",     OPTION_VAL_MAME_ASIC_YM3438_BE },
+         { "mame (enhanced ym3438)", OPTION_VAL_MAME_ENHANCED_YM3438_BE },
+#ifdef HAVE_YM3438_CORE
+         { "nuked (ym2612)",         OPTION_VAL_NUKED_YM2612_BE },
+         { "nuked (ym3438)",         OPTION_VAL_NUKED_YM3438_BE },
+#endif
+         { NULL, NULL },
+      },
+      "mame (ym2612)"
+   },
+   {
+      "genesis_plus_gx_sound_output",
+      GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "stereo", OPTION_VAL_STEREO_BE },
+         { "mono",   OPTION_VAL_MONO_BE },
+         { NULL, NULL },
+      },
+      "stereo"
+   },
+   {
+      "genesis_plus_gx_audio_filter",
+      GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "disabled", NULL },
+         { "low-pass", OPTION_VAL_LOW_PASS_BE },
+#if HAVE_EQ
+         { "EQ",       OPTION_VAL_EQ_BE },
+#endif
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_lowpass_range",
+      GENESIS_PLUS_GX_LOWPASS_RANGE_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "5",  NULL },
+         { "10", NULL },
+         { "15", NULL },
+         { "20", NULL },
+         { "25", NULL },
+         { "30", NULL },
+         { "35", NULL },
+         { "40", NULL },
+         { "45", NULL },
+         { "50", NULL },
+         { "55", NULL },
+         { "60", NULL },
+         { "65", NULL },
+         { "70", NULL },
+         { "75", NULL },
+         { "80", NULL },
+         { "85", NULL },
+         { "90", NULL },
+         { "95", NULL },
+         { NULL, NULL },
+      },
+      "60"
+   },
+   {
+      "genesis_plus_gx_psg_preamp",
+      GENESIS_PLUS_GX_PSG_PREAMP_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "0",   NULL },
+         { "5",   NULL },
+         { "10",  NULL },
+         { "15",  NULL },
+         { "20",  NULL },
+         { "25",  NULL },
+         { "30",  NULL },
+         { "35",  NULL },
+         { "40",  NULL },
+         { "45",  NULL },
+         { "50",  NULL },
+         { "55",  NULL },
+         { "60",  NULL },
+         { "65",  NULL },
+         { "70",  NULL },
+         { "75",  NULL },
+         { "80",  NULL },
+         { "85",  NULL },
+         { "90",  NULL },
+         { "95",  NULL },
+         { "100", NULL },
+         { "105", NULL },
+         { "110", NULL },
+         { "115", NULL },
+         { "120", NULL },
+         { "125", NULL },
+         { "130", NULL },
+         { "135", NULL },
+         { "140", NULL },
+         { "145", NULL },
+         { "150", NULL },
+         { "155", NULL },
+         { "160", NULL },
+         { "165", NULL },
+         { "170", NULL },
+         { "175", NULL },
+         { "180", NULL },
+         { "185", NULL },
+         { "190", NULL },
+         { "195", NULL },
+         { "200", NULL },
+         { NULL, NULL },
+      },
+      "150"
+   },
+   {
+      "genesis_plus_gx_fm_preamp",
+      GENESIS_PLUS_GX_FM_PREAMP_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_FM_PREAMP_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "0",   NULL },
+         { "5",   NULL },
+         { "10",  NULL },
+         { "15",  NULL },
+         { "20",  NULL },
+         { "25",  NULL },
+         { "30",  NULL },
+         { "35",  NULL },
+         { "40",  NULL },
+         { "45",  NULL },
+         { "50",  NULL },
+         { "55",  NULL },
+         { "60",  NULL },
+         { "65",  NULL },
+         { "70",  NULL },
+         { "75",  NULL },
+         { "80",  NULL },
+         { "85",  NULL },
+         { "90",  NULL },
+         { "95",  NULL },
+         { "100", NULL },
+         { "105", NULL },
+         { "110", NULL },
+         { "115", NULL },
+         { "120", NULL },
+         { "125", NULL },
+         { "130", NULL },
+         { "135", NULL },
+         { "140", NULL },
+         { "145", NULL },
+         { "150", NULL },
+         { "155", NULL },
+         { "160", NULL },
+         { "165", NULL },
+         { "170", NULL },
+         { "175", NULL },
+         { "180", NULL },
+         { "185", NULL },
+         { "190", NULL },
+         { "195", NULL },
+         { "200", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_cdda_volume",
+      GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "0",   NULL },
+         { "5",   NULL },
+         { "10",  NULL },
+         { "15",  NULL },
+         { "20",  NULL },
+         { "25",  NULL },
+         { "30",  NULL },
+         { "35",  NULL },
+         { "40",  NULL },
+         { "45",  NULL },
+         { "50",  NULL },
+         { "55",  NULL },
+         { "60",  NULL },
+         { "65",  NULL },
+         { "70",  NULL },
+         { "75",  NULL },
+         { "80",  NULL },
+         { "85",  NULL },
+         { "90",  NULL },
+         { "95",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_pcm_volume",
+      GENESIS_PLUS_GX_PCM_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "0",   NULL },
+         { "5",   NULL },
+         { "10",  NULL },
+         { "15",  NULL },
+         { "20",  NULL },
+         { "25",  NULL },
+         { "30",  NULL },
+         { "35",  NULL },
+         { "40",  NULL },
+         { "45",  NULL },
+         { "50",  NULL },
+         { "55",  NULL },
+         { "60",  NULL },
+         { "65",  NULL },
+         { "70",  NULL },
+         { "75",  NULL },
+         { "80",  NULL },
+         { "85",  NULL },
+         { "90",  NULL },
+         { "95",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+#ifdef HAVE_EQ
+   {
+      "genesis_plus_gx_audio_eq_low",
+      GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "0",   NULL },
+         { "5",   NULL },
+         { "10",  NULL },
+         { "15",  NULL },
+         { "20",  NULL },
+         { "25",  NULL },
+         { "30",  NULL },
+         { "35",  NULL },
+         { "40",  NULL },
+         { "45",  NULL },
+         { "50",  NULL },
+         { "55",  NULL },
+         { "60",  NULL },
+         { "65",  NULL },
+         { "70",  NULL },
+         { "75",  NULL },
+         { "80",  NULL },
+         { "85",  NULL },
+         { "90",  NULL },
+         { "95",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_audio_eq_mid",
+      GENESIS_PLUS_GX_AUDIO_EQ_MID_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_AUDIO_EQ_MID_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "0",   NULL },
+         { "5",   NULL },
+         { "10",  NULL },
+         { "15",  NULL },
+         { "20",  NULL },
+         { "25",  NULL },
+         { "30",  NULL },
+         { "35",  NULL },
+         { "40",  NULL },
+         { "45",  NULL },
+         { "50",  NULL },
+         { "55",  NULL },
+         { "60",  NULL },
+         { "65",  NULL },
+         { "70",  NULL },
+         { "75",  NULL },
+         { "80",  NULL },
+         { "85",  NULL },
+         { "90",  NULL },
+         { "95",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_audio_eq_high",
+      GENESIS_PLUS_GX_AUDIO_EQ_HIGH_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_BE,
+      NULL,
+      "audio",
+      {
+         { "0",   NULL },
+         { "5",   NULL },
+         { "10",  NULL },
+         { "15",  NULL },
+         { "20",  NULL },
+         { "25",  NULL },
+         { "30",  NULL },
+         { "35",  NULL },
+         { "40",  NULL },
+         { "45",  NULL },
+         { "50",  NULL },
+         { "55",  NULL },
+         { "60",  NULL },
+         { "65",  NULL },
+         { "70",  NULL },
+         { "75",  NULL },
+         { "80",  NULL },
+         { "85",  NULL },
+         { "90",  NULL },
+         { "95",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+#endif
+   {
+      "genesis_plus_gx_gun_input",
+      GENESIS_PLUS_GX_GUN_INPUT_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_GUN_INPUT_INFO_0_BE,
+      NULL,
+      "input",
+      {
+         { "lightgun",    OPTION_VAL_LIGHTGUN_BE },
+         { "touchscreen", OPTION_VAL_TOUCHSCREEN_BE },
+         { NULL, NULL },
+      },
+      "lightgun"
+   },
+   {
+      "genesis_plus_gx_gun_cursor",
+      GENESIS_PLUS_GX_GUN_CURSOR_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_BE,
+      NULL,
+      "input",
+      {
+         { "disabled", NULL },
+         { "enabled",  NULL },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_invert_mouse",
+      GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_BE,
+      NULL,
+      "input",
+      {
+         { "disabled", NULL },
+         { "enabled",  NULL },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_no_sprite_limit",
+      GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_BE,
+      NULL,
+      "hacks",
+      {
+         { "disabled", NULL },
+         { "enabled",  NULL },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_enhanced_vscroll",
+      GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_BE,
+      NULL,
+      "hacks",
+      {
+         { "disabled", NULL },
+         { "enabled",  NULL },
+         { NULL, NULL },
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_enhanced_vscroll_limit",
+      GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_BE,
+      NULL,
+      "hacks",
+      {
+         { "2", NULL },
+         { "3",  NULL },
+         { "4", NULL },
+         { "5",  NULL },
+         { "6", NULL },
+         { "7",  NULL },
+         { "8", NULL },
+         { "9",  NULL },
+         { "10", NULL },
+         { "11",  NULL },
+         { "12", NULL },
+         { "13",  NULL },
+         { "14", NULL },
+         { "15",  NULL },
+         { "16", NULL },
+         { NULL, NULL },
+      },
+      "8"
+   },
+#ifdef HAVE_OVERCLOCK
+   {
+      "genesis_plus_gx_overclock",
+      GENESIS_PLUS_GX_OVERCLOCK_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_OVERCLOCK_INFO_0_BE,
+      NULL,
+      "hacks",
+      {
+         { "100", OPTION_VAL_100_BE },
+         { "125", OPTION_VAL_125_BE },
+         { "150", OPTION_VAL_150_BE },
+         { "175", OPTION_VAL_175_BE },
+         { "200", OPTION_VAL_200_BE },
+         { "225", OPTION_VAL_225_BE },
+         { "250", OPTION_VAL_250_BE },
+         { "275", OPTION_VAL_275_BE },
+         { "300", OPTION_VAL_300_BE },
+         { "325", OPTION_VAL_325_BE },
+         { "350", OPTION_VAL_350_BE },
+         { "375", OPTION_VAL_375_BE },
+         { "400", OPTION_VAL_400_BE },
+         { "425", OPTION_VAL_425_BE },
+         { "450", OPTION_VAL_450_BE },
+         { "475", OPTION_VAL_475_BE },
+         { "500", OPTION_VAL_500_BE },
+         { NULL, NULL },
+      },
+      "100%"
+   },
+#endif
+   {
+      "genesis_plus_gx_force_dtack",
+      GENESIS_PLUS_GX_FORCE_DTACK_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_BE,
+      NULL,
+      "hacks",
+      {
+         { "enabled",  NULL },
+         { "disabled", NULL },
+         { NULL, NULL },
+      },
+      "enabled"
+   },
+   {
+      "genesis_plus_gx_addr_error",
+      GENESIS_PLUS_GX_ADDR_ERROR_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_BE,
+      NULL,
+      "hacks",
+      {
+         { "enabled",  NULL },
+         { "disabled", NULL },
+         { NULL, NULL },
+      },
+      "enabled"
+   },
+   {
+      "genesis_plus_gx_cd_latency",
+      GENESIS_PLUS_GX_CD_LATENCY_LABEL_BE,
+      NULL,
+        GENESIS_PLUS_GX_CD_LATENCY_INFO_0_BE,
+      NULL,
+      "hacks",
+      {
+         { "enabled",  NULL },
+         { "disabled", NULL },
+         { NULL, NULL },
+      },
+      "enabled"
+   },
+#ifdef USE_PER_SOUND_CHANNELS_CONFIG
+   {
+      "genesis_plus_gx_show_advanced_audio_settings",
+      GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "enabled",  NULL },
+         { "disabled", NULL },
+         { NULL, NULL},
+      },
+      "disabled"
+   },
+   {
+      "genesis_plus_gx_psg_channel_0_volume",
+      GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_psg_channel_1_volume",
+      GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_psg_channel_2_volume",
+      GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_psg_channel_3_volume",
+      GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_md_channel_0_volume",
+      GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_md_channel_1_volume",
+      GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_md_channel_2_volume",
+      GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_md_channel_3_volume",
+      GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_md_channel_4_volume",
+      GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_md_channel_5_volume",
+      GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_sms_fm_channel_0_volume",
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_sms_fm_channel_1_volume",
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_sms_fm_channel_2_volume",
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_sms_fm_channel_3_volume",
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_sms_fm_channel_4_volume",
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_sms_fm_channel_5_volume",
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_sms_fm_channel_6_volume",
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_sms_fm_channel_7_volume",
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+   {
+      "genesis_plus_gx_sms_fm_channel_8_volume",
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_BE,
+      NULL,
+      "channel_volume",
+      {
+         { "0",   NULL },
+         { "10",  NULL },
+         { "20",  NULL },
+         { "30",  NULL },
+         { "40",  NULL },
+         { "50",  NULL },
+         { "60",  NULL },
+         { "70",  NULL },
+         { "80",  NULL },
+         { "90",  NULL },
+         { "100", NULL },
+         { NULL, NULL },
+      },
+      "100"
+   },
+#endif
+   { NULL, NULL, NULL, NULL, NULL, NULL, {{0}}, NULL },
+};
+struct retro_core_options_v2 options_be = {
+   option_cats_be,
+   option_defs_be
+};
+
 /* RETRO_LANGUAGE_CA */
 
 #define CATEGORY_SYSTEM_LABEL_CA "Sistema"
@@ -3062,10 +4610,13 @@ struct retro_core_options_v2 options_ast = {
 #define OPTION_VAL_NTSC_J_CA NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_CA NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_CA NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CA NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CA NULL
 #define OPTION_VAL_PER_BIOS_CA NULL
 #define OPTION_VAL_PER_GAME_CA NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_CA NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CA NULL
+#define OPTION_VAL_PER_CART_CA NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_CA NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_CA NULL
 #define OPTION_VAL_SEGA_MEGA_CD_CA NULL
@@ -3314,10 +4865,10 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_CA,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CA,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_CA,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CA,
       NULL,
       "system",
       {
@@ -3326,6 +4877,20 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_CA,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_CA,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_CA },
+         { "per game", OPTION_VAL_PER_GAME_CA },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -4559,10 +6124,13 @@ struct retro_core_options_v2 options_ca = {
 #define OPTION_VAL_NTSC_J_CHS NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_CHS "系统启动 ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_CHS "使用官方的 BIOS/bootloader 模拟硬件，如果存在于RetroArch的系统目录中。显示针对控制台的启动序列/动画，然后运行加载内容。"
-#define GENESIS_PLUS_GX_BRAM_LABEL_CHS "CD 系统 BRAM"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_CHS "运行 Sega CD/Mega-CD 内容时， 指定是在特定区域的所有游戏之间共享单一保存文件(Per-BIOS)，还是为每个游戏创建单独的保存文件(Per-Game)。 请注意，Sega CD/Mega-CD 有有限的内部存储，仅足以提供少数头衔。 为了避免空间不足，建议设置“Per-Game”。"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CHS NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CHS NULL
 #define OPTION_VAL_PER_BIOS_CHS "双精度"
 #define OPTION_VAL_PER_GAME_CHS "每个游戏"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_CHS NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CHS NULL
+#define OPTION_VAL_PER_CART_CHS NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_CHS "CD 附加组件 (MD 模式) (需要重启)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_CHS "指定支持的 Mega 驱动器/Genesis 游戏用于CD音频回放的附加组件。"
 #define OPTION_VAL_SEGA_MEGA_CD_CHS NULL
@@ -4811,10 +6379,10 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_CHS,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CHS,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_CHS,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CHS,
       NULL,
       "system",
       {
@@ -4823,6 +6391,20 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_CHS,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_CHS,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_CHS },
+         { "per game", OPTION_VAL_PER_GAME_CHS },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -6056,10 +7638,13 @@ struct retro_core_options_v2 options_chs = {
 #define OPTION_VAL_NTSC_J_CHT NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_CHT NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_CHT NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_CHT NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_CHT NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CHT NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CHT NULL
 #define OPTION_VAL_PER_BIOS_CHT NULL
 #define OPTION_VAL_PER_GAME_CHT NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_CHT NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CHT NULL
+#define OPTION_VAL_PER_CART_CHT NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_CHT NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_CHT NULL
 #define OPTION_VAL_SEGA_MEGA_CD_CHT "光碟機 (Sega CD/Mega CD)"
@@ -6308,10 +7893,10 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_CHT,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CHT,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_CHT,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CHT,
       NULL,
       "system",
       {
@@ -6320,6 +7905,20 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_CHT,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_CHT,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_CHT },
+         { "per game", OPTION_VAL_PER_GAME_CHT },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -7553,10 +9152,13 @@ struct retro_core_options_v2 options_cht = {
 #define OPTION_VAL_NTSC_J_CS NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_CS "Systém Boot ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_CS "Použijte oficiální BIOS/bootloader pro emulovaný hardware, pokud je přítomen v systémovém adresáři aplikace RetroArch. Zobrazí spouštěcí sekvenci/animaci specifickou pro konzoli a poté spustí načtený obsah."
-#define GENESIS_PLUS_GX_BRAM_LABEL_CS "CD Systém BRAM"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_CS "Při spouštění obsahu Sega CD/Mega-CD určuje, zda se má sdílet jeden ukládací soubor pro všechny hry z určité oblasti (Per-BIOS), nebo zda se má pro každou hru vytvořit samostatný ukládací soubor (Per-Game). Všimněte si, že Sega CD/Mega-CD má omezenou vnitřní paměť, která stačí pouze pro několik titulů. Abyste se vyhnuli nedostatku místa, doporučujeme použít nastavení 'Per-Game'."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CS NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CS NULL
 #define OPTION_VAL_PER_BIOS_CS "Na-BIOS"
 #define OPTION_VAL_PER_GAME_CS "Na-Hru"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_CS NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CS NULL
+#define OPTION_VAL_PER_CART_CS NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_CS "Doplněk CD (režim MD) (Vyžaduje Restart)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_CS "Určete, který doplněk se má použít pro přehrávání zvuku CD s podporovanými hrami Mega Drive/Genesis."
 #define OPTION_VAL_SEGA_MEGA_CD_CS NULL
@@ -7805,10 +9407,10 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_CS,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CS,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_CS,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CS,
       NULL,
       "system",
       {
@@ -7817,6 +9419,20 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_CS,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_CS,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_CS },
+         { "per game", OPTION_VAL_PER_GAME_CS },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -9050,10 +10666,13 @@ struct retro_core_options_v2 options_cs = {
 #define OPTION_VAL_NTSC_J_CY NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_CY NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_CY NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_CY NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_CY NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CY NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CY NULL
 #define OPTION_VAL_PER_BIOS_CY NULL
 #define OPTION_VAL_PER_GAME_CY NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_CY NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CY NULL
+#define OPTION_VAL_PER_CART_CY NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_CY NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_CY NULL
 #define OPTION_VAL_SEGA_MEGA_CD_CY NULL
@@ -9302,10 +10921,10 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_CY,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CY,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_CY,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CY,
       NULL,
       "system",
       {
@@ -9314,6 +10933,20 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_CY,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_CY,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_CY },
+         { "per game", OPTION_VAL_PER_GAME_CY },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -10547,10 +12180,13 @@ struct retro_core_options_v2 options_cy = {
 #define OPTION_VAL_NTSC_J_DA NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_DA NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_DA NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_DA NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_DA NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_DA NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_DA NULL
 #define OPTION_VAL_PER_BIOS_DA NULL
 #define OPTION_VAL_PER_GAME_DA NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_DA NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_DA NULL
+#define OPTION_VAL_PER_CART_DA NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_DA NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_DA NULL
 #define OPTION_VAL_SEGA_MEGA_CD_DA NULL
@@ -10799,10 +12435,10 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_DA,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_DA,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_DA,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_DA,
       NULL,
       "system",
       {
@@ -10811,6 +12447,20 @@ struct retro_core_option_v2_definition option_defs_da[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_DA,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_DA,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_DA },
+         { "per game", OPTION_VAL_PER_GAME_DA },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -12044,10 +13694,13 @@ struct retro_core_options_v2 options_da = {
 #define OPTION_VAL_NTSC_J_DE NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_DE "System-Boot-ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_DE "Offiziellen BIOS/Bootloader für emulierte Hardware verwenden, falls im Systemverzeichnis von RetroArch vorhanden. Zeigt eine konsolenspezifische Startsequenz/Animation an und führt dann den geladenen Inhalt aus."
-#define GENESIS_PLUS_GX_BRAM_LABEL_DE "CD-System-BRAM"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_DE "Gibt an, ob bei Sega CD/Mega-CD-Inhalten eine einzige Speicherdatei für alle Spiele aus einer bestimmten Region (Pro BIOS) oder eine separate Speicherdatei für jedes Spiel (Pro Spiel) erstellt werden soll. Zu beachten ist, dass die Sega CD/Mega-CD über einen begrenzten internen Speicherplatz verfügt, der nur für eine Handvoll Titel ausreicht. Um zu vermeiden, dass der Speicherplatz knapp wird, wird die Einstellung \"Pro Spiel\" empfohlen."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_DE NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_DE "Legt beim Ausführen von Sega CD/Mega CD-Inhalten fest, ob eine einzige Speicherdatei für alle Spiele aus einer bestimmten Region (Pro BIOS) geteilt wird oder eine separate Speicherdatei für jedes Spiel (Pro Spiel) erstellt werden soll. Zu beachten ist, dass das Sega CD/Mega CD über einen begrenzten internen Speicherplatz verfügt, der nur für eine Handvoll Titel ausreicht. Um zu vermeiden, dass der Speicherplatz knapp wird, wird die Einstellung 'Pro Spiel' empfohlen."
 #define OPTION_VAL_PER_BIOS_DE "Pro BIOS"
 #define OPTION_VAL_PER_GAME_DE "Pro Spiel"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_DE "CD Speicherkarte BRAM"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_DE "Legt beim Ausführen von Sega CD/Mega CD-Inhalten fest, ob eine einzige Speicherkarte für alle Spiele (Pro Karte) geteilt wird oder eine separate Speicherkarte für jedes Spiel erstellt werden soll (Pro Spiel)."
+#define OPTION_VAL_PER_CART_DE "Pro Karte"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_DE "CD-Add-on (MD-Modus) (Neustart erforderlich)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_DE "Festlegen, welches Add-on zur CD-Audiowiedergabe für unterstützte Mega Drive-/Genesis-Spiele verwendet werden soll."
 #define OPTION_VAL_SEGA_MEGA_CD_DE NULL
@@ -12296,10 +13949,10 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_DE,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_DE,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_DE,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_DE,
       NULL,
       "system",
       {
@@ -12308,6 +13961,20 @@ struct retro_core_option_v2_definition option_defs_de[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_DE,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_DE,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_DE },
+         { "per game", OPTION_VAL_PER_GAME_DE },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -13541,10 +15208,13 @@ struct retro_core_options_v2 options_de = {
 #define OPTION_VAL_NTSC_J_EL NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_EL NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_EL NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_EL NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_EL NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_EL NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_EL NULL
 #define OPTION_VAL_PER_BIOS_EL NULL
 #define OPTION_VAL_PER_GAME_EL NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_EL NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_EL NULL
+#define OPTION_VAL_PER_CART_EL NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_EL NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_EL NULL
 #define OPTION_VAL_SEGA_MEGA_CD_EL NULL
@@ -13793,10 +15463,10 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_EL,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_EL,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_EL,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_EL,
       NULL,
       "system",
       {
@@ -13805,6 +15475,20 @@ struct retro_core_option_v2_definition option_defs_el[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_EL,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_EL,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_EL },
+         { "per game", OPTION_VAL_PER_GAME_EL },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -15038,10 +16722,13 @@ struct retro_core_options_v2 options_el = {
 #define OPTION_VAL_NTSC_J_EN NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_EN NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_EN NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_EN NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_EN NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_EN NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_EN NULL
 #define OPTION_VAL_PER_BIOS_EN NULL
 #define OPTION_VAL_PER_GAME_EN NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_EN NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_EN NULL
+#define OPTION_VAL_PER_CART_EN NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_EN NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_EN NULL
 #define OPTION_VAL_SEGA_MEGA_CD_EN NULL
@@ -15290,10 +16977,10 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_EN,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_EN,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_EN,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_EN,
       NULL,
       "system",
       {
@@ -15302,6 +16989,20 @@ struct retro_core_option_v2_definition option_defs_en[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_EN,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_EN,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_EN },
+         { "per game", OPTION_VAL_PER_GAME_EN },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -16535,10 +18236,13 @@ struct retro_core_options_v2 options_en = {
 #define OPTION_VAL_NTSC_J_EO NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_EO NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_EO NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_EO NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_EO NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_EO NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_EO NULL
 #define OPTION_VAL_PER_BIOS_EO NULL
 #define OPTION_VAL_PER_GAME_EO NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_EO NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_EO NULL
+#define OPTION_VAL_PER_CART_EO NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_EO NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_EO NULL
 #define OPTION_VAL_SEGA_MEGA_CD_EO NULL
@@ -16787,10 +18491,10 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_EO,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_EO,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_EO,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_EO,
       NULL,
       "system",
       {
@@ -16799,6 +18503,20 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_EO,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_EO,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_EO },
+         { "per game", OPTION_VAL_PER_GAME_EO },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -18032,10 +19750,13 @@ struct retro_core_options_v2 options_eo = {
 #define OPTION_VAL_NTSC_J_ES NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_ES "ROM de arranque del sistema"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_ES "Utiliza un cargador de arranque o BIOS oficiales para la emulación si se encuentran en el directorio del sistema de RetroArch. Se mostrará la secuencia específica de inicio de la consola y luego se ejecutará el contenido cargado."
-#define GENESIS_PLUS_GX_BRAM_LABEL_ES "BRAM para el sistema de CD"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_ES "Al ejecutar contenidos para Mega-CD/Sega CD, especifica si se debe compartir un archivo de guardado entre todos los juegos de la misma región («Una por BIOS») o si se debe crear un archivo de guardado individual para cada juego («Una por cada juego»). Nota: la Mega-CD/Sega CD tiene un almacenamiento interno limitado, suficiente para unos pocos títulos. Se recomienda seleccionar «Una por cada juego» para que no te quedes sin espacio libre."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_ES "BRAM para el sistema de CD"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_ES "Al ejecutar contenidos para Mega-CD/Sega CD, especifica si se debe compartir un archivo de guardado entre todos los juegos de la misma región («Una por BIOS») o si se debe crear un archivo de guardado individual para cada juego («Una por cada juego»). Nota: la Mega-CD/Sega CD tiene un almacenamiento interno limitado, suficiente para unos pocos títulos. Se recomienda seleccionar «Una por cada juego» para que no te quedes sin espacio libre."
 #define OPTION_VAL_PER_BIOS_ES "Uno por BIOS"
 #define OPTION_VAL_PER_GAME_ES "Uno por cada juego"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_ES "BRAM de memoria para el CD"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_ES "Al ejecutar contenidos para Mega-CD/Sega CD, especifica si se debe compartir un cartucho de RAM para guardados entre todos los juegos de la misma región («Una por cartucho») o si se debe crear un archivo de guardado individual para cada juego («Una por cada juego»)."
+#define OPTION_VAL_PER_CART_ES "Una por cartucho"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_ES "Módulo de CD (modo MD, es necesario reiniciar)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_ES "Especifica el módulo que se ha de utilizar para la reproducción de audio de CD en los juegos compatibles de Mega Drive/Genesis."
 #define OPTION_VAL_SEGA_MEGA_CD_ES "Sega CD/Mega-CD"
@@ -18284,10 +20005,10 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_ES,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_ES,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_ES,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_ES,
       NULL,
       "system",
       {
@@ -18296,6 +20017,20 @@ struct retro_core_option_v2_definition option_defs_es[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_ES,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_ES,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_ES },
+         { "per game", OPTION_VAL_PER_GAME_ES },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -19529,10 +21264,13 @@ struct retro_core_options_v2 options_es = {
 #define OPTION_VAL_NTSC_J_FA NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_FA NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_FA NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_FA NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_FA NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_FA NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_FA NULL
 #define OPTION_VAL_PER_BIOS_FA NULL
 #define OPTION_VAL_PER_GAME_FA NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_FA NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_FA NULL
+#define OPTION_VAL_PER_CART_FA NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_FA NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_FA NULL
 #define OPTION_VAL_SEGA_MEGA_CD_FA NULL
@@ -19781,10 +21519,10 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_FA,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_FA,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_FA,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_FA,
       NULL,
       "system",
       {
@@ -19793,6 +21531,20 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_FA,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_FA,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_FA },
+         { "per game", OPTION_VAL_PER_GAME_FA },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -21026,10 +22778,13 @@ struct retro_core_options_v2 options_fa = {
 #define OPTION_VAL_NTSC_J_FI NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_FI "Järjestelmän käynnistys ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_FI "Käytä virallista BIOS/bootloader-ohjelmaa emuloiduille laitteelle, jos sellainen löytyy RetroArchin järjestelmäkansiosta. Näyttää konsolikohtaisen käynnistyslatauksen/animaation ja ajaa sitten ladatun sisällön."
-#define GENESIS_PLUS_GX_BRAM_LABEL_FI "CD-järjestelmän BRAM"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_FI "Määrittää Sega CD- ja Mega-CD:n sisältöä ajettaessa, jaetaanko yksi tallennustiedoston tietyn alueen kaikkien pelien välillä (BIOS-kohtainen) vai luodaanko jokaiselle pelille erillinen tallennustiedosto (Pelikohtainen). Huomaa, että Sega CD/Mega-CD:llä on rajallinen sisäinen tallennustila, riittäen vain muutamiin peleihin. Jotta tallennustila ei loppuisi, suositellaan \"Pelikohtainen\" asetusta."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_FI NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_FI NULL
 #define OPTION_VAL_PER_BIOS_FI "BIOS-kohtainen"
 #define OPTION_VAL_PER_GAME_FI "Pelikohtainen"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_FI NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_FI NULL
+#define OPTION_VAL_PER_CART_FI NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_FI "CD-lisäosa (MD-tila) (vaatii uudelleenkäynnistyksen)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_FI "Märittelee, mitä lisäosaa käytetään CD:n audio toistamiseen tuetuilla Mega Drive/Genesis -peleillä."
 #define OPTION_VAL_SEGA_MEGA_CD_FI "Sega/Mega-CD"
@@ -21278,10 +23033,10 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_FI,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_FI,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_FI,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_FI,
       NULL,
       "system",
       {
@@ -21290,6 +23045,20 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_FI,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_FI,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_FI },
+         { "per game", OPTION_VAL_PER_GAME_FI },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -22523,10 +24292,13 @@ struct retro_core_options_v2 options_fi = {
 #define OPTION_VAL_NTSC_J_FR NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_FR "ROM de démarrage du système"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_FR "Utiliser le BIOS/bootloader officiel pour le matériel émulé, s'il est présent dans le répertoire système de RetroArch. Affiche une séquence de démarrage/animation spécifique à la console, puis lance le contenu chargé."
-#define GENESIS_PLUS_GX_BRAM_LABEL_FR "BRAM du système CD"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_FR "Lors de l'exécution de contenu Sega CD/Mega-CD, spécifie s'il faut partager un seul fichier de sauvegarde entre tous les jeux d'une région spécifique (Par BIOS) ou créer un fichier de sauvegarde séparé pour chaque jeu (Par jeu). Notez que le Sega CD/Mega-CD a un stockage interne limité, suffisant seulement pour une poignée de titres. Pour éviter de manquer d'espace, le paramètre 'Par jeu' est recommandé."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_FR "BRAM du système CD"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_FR "Lors de l'exécution de contenu Sega CD/Mega-CD, spécifie s'il faut partager un seul fichier de sauvegarde entre tous les jeux d'une région spécifique (Par BIOS) ou créer un fichier de sauvegarde séparé pour chaque jeu (Par jeu). Notez que le Sega CD/Mega-CD a un stockage interne limité, suffisant seulement pour une poignée de titres. Pour éviter de manquer d'espace, le paramètre 'Par jeu' est recommandé."
 #define OPTION_VAL_PER_BIOS_FR "Par BIOS"
 #define OPTION_VAL_PER_GAME_FR "Par jeu"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_FR "BRAM de la cartouche de sauvegarde CD"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_FR "Lorsque vous exécutez du contenu Sega CD/Mega-CD, cette option spécifie si vous voulez partager une seule cartouche de sauvegarde pour tous les jeux (Par cartouche) ou créer une cartouche de sauvegarde séparée pour chaque jeu (Par jeu)."
+#define OPTION_VAL_PER_CART_FR "Par cartouche"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_FR "Module CD complémentaire (mode MD) (Redémarrage requis)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_FR "Spécifie quel module complémentaire utiliser pour la lecture audio de CD avec les jeux Mega Drive/Genesis pris en charge."
 #define OPTION_VAL_SEGA_MEGA_CD_FR NULL
@@ -22775,10 +24547,10 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_FR,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_FR,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_FR,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_FR,
       NULL,
       "system",
       {
@@ -22787,6 +24559,20 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_FR,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_FR,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_FR },
+         { "per game", OPTION_VAL_PER_GAME_FR },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -24020,10 +25806,13 @@ struct retro_core_options_v2 options_fr = {
 #define OPTION_VAL_NTSC_J_GL NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_GL NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_GL NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_GL NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_GL NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_GL NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_GL NULL
 #define OPTION_VAL_PER_BIOS_GL NULL
 #define OPTION_VAL_PER_GAME_GL NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_GL NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_GL NULL
+#define OPTION_VAL_PER_CART_GL NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_GL NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_GL NULL
 #define OPTION_VAL_SEGA_MEGA_CD_GL NULL
@@ -24272,10 +26061,10 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_GL,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_GL,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_GL,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_GL,
       NULL,
       "system",
       {
@@ -24284,6 +26073,20 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_GL,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_GL,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_GL },
+         { "per game", OPTION_VAL_PER_GAME_GL },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -25517,10 +27320,13 @@ struct retro_core_options_v2 options_gl = {
 #define OPTION_VAL_NTSC_J_HE NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_HE NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_HE NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_HE NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_HE NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_HE NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_HE NULL
 #define OPTION_VAL_PER_BIOS_HE NULL
 #define OPTION_VAL_PER_GAME_HE NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_HE NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_HE NULL
+#define OPTION_VAL_PER_CART_HE NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_HE NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_HE NULL
 #define OPTION_VAL_SEGA_MEGA_CD_HE NULL
@@ -25769,10 +27575,10 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_HE,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_HE,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_HE,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_HE,
       NULL,
       "system",
       {
@@ -25781,6 +27587,20 @@ struct retro_core_option_v2_definition option_defs_he[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_HE,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_HE,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_HE },
+         { "per game", OPTION_VAL_PER_GAME_HE },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -27014,10 +28834,13 @@ struct retro_core_options_v2 options_he = {
 #define OPTION_VAL_NTSC_J_HR NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_HR NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_HR NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_HR NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_HR NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_HR NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_HR NULL
 #define OPTION_VAL_PER_BIOS_HR NULL
 #define OPTION_VAL_PER_GAME_HR NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_HR NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_HR NULL
+#define OPTION_VAL_PER_CART_HR NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_HR NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_HR NULL
 #define OPTION_VAL_SEGA_MEGA_CD_HR NULL
@@ -27266,10 +29089,10 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_HR,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_HR,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_HR,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_HR,
       NULL,
       "system",
       {
@@ -27278,6 +29101,20 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_HR,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_HR,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_HR },
+         { "per game", OPTION_VAL_PER_GAME_HR },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -28511,10 +30348,13 @@ struct retro_core_options_v2 options_hr = {
 #define OPTION_VAL_NTSC_J_HU NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_HU "Rendszer boot ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_HU "A hivatalos BIOS / bootbetöltő használata az emulált hardverhez, ha az megtalálható a RetroArch rendszerkönyvtárában. Megjeleníti a konzoltól függő indítási szekvenciát / animációt, majd utána indítja a betöltött tartalmat."
-#define GENESIS_PLUS_GX_BRAM_LABEL_HU "CD System Backup RAM"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_HU "Sega CD / Mega-CD tartalmak esetében a mentések tárolása régió (BIOS) szerint egy helyen vagy játékok szerint külön. Figyelem, a Sega CD / Mega-CD korlátozott belső tárhellyel bír, csak néhány cím fér rá. Javasolt a \"Játékonként\" beállítás, hogy ne fogyjon el a hely."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_HU "CD System Backup RAM"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_HU "Sega CD / Mega-CD tartalmak esetében a mentések tárolása régió (BIOS) szerint egy helyen vagy játékok szerint külön. Figyelem, a Sega CD / Mega-CD korlátozott belső tárhellyel bír, csak néhány cím fér rá. Javasolt a \"Játékonként\" beállítás, hogy ne fogyjon el a hely."
 #define OPTION_VAL_PER_BIOS_HU "BIOS régiónként"
 #define OPTION_VAL_PER_GAME_HU "Játékonként"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_HU NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_HU NULL
+#define OPTION_VAL_PER_CART_HU NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_HU "CD add-on (MD mód) (újraindítás szükséges)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_HU "Az add-on típusa CD hanglejátszáshoz, támogatott Mega Drive / Genesis játékok esetén."
 #define OPTION_VAL_SEGA_MEGA_CD_HU NULL
@@ -28763,10 +30603,10 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_HU,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_HU,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_HU,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_HU,
       NULL,
       "system",
       {
@@ -28775,6 +30615,20 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_HU,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_HU,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_HU },
+         { "per game", OPTION_VAL_PER_GAME_HU },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -30008,10 +31862,13 @@ struct retro_core_options_v2 options_hu = {
 #define OPTION_VAL_NTSC_J_ID NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_ID NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_ID NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_ID NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_ID NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_ID NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_ID NULL
 #define OPTION_VAL_PER_BIOS_ID NULL
 #define OPTION_VAL_PER_GAME_ID NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_ID NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_ID NULL
+#define OPTION_VAL_PER_CART_ID NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_ID NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_ID NULL
 #define OPTION_VAL_SEGA_MEGA_CD_ID NULL
@@ -30260,10 +32117,10 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_ID,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_ID,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_ID,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_ID,
       NULL,
       "system",
       {
@@ -30272,6 +32129,20 @@ struct retro_core_option_v2_definition option_defs_id[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_ID,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_ID,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_ID },
+         { "per game", OPTION_VAL_PER_GAME_ID },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -31505,10 +33376,13 @@ struct retro_core_options_v2 options_id = {
 #define OPTION_VAL_NTSC_J_IT NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_IT "ROM Di Avvio Di Sistema"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_IT "Usa BIOS/bootloader ufficiale per l'hardware emulato, se presente nella directory di sistema di RetroArch. Visualizza la sequenza di avvio/animazione specifica della console, quindi esegue il contenuto caricato."
-#define GENESIS_PLUS_GX_BRAM_LABEL_IT "BRAM Del Sistema Cd"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_IT "Quando si esegue il contenuto di Sega CD/Mega-CD, specifica se condividere un singolo file di salvataggio tra tutti i giochi di una regione specifica (Per-BIOS) o creare un file di salvataggio separato per ogni partita (Per-Game). Si noti che il CD Sega / Mega-CD ha una limitata memoria interna, sufficiente solo per una manciata di titoli. Per evitare di esaurire lo spazio, si raccomanda l'impostazione 'Per-Game'."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_IT "BRAM Del Sistema Cd"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_IT "Quando si esegue il contenuto di Sega CD/Mega-CD, specifica se condividere un singolo file di salvataggio tra tutti i giochi di una regione specifica (Per-BIOS) o creare un file di salvataggio separato per ogni partita (Per-Game). Si noti che il CD Sega / Mega-CD ha una limitata memoria interna, sufficiente solo per una manciata di titoli. Per evitare di esaurire lo spazio, si raccomanda l'impostazione 'Per-Game'."
 #define OPTION_VAL_PER_BIOS_IT NULL
 #define OPTION_VAL_PER_GAME_IT NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_IT "BRAM Carrello Backup CD"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_IT "Quando si esegue il contenuto di Sega CD/Mega-CD, specifica se condividere un singolo carrello di ram di backup per tutti i giochi (Per-Cartuccia) o creare un carrello di ram di backup separato per ogni partita (Per-Gioco)."
+#define OPTION_VAL_PER_CART_IT "Per-Cartuccia"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_IT "CD add-on (modalità MD) (Richiede il riavvio)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_IT "Specifica quale componente aggiuntivo usare per la riproduzione di CD audio con i giochi Mega Drive/Genesis supportati."
 #define OPTION_VAL_SEGA_MEGA_CD_IT NULL
@@ -31757,10 +33631,10 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_IT,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_IT,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_IT,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_IT,
       NULL,
       "system",
       {
@@ -31769,6 +33643,20 @@ struct retro_core_option_v2_definition option_defs_it[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_IT,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_IT,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_IT },
+         { "per game", OPTION_VAL_PER_GAME_IT },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -33002,10 +34890,13 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_NTSC_J_JA NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_JA "システムブートROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_JA "CD システム BRAM"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_JA NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_JA NULL
 #define OPTION_VAL_PER_BIOS_JA "BIOS ごと"
 #define OPTION_VAL_PER_GAME_JA "ゲームごと"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_JA NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_JA NULL
+#define OPTION_VAL_PER_CART_JA NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_JA NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_JA NULL
 #define OPTION_VAL_SEGA_MEGA_CD_JA NULL
@@ -33254,10 +35145,10 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_JA,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_JA,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_JA,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_JA,
       NULL,
       "system",
       {
@@ -33266,6 +35157,20 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_JA,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_JA,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_JA },
+         { "per game", OPTION_VAL_PER_GAME_JA },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -34499,10 +36404,13 @@ struct retro_core_options_v2 options_ja = {
 #define OPTION_VAL_NTSC_J_KO NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_KO "시스템 부트 롬"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_KO "하드웨어의 공식 BIOS/부트로더를 사용합니다. 해당되는 파일이 RetroArch의 시스템 디렉토리에 존재해야 합니다. 콘솔 특유의 시작 시퀀스/애니메이션을 표시하고 컨텐츠를 실행합니다."
-#define GENESIS_PLUS_GX_BRAM_LABEL_KO "CD 시스템 BRAM"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_KO "Sega CD/Mega-CD 컨텐츠를 실행할 때, 특정 지역의 모든 게임 간에 단일 세이브 파일을 사용할지(BIOS별), 각 게임마다 별도의 세이브 파일을 사용할지(게임별)를 선택합니다. Sega CD/Mega-CD의 내부 저장소는 아주 작아 게임 몇 개의 데이터만 저장할 수 있으므로, 용량 부족 방지를 위해 '게임별' 설정을 사용할 것을 권장합니다."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_KO NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_KO NULL
 #define OPTION_VAL_PER_BIOS_KO "BIOS별"
 #define OPTION_VAL_PER_GAME_KO "게임별"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_KO NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_KO NULL
+#define OPTION_VAL_PER_CART_KO NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_KO "CD 애드온 (MD 모드) (재시작 필요)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_KO "지원되는 Mega Drive/Genesis 게임의 CD 오디오 재생을 위해 사용할 애드온을 선택합니다."
 #define OPTION_VAL_SEGA_MEGA_CD_KO NULL
@@ -34751,10 +36659,10 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_KO,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_KO,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_KO,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_KO,
       NULL,
       "system",
       {
@@ -34763,6 +36671,20 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_KO,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_KO,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_KO },
+         { "per game", OPTION_VAL_PER_GAME_KO },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -35996,10 +37918,13 @@ struct retro_core_options_v2 options_ko = {
 #define OPTION_VAL_NTSC_J_NL NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_NL NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_NL NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_NL NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_NL NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_NL NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_NL NULL
 #define OPTION_VAL_PER_BIOS_NL NULL
 #define OPTION_VAL_PER_GAME_NL NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_NL NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_NL NULL
+#define OPTION_VAL_PER_CART_NL NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_NL NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_NL NULL
 #define OPTION_VAL_SEGA_MEGA_CD_NL NULL
@@ -36248,10 +38173,10 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_NL,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_NL,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_NL,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_NL,
       NULL,
       "system",
       {
@@ -36260,6 +38185,20 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_NL,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_NL,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_NL },
+         { "per game", OPTION_VAL_PER_GAME_NL },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -37493,10 +39432,13 @@ struct retro_core_options_v2 options_nl = {
 #define OPTION_VAL_NTSC_J_NO NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_NO NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_NO NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_NO NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_NO NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_NO NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_NO NULL
 #define OPTION_VAL_PER_BIOS_NO NULL
 #define OPTION_VAL_PER_GAME_NO NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_NO NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_NO NULL
+#define OPTION_VAL_PER_CART_NO NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_NO NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_NO NULL
 #define OPTION_VAL_SEGA_MEGA_CD_NO NULL
@@ -37745,10 +39687,10 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_NO,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_NO,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_NO,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_NO,
       NULL,
       "system",
       {
@@ -37757,6 +39699,20 @@ struct retro_core_option_v2_definition option_defs_no[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_NO,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_NO,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_NO },
+         { "per game", OPTION_VAL_PER_GAME_NO },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -38990,10 +40946,13 @@ struct retro_core_options_v2 options_no = {
 #define OPTION_VAL_NTSC_J_PL NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_PL NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_PL NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_PL NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_PL NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_PL NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_PL NULL
 #define OPTION_VAL_PER_BIOS_PL NULL
 #define OPTION_VAL_PER_GAME_PL NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_PL NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_PL NULL
+#define OPTION_VAL_PER_CART_PL NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_PL "Dodatek CD (tryb MD) (wymaga restartu)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_PL NULL
 #define OPTION_VAL_SEGA_MEGA_CD_PL NULL
@@ -39242,10 +41201,10 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_PL,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_PL,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_PL,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_PL,
       NULL,
       "system",
       {
@@ -39254,6 +41213,20 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_PL,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_PL,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_PL },
+         { "per game", OPTION_VAL_PER_GAME_PL },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -40487,10 +42460,13 @@ struct retro_core_options_v2 options_pl = {
 #define OPTION_VAL_NTSC_J_PT_BR NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_PT_BR "ROM de inicialização do sistema"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_PT_BR "Usa a BIOS/carregador de inicialização oficial para o hardware emulado, se estiver presente no diretório de sistema do RetroArch. Exibe a sequência/animação da inicialização específica do console e executa o conteúdo carregado."
-#define GENESIS_PLUS_GX_BRAM_LABEL_PT_BR "BRAM do sistema de CD"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_PT_BR "Ao executar conteúdos para o Sega CD, especifica se deverá ser compartilhado um arquivo salvamento entre todos os jogos na mesma região ('Por Bios') ou se deverá ser criado um arquivo de salvamento individual para cada jogo ('Por jogo'). Nota: O Sega CD tem um armazenamento interno limitado que só pode conter alguns poucos títulos. É recomendável selecionar 'Por jogo' para evitar ficar sem espaço livre."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_PT_BR NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_PT_BR NULL
 #define OPTION_VAL_PER_BIOS_PT_BR "Por BIOS"
 #define OPTION_VAL_PER_GAME_PT_BR "Por jogo"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_PT_BR NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_PT_BR NULL
+#define OPTION_VAL_PER_CART_PT_BR NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_PT_BR "Módulo de CD (modo MD) (requer reinício)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_PT_BR "Especifique qual módulo usar para reprodução de áudio de CD com jogos suportados do Mega Drive."
 #define OPTION_VAL_SEGA_MEGA_CD_PT_BR "Sega CD"
@@ -40739,10 +42715,10 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_PT_BR,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_PT_BR,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_PT_BR,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_PT_BR,
       NULL,
       "system",
       {
@@ -40751,6 +42727,20 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_PT_BR,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_PT_BR,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_PT_BR },
+         { "per game", OPTION_VAL_PER_GAME_PT_BR },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -41984,10 +43974,13 @@ struct retro_core_options_v2 options_pt_br = {
 #define OPTION_VAL_NTSC_J_PT_PT NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_PT_PT NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_PT_PT NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_PT_PT NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_PT_PT NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_PT_PT NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_PT_PT NULL
 #define OPTION_VAL_PER_BIOS_PT_PT NULL
 #define OPTION_VAL_PER_GAME_PT_PT NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_PT_PT NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_PT_PT NULL
+#define OPTION_VAL_PER_CART_PT_PT NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_PT_PT NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_PT_PT NULL
 #define OPTION_VAL_SEGA_MEGA_CD_PT_PT NULL
@@ -42236,10 +44229,10 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_PT_PT,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_PT_PT,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_PT_PT,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_PT_PT,
       NULL,
       "system",
       {
@@ -42248,6 +44241,20 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_PT_PT,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_PT_PT,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_PT_PT },
+         { "per game", OPTION_VAL_PER_GAME_PT_PT },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -43481,10 +45488,13 @@ struct retro_core_options_v2 options_pt_pt = {
 #define OPTION_VAL_NTSC_J_RU NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_RU "Загрузочный ROM системы"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_RU "Использовать для эмулируемой системы официальный BIOS/загрузчик, при наличии файла в системном каталоге RetroArch. Отображает перед запуском контента начальную заставку/анимацию загрузки консоли."
-#define GENESIS_PLUS_GX_BRAM_LABEL_RU "Резервная память Sega CD"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_RU "Определяет, использовать для игр Sega CD/Mega-CD одного региона общий файл сохранения (значение 'Для BIOS') или создавать для каждой игры индивидуальный файл сохранения (значение 'Для игры'). Учитывайте, что Sega CD/Mega-CD имеет ограниченный объём внутренней памяти, достаточный лишь для нескольких игр. Чтобы избежать нехватки места используйте режим 'Для игры'."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_RU NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_RU NULL
 #define OPTION_VAL_PER_BIOS_RU "Для BIOS"
 #define OPTION_VAL_PER_GAME_RU "Для игры"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_RU NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_RU NULL
+#define OPTION_VAL_PER_CART_RU NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_RU "Расширение CD (режим MD) (требуется перезапуск)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_RU "Выбор расширения для игр Mega Drive/Genesis с поддержкой воспроизведения аудио CD."
 #define OPTION_VAL_SEGA_MEGA_CD_RU NULL
@@ -43733,10 +45743,10 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_RU,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_RU,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_RU,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_RU,
       NULL,
       "system",
       {
@@ -43745,6 +45755,20 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_RU,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_RU,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_RU },
+         { "per game", OPTION_VAL_PER_GAME_RU },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -44978,10 +47002,13 @@ struct retro_core_options_v2 options_ru = {
 #define OPTION_VAL_NTSC_J_SK NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_SK NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_SK NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_SK NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_SK NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_SK NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_SK NULL
 #define OPTION_VAL_PER_BIOS_SK "Podľa BIOSu"
 #define OPTION_VAL_PER_GAME_SK "Podľa hry"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_SK NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_SK NULL
+#define OPTION_VAL_PER_CART_SK NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_SK NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_SK NULL
 #define OPTION_VAL_SEGA_MEGA_CD_SK NULL
@@ -45230,10 +47257,10 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_SK,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_SK,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_SK,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_SK,
       NULL,
       "system",
       {
@@ -45242,6 +47269,20 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_SK,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_SK,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_SK },
+         { "per game", OPTION_VAL_PER_GAME_SK },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -46475,10 +48516,13 @@ struct retro_core_options_v2 options_sk = {
 #define OPTION_VAL_NTSC_J_SR NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_SR NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_SR NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_SR NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_SR NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_SR NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_SR NULL
 #define OPTION_VAL_PER_BIOS_SR NULL
 #define OPTION_VAL_PER_GAME_SR NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_SR NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_SR NULL
+#define OPTION_VAL_PER_CART_SR NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_SR NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_SR NULL
 #define OPTION_VAL_SEGA_MEGA_CD_SR NULL
@@ -46727,10 +48771,10 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_SR,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_SR,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_SR,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_SR,
       NULL,
       "system",
       {
@@ -46739,6 +48783,20 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_SR,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_SR,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_SR },
+         { "per game", OPTION_VAL_PER_GAME_SR },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -47972,10 +50030,13 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_NTSC_J_SV NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_SV NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_SV NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_SV NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_SV NULL
 #define OPTION_VAL_PER_BIOS_SV NULL
 #define OPTION_VAL_PER_GAME_SV NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_SV NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_SV NULL
+#define OPTION_VAL_PER_CART_SV NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_SV NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_SV NULL
 #define OPTION_VAL_SEGA_MEGA_CD_SV NULL
@@ -48224,10 +50285,10 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_SV,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_SV,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_SV,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_SV,
       NULL,
       "system",
       {
@@ -48236,6 +50297,20 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_SV,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_SV,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_SV },
+         { "per game", OPTION_VAL_PER_GAME_SV },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -49469,10 +51544,13 @@ struct retro_core_options_v2 options_sv = {
 #define OPTION_VAL_NTSC_J_TR NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_TR "Sistem Önyükleme ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_TR "RetroArch sistem dizininde varsa, öykünülmüş donanım için resmi BIOS/önyükleyici kullanın. Konsola özgü başlangıç sırası/animasyonu görüntüler, ardından yüklü içeriği çalıştırır."
-#define GENESIS_PLUS_GX_BRAM_LABEL_TR "CD Sistemi BRAM"
-#define GENESIS_PLUS_GX_BRAM_INFO_0_TR "Sega CD/Mega-CD içeriğini çalıştırırken, belirli bir bölgedeki tüm oyunlar arasında tek bir kayıt dosyası paylaşılacağını (BIOS Başına) veya her oyun için ayrı bir kaydetme dosyası oluşturulacağını (Oyun Başına) belirtir. Sega CD/Mega-CD'nin sınırlı dahili depolamaya sahip olduğunu ve yalnızca birkaç başlık için yeterli olduğunu unutmayın. Alanın bitmesini önlemek için 'Oyun Başına' ayarı önerilir."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_TR NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_TR NULL
 #define OPTION_VAL_PER_BIOS_TR "BIOS Başına"
 #define OPTION_VAL_PER_GAME_TR "Oyun Başına"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_TR NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_TR NULL
+#define OPTION_VAL_PER_CART_TR NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_TR "CD eklentisi (MD kipi) (Yeniden Başlatılmalı)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_TR "Desteklenen Mega Drive/Genesis oyunlarıyla CD ses oynatmak için hangi eklentinin kullanılacağını belirtin."
 #define OPTION_VAL_SEGA_MEGA_CD_TR NULL
@@ -49721,10 +51799,10 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_TR,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_TR,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_TR,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_TR,
       NULL,
       "system",
       {
@@ -49733,6 +51811,20 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_TR,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_TR,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_TR },
+         { "per game", OPTION_VAL_PER_GAME_TR },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -50966,10 +53058,13 @@ struct retro_core_options_v2 options_tr = {
 #define OPTION_VAL_NTSC_J_UK NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_UK "Системний ROM завантаження"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_UK NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_UK NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_UK NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_UK NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_UK NULL
 #define OPTION_VAL_PER_BIOS_UK NULL
 #define OPTION_VAL_PER_GAME_UK NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_UK NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_UK NULL
+#define OPTION_VAL_PER_CART_UK NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_UK NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_UK NULL
 #define OPTION_VAL_SEGA_MEGA_CD_UK NULL
@@ -51218,10 +53313,10 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_UK,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_UK,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_UK,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_UK,
       NULL,
       "system",
       {
@@ -51230,6 +53325,20 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_UK,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_UK,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_UK },
+         { "per game", OPTION_VAL_PER_GAME_UK },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -52463,10 +54572,13 @@ struct retro_core_options_v2 options_uk = {
 #define OPTION_VAL_NTSC_J_VAL NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_VAL NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_VAL NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_VAL NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_VAL NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_VAL NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_VAL NULL
 #define OPTION_VAL_PER_BIOS_VAL NULL
 #define OPTION_VAL_PER_GAME_VAL NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_VAL NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_VAL NULL
+#define OPTION_VAL_PER_CART_VAL NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_VAL NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_VAL NULL
 #define OPTION_VAL_SEGA_MEGA_CD_VAL NULL
@@ -52715,10 +54827,10 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_VAL,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_VAL,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_VAL,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_VAL,
       NULL,
       "system",
       {
@@ -52727,6 +54839,20 @@ struct retro_core_option_v2_definition option_defs_val[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_VAL,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_VAL,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_VAL },
+         { "per game", OPTION_VAL_PER_GAME_VAL },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
@@ -53960,10 +56086,13 @@ struct retro_core_options_v2 options_val = {
 #define OPTION_VAL_NTSC_J_VN NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_VN NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_VN NULL
-#define GENESIS_PLUS_GX_BRAM_LABEL_VN NULL
-#define GENESIS_PLUS_GX_BRAM_INFO_0_VN NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_VN NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_VN NULL
 #define OPTION_VAL_PER_BIOS_VN NULL
 #define OPTION_VAL_PER_GAME_VN NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_VN NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_VN NULL
+#define OPTION_VAL_PER_CART_VN NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_VN NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_VN NULL
 #define OPTION_VAL_SEGA_MEGA_CD_VN NULL
@@ -54212,10 +56341,10 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       "disabled"
    },
    {
-      "genesis_plus_gx_bram",
-      GENESIS_PLUS_GX_BRAM_LABEL_VN,
+      "genesis_plus_gx_system_bram",
+      GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_VN,
       NULL,
-      GENESIS_PLUS_GX_BRAM_INFO_0_VN,
+      GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_VN,
       NULL,
       "system",
       {
@@ -54224,6 +56353,20 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
          { NULL, NULL },
       },
       "per bios"
+   },
+   {
+      "genesis_plus_gx_cart_bram",
+      GENESIS_PLUS_GX_CART_BRAM_LABEL_VN,
+      NULL,
+      GENESIS_PLUS_GX_CART_BRAM_INFO_0_VN,
+      NULL,
+      "system",
+      {
+         { "per cart", OPTION_VAL_PER_CART_VN },
+         { "per game", OPTION_VAL_PER_GAME_VN },
+         { NULL, NULL },
+      },
+      "per cart"
    },
    {
       "genesis_plus_gx_add_on",
