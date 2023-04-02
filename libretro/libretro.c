@@ -137,6 +137,7 @@ static uint8_t brm_format[0x40] =
   0x53,0x45,0x47,0x41,0x5f,0x43,0x44,0x5f,0x52,0x4f,0x4d,0x00,0x01,0x00,0x00,0x00,
   0x52,0x41,0x4d,0x5f,0x43,0x41,0x52,0x54,0x52,0x49,0x44,0x47,0x45,0x5f,0x5f,0x5f
 };
+uint8_t cart_size;
 
 static bool is_running = 0;
 static uint8_t temp[0x10000];
@@ -1327,41 +1328,127 @@ static void check_variables(bool first_run)
   bool update_frameskip     = false;
   struct retro_variable var = {0};
 
-  var.key = "genesis_plus_gx_system_bram";
-  environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
+  if (first_run)
   {
-   if (!var.value || !strcmp(var.value, "per bios"))
-   {
-     fill_pathname_join(CD_BRAM_EU, save_dir, "scd_E.brm", sizeof(CD_BRAM_EU));
-     fill_pathname_join(CD_BRAM_US, save_dir, "scd_U.brm", sizeof(CD_BRAM_US));
-     fill_pathname_join(CD_BRAM_JP, save_dir, "scd_J.brm", sizeof(CD_BRAM_JP));
-   }
-   else
-   {
-     char newpath[4096];
-     fill_pathname_join(newpath, save_dir, g_rom_name, sizeof(newpath));
-     strlcat(newpath, ".brm", sizeof(newpath));
-     strlcpy(CD_BRAM_EU, newpath, sizeof(CD_BRAM_EU));
-     strlcpy(CD_BRAM_US, newpath, sizeof(CD_BRAM_US));
-     strlcpy(CD_BRAM_JP, newpath, sizeof(CD_BRAM_JP));
-   }
+    var.key = "genesis_plus_gx_system_bram";
+    environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
+    {
+      if (!var.value || !strcmp(var.value, "per bios"))
+      {
+        fill_pathname_join(CD_BRAM_EU, save_dir, "scd_E.brm", sizeof(CD_BRAM_EU));
+        fill_pathname_join(CD_BRAM_US, save_dir, "scd_U.brm", sizeof(CD_BRAM_US));
+        fill_pathname_join(CD_BRAM_JP, save_dir, "scd_J.brm", sizeof(CD_BRAM_JP));
+      }
+      else
+      {
+        char newpath[4096];
+        fill_pathname_join(newpath, save_dir, g_rom_name, sizeof(newpath));
+        strlcat(newpath, ".brm", sizeof(newpath));
+        strlcpy(CD_BRAM_EU, newpath, sizeof(CD_BRAM_EU));
+        strlcpy(CD_BRAM_US, newpath, sizeof(CD_BRAM_US));
+        strlcpy(CD_BRAM_JP, newpath, sizeof(CD_BRAM_JP));
+      }
+    }
   }
 
-  var.key = "genesis_plus_gx_cart_bram";
-  environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
+  if (first_run)
   {
-   if (!var.value || !strcmp(var.value, "per cart"))
-   {
-     fill_pathname_join(CART_BRAM, save_dir, "cart.brm", sizeof(CART_BRAM));
-   }
-   else
-   {
-     char newpath[4096];
-     fill_pathname_join(newpath, save_dir, g_rom_name, sizeof(newpath));
-     strlcat(newpath, "_cart.brm", sizeof(newpath));
-     strlcpy(CART_BRAM, newpath, sizeof(CART_BRAM));
-   }
+    var.key = "genesis_plus_gx_cart_size";
+    environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
+    {
+      if (var.value && !strcmp(var.value, "disabled"))
+        cart_size = 0;
+      else if (var.value && !strcmp(var.value, "128k"))
+        cart_size = 1;
+      else if (var.value && !strcmp(var.value, "256k"))
+        cart_size = 2;
+      else if (var.value && !strcmp(var.value, "512k"))
+        cart_size = 3;
+      else if (var.value && !strcmp(var.value, "1meg"))
+        cart_size = 4;
+      else if (var.value && !strcmp(var.value, "2meg"))
+        cart_size = 5;
+      else if (var.value && !strcmp(var.value, "4meg"))
+        cart_size = 6;
+    }
   }
+
+  if (first_run)
+  {
+    var.key = "genesis_plus_gx_cart_bram";
+    environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
+    {
+      if ((!var.value || !strcmp(var.value, "per cart")) && cart_size == 1)
+         {
+           fill_pathname_join(CART_BRAM, save_dir, "128Kbit_cart.brm", sizeof(CART_BRAM));
+         }
+      else if ((!var.value || !strcmp(var.value, "per cart")) && cart_size == 2)
+         {
+           fill_pathname_join(CART_BRAM, save_dir, "256Kbit_cart.brm", sizeof(CART_BRAM));
+         }
+      else if ((!var.value || !strcmp(var.value, "per cart")) && cart_size == 3)
+         {
+           fill_pathname_join(CART_BRAM, save_dir, "512Kbit_cart.brm", sizeof(CART_BRAM));
+         }
+      else if ((!var.value || !strcmp(var.value, "per cart")) && cart_size == 4)
+         {
+           fill_pathname_join(CART_BRAM, save_dir, "1Mbit_cart.brm", sizeof(CART_BRAM));
+         }
+      else if ((!var.value || !strcmp(var.value, "per cart")) && cart_size == 5)
+         {
+           fill_pathname_join(CART_BRAM, save_dir, "2Mbit_cart.brm", sizeof(CART_BRAM));
+         }
+      else if ((!var.value || !strcmp(var.value, "per cart")) && cart_size == 6)
+         {
+           fill_pathname_join(CART_BRAM, save_dir, "4Mbit_cart.brm", sizeof(CART_BRAM));
+         }
+      else
+      {
+      if (cart_size == 1)
+         { 
+           char newpath[4096];
+           fill_pathname_join(newpath, save_dir, g_rom_name, sizeof(newpath));
+           strlcat(newpath, "_128Kbit_cart.brm", sizeof(newpath));
+           strlcpy(CART_BRAM, newpath, sizeof(CART_BRAM));
+         }
+      else if (cart_size == 2)
+         { 
+           char newpath[4096];
+           fill_pathname_join(newpath, save_dir, g_rom_name, sizeof(newpath));
+           strlcat(newpath, "_256Kbit_cart.brm", sizeof(newpath));
+           strlcpy(CART_BRAM, newpath, sizeof(CART_BRAM));
+         }
+      else if (cart_size == 3)
+         { 
+           char newpath[4096];
+           fill_pathname_join(newpath, save_dir, g_rom_name, sizeof(newpath));
+           strlcat(newpath, "_512Kbit_cart.brm", sizeof(newpath));
+           strlcpy(CART_BRAM, newpath, sizeof(CART_BRAM));
+         }
+      else if (cart_size == 4)
+         { 
+           char newpath[4096];
+           fill_pathname_join(newpath, save_dir, g_rom_name, sizeof(newpath));
+           strlcat(newpath, "_1Mbit_cart.brm", sizeof(newpath));
+           strlcpy(CART_BRAM, newpath, sizeof(CART_BRAM));
+         }
+      else if (cart_size == 5)
+         { 
+           char newpath[4096];
+           fill_pathname_join(newpath, save_dir, g_rom_name, sizeof(newpath));
+           strlcat(newpath, "_2Mbit_cart.brm", sizeof(newpath));
+           strlcpy(CART_BRAM, newpath, sizeof(CART_BRAM));
+         }
+      else if (cart_size == 6)
+         { 
+           char newpath[4096];
+           fill_pathname_join(newpath, save_dir, g_rom_name, sizeof(newpath));
+           strlcat(newpath, "_4Mbit_cart.brm", sizeof(newpath));
+           strlcpy(CART_BRAM, newpath, sizeof(CART_BRAM));
+         }
+      }
+     }
+   }
 
   var.key = "genesis_plus_gx_system_hw";
   environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
