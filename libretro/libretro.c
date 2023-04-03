@@ -1357,7 +1357,7 @@ static void check_variables(bool first_run)
     environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
     {
       if (var.value && !strcmp(var.value, "disabled"))
-        cart_size = 0;
+        cart_size = 0xff;
       else if (var.value && !strcmp(var.value, "128k"))
         cart_size = 1;
       else if (var.value && !strcmp(var.value, "256k"))
