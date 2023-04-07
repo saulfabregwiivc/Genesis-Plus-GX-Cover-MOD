@@ -75,6 +75,14 @@ extern "C" {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_AR NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_AR NULL
 #define OPTION_VAL_PER_CART_AR NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_AR NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_AR NULL
+#define OPTION_VAL_128K_AR NULL
+#define OPTION_VAL_256K_AR NULL
+#define OPTION_VAL_512K_AR NULL
+#define OPTION_VAL_1MEG_AR NULL
+#define OPTION_VAL_2MEG_AR NULL
+#define OPTION_VAL_4MEG_AR NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_AR NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_AR NULL
 #define OPTION_VAL_SEGA_MEGA_CD_AR NULL
@@ -349,6 +357,25 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_AR,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_AR,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_AR  },
+         { "256k",     OPTION_VAL_256K_AR  },
+         { "512k",     OPTION_VAL_512K_AR  },
+         { "1meg",     OPTION_VAL_1MEG_AR    },
+         { "2meg",     OPTION_VAL_2MEG_AR    },
+         { "4meg",     OPTION_VAL_4MEG_AR    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -1589,6 +1616,14 @@ struct retro_core_options_v2 options_ar = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_AST NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_AST NULL
 #define OPTION_VAL_PER_CART_AST NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_AST NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_AST NULL
+#define OPTION_VAL_128K_AST NULL
+#define OPTION_VAL_256K_AST NULL
+#define OPTION_VAL_512K_AST NULL
+#define OPTION_VAL_1MEG_AST NULL
+#define OPTION_VAL_2MEG_AST NULL
+#define OPTION_VAL_4MEG_AST NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_AST NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_AST NULL
 #define OPTION_VAL_SEGA_MEGA_CD_AST NULL
@@ -1863,6 +1898,25 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_AST,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_AST,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_AST  },
+         { "256k",     OPTION_VAL_256K_AST  },
+         { "512k",     OPTION_VAL_512K_AST  },
+         { "1meg",     OPTION_VAL_1MEG_AST    },
+         { "2meg",     OPTION_VAL_2MEG_AST    },
+         { "4meg",     OPTION_VAL_4MEG_AST    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -3068,9 +3122,9 @@ struct retro_core_options_v2 options_ast = {
 
 #define CATEGORY_SYSTEM_LABEL_BE NULL
 #define CATEGORY_SYSTEM_INFO_0_BE NULL
-#define CATEGORY_VIDEO_LABEL_BE NULL
+#define CATEGORY_VIDEO_LABEL_BE "Відэа"
 #define CATEGORY_VIDEO_INFO_0_BE NULL
-#define CATEGORY_AUDIO_LABEL_BE NULL
+#define CATEGORY_AUDIO_LABEL_BE "Аўдыё"
 #define CATEGORY_AUDIO_INFO_0_BE NULL
 #define CATEGORY_INPUT_LABEL_BE NULL
 #define CATEGORY_INPUT_INFO_0_BE NULL
@@ -3103,6 +3157,14 @@ struct retro_core_options_v2 options_ast = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_BE NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_BE NULL
 #define OPTION_VAL_PER_CART_BE NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_BE NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_BE NULL
+#define OPTION_VAL_128K_BE "128кбіт"
+#define OPTION_VAL_256K_BE "256кбіт"
+#define OPTION_VAL_512K_BE "512кбіт"
+#define OPTION_VAL_1MEG_BE "1Мбіт"
+#define OPTION_VAL_2MEG_BE "2Мбіт"
+#define OPTION_VAL_4MEG_BE "4Мбіт"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_BE NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_BE NULL
 #define OPTION_VAL_SEGA_MEGA_CD_BE NULL
@@ -3119,7 +3181,7 @@ struct retro_core_options_v2 options_ast = {
 #define OPTION_VAL_PAL_PAR_BE NULL
 #define OPTION_VAL_4_3_BE NULL
 #define OPTION_VAL_UNCORRECTED_BE NULL
-#define GENESIS_PLUS_GX_OVERSCAN_LABEL_BE NULL
+#define GENESIS_PLUS_GX_OVERSCAN_LABEL_BE "Межы"
 #define GENESIS_PLUS_GX_OVERSCAN_INFO_0_BE NULL
 #define OPTION_VAL_TOP_BOTTOM_BE NULL
 #define OPTION_VAL_LEFT_RIGHT_BE NULL
@@ -3132,8 +3194,8 @@ struct retro_core_options_v2 options_ast = {
 #define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_BE NULL
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_BE NULL
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_BE NULL
-#define OPTION_VAL_MONOCHROME_BE NULL
-#define OPTION_VAL_COMPOSITE_BE NULL
+#define OPTION_VAL_MONOCHROME_BE "Манахромны"
+#define OPTION_VAL_COMPOSITE_BE "Кампазітны"
 #define OPTION_VAL_SVIDEO_BE NULL
 #define OPTION_VAL_RGB_BE NULL
 #define GENESIS_PLUS_GX_LCD_FILTER_LABEL_BE NULL
@@ -3149,7 +3211,7 @@ struct retro_core_options_v2 options_ast = {
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_BE NULL
 #define GENESIS_PLUS_GX_YM2413_LABEL_BE NULL
 #define GENESIS_PLUS_GX_YM2413_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_YM2413_CORE_LABEL_BE NULL
+#define GENESIS_PLUS_GX_YM2413_CORE_LABEL_BE "Ядро Master System FM (YM2413)"
 #define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_BE NULL
 #define OPTION_VAL_MAME_BE NULL
 #define OPTION_VAL_NUKED_BE NULL
@@ -3158,14 +3220,14 @@ struct retro_core_options_v2 options_ast = {
 #define GENESIS_PLUS_GX_YM2612_INFO_1_BE NULL
 #define OPTION_VAL_MAME_YM2612_BE NULL
 #define OPTION_VAL_MAME_ASIC_YM3438_BE NULL
-#define OPTION_VAL_MAME_ENHANCED_YM3438_BE NULL
+#define OPTION_VAL_MAME_ENHANCED_YM3438_BE "MAME (удасканалены YM3438)"
 #define OPTION_VAL_NUKED_YM2612_BE NULL
 #define OPTION_VAL_NUKED_YM3438_BE NULL
-#define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_BE NULL
-#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_BE NULL
-#define OPTION_VAL_STEREO_BE NULL
-#define OPTION_VAL_MONO_BE NULL
-#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_BE NULL
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_BE "Вывад гуку"
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_BE "Выбраць стэрэа або мона прайграванне гуку."
+#define OPTION_VAL_STEREO_BE "Стэрэа"
+#define OPTION_VAL_MONO_BE "Мона"
+#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_BE "Аўдыёфільтр"
 #define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_BE NULL
 #define OPTION_VAL_LOW_PASS_BE NULL
 #define OPTION_VAL_EQ_BE NULL
@@ -3175,9 +3237,9 @@ struct retro_core_options_v2 options_ast = {
 #define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_BE NULL
 #define GENESIS_PLUS_GX_FM_PREAMP_LABEL_BE NULL
 #define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_BE "Гучнасць CD-DA"
 #define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_BE "Гучнасць PCM"
 #define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_BE NULL
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_BE NULL
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_BE NULL
@@ -3187,8 +3249,8 @@ struct retro_core_options_v2 options_ast = {
 #define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_BE NULL
 #define GENESIS_PLUS_GX_GUN_INPUT_LABEL_BE NULL
 #define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_BE NULL
-#define OPTION_VAL_LIGHTGUN_BE NULL
-#define OPTION_VAL_TOUCHSCREEN_BE NULL
+#define OPTION_VAL_LIGHTGUN_BE "Светлавы пісталет"
+#define OPTION_VAL_TOUCHSCREEN_BE "Сэнсарны экран"
 #define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_BE NULL
 #define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_BE NULL
 #define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_BE NULL
@@ -3199,7 +3261,7 @@ struct retro_core_options_v2 options_ast = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_BE NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_BE NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_OVERCLOCK_LABEL_BE NULL
+#define GENESIS_PLUS_GX_OVERCLOCK_LABEL_BE "Хуткасць ЦП"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_BE NULL
 #define OPTION_VAL_100_BE NULL
 #define OPTION_VAL_125_BE NULL
@@ -3226,44 +3288,44 @@ struct retro_core_options_v2 options_ast = {
 #define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_BE NULL
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_BE NULL
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_BE "Гучнасць PSG канала тону 0 у %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_BE "Зменшыць гучнасць PSG канала тону 0."
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_BE "Гучнасць PSG канала тону 1 у %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_BE "Зменшыць гучнасць PSG канала тону 1."
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_BE "Гучнасць PSG канала тону 2 у %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_BE "Зменшыць гучнасць PSG канала тону 2."
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_BE "Гучнасць PSG канала шуму 3 у %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_BE "Зменшыць гучнасць PSG канала шуму 3."
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_BE "Гучнасць Mega Drive/Genesis FM канала 0 у %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_BE "Гучнасць Mega Drive/Genesis FM канала 1 у %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_BE "Гучнасць Mega Drive/Genesis FM канала 2 у %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_BE "Гучнасць Mega Drive/Genesis FM канала 3 у %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_BE "Гучнасць Mega Drive/Genesis FM канала 4 у %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_BE NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_BE "Гучнасць Mega Drive/Genesis FM канала 5 у %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_BE NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_BE "Гучнасць Master System FM (YM2413) канала 0 у %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_BE "Зменшыць гучнасць Master System FM канала 0."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_BE "Гучнасць Master System FM (YM2413) канала 1 у %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_BE "Зменшыць гучнасць Master System FM канала 1."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_BE "Гучнасць Master System FM (YM2413) канала 2 у %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_BE "Зменшыць гучнасць Master System FM канала 2."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_BE "Гучнасць Master System FM (YM2413) канала 3 у %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_BE "Зменшыць гучнасць Master System FM канала 3."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_BE "Гучнасць Master System FM (YM2413) канала 4 у %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_BE "Зменшыць гучнасць Master System FM канала 4."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_BE "Гучнасць Master System FM (YM2413) канала 5 у %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_BE "Зменшыць гучнасць Master System FM канала 5."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_BE "Гучнасць Master System FM (YM2413) канала 6 у %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_BE "Зменшыць гучнасць Master System FM канала 6."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_BE "Гучнасць Master System FM (YM2413) канала 7 у %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_BE "Зменшыць гучнасць Master System FM канала 7."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_BE "Гучнасць Master System FM (YM2413) канала 8 у %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_BE "Зменшыць гучнасць Master System FM канала 8."
 
 struct retro_core_option_v2_category option_cats_be[] = {
    {
@@ -3377,6 +3439,25 @@ struct retro_core_option_v2_definition option_defs_be[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_BE,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_BE,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_BE  },
+         { "256k",     OPTION_VAL_256K_BE  },
+         { "512k",     OPTION_VAL_512K_BE  },
+         { "1meg",     OPTION_VAL_1MEG_BE    },
+         { "2meg",     OPTION_VAL_2MEG_BE    },
+         { "4meg",     OPTION_VAL_4MEG_BE    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -4617,6 +4698,14 @@ struct retro_core_options_v2 options_be = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_CA NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CA NULL
 #define OPTION_VAL_PER_CART_CA NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_CA NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_CA NULL
+#define OPTION_VAL_128K_CA NULL
+#define OPTION_VAL_256K_CA NULL
+#define OPTION_VAL_512K_CA NULL
+#define OPTION_VAL_1MEG_CA NULL
+#define OPTION_VAL_2MEG_CA NULL
+#define OPTION_VAL_4MEG_CA NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_CA NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_CA NULL
 #define OPTION_VAL_SEGA_MEGA_CD_CA NULL
@@ -4891,6 +4980,25 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_CA,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_CA,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_CA  },
+         { "256k",     OPTION_VAL_256K_CA  },
+         { "512k",     OPTION_VAL_512K_CA  },
+         { "1meg",     OPTION_VAL_1MEG_CA    },
+         { "2meg",     OPTION_VAL_2MEG_CA    },
+         { "4meg",     OPTION_VAL_4MEG_CA    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -6131,6 +6239,14 @@ struct retro_core_options_v2 options_ca = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_CHS NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CHS NULL
 #define OPTION_VAL_PER_CART_CHS NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_CHS NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_CHS NULL
+#define OPTION_VAL_128K_CHS NULL
+#define OPTION_VAL_256K_CHS NULL
+#define OPTION_VAL_512K_CHS NULL
+#define OPTION_VAL_1MEG_CHS NULL
+#define OPTION_VAL_2MEG_CHS NULL
+#define OPTION_VAL_4MEG_CHS NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_CHS "CD 附加组件 (MD 模式) (需要重启)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_CHS "指定支持的 Mega 驱动器/Genesis 游戏用于CD音频回放的附加组件。"
 #define OPTION_VAL_SEGA_MEGA_CD_CHS NULL
@@ -6405,6 +6521,25 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_CHS,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_CHS,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_CHS  },
+         { "256k",     OPTION_VAL_256K_CHS  },
+         { "512k",     OPTION_VAL_512K_CHS  },
+         { "1meg",     OPTION_VAL_1MEG_CHS    },
+         { "2meg",     OPTION_VAL_2MEG_CHS    },
+         { "4meg",     OPTION_VAL_4MEG_CHS    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -7645,6 +7780,14 @@ struct retro_core_options_v2 options_chs = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_CHT NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CHT NULL
 #define OPTION_VAL_PER_CART_CHT NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_CHT NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_CHT NULL
+#define OPTION_VAL_128K_CHT NULL
+#define OPTION_VAL_256K_CHT NULL
+#define OPTION_VAL_512K_CHT NULL
+#define OPTION_VAL_1MEG_CHT NULL
+#define OPTION_VAL_2MEG_CHT NULL
+#define OPTION_VAL_4MEG_CHT NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_CHT NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_CHT NULL
 #define OPTION_VAL_SEGA_MEGA_CD_CHT "光碟機 (Sega CD/Mega CD)"
@@ -7919,6 +8062,25 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_CHT,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_CHT,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_CHT  },
+         { "256k",     OPTION_VAL_256K_CHT  },
+         { "512k",     OPTION_VAL_512K_CHT  },
+         { "1meg",     OPTION_VAL_1MEG_CHT    },
+         { "2meg",     OPTION_VAL_2MEG_CHT    },
+         { "4meg",     OPTION_VAL_4MEG_CHT    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -9159,6 +9321,14 @@ struct retro_core_options_v2 options_cht = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_CS NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CS NULL
 #define OPTION_VAL_PER_CART_CS NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_CS NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_CS NULL
+#define OPTION_VAL_128K_CS NULL
+#define OPTION_VAL_256K_CS NULL
+#define OPTION_VAL_512K_CS NULL
+#define OPTION_VAL_1MEG_CS NULL
+#define OPTION_VAL_2MEG_CS NULL
+#define OPTION_VAL_4MEG_CS NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_CS "Doplněk CD (režim MD) (Vyžaduje Restart)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_CS "Určete, který doplněk se má použít pro přehrávání zvuku CD s podporovanými hrami Mega Drive/Genesis."
 #define OPTION_VAL_SEGA_MEGA_CD_CS NULL
@@ -9433,6 +9603,25 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_CS,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_CS,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_CS  },
+         { "256k",     OPTION_VAL_256K_CS  },
+         { "512k",     OPTION_VAL_512K_CS  },
+         { "1meg",     OPTION_VAL_1MEG_CS    },
+         { "2meg",     OPTION_VAL_2MEG_CS    },
+         { "4meg",     OPTION_VAL_4MEG_CS    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -10673,6 +10862,14 @@ struct retro_core_options_v2 options_cs = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_CY NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CY NULL
 #define OPTION_VAL_PER_CART_CY NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_CY NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_CY NULL
+#define OPTION_VAL_128K_CY NULL
+#define OPTION_VAL_256K_CY NULL
+#define OPTION_VAL_512K_CY NULL
+#define OPTION_VAL_1MEG_CY NULL
+#define OPTION_VAL_2MEG_CY NULL
+#define OPTION_VAL_4MEG_CY NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_CY NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_CY NULL
 #define OPTION_VAL_SEGA_MEGA_CD_CY NULL
@@ -10947,6 +11144,25 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_CY,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_CY,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_CY  },
+         { "256k",     OPTION_VAL_256K_CY  },
+         { "512k",     OPTION_VAL_512K_CY  },
+         { "1meg",     OPTION_VAL_1MEG_CY    },
+         { "2meg",     OPTION_VAL_2MEG_CY    },
+         { "4meg",     OPTION_VAL_4MEG_CY    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -12187,6 +12403,14 @@ struct retro_core_options_v2 options_cy = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_DA NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_DA NULL
 #define OPTION_VAL_PER_CART_DA NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_DA NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_DA NULL
+#define OPTION_VAL_128K_DA NULL
+#define OPTION_VAL_256K_DA NULL
+#define OPTION_VAL_512K_DA NULL
+#define OPTION_VAL_1MEG_DA NULL
+#define OPTION_VAL_2MEG_DA NULL
+#define OPTION_VAL_4MEG_DA NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_DA NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_DA NULL
 #define OPTION_VAL_SEGA_MEGA_CD_DA NULL
@@ -12461,6 +12685,25 @@ struct retro_core_option_v2_definition option_defs_da[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_DA,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_DA,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_DA  },
+         { "256k",     OPTION_VAL_256K_DA  },
+         { "512k",     OPTION_VAL_512K_DA  },
+         { "1meg",     OPTION_VAL_1MEG_DA    },
+         { "2meg",     OPTION_VAL_2MEG_DA    },
+         { "4meg",     OPTION_VAL_4MEG_DA    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -13694,13 +13937,21 @@ struct retro_core_options_v2 options_da = {
 #define OPTION_VAL_NTSC_J_DE NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_DE "System-Boot-ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_DE "Offiziellen BIOS/Bootloader für emulierte Hardware verwenden, falls im Systemverzeichnis von RetroArch vorhanden. Zeigt eine konsolenspezifische Startsequenz/Animation an und führt dann den geladenen Inhalt aus."
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_DE NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_DE "CD-System BRAM (Neustart erforderlich)"
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_DE "Legt beim Ausführen von Sega CD/Mega CD-Inhalten fest, ob eine einzige Speicherdatei für alle Spiele aus einer bestimmten Region (Pro BIOS) geteilt wird oder eine separate Speicherdatei für jedes Spiel (Pro Spiel) erstellt werden soll. Zu beachten ist, dass das Sega CD/Mega CD über einen begrenzten internen Speicherplatz verfügt, der nur für eine Handvoll Titel ausreicht. Um zu vermeiden, dass der Speicherplatz knapp wird, wird die Einstellung 'Pro Spiel' empfohlen."
 #define OPTION_VAL_PER_BIOS_DE "Pro BIOS"
 #define OPTION_VAL_PER_GAME_DE "Pro Spiel"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_DE "CD Speicherkarte BRAM"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_DE "CD-Speicherkarte BRAM (Neustart erforderlich)"
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_DE "Legt beim Ausführen von Sega CD/Mega CD-Inhalten fest, ob eine einzige Speicherkarte für alle Spiele (Pro Karte) geteilt wird oder eine separate Speicherkarte für jedes Spiel erstellt werden soll (Pro Spiel)."
 #define OPTION_VAL_PER_CART_DE "Pro Karte"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_DE "CD-Speicherkarte BRAM Größe (Neustart erforderlich)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_DE "Legt die Größe der Speicherkarte fest, wenn Inhalt von Sega CD/Mega-CD ausgeführt wird. Nützlich, wenn die Speicherkarte auf „pro Spiel“ gesetzt wird, um mehrere größere Speicherkartengrößen zu vermeiden."
+#define OPTION_VAL_128K_DE "128 Kbit"
+#define OPTION_VAL_256K_DE "256 Kbit"
+#define OPTION_VAL_512K_DE "512 Kbit"
+#define OPTION_VAL_1MEG_DE "1 Mbit"
+#define OPTION_VAL_2MEG_DE "2 Mbit"
+#define OPTION_VAL_4MEG_DE "4 Mbit"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_DE "CD-Add-on (MD-Modus) (Neustart erforderlich)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_DE "Festlegen, welches Add-on zur CD-Audiowiedergabe für unterstützte Mega Drive-/Genesis-Spiele verwendet werden soll."
 #define OPTION_VAL_SEGA_MEGA_CD_DE NULL
@@ -13975,6 +14226,25 @@ struct retro_core_option_v2_definition option_defs_de[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_DE,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_DE,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_DE  },
+         { "256k",     OPTION_VAL_256K_DE  },
+         { "512k",     OPTION_VAL_512K_DE  },
+         { "1meg",     OPTION_VAL_1MEG_DE    },
+         { "2meg",     OPTION_VAL_2MEG_DE    },
+         { "4meg",     OPTION_VAL_4MEG_DE    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -15215,6 +15485,14 @@ struct retro_core_options_v2 options_de = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_EL NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_EL NULL
 #define OPTION_VAL_PER_CART_EL NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_EL NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_EL NULL
+#define OPTION_VAL_128K_EL NULL
+#define OPTION_VAL_256K_EL NULL
+#define OPTION_VAL_512K_EL NULL
+#define OPTION_VAL_1MEG_EL NULL
+#define OPTION_VAL_2MEG_EL NULL
+#define OPTION_VAL_4MEG_EL NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_EL NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_EL NULL
 #define OPTION_VAL_SEGA_MEGA_CD_EL NULL
@@ -15489,6 +15767,25 @@ struct retro_core_option_v2_definition option_defs_el[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_EL,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_EL,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_EL  },
+         { "256k",     OPTION_VAL_256K_EL  },
+         { "512k",     OPTION_VAL_512K_EL  },
+         { "1meg",     OPTION_VAL_1MEG_EL    },
+         { "2meg",     OPTION_VAL_2MEG_EL    },
+         { "4meg",     OPTION_VAL_4MEG_EL    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -16729,6 +17026,14 @@ struct retro_core_options_v2 options_el = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_EN NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_EN NULL
 #define OPTION_VAL_PER_CART_EN NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_EN NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_EN NULL
+#define OPTION_VAL_128K_EN NULL
+#define OPTION_VAL_256K_EN NULL
+#define OPTION_VAL_512K_EN NULL
+#define OPTION_VAL_1MEG_EN NULL
+#define OPTION_VAL_2MEG_EN NULL
+#define OPTION_VAL_4MEG_EN NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_EN NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_EN NULL
 #define OPTION_VAL_SEGA_MEGA_CD_EN NULL
@@ -17003,6 +17308,25 @@ struct retro_core_option_v2_definition option_defs_en[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_EN,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_EN,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_EN  },
+         { "256k",     OPTION_VAL_256K_EN  },
+         { "512k",     OPTION_VAL_512K_EN  },
+         { "1meg",     OPTION_VAL_1MEG_EN    },
+         { "2meg",     OPTION_VAL_2MEG_EN    },
+         { "4meg",     OPTION_VAL_4MEG_EN    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -18243,6 +18567,14 @@ struct retro_core_options_v2 options_en = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_EO NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_EO NULL
 #define OPTION_VAL_PER_CART_EO NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_EO NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_EO NULL
+#define OPTION_VAL_128K_EO NULL
+#define OPTION_VAL_256K_EO NULL
+#define OPTION_VAL_512K_EO NULL
+#define OPTION_VAL_1MEG_EO NULL
+#define OPTION_VAL_2MEG_EO NULL
+#define OPTION_VAL_4MEG_EO NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_EO NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_EO NULL
 #define OPTION_VAL_SEGA_MEGA_CD_EO NULL
@@ -18517,6 +18849,25 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_EO,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_EO,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_EO  },
+         { "256k",     OPTION_VAL_256K_EO  },
+         { "512k",     OPTION_VAL_512K_EO  },
+         { "1meg",     OPTION_VAL_1MEG_EO    },
+         { "2meg",     OPTION_VAL_2MEG_EO    },
+         { "4meg",     OPTION_VAL_4MEG_EO    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -19750,13 +20101,21 @@ struct retro_core_options_v2 options_eo = {
 #define OPTION_VAL_NTSC_J_ES NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_ES "ROM de arranque del sistema"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_ES "Utiliza un cargador de arranque o BIOS oficiales para la emulación si se encuentran en el directorio del sistema de RetroArch. Se mostrará la secuencia específica de inicio de la consola y luego se ejecutará el contenido cargado."
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_ES "BRAM para el sistema de CD"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_ES "BRAM del sistema de CD (es necesario reiniciar)"
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_ES "Al ejecutar contenidos para Mega-CD/Sega CD, especifica si se debe compartir un archivo de guardado entre todos los juegos de la misma región («Una por BIOS») o si se debe crear un archivo de guardado individual para cada juego («Una por cada juego»). Nota: la Mega-CD/Sega CD tiene un almacenamiento interno limitado, suficiente para unos pocos títulos. Se recomienda seleccionar «Una por cada juego» para que no te quedes sin espacio libre."
 #define OPTION_VAL_PER_BIOS_ES "Uno por BIOS"
 #define OPTION_VAL_PER_GAME_ES "Uno por cada juego"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_ES "BRAM de memoria para el CD"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_ES "BRAM de memoria de CD (es necesario reiniciar)"
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_ES "Al ejecutar contenidos para Mega-CD/Sega CD, especifica si se debe compartir un cartucho de RAM para guardados entre todos los juegos de la misma región («Una por cartucho») o si se debe crear un archivo de guardado individual para cada juego («Una por cada juego»)."
 #define OPTION_VAL_PER_CART_ES "Una por cartucho"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_ES "Tamaño de la BRAM de memoria de CD (es necesario reiniciar)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_ES "Establece el tamaño del cartucho de memoria BRAM para los contenidos de Sega CD/Mega-CD. Este ajuste es ideal al configurar las BRAM de memoria para que haya una por cada juego y evitar tener varios cartuchos con un tamaño grande."
+#define OPTION_VAL_128K_ES "128 Kbit"
+#define OPTION_VAL_256K_ES "256 Kbit"
+#define OPTION_VAL_512K_ES "512 Kbit"
+#define OPTION_VAL_1MEG_ES "1 Mbit"
+#define OPTION_VAL_2MEG_ES "2 Mbit"
+#define OPTION_VAL_4MEG_ES "4 Mbit"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_ES "Módulo de CD (modo MD, es necesario reiniciar)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_ES "Especifica el módulo que se ha de utilizar para la reproducción de audio de CD en los juegos compatibles de Mega Drive/Genesis."
 #define OPTION_VAL_SEGA_MEGA_CD_ES "Sega CD/Mega-CD"
@@ -20031,6 +20390,25 @@ struct retro_core_option_v2_definition option_defs_es[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_ES,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_ES,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_ES  },
+         { "256k",     OPTION_VAL_256K_ES  },
+         { "512k",     OPTION_VAL_512K_ES  },
+         { "1meg",     OPTION_VAL_1MEG_ES    },
+         { "2meg",     OPTION_VAL_2MEG_ES    },
+         { "4meg",     OPTION_VAL_4MEG_ES    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -21271,6 +21649,14 @@ struct retro_core_options_v2 options_es = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_FA NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_FA NULL
 #define OPTION_VAL_PER_CART_FA NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_FA NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_FA NULL
+#define OPTION_VAL_128K_FA NULL
+#define OPTION_VAL_256K_FA NULL
+#define OPTION_VAL_512K_FA NULL
+#define OPTION_VAL_1MEG_FA NULL
+#define OPTION_VAL_2MEG_FA NULL
+#define OPTION_VAL_4MEG_FA NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_FA NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_FA NULL
 #define OPTION_VAL_SEGA_MEGA_CD_FA NULL
@@ -21545,6 +21931,25 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_FA,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_FA,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_FA  },
+         { "256k",     OPTION_VAL_256K_FA  },
+         { "512k",     OPTION_VAL_512K_FA  },
+         { "1meg",     OPTION_VAL_1MEG_FA    },
+         { "2meg",     OPTION_VAL_2MEG_FA    },
+         { "4meg",     OPTION_VAL_4MEG_FA    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -22785,6 +23190,14 @@ struct retro_core_options_v2 options_fa = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_FI NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_FI NULL
 #define OPTION_VAL_PER_CART_FI NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_FI NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_FI NULL
+#define OPTION_VAL_128K_FI NULL
+#define OPTION_VAL_256K_FI NULL
+#define OPTION_VAL_512K_FI NULL
+#define OPTION_VAL_1MEG_FI NULL
+#define OPTION_VAL_2MEG_FI NULL
+#define OPTION_VAL_4MEG_FI NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_FI "CD-lisäosa (MD-tila) (vaatii uudelleenkäynnistyksen)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_FI "Märittelee, mitä lisäosaa käytetään CD:n audio toistamiseen tuetuilla Mega Drive/Genesis -peleillä."
 #define OPTION_VAL_SEGA_MEGA_CD_FI "Sega/Mega-CD"
@@ -23059,6 +23472,25 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_FI,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_FI,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_FI  },
+         { "256k",     OPTION_VAL_256K_FI  },
+         { "512k",     OPTION_VAL_512K_FI  },
+         { "1meg",     OPTION_VAL_1MEG_FI    },
+         { "2meg",     OPTION_VAL_2MEG_FI    },
+         { "4meg",     OPTION_VAL_4MEG_FI    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -24292,13 +24724,21 @@ struct retro_core_options_v2 options_fi = {
 #define OPTION_VAL_NTSC_J_FR NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_FR "ROM de démarrage du système"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_FR "Utiliser le BIOS/bootloader officiel pour le matériel émulé, s'il est présent dans le répertoire système de RetroArch. Affiche une séquence de démarrage/animation spécifique à la console, puis lance le contenu chargé."
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_FR "BRAM du système CD"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_FR "BRAM du système de CD (Redémarrage requis)"
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_FR "Lors de l'exécution de contenu Sega CD/Mega-CD, spécifie s'il faut partager un seul fichier de sauvegarde entre tous les jeux d'une région spécifique (Par BIOS) ou créer un fichier de sauvegarde séparé pour chaque jeu (Par jeu). Notez que le Sega CD/Mega-CD a un stockage interne limité, suffisant seulement pour une poignée de titres. Pour éviter de manquer d'espace, le paramètre 'Par jeu' est recommandé."
 #define OPTION_VAL_PER_BIOS_FR "Par BIOS"
 #define OPTION_VAL_PER_GAME_FR "Par jeu"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_FR "BRAM de la cartouche de sauvegarde CD"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_FR "BRAM de la cartouche de sauvegarde du CD (Redémarrage requis)"
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_FR "Lorsque vous exécutez du contenu Sega CD/Mega-CD, cette option spécifie si vous voulez partager une seule cartouche de sauvegarde pour tous les jeux (Par cartouche) ou créer une cartouche de sauvegarde séparée pour chaque jeu (Par jeu)."
 #define OPTION_VAL_PER_CART_FR "Par cartouche"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_FR "Quantité de BRAM de la cartouche de sauvegarde du CD (Redémarrage requis)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_FR "Définit la quantité de ram de la cartouche de sauvegarde lors de l'exécution du contenu Sega CD/Mega-CD. Utile lors du réglage de la cartouche de sauvegarde sur 'Par jeu' pour éviter plusieurs tailles de cartouches plus grandes."
+#define OPTION_VAL_128K_FR "128 kbit"
+#define OPTION_VAL_256K_FR "256 kbit"
+#define OPTION_VAL_512K_FR "512 kbit"
+#define OPTION_VAL_1MEG_FR "1 Mbit"
+#define OPTION_VAL_2MEG_FR "2 Mbit"
+#define OPTION_VAL_4MEG_FR "4 Mbit"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_FR "Module CD complémentaire (mode MD) (Redémarrage requis)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_FR "Spécifie quel module complémentaire utiliser pour la lecture audio de CD avec les jeux Mega Drive/Genesis pris en charge."
 #define OPTION_VAL_SEGA_MEGA_CD_FR NULL
@@ -24573,6 +25013,25 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_FR,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_FR,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_FR  },
+         { "256k",     OPTION_VAL_256K_FR  },
+         { "512k",     OPTION_VAL_512K_FR  },
+         { "1meg",     OPTION_VAL_1MEG_FR    },
+         { "2meg",     OPTION_VAL_2MEG_FR    },
+         { "4meg",     OPTION_VAL_4MEG_FR    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -25813,6 +26272,14 @@ struct retro_core_options_v2 options_fr = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_GL NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_GL NULL
 #define OPTION_VAL_PER_CART_GL NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_GL NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_GL NULL
+#define OPTION_VAL_128K_GL NULL
+#define OPTION_VAL_256K_GL NULL
+#define OPTION_VAL_512K_GL NULL
+#define OPTION_VAL_1MEG_GL NULL
+#define OPTION_VAL_2MEG_GL NULL
+#define OPTION_VAL_4MEG_GL NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_GL NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_GL NULL
 #define OPTION_VAL_SEGA_MEGA_CD_GL NULL
@@ -26087,6 +26554,25 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_GL,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_GL,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_GL  },
+         { "256k",     OPTION_VAL_256K_GL  },
+         { "512k",     OPTION_VAL_512K_GL  },
+         { "1meg",     OPTION_VAL_1MEG_GL    },
+         { "2meg",     OPTION_VAL_2MEG_GL    },
+         { "4meg",     OPTION_VAL_4MEG_GL    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -27327,6 +27813,14 @@ struct retro_core_options_v2 options_gl = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_HE NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_HE NULL
 #define OPTION_VAL_PER_CART_HE NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_HE NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_HE NULL
+#define OPTION_VAL_128K_HE NULL
+#define OPTION_VAL_256K_HE NULL
+#define OPTION_VAL_512K_HE NULL
+#define OPTION_VAL_1MEG_HE NULL
+#define OPTION_VAL_2MEG_HE NULL
+#define OPTION_VAL_4MEG_HE NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_HE NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_HE NULL
 #define OPTION_VAL_SEGA_MEGA_CD_HE NULL
@@ -27601,6 +28095,25 @@ struct retro_core_option_v2_definition option_defs_he[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_HE,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_HE,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_HE  },
+         { "256k",     OPTION_VAL_256K_HE  },
+         { "512k",     OPTION_VAL_512K_HE  },
+         { "1meg",     OPTION_VAL_1MEG_HE    },
+         { "2meg",     OPTION_VAL_2MEG_HE    },
+         { "4meg",     OPTION_VAL_4MEG_HE    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -28841,6 +29354,14 @@ struct retro_core_options_v2 options_he = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_HR NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_HR NULL
 #define OPTION_VAL_PER_CART_HR NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_HR NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_HR NULL
+#define OPTION_VAL_128K_HR NULL
+#define OPTION_VAL_256K_HR NULL
+#define OPTION_VAL_512K_HR NULL
+#define OPTION_VAL_1MEG_HR NULL
+#define OPTION_VAL_2MEG_HR NULL
+#define OPTION_VAL_4MEG_HR NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_HR NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_HR NULL
 #define OPTION_VAL_SEGA_MEGA_CD_HR NULL
@@ -29115,6 +29636,25 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_HR,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_HR,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_HR  },
+         { "256k",     OPTION_VAL_256K_HR  },
+         { "512k",     OPTION_VAL_512K_HR  },
+         { "1meg",     OPTION_VAL_1MEG_HR    },
+         { "2meg",     OPTION_VAL_2MEG_HR    },
+         { "4meg",     OPTION_VAL_4MEG_HR    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -30348,13 +30888,21 @@ struct retro_core_options_v2 options_hr = {
 #define OPTION_VAL_NTSC_J_HU NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_HU "Rendszer boot ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_HU "A hivatalos BIOS / bootbetöltő használata az emulált hardverhez, ha az megtalálható a RetroArch rendszerkönyvtárában. Megjeleníti a konzoltól függő indítási szekvenciát / animációt, majd utána indítja a betöltött tartalmat."
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_HU "CD System Backup RAM"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_HU "CD System BRAM (újraindítás szükséges)"
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_HU "Sega CD / Mega-CD tartalmak esetében a mentések tárolása régió (BIOS) szerint egy helyen vagy játékok szerint külön. Figyelem, a Sega CD / Mega-CD korlátozott belső tárhellyel bír, csak néhány cím fér rá. Javasolt a \"Játékonként\" beállítás, hogy ne fogyjon el a hely."
 #define OPTION_VAL_PER_BIOS_HU "BIOS régiónként"
 #define OPTION_VAL_PER_GAME_HU "Játékonként"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_HU NULL
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_HU NULL
-#define OPTION_VAL_PER_CART_HU NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_HU "CD Backup cartridge BRAM (újraindítás szükséges)"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_HU "Sega CD / Mega-CD tartalmak esetében minden játékhoz egy közös RAM cartridge használata, vagy játékok szerint külön RAM cartridge létrehozása."
+#define OPTION_VAL_PER_CART_HU "Cartridge szerint (közös)"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_HU "CD Backup cartridge BRAM méret (újraindítás szükséges)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_HU "A mentési memória (backup RAM) mérete Sega CD / Mega-CD tartalmakhoz. A játékonkénti beállításhoz hasznos, elkerülhető vele a nagyobb méret sokszorozása."
+#define OPTION_VAL_128K_HU NULL
+#define OPTION_VAL_256K_HU NULL
+#define OPTION_VAL_512K_HU NULL
+#define OPTION_VAL_1MEG_HU NULL
+#define OPTION_VAL_2MEG_HU NULL
+#define OPTION_VAL_4MEG_HU NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_HU "CD add-on (MD mód) (újraindítás szükséges)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_HU "Az add-on típusa CD hanglejátszáshoz, támogatott Mega Drive / Genesis játékok esetén."
 #define OPTION_VAL_SEGA_MEGA_CD_HU NULL
@@ -30629,6 +31177,25 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_HU,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_HU,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_HU  },
+         { "256k",     OPTION_VAL_256K_HU  },
+         { "512k",     OPTION_VAL_512K_HU  },
+         { "1meg",     OPTION_VAL_1MEG_HU    },
+         { "2meg",     OPTION_VAL_2MEG_HU    },
+         { "4meg",     OPTION_VAL_4MEG_HU    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -31869,6 +32436,14 @@ struct retro_core_options_v2 options_hu = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_ID NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_ID NULL
 #define OPTION_VAL_PER_CART_ID NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_ID NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_ID NULL
+#define OPTION_VAL_128K_ID NULL
+#define OPTION_VAL_256K_ID NULL
+#define OPTION_VAL_512K_ID NULL
+#define OPTION_VAL_1MEG_ID NULL
+#define OPTION_VAL_2MEG_ID NULL
+#define OPTION_VAL_4MEG_ID NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_ID NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_ID NULL
 #define OPTION_VAL_SEGA_MEGA_CD_ID NULL
@@ -32143,6 +32718,25 @@ struct retro_core_option_v2_definition option_defs_id[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_ID,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_ID,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_ID  },
+         { "256k",     OPTION_VAL_256K_ID  },
+         { "512k",     OPTION_VAL_512K_ID  },
+         { "1meg",     OPTION_VAL_1MEG_ID    },
+         { "2meg",     OPTION_VAL_2MEG_ID    },
+         { "4meg",     OPTION_VAL_4MEG_ID    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -33376,13 +33970,21 @@ struct retro_core_options_v2 options_id = {
 #define OPTION_VAL_NTSC_J_IT NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_IT "ROM Di Avvio Di Sistema"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_IT "Usa BIOS/bootloader ufficiale per l'hardware emulato, se presente nella directory di sistema di RetroArch. Visualizza la sequenza di avvio/animazione specifica della console, quindi esegue il contenuto caricato."
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_IT "BRAM Del Sistema Cd"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_IT "BRAM Del Sistema Cd (Richiede Il Riavvio)"
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_IT "Quando si esegue il contenuto di Sega CD/Mega-CD, specifica se condividere un singolo file di salvataggio tra tutti i giochi di una regione specifica (Per-BIOS) o creare un file di salvataggio separato per ogni partita (Per-Game). Si noti che il CD Sega / Mega-CD ha una limitata memoria interna, sufficiente solo per una manciata di titoli. Per evitare di esaurire lo spazio, si raccomanda l'impostazione 'Per-Game'."
 #define OPTION_VAL_PER_BIOS_IT NULL
 #define OPTION_VAL_PER_GAME_IT NULL
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_IT "BRAM Carrello Backup CD"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_IT "BRAM Del Carrello Di Backup Del CD (Richiede Il Riavvio)"
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_IT "Quando si esegue il contenuto di Sega CD/Mega-CD, specifica se condividere un singolo carrello di ram di backup per tutti i giochi (Per-Cartuccia) o creare un carrello di ram di backup separato per ogni partita (Per-Gioco)."
 #define OPTION_VAL_PER_CART_IT "Per-Cartuccia"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_IT "Dimensione BRAM Del Carrello Backup Del CD (Richiede Il Riavvio)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_IT "Imposta la dimensione del carrello del ram di backup quando si esegue Sega CD/Mega-CD contenuto. Utile quando si imposta il carrello del ram di backup su Per-Game per evitare più dimensioni del carrello più grandi."
+#define OPTION_VAL_128K_IT NULL
+#define OPTION_VAL_256K_IT NULL
+#define OPTION_VAL_512K_IT NULL
+#define OPTION_VAL_1MEG_IT NULL
+#define OPTION_VAL_2MEG_IT NULL
+#define OPTION_VAL_4MEG_IT NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_IT "CD add-on (modalità MD) (Richiede il riavvio)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_IT "Specifica quale componente aggiuntivo usare per la riproduzione di CD audio con i giochi Mega Drive/Genesis supportati."
 #define OPTION_VAL_SEGA_MEGA_CD_IT NULL
@@ -33657,6 +34259,25 @@ struct retro_core_option_v2_definition option_defs_it[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_IT,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_IT,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_IT  },
+         { "256k",     OPTION_VAL_256K_IT  },
+         { "512k",     OPTION_VAL_512K_IT  },
+         { "1meg",     OPTION_VAL_1MEG_IT    },
+         { "2meg",     OPTION_VAL_2MEG_IT    },
+         { "4meg",     OPTION_VAL_4MEG_IT    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -34897,6 +35518,14 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_JA NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_JA NULL
 #define OPTION_VAL_PER_CART_JA NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_JA NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_JA NULL
+#define OPTION_VAL_128K_JA NULL
+#define OPTION_VAL_256K_JA NULL
+#define OPTION_VAL_512K_JA NULL
+#define OPTION_VAL_1MEG_JA NULL
+#define OPTION_VAL_2MEG_JA NULL
+#define OPTION_VAL_4MEG_JA NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_JA NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_JA NULL
 #define OPTION_VAL_SEGA_MEGA_CD_JA NULL
@@ -35171,6 +35800,25 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_JA,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_JA,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_JA  },
+         { "256k",     OPTION_VAL_256K_JA  },
+         { "512k",     OPTION_VAL_512K_JA  },
+         { "1meg",     OPTION_VAL_1MEG_JA    },
+         { "2meg",     OPTION_VAL_2MEG_JA    },
+         { "4meg",     OPTION_VAL_4MEG_JA    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -36411,6 +37059,14 @@ struct retro_core_options_v2 options_ja = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_KO NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_KO NULL
 #define OPTION_VAL_PER_CART_KO NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_KO NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_KO NULL
+#define OPTION_VAL_128K_KO NULL
+#define OPTION_VAL_256K_KO NULL
+#define OPTION_VAL_512K_KO NULL
+#define OPTION_VAL_1MEG_KO NULL
+#define OPTION_VAL_2MEG_KO NULL
+#define OPTION_VAL_4MEG_KO NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_KO "CD 애드온 (MD 모드) (재시작 필요)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_KO "지원되는 Mega Drive/Genesis 게임의 CD 오디오 재생을 위해 사용할 애드온을 선택합니다."
 #define OPTION_VAL_SEGA_MEGA_CD_KO NULL
@@ -36685,6 +37341,25 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_KO,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_KO,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_KO  },
+         { "256k",     OPTION_VAL_256K_KO  },
+         { "512k",     OPTION_VAL_512K_KO  },
+         { "1meg",     OPTION_VAL_1MEG_KO    },
+         { "2meg",     OPTION_VAL_2MEG_KO    },
+         { "4meg",     OPTION_VAL_4MEG_KO    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -37925,6 +38600,14 @@ struct retro_core_options_v2 options_ko = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_NL NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_NL NULL
 #define OPTION_VAL_PER_CART_NL NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_NL NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_NL NULL
+#define OPTION_VAL_128K_NL NULL
+#define OPTION_VAL_256K_NL NULL
+#define OPTION_VAL_512K_NL NULL
+#define OPTION_VAL_1MEG_NL NULL
+#define OPTION_VAL_2MEG_NL NULL
+#define OPTION_VAL_4MEG_NL NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_NL NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_NL NULL
 #define OPTION_VAL_SEGA_MEGA_CD_NL NULL
@@ -38199,6 +38882,25 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_NL,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_NL,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_NL  },
+         { "256k",     OPTION_VAL_256K_NL  },
+         { "512k",     OPTION_VAL_512K_NL  },
+         { "1meg",     OPTION_VAL_1MEG_NL    },
+         { "2meg",     OPTION_VAL_2MEG_NL    },
+         { "4meg",     OPTION_VAL_4MEG_NL    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -39439,6 +40141,14 @@ struct retro_core_options_v2 options_nl = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_NO NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_NO NULL
 #define OPTION_VAL_PER_CART_NO NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_NO NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_NO NULL
+#define OPTION_VAL_128K_NO NULL
+#define OPTION_VAL_256K_NO NULL
+#define OPTION_VAL_512K_NO NULL
+#define OPTION_VAL_1MEG_NO NULL
+#define OPTION_VAL_2MEG_NO NULL
+#define OPTION_VAL_4MEG_NO NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_NO NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_NO NULL
 #define OPTION_VAL_SEGA_MEGA_CD_NO NULL
@@ -39713,6 +40423,25 @@ struct retro_core_option_v2_definition option_defs_no[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_NO,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_NO,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_NO  },
+         { "256k",     OPTION_VAL_256K_NO  },
+         { "512k",     OPTION_VAL_512K_NO  },
+         { "1meg",     OPTION_VAL_1MEG_NO    },
+         { "2meg",     OPTION_VAL_2MEG_NO    },
+         { "4meg",     OPTION_VAL_4MEG_NO    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -40953,6 +41682,14 @@ struct retro_core_options_v2 options_no = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_PL NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_PL NULL
 #define OPTION_VAL_PER_CART_PL NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_PL NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_PL NULL
+#define OPTION_VAL_128K_PL NULL
+#define OPTION_VAL_256K_PL NULL
+#define OPTION_VAL_512K_PL NULL
+#define OPTION_VAL_1MEG_PL NULL
+#define OPTION_VAL_2MEG_PL NULL
+#define OPTION_VAL_4MEG_PL NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_PL "Dodatek CD (tryb MD) (wymaga restartu)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_PL NULL
 #define OPTION_VAL_SEGA_MEGA_CD_PL NULL
@@ -41227,6 +41964,25 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_PL,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_PL,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_PL  },
+         { "256k",     OPTION_VAL_256K_PL  },
+         { "512k",     OPTION_VAL_512K_PL  },
+         { "1meg",     OPTION_VAL_1MEG_PL    },
+         { "2meg",     OPTION_VAL_2MEG_PL    },
+         { "4meg",     OPTION_VAL_4MEG_PL    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -42467,6 +43223,14 @@ struct retro_core_options_v2 options_pl = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_PT_BR NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_PT_BR NULL
 #define OPTION_VAL_PER_CART_PT_BR NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_PT_BR NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_PT_BR NULL
+#define OPTION_VAL_128K_PT_BR NULL
+#define OPTION_VAL_256K_PT_BR NULL
+#define OPTION_VAL_512K_PT_BR NULL
+#define OPTION_VAL_1MEG_PT_BR NULL
+#define OPTION_VAL_2MEG_PT_BR NULL
+#define OPTION_VAL_4MEG_PT_BR NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_PT_BR "Módulo de CD (modo MD) (requer reinício)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_PT_BR "Especifique qual módulo usar para reprodução de áudio de CD com jogos suportados do Mega Drive."
 #define OPTION_VAL_SEGA_MEGA_CD_PT_BR "Sega CD"
@@ -42741,6 +43505,25 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_PT_BR,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_PT_BR,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_PT_BR  },
+         { "256k",     OPTION_VAL_256K_PT_BR  },
+         { "512k",     OPTION_VAL_512K_PT_BR  },
+         { "1meg",     OPTION_VAL_1MEG_PT_BR    },
+         { "2meg",     OPTION_VAL_2MEG_PT_BR    },
+         { "4meg",     OPTION_VAL_4MEG_PT_BR    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -43981,6 +44764,14 @@ struct retro_core_options_v2 options_pt_br = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_PT_PT NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_PT_PT NULL
 #define OPTION_VAL_PER_CART_PT_PT NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_PT_PT NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_PT_PT NULL
+#define OPTION_VAL_128K_PT_PT NULL
+#define OPTION_VAL_256K_PT_PT NULL
+#define OPTION_VAL_512K_PT_PT NULL
+#define OPTION_VAL_1MEG_PT_PT NULL
+#define OPTION_VAL_2MEG_PT_PT NULL
+#define OPTION_VAL_4MEG_PT_PT NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_PT_PT NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_PT_PT NULL
 #define OPTION_VAL_SEGA_MEGA_CD_PT_PT NULL
@@ -44255,6 +45046,25 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_PT_PT,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_PT_PT,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_PT_PT  },
+         { "256k",     OPTION_VAL_256K_PT_PT  },
+         { "512k",     OPTION_VAL_512K_PT_PT  },
+         { "1meg",     OPTION_VAL_1MEG_PT_PT    },
+         { "2meg",     OPTION_VAL_2MEG_PT_PT    },
+         { "4meg",     OPTION_VAL_4MEG_PT_PT    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -45495,6 +46305,14 @@ struct retro_core_options_v2 options_pt_pt = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_RU NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_RU NULL
 #define OPTION_VAL_PER_CART_RU NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_RU NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_RU NULL
+#define OPTION_VAL_128K_RU "128 кбит"
+#define OPTION_VAL_256K_RU "256 кбит"
+#define OPTION_VAL_512K_RU "512 кбит"
+#define OPTION_VAL_1MEG_RU "1 Мбит"
+#define OPTION_VAL_2MEG_RU "2 Мбит"
+#define OPTION_VAL_4MEG_RU "4 Мбит"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_RU "Расширение CD (режим MD) (требуется перезапуск)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_RU "Выбор расширения для игр Mega Drive/Genesis с поддержкой воспроизведения аудио CD."
 #define OPTION_VAL_SEGA_MEGA_CD_RU NULL
@@ -45769,6 +46587,25 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_RU,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_RU,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_RU  },
+         { "256k",     OPTION_VAL_256K_RU  },
+         { "512k",     OPTION_VAL_512K_RU  },
+         { "1meg",     OPTION_VAL_1MEG_RU    },
+         { "2meg",     OPTION_VAL_2MEG_RU    },
+         { "4meg",     OPTION_VAL_4MEG_RU    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -47009,6 +47846,14 @@ struct retro_core_options_v2 options_ru = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_SK NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_SK NULL
 #define OPTION_VAL_PER_CART_SK NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_SK NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_SK NULL
+#define OPTION_VAL_128K_SK NULL
+#define OPTION_VAL_256K_SK NULL
+#define OPTION_VAL_512K_SK NULL
+#define OPTION_VAL_1MEG_SK NULL
+#define OPTION_VAL_2MEG_SK NULL
+#define OPTION_VAL_4MEG_SK NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_SK NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_SK NULL
 #define OPTION_VAL_SEGA_MEGA_CD_SK NULL
@@ -47283,6 +48128,25 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_SK,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_SK,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_SK  },
+         { "256k",     OPTION_VAL_256K_SK  },
+         { "512k",     OPTION_VAL_512K_SK  },
+         { "1meg",     OPTION_VAL_1MEG_SK    },
+         { "2meg",     OPTION_VAL_2MEG_SK    },
+         { "4meg",     OPTION_VAL_4MEG_SK    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -48523,6 +49387,14 @@ struct retro_core_options_v2 options_sk = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_SR NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_SR NULL
 #define OPTION_VAL_PER_CART_SR NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_SR NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_SR NULL
+#define OPTION_VAL_128K_SR NULL
+#define OPTION_VAL_256K_SR NULL
+#define OPTION_VAL_512K_SR NULL
+#define OPTION_VAL_1MEG_SR NULL
+#define OPTION_VAL_2MEG_SR NULL
+#define OPTION_VAL_4MEG_SR NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_SR NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_SR NULL
 #define OPTION_VAL_SEGA_MEGA_CD_SR NULL
@@ -48797,6 +49669,25 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_SR,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_SR,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_SR  },
+         { "256k",     OPTION_VAL_256K_SR  },
+         { "512k",     OPTION_VAL_512K_SR  },
+         { "1meg",     OPTION_VAL_1MEG_SR    },
+         { "2meg",     OPTION_VAL_2MEG_SR    },
+         { "4meg",     OPTION_VAL_4MEG_SR    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -50030,13 +50921,21 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_NTSC_J_SV NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_SV NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_SV NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_SV "CD-System BRAM (Kräver omstart)"
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_SV NULL
 #define OPTION_VAL_PER_BIOS_SV NULL
 #define OPTION_VAL_PER_GAME_SV NULL
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_SV NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_SV NULL
 #define OPTION_VAL_PER_CART_SV NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_SV NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_SV NULL
+#define OPTION_VAL_128K_SV NULL
+#define OPTION_VAL_256K_SV NULL
+#define OPTION_VAL_512K_SV NULL
+#define OPTION_VAL_1MEG_SV NULL
+#define OPTION_VAL_2MEG_SV NULL
+#define OPTION_VAL_4MEG_SV NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_SV NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_SV NULL
 #define OPTION_VAL_SEGA_MEGA_CD_SV NULL
@@ -50311,6 +51210,25 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_SV,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_SV,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_SV  },
+         { "256k",     OPTION_VAL_256K_SV  },
+         { "512k",     OPTION_VAL_512K_SV  },
+         { "1meg",     OPTION_VAL_1MEG_SV    },
+         { "2meg",     OPTION_VAL_2MEG_SV    },
+         { "4meg",     OPTION_VAL_4MEG_SV    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -51551,6 +52469,14 @@ struct retro_core_options_v2 options_sv = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_TR NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_TR NULL
 #define OPTION_VAL_PER_CART_TR NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_TR NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_TR NULL
+#define OPTION_VAL_128K_TR NULL
+#define OPTION_VAL_256K_TR NULL
+#define OPTION_VAL_512K_TR NULL
+#define OPTION_VAL_1MEG_TR NULL
+#define OPTION_VAL_2MEG_TR NULL
+#define OPTION_VAL_4MEG_TR NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_TR "CD eklentisi (MD kipi) (Yeniden Başlatılmalı)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_TR "Desteklenen Mega Drive/Genesis oyunlarıyla CD ses oynatmak için hangi eklentinin kullanılacağını belirtin."
 #define OPTION_VAL_SEGA_MEGA_CD_TR NULL
@@ -51825,6 +52751,25 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_TR,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_TR,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_TR  },
+         { "256k",     OPTION_VAL_256K_TR  },
+         { "512k",     OPTION_VAL_512K_TR  },
+         { "1meg",     OPTION_VAL_1MEG_TR    },
+         { "2meg",     OPTION_VAL_2MEG_TR    },
+         { "4meg",     OPTION_VAL_4MEG_TR    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -53065,6 +54010,14 @@ struct retro_core_options_v2 options_tr = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_UK NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_UK NULL
 #define OPTION_VAL_PER_CART_UK NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_UK NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_UK NULL
+#define OPTION_VAL_128K_UK NULL
+#define OPTION_VAL_256K_UK NULL
+#define OPTION_VAL_512K_UK NULL
+#define OPTION_VAL_1MEG_UK NULL
+#define OPTION_VAL_2MEG_UK NULL
+#define OPTION_VAL_4MEG_UK NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_UK NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_UK NULL
 #define OPTION_VAL_SEGA_MEGA_CD_UK NULL
@@ -53339,6 +54292,25 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_UK,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_UK,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_UK  },
+         { "256k",     OPTION_VAL_256K_UK  },
+         { "512k",     OPTION_VAL_512K_UK  },
+         { "1meg",     OPTION_VAL_1MEG_UK    },
+         { "2meg",     OPTION_VAL_2MEG_UK    },
+         { "4meg",     OPTION_VAL_4MEG_UK    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -54579,6 +55551,14 @@ struct retro_core_options_v2 options_uk = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_VAL NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_VAL NULL
 #define OPTION_VAL_PER_CART_VAL NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_VAL NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_VAL NULL
+#define OPTION_VAL_128K_VAL NULL
+#define OPTION_VAL_256K_VAL NULL
+#define OPTION_VAL_512K_VAL NULL
+#define OPTION_VAL_1MEG_VAL NULL
+#define OPTION_VAL_2MEG_VAL NULL
+#define OPTION_VAL_4MEG_VAL NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_VAL NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_VAL NULL
 #define OPTION_VAL_SEGA_MEGA_CD_VAL NULL
@@ -54853,6 +55833,25 @@ struct retro_core_option_v2_definition option_defs_val[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_VAL,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_VAL,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_VAL  },
+         { "256k",     OPTION_VAL_256K_VAL  },
+         { "512k",     OPTION_VAL_512K_VAL  },
+         { "1meg",     OPTION_VAL_1MEG_VAL    },
+         { "2meg",     OPTION_VAL_2MEG_VAL    },
+         { "4meg",     OPTION_VAL_4MEG_VAL    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
@@ -56093,6 +57092,14 @@ struct retro_core_options_v2 options_val = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_VN NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_VN NULL
 #define OPTION_VAL_PER_CART_VN NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_VN NULL
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_VN NULL
+#define OPTION_VAL_128K_VN NULL
+#define OPTION_VAL_256K_VN NULL
+#define OPTION_VAL_512K_VN NULL
+#define OPTION_VAL_1MEG_VN NULL
+#define OPTION_VAL_2MEG_VN NULL
+#define OPTION_VAL_4MEG_VN NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_VN NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_VN NULL
 #define OPTION_VAL_SEGA_MEGA_CD_VN NULL
@@ -56367,6 +57374,25 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
          { NULL, NULL },
       },
       "per cart"
+   },
+   {
+      "genesis_plus_gx_cart_size",
+      GENESIS_PLUS_GX_CART_SIZE_LABEL_VN,
+      NULL,
+      GENESIS_PLUS_GX_CART_SIZE_INFO_0_VN,
+      NULL,
+      "system",
+      {
+         { "disabled", "Disabled" },
+         { "128k",     OPTION_VAL_128K_VN  },
+         { "256k",     OPTION_VAL_256K_VN  },
+         { "512k",     OPTION_VAL_512K_VN  },
+         { "1meg",     OPTION_VAL_1MEG_VN    },
+         { "2meg",     OPTION_VAL_2MEG_VN    },
+         { "4meg",     OPTION_VAL_4MEG_VN    },
+         { NULL, NULL },
+      },
+      "4meg"
    },
    {
       "genesis_plus_gx_add_on",
