@@ -50914,7 +50914,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_MASTER_SYSTEM_II_SV NULL
 #define OPTION_VAL_GAME_GEAR_SV NULL
 #define OPTION_VAL_MEGA_DRIVE_GENESIS_SV NULL
-#define GENESIS_PLUS_GX_REGION_DETECT_LABEL_SV NULL
+#define GENESIS_PLUS_GX_REGION_DETECT_LABEL_SV "Systemregion"
 #define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_SV NULL
 #define OPTION_VAL_NTSC_U_SV NULL
 #define OPTION_VAL_PAL_SV NULL
@@ -54004,12 +54004,12 @@ struct retro_core_options_v2 options_tr = {
 #define GENESIS_PLUS_GX_BIOS_LABEL_UK "Системний ROM завантаження"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_UK NULL
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_UK NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_UK NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_UK "Під час запуску вмісту Sega CD/Mega-CD вказує, чи використовувати один файл збереження для всіх ігор з певного регіону (За кожен BIOS), чи створювати окремий файл збереження для кожної гри (За кожну Гру). Зверніть увагу, що Sega CD/Mega-CD має обмежену внутрішню пам'ять, достатню лише для кількох ігор. Щоб уникнути нестачі місця, рекомендується використовувати параметр \"За кожну Гру\"."
 #define OPTION_VAL_PER_BIOS_UK NULL
 #define OPTION_VAL_PER_GAME_UK NULL
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_UK NULL
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_UK NULL
-#define OPTION_VAL_PER_CART_UK NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_UK "Під час запуску вмісту Sega CD/Mega-CD вказує, чи слід використовувати одну RAM резервної копії для всіх ігор (За кожен Картридж), чи створити окремий RAM резервної копії для кожної гри (За кожну Гру)."
+#define OPTION_VAL_PER_CART_UK "За кожен Картридж"
 #define GENESIS_PLUS_GX_CART_SIZE_LABEL_UK NULL
 #define GENESIS_PLUS_GX_CART_SIZE_INFO_0_UK NULL
 #define OPTION_VAL_128K_UK NULL
