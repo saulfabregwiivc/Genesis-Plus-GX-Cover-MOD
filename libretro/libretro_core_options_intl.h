@@ -37052,15 +37052,15 @@ struct retro_core_options_v2 options_ja = {
 #define OPTION_VAL_NTSC_J_KO NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_KO "시스템 부트 롬"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_KO "하드웨어의 공식 BIOS/부트로더를 사용합니다. 해당되는 파일이 RetroArch의 시스템 디렉토리에 존재해야 합니다. 콘솔 특유의 시작 시퀀스/애니메이션을 표시하고 컨텐츠를 실행합니다."
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_KO NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_KO NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_KO "CD 시스템 BRAM (재시작 필요)"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_KO "Sega CD/Mega-CD 컨텐츠를 실행할 때, 특정 지역의 모든 게임 간에 단일 세이브 파일을 사용할지(BIOS별), 각 게임마다 별도의 세이브 파일을 사용할지(게임별)를 선택합니다. Sega CD/Mega-CD의 내부 저장소는 아주 작아 게임 몇 개의 데이터만 저장할 수 있으므로, 용량 부족 방지를 위해 '게임별' 설정을 사용할 것을 권장합니다."
 #define OPTION_VAL_PER_BIOS_KO "BIOS별"
 #define OPTION_VAL_PER_GAME_KO "게임별"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_KO NULL
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_KO NULL
-#define OPTION_VAL_PER_CART_KO NULL
-#define GENESIS_PLUS_GX_CART_SIZE_LABEL_KO NULL
-#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_KO NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_KO "CD 백업 카트리지 BRAM (재시작 필요)"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_KO "Sega CD/Mega-CD 컨텐츠를 실행할 때, 모든 게임 간에 단일 백업 RAM 카트리지를 사용할지(카트리지별), 각 게임마다 별도의 백업 RAM 카트리지를 사용할지(게임별)를 선택합니다."
+#define OPTION_VAL_PER_CART_KO "카트리지별"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_KO "CD 백업 카트리지 BRAM 크기 (재시작 필요)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_KO "Sega CD/Mega-CD 컨텐츠를 실행할 때 사용할 백업 RAM 카트리지의 크기를 설정합니다. 게임별 백업 RAM 카트리지 사용 시 여러 크기의 카트리지가 생기는 것을 방지하고자 할 때 유용합니다."
 #define OPTION_VAL_128K_KO NULL
 #define OPTION_VAL_256K_KO NULL
 #define OPTION_VAL_512K_KO NULL
@@ -52462,15 +52462,15 @@ struct retro_core_options_v2 options_sv = {
 #define OPTION_VAL_NTSC_J_TR NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_TR "Sistem Önyükleme ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_TR "RetroArch sistem dizininde varsa, öykünülmüş donanım için resmi BIOS/önyükleyici kullanın. Konsola özgü başlangıç sırası/animasyonu görüntüler, ardından yüklü içeriği çalıştırır."
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_TR NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_TR NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_TR "CD System BRAM (Yeniden Başlatılmalı)"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_TR "Sega CD/Mega-CD içeriğini çalıştırırken, belirli bir bölgedeki tüm oyunlar arasında tek bir kayıt dosyasının paylaşılıp paylaşılmayacağını (BIOS Başına) veya her oyun için ayrı bir kayıt dosyası oluşturulacağını (Oyun Başına) belirtir. Sega CD/Mega-CD'nin yalnızca bir avuç başlık için yeterli olan sınırlı dahili depolamaya sahip olduğunu unutmayın. Alanın bitmesini önlemek için 'Oyun Başına' ayarı önerilir."
 #define OPTION_VAL_PER_BIOS_TR "BIOS Başına"
 #define OPTION_VAL_PER_GAME_TR "Oyun Başına"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_TR NULL
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_TR NULL
-#define OPTION_VAL_PER_CART_TR NULL
-#define GENESIS_PLUS_GX_CART_SIZE_LABEL_TR NULL
-#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_TR NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_TR "CD Backup Cart BRAM (Yeniden Başlatılmalı)"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_TR "Sega CD/Mega-CD içeriğini çalıştırırken, tüm oyunlar için tek bir yedek ram sepetinin paylaşılıp paylaşılmayacağını (Kart Başına) veya her oyun için ayrı bir yedek ram sepeti (Oyun Başına) oluşturulup oluşturulmayacağını belirtir."
+#define OPTION_VAL_PER_CART_TR "Kart Başına"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_TR "CD Backup Cart BRAM Boyutu (Yeniden Başlatılmalı)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_TR "Sega CD/Mega-CD içeriğini çalıştırırken yedek ram sepeti boyutunu ayarlar. Birden fazla büyük sepet boyutundan kaçınmak için yedek ram sepetini Oyun Başına olarak ayarlarken kullanışlıdır."
 #define OPTION_VAL_128K_TR NULL
 #define OPTION_VAL_256K_TR NULL
 #define OPTION_VAL_512K_TR NULL
@@ -52580,17 +52580,17 @@ struct retro_core_options_v2 options_sv = {
 #define OPTION_VAL_150_TR "%150"
 #define OPTION_VAL_175_TR "%175"
 #define OPTION_VAL_200_TR "%200"
-#define OPTION_VAL_225_TR NULL
+#define OPTION_VAL_225_TR "%225"
 #define OPTION_VAL_250_TR "%250"
-#define OPTION_VAL_275_TR NULL
+#define OPTION_VAL_275_TR "%275"
 #define OPTION_VAL_300_TR "%300"
-#define OPTION_VAL_325_TR NULL
+#define OPTION_VAL_325_TR "%325"
 #define OPTION_VAL_350_TR "%350"
-#define OPTION_VAL_375_TR NULL
+#define OPTION_VAL_375_TR "%375"
 #define OPTION_VAL_400_TR "%400"
-#define OPTION_VAL_425_TR NULL
+#define OPTION_VAL_425_TR "%425"
 #define OPTION_VAL_450_TR "%450"
-#define OPTION_VAL_475_TR NULL
+#define OPTION_VAL_475_TR "%475"
 #define OPTION_VAL_500_TR "%500"
 #define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_TR "Sistem Kilidi"
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_TR "Geçersiz adres erişimi gerçekleştirirken gerçek donanımda oluşan sistem kilitlenmelerini taklit edin. Bu, yalnızca doğru işlem için uygun olmayan belirli demolar ve homebrew oynarken devre dışı bırakılmalıdır."
@@ -54003,21 +54003,21 @@ struct retro_core_options_v2 options_tr = {
 #define OPTION_VAL_NTSC_J_UK NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_UK "Системний ROM завантаження"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_UK NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_UK NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_UK "CD System BRAM (Потребує Перезавантаження)"
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_UK "Під час запуску вмісту Sega CD/Mega-CD вказує, чи використовувати один файл збереження для всіх ігор з певного регіону (За кожен BIOS), чи створювати окремий файл збереження для кожної гри (За кожну Гру). Зверніть увагу, що Sega CD/Mega-CD має обмежену внутрішню пам'ять, достатню лише для кількох ігор. Щоб уникнути нестачі місця, рекомендується використовувати параметр \"За кожну Гру\"."
 #define OPTION_VAL_PER_BIOS_UK NULL
 #define OPTION_VAL_PER_GAME_UK NULL
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_UK NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_UK "CD Резервна Копія Карти BRAM (Потребує Перезавантаження)"
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_UK "Під час запуску вмісту Sega CD/Mega-CD вказує, чи слід використовувати одну RAM резервної копії для всіх ігор (За кожен Картридж), чи створити окремий RAM резервної копії для кожної гри (За кожну Гру)."
 #define OPTION_VAL_PER_CART_UK "За кожен Картридж"
-#define GENESIS_PLUS_GX_CART_SIZE_LABEL_UK NULL
-#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_UK NULL
-#define OPTION_VAL_128K_UK NULL
-#define OPTION_VAL_256K_UK NULL
-#define OPTION_VAL_512K_UK NULL
-#define OPTION_VAL_1MEG_UK NULL
-#define OPTION_VAL_2MEG_UK NULL
-#define OPTION_VAL_4MEG_UK NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_UK "Розмір CD Резервної Копії Карти BRAM (Потребує Перезавантаження)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_UK "Встановлює розмір резервної копії карти RAM під час відтворення вмісту Sega CD/Mega-CD. Корисно, якщо встановити розмір резервної копії карти RAM для кожної гри, щоб уникнути використання багатьох карт більших розмірів."
+#define OPTION_VAL_128K_UK "128Кбіт"
+#define OPTION_VAL_256K_UK "256Кбіт"
+#define OPTION_VAL_512K_UK "512Кбіт"
+#define OPTION_VAL_1MEG_UK "1Мбіт"
+#define OPTION_VAL_2MEG_UK "2Мбіт"
+#define OPTION_VAL_4MEG_UK "4Мбіт"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_UK NULL
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_UK NULL
 #define OPTION_VAL_SEGA_MEGA_CD_UK NULL
