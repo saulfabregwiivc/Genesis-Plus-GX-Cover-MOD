@@ -9314,15 +9314,15 @@ struct retro_core_options_v2 options_cht = {
 #define OPTION_VAL_NTSC_J_CS NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_CS "Systém Boot ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_CS "Použijte oficiální BIOS/bootloader pro emulovaný hardware, pokud je přítomen v systémovém adresáři aplikace RetroArch. Zobrazí spouštěcí sekvenci/animaci specifickou pro konzoli a poté spustí načtený obsah."
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CS NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CS NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CS "CD System BRAM (Vyžaduje restart)"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CS "Při spouštění obsahu Sega CD/Mega-CD určuje, zda se má sdílet jeden ukládací soubor pro všechny hry z určité oblasti (Pro-BIOS), nebo zda se má pro každou hru vytvořit samostatný ukládací soubor (Pro-Hru). Všimněte si, že Sega CD/Mega-CD má omezenou vnitřní paměť, která stačí pouze pro několik titulů. Abyste se vyhnuli nedostatku místa, doporučujeme použít nastavení \"Pro-Hru\"."
 #define OPTION_VAL_PER_BIOS_CS "Na-BIOS"
 #define OPTION_VAL_PER_GAME_CS "Na-Hru"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_CS NULL
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CS NULL
-#define OPTION_VAL_PER_CART_CS NULL
-#define GENESIS_PLUS_GX_CART_SIZE_LABEL_CS NULL
-#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_CS NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_CS "CD Záložní koš BRAM (Vyžaduje restart)"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CS "Při spouštění obsahu Sega CD/Mega-CD určuje, zda má být pro všechny hry sdílena jedna záložní ram koš (Pro-Koš), nebo zda má být pro každou hru vytvořena samostatná záložní ram koš (Pro-Hru)."
+#define OPTION_VAL_PER_CART_CS "Pro-Koš"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_CS "Velikost BRAM záložního koše CD (Vyžaduje restart)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_CS "Nastavuje velikost záložního ram koše při spouštění obsahu Sega CD/Mega-CD. Užitečné při nastavení záložního ram koše na Pro-Hru, aby se zabránilo více větším velikostem koše."
 #define OPTION_VAL_128K_CS NULL
 #define OPTION_VAL_256K_CS NULL
 #define OPTION_VAL_512K_CS NULL
