@@ -42,6 +42,7 @@ extern "C" {
 
 #if defined(M68K_OVERCLOCK_SHIFT) || defined(Z80_OVERCLOCK_SHIFT)
 #define HAVE_OVERCLOCK
+#define HAVE_EQ
 #endif
 
 /*
@@ -451,7 +452,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
       {
          { "disabled", NULL },
          { "low-pass", "Low-Pass" },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       NULL },
 #endif
          { NULL, NULL },

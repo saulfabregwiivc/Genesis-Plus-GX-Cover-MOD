@@ -198,8 +198,8 @@ static bool libretro_supports_bitmasks          = false;
 
 #define SOUND_FREQUENCY 44100
 
-/* Hide the EQ settings for now */
-/*#define HAVE_EQ*/
+/*EQ settings*/
+#define HAVE_EQ
 
 /* Frameskipping Support */
 
@@ -1756,7 +1756,7 @@ static void check_variables(bool first_run)
     if (var.value && !strcmp(var.value, "low-pass"))
       config.filter = 1;
 
-#if HAVE_EQ 
+#ifdef HAVE_EQ 
     else if (var.value && !strcmp(var.value, "EQ"))
       config.filter = 2;
 #endif
@@ -1771,7 +1771,7 @@ static void check_variables(bool first_run)
     config.lp_range = (!var.value) ? 0x9999 : ((atoi(var.value) * 65536) / 100);
   }
 
-#if HAVE_EQ
+#ifdef HAVE_EQ
   var.key = "genesis_plus_gx_audio_eq_low";
   environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
   {
