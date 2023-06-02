@@ -636,7 +636,7 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_AR },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_AR },
 #endif
          { NULL, NULL },
@@ -2177,7 +2177,7 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_AST },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_AST },
 #endif
          { NULL, NULL },
@@ -3718,7 +3718,7 @@ struct retro_core_option_v2_definition option_defs_be[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_BE },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_BE },
 #endif
          { NULL, NULL },
@@ -5259,7 +5259,7 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_CA },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_CA },
 #endif
          { NULL, NULL },
@@ -6800,7 +6800,7 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_CHS },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_CHS },
 #endif
          { NULL, NULL },
@@ -8341,7 +8341,7 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_CHT },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_CHT },
 #endif
          { NULL, NULL },
@@ -9424,7 +9424,7 @@ struct retro_core_options_v2 options_cht = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_CS "Vylepšené vertikální posouvání po dlaždici"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_CS "Umožňuje posouvat každou jednotlivou buňku svisle místo 16px dvoubuněk zprůměrováním s hodnotou vertikálního posouvání sousední buňky. Tento hack platí pouze pro několik her, které používají režim vertikálního posouvání po 2 buňkách."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_CS "Vylepšený limit vertikálního posouvání na dlaždici"
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CS "Pouze když je povoleno vylepšení vertikálního posouvání na dlaždici. Upravuje limit vylepšení vertikálního posouvání. Pokud je rozdíl vscroll mezi sousedními dlaždicemi větší než tento limit, je vylepšení zakázáno."
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CS NULL
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_CS "Rychlost CPU"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_CS "Přetaktování emulovaného procesoru. Může snížit zpomalení, ale může způsobit závady."
 #define OPTION_VAL_100_CS NULL
@@ -9882,7 +9882,7 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_CS },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_CS },
 #endif
          { NULL, NULL },
@@ -11423,7 +11423,7 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_CY },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_CY },
 #endif
          { NULL, NULL },
@@ -12964,7 +12964,7 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_DA },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_DA },
 #endif
          { NULL, NULL },
@@ -14047,7 +14047,7 @@ struct retro_core_options_v2 options_da = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_DE "Verbessertes vertikales Scrollen pro Kachel"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_DE "Ermöglicht es, jede einzelne Zelle vertikal zu scrollen anstatt \"16px 2-Zelle\", indem man mit dem vertikalen Scrollwert der benachbarten Zelle im Durchschnitt ist. Dieser Hack gilt nur für wenige Spiele, die einen vertikalen 2-Zell-Scroll-Modus verwenden."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_DE "Verbessertes vertikales Scrollen pro Kachel Begrenzung"
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_DE "Nur wenn \"Verbessertes vertikales Scrollen pro Kachel\" aktiviert ist. Passt die Begrenzung der vertikalen Scroll-Verbesserung an. Wenn der vertikale Scrollunterschied zwischen benachbarten Kacheln größer als diese Begrenzung ist, ist die Verbesserung deaktiviert."
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_DE "Nur wenn „Verbessertes vertikales Scrollen pro Kachel“ aktiviert ist. Passt die Begrenzung der vertikalen Scroll-Verbesserung an. Wenn der vertikale Scrollunterschied zwischen benachbarten Kacheln größer als diese Begrenzung ist, wird die Verbesserung deaktiviert."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_DE "CPU-Geschwindigkeit"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_DE "Die emulierte CPU übertakten. Kann Slowdow verringern, aber Glitches (Störeffekte) verursachen."
 #define OPTION_VAL_100_DE "100 %"
@@ -14505,7 +14505,7 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_DE },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_DE },
 #endif
          { NULL, NULL },
@@ -16046,7 +16046,7 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_EL },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_EL },
 #endif
          { NULL, NULL },
@@ -17587,7 +17587,7 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_EN },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_EN },
 #endif
          { NULL, NULL },
@@ -19128,7 +19128,7 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_EO },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_EO },
 #endif
          { NULL, NULL },
@@ -20669,7 +20669,7 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_ES },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_ES },
 #endif
          { NULL, NULL },
@@ -22210,7 +22210,7 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_FA },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_FA },
 #endif
          { NULL, NULL },
@@ -23183,21 +23183,21 @@ struct retro_core_options_v2 options_fa = {
 #define OPTION_VAL_NTSC_J_FI NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_FI "Järjestelmän käynnistys ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_FI "Käytä virallista BIOS/bootloader-ohjelmaa emuloiduille laitteelle, jos sellainen löytyy RetroArchin järjestelmäkansiosta. Näyttää konsolikohtaisen käynnistyslatauksen/animaation ja ajaa sitten ladatun sisällön."
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_FI NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_FI "CD-järjestelmän BRAM (uudelleenkäynnistys vaaditaan)"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_FI "Määrittää Sega CD- ja Mega-CD:n sisältöä ajettaessa, jaetaanko yksi tallennustiedoston tietyn alueen kaikkien pelien välillä (BIOS-kohtainen) vai luodaanko jokaiselle pelille erillinen tallennustiedosto (Pelikohtainen). Huomaa, että Sega CD/Mega-CD:llä on rajallinen sisäinen tallennustila, riittäen vain muutamiin peleihin. Jotta tallennustila ei loppuisi, suositellaan \"Pelikohtainen\" asetusta."
 #define OPTION_VAL_PER_BIOS_FI "BIOS-kohtainen"
 #define OPTION_VAL_PER_GAME_FI "Pelikohtainen"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_FI NULL
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_FI NULL
-#define OPTION_VAL_PER_CART_FI NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_FI "CD-järjestelmän varmuuskopio kasetin BRAM (uudelleenkäynnistys vaaditaan)"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_FI "Määrittelee Sega CD- ja Mega-CD-sisältöä ajettaessa, jaetaanko yksi varmuuskopio RAM-kasetti kaikille peleille (Kasettikohtainen) vai luodaanko erillinen varmuuskopio RAM-kasetti jokaiselle pelille (Pelikohtainen)."
+#define OPTION_VAL_PER_CART_FI "Kasettikohtainen"
 #define GENESIS_PLUS_GX_CART_SIZE_LABEL_FI NULL
 #define GENESIS_PLUS_GX_CART_SIZE_INFO_0_FI NULL
-#define OPTION_VAL_128K_FI NULL
-#define OPTION_VAL_256K_FI NULL
-#define OPTION_VAL_512K_FI NULL
-#define OPTION_VAL_1MEG_FI NULL
-#define OPTION_VAL_2MEG_FI NULL
-#define OPTION_VAL_4MEG_FI NULL
+#define OPTION_VAL_128K_FI "128 kbit"
+#define OPTION_VAL_256K_FI "256 kbit"
+#define OPTION_VAL_512K_FI "512 kbit"
+#define OPTION_VAL_1MEG_FI "1 Mbit"
+#define OPTION_VAL_2MEG_FI "2 Mbit"
+#define OPTION_VAL_4MEG_FI "4 Mbit"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_FI "CD-lisäosa (MD-tila) (vaatii uudelleenkäynnistyksen)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_FI "Märittelee, mitä lisäosaa käytetään CD:n audio toistamiseen tuetuilla Mega Drive/Genesis -peleillä."
 #define OPTION_VAL_SEGA_MEGA_CD_FI "Sega/Mega-CD"
@@ -23751,7 +23751,7 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_FI },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_FI },
 #endif
          { NULL, NULL },
@@ -25292,7 +25292,7 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_FR },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_FR },
 #endif
          { NULL, NULL },
@@ -26833,7 +26833,7 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_GL },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_GL },
 #endif
          { NULL, NULL },
@@ -28374,7 +28374,7 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_HE },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_HE },
 #endif
          { NULL, NULL },
@@ -29915,7 +29915,7 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_HR },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_HR },
 #endif
          { NULL, NULL },
@@ -30998,7 +30998,7 @@ struct retro_core_options_v2 options_hr = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_HU "Feljavított függőleges görgetés csempénként"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_HU "A 16 pixeles kétcellás görgetés helyett minden cella egyesével görgethető függőlegesen, a szomszéd cellák átlagolásával. Csak azon pár játékra van hatással, amelyek a kétcellás függőleges görgetést használják."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_HU "Feljavított függőleges görgetés korlátja"
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_HU "Csak ha a feljavított függőleges görgetés engedélyezve van. A függőleges görgetés feljavításának határértéke, amikor ennél az értéknél nagyobb az eltérés a szomszédos cellák közt, a feljavítás kikapcsol."
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_HU NULL
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_HU "CPU sebesség"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_HU "Az emulált CPU túlhajtása. Csökkentheti a belassulást, de hibákat okozhat."
 #define OPTION_VAL_100_HU NULL
@@ -31456,7 +31456,7 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_HU },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_HU },
 #endif
          { NULL, NULL },
@@ -32997,7 +32997,7 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_ID },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_ID },
 #endif
          { NULL, NULL },
@@ -34080,7 +34080,7 @@ struct retro_core_options_v2 options_id = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_IT "Scorrimento verticale per piastrelle migliorato"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_IT "Consente ad ogni singola cella di scorrere verticalmente, invece di 16px 2-cell, calcolando la media con il valore vscroll della cella vicina. Questo hack si applica solo a pochi giochi che utilizzano la modalità di scorrimento verticale a 2 celle."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_IT "Limite di scorrimento verticale migliorato per tile"
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_IT "Solo quando è abilitata la possibilità dello scorrimento verticale per tegola. Regola il limite dell'aumento dello scorrimento verticale. Quando la differenza di vscroll tra le tessere vicine è più grande di questo limite, il miglioramento è disabilitato."
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_IT "Solo quando è abilitato lo scorrimento verticale per tile migliorato. Regola il limite dell'aumento dello scorrimento verticale. Quando la differenza di vscroll tra le tessere vicine è più grande di questo limite, il miglioramento è disabilitato."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_IT "Velocità CPU"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_IT "Sovrascrivi la CPU emulata. Può ridurre il rallentamento, ma può causare glitch."
 #define OPTION_VAL_100_IT NULL
@@ -34538,7 +34538,7 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_IT },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_IT },
 #endif
          { NULL, NULL },
@@ -36079,7 +36079,7 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_JA },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_JA },
 #endif
          { NULL, NULL },
@@ -37162,7 +37162,7 @@ struct retro_core_options_v2 options_ja = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_KO "타일 수직 스크롤 향상"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_KO "16픽셀 2셀 대신 인접한 셀의 세로 스크롤 값을 평균내어 각각의 개별 셀이 수직 스크롤 되도록 해줍니다. 이 핵은 2셀 세로 스크롤 모드를 사용하는 소수의 게임에만 적용됩니다."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_KO "타일 수직 스크롤 향상 제한"
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_KO "타일 수직 스크롤 향상이 활성화된 경우에만 적용됩니다. 수직 스크롤 향상값의 한계를 조정합니다. 인접한 타일 간의 수직 스크롤 차이가 제한 값 보다 크면 향상이 비활성화됩니다."
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_KO NULL
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_KO "CPU 속도"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_KO "에뮬레이트되는 CPU를 오버클럭합니다. 느려지는 현상을 줄일 수 있지만 버그가 발생할 수 있습니다."
 #define OPTION_VAL_100_KO NULL
@@ -37620,7 +37620,7 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_KO },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_KO },
 #endif
          { NULL, NULL },
@@ -39161,7 +39161,7 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_NL },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_NL },
 #endif
          { NULL, NULL },
@@ -40702,7 +40702,7 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_NO },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_NO },
 #endif
          { NULL, NULL },
@@ -42243,7 +42243,7 @@ struct retro_core_option_v2_definition option_defs_or[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_OR },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_OR },
 #endif
          { NULL, NULL },
@@ -43326,7 +43326,7 @@ struct retro_core_options_v2 options_or = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_PL NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_PL NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_PL NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_PL NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_PL "Tylko gdy ulepszone pionowe przewijanie w polu jest włączone. Dostosuj limit wzmocnienia przewijania w pionie. Gdy różnica pomiędzy sąsiednimi polami jest większa niż ten limit, wzmocnienie jest wyłączone."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_PL "Prędkość procesora"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_PL "Umożliwia przeciążenie emulowanego CPU. Może zmniejszyć spowolnienie, ale może powodować glitche."
 #define OPTION_VAL_100_PL NULL
@@ -43784,7 +43784,7 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_PL },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_PL },
 #endif
          { NULL, NULL },
@@ -45325,7 +45325,7 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_PT_BR },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_PT_BR },
 #endif
          { NULL, NULL },
@@ -46866,7 +46866,7 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_PT_PT },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_PT_PT },
 #endif
          { NULL, NULL },
@@ -48407,7 +48407,7 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_RU },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_RU },
 #endif
          { NULL, NULL },
@@ -49948,7 +49948,7 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_SK },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_SK },
 #endif
          { NULL, NULL },
@@ -51489,7 +51489,7 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_SR },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_SR },
 #endif
          { NULL, NULL },
@@ -53030,7 +53030,7 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_SV },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_SV },
 #endif
          { NULL, NULL },
@@ -54571,7 +54571,7 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_TR },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_TR },
 #endif
          { NULL, NULL },
@@ -56112,7 +56112,7 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_UK },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_UK },
 #endif
          { NULL, NULL },
@@ -57653,7 +57653,7 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_VAL },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_VAL },
 #endif
          { NULL, NULL },
@@ -59194,7 +59194,7 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       {
          { "disabled", NULL },
          { "low-pass", OPTION_VAL_LOW_PASS_VN },
-#if HAVE_EQ
+#ifdef HAVE_EQ
          { "EQ",       OPTION_VAL_EQ_VN },
 #endif
          { NULL, NULL },
