@@ -23243,7 +23243,7 @@ struct retro_core_options_v2 options_fa = {
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_FI "Kuvienohituksen arvo (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_FI "Kun \"kehyksen ohitus\" on asetettu \"manuaaliksi\", määrittää äänipuskuri käyttökynnyksen (prosentteina), jonka alapuolella kehykset ohitetaan. Korkeammat arvot vähentävät särkymisen riskiä siten, että kehykset putoavat useammin."
 #define GENESIS_PLUS_GX_YM2413_LABEL_FI NULL
-#define GENESIS_PLUS_GX_YM2413_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_YM2413_INFO_0_FI "Ota käyttöön tiettyjen Sega Mark III/Master System -pelien käyttämä FM-äänimoduulin emulointi äänen ulostulon ehostamista varten."
 #define GENESIS_PLUS_GX_YM2413_CORE_LABEL_FI "Master System FM (YM2413) ydin"
 #define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_FI NULL
 #define OPTION_VAL_MAME_FI NULL
@@ -37162,7 +37162,7 @@ struct retro_core_options_v2 options_ja = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_KO "타일 수직 스크롤 향상"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_KO "16픽셀 2셀 대신 인접한 셀의 세로 스크롤 값을 평균내어 각각의 개별 셀이 수직 스크롤 되도록 해줍니다. 이 핵은 2셀 세로 스크롤 모드를 사용하는 소수의 게임에만 적용됩니다."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_KO "타일 수직 스크롤 향상 제한"
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_KO NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_KO "타일별 세로 스크롤 향상을 활성화한 경우에만 해당합니다. 세로 스크롤 향상 한도를 조정합니다. 인접한 타일 간의 세로 스크롤 차이가 이 제한보다 크면 향상 기능이 비활성화됩니다."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_KO "CPU 속도"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_KO "에뮬레이트되는 CPU를 오버클럭합니다. 느려지는 현상을 줄일 수 있지만 버그가 발생할 수 있습니다."
 #define OPTION_VAL_100_KO NULL
