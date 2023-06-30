@@ -23190,8 +23190,8 @@ struct retro_core_options_v2 options_fa = {
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_FI "CD-järjestelmän varmuuskopio kasetin BRAM (uudelleenkäynnistys vaaditaan)"
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_FI "Määrittelee Sega CD- ja Mega-CD-sisältöä ajettaessa, jaetaanko yksi varmuuskopio RAM-kasetti kaikille peleille (Kasettikohtainen) vai luodaanko erillinen varmuuskopio RAM-kasetti jokaiselle pelille (Pelikohtainen)."
 #define OPTION_VAL_PER_CART_FI "Kasettikohtainen"
-#define GENESIS_PLUS_GX_CART_SIZE_LABEL_FI NULL
-#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_FI "CD-varmuuskopiokasetin BRAM-koko (Uudelleenkäynnistys vaaditaan)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_FI "Valitse varmuuskopiokasetin koko, kun ajetaan Sega CD/Mega-CD sisältöä. Hyödyllinen, kun asetetaan varmuuskopiokasetti pelikohtaiseksi, jolloin voidaan välttää useita suuria kasetteja."
 #define OPTION_VAL_128K_FI "128 kbit"
 #define OPTION_VAL_256K_FI "256 kbit"
 #define OPTION_VAL_512K_FI "512 kbit"
