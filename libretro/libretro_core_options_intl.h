@@ -9424,7 +9424,7 @@ struct retro_core_options_v2 options_cht = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_CS "Vylepšené vertikální posouvání po dlaždici"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_CS "Umožňuje posouvat každou jednotlivou buňku svisle místo 16px dvoubuněk zprůměrováním s hodnotou vertikálního posouvání sousední buňky. Tento hack platí pouze pro několik her, které používají režim vertikálního posouvání po 2 buňkách."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_CS "Vylepšený limit vertikálního posouvání na dlaždici"
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CS NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CS "Pouze když je povoleno vylepšené vertikální posouvání po dlaždicích. Upravuje limit vylepšení vertikálního posouvání. Pokud je rozdíl vscroll mezi sousedními dlaždicemi větší než tento limit, je vylepšení zakázáno."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_CS "Rychlost CPU"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_CS "Přetaktování emulovaného procesoru. Může snížit zpomalení, ale může způsobit závady."
 #define OPTION_VAL_100_CS NULL
