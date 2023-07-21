@@ -23317,8 +23317,8 @@ struct retro_core_options_v2 options_fa = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_FI NULL
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_FI "68K-osoitevirhe"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_FI NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_FI "CD:n lukunopeus"
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_FI "Simuloi alkuperäinen CD-laitteiston lukunopeutta etsiessä tiettyä sijaintia levyltä. Tätä tarvitaan muutamia CD-pelejä varten, jotka kaatuvat, jos CD:n tiedot ovat saatavilla liian pian ja myös korjaa CD:n äänen ajoitusongelmia joissakin peleissä. Tämän poistaminen käytöstä voi olla hyödyllistä MSU-MD-peleissä, koska se tekee CD-ääniraitojen silmukoista saumattomampia."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_FI NULL
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_FI "Ota käyttöön alhaisen tason äänikanavan parametrien asetukset. HUOM.: Pikavalikko pitää ottaa käyttöön tämän asetuksen käyttöönottamiseksi."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_FI NULL
