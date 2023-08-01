@@ -9424,7 +9424,7 @@ struct retro_core_options_v2 options_cht = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_CS "Vylepšené vertikální posouvání po dlaždici"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_CS "Umožňuje posouvat každou jednotlivou buňku svisle místo 16px dvoubuněk zprůměrováním s hodnotou vertikálního posouvání sousední buňky. Tento hack platí pouze pro několik her, které používají režim vertikálního posouvání po 2 buňkách."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_CS "Vylepšený limit vertikálního posouvání na dlaždici"
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CS NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CS "Pouze když je povoleno vylepšené vertikální posouvání po dlaždicích. Upravuje limit vylepšení vertikálního posouvání. Pokud je rozdíl vscroll mezi sousedními dlaždicemi větší než tento limit, je vylepšení zakázáno."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_CS "Rychlost CPU"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_CS "Přetaktování emulovaného procesoru. Může snížit zpomalení, ale může způsobit závady."
 #define OPTION_VAL_100_CS NULL
@@ -23317,9 +23317,9 @@ struct retro_core_options_v2 options_fa = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_FI NULL
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_FI "68K-osoitevirhe"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_FI NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_FI NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_FI "CD:n lukunopeus"
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_FI "Simuloi alkuperäinen CD-laitteiston lukunopeutta etsiessä tiettyä sijaintia levyltä. Tätä tarvitaan muutamia CD-pelejä varten, jotka kaatuvat, jos CD:n tiedot ovat saatavilla liian pian ja myös korjaa CD:n äänen ajoitusongelmia joissakin peleissä. Tämän poistaminen käytöstä voi olla hyödyllistä MSU-MD-peleissä, koska se tekee CD-ääniraitojen silmukoista saumattomampia."
+#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_FI "Näytä äänenvoimakkuuden lisäasetukset (Avaa valikko uudestaan)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_FI "Ota käyttöön alhaisen tason äänikanavan parametrien asetukset. HUOM.: Pikavalikko pitää ottaa käyttöön tämän asetuksen käyttöönottamiseksi."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_FI NULL
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_FI NULL
@@ -23329,36 +23329,36 @@ struct retro_core_options_v2 options_fa = {
 #define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_FI NULL
 #define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_FI NULL
 #define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_FI NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_FI "Mega Drive/Genesis FM-kanavan 0 äänenvoimakkuus %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_FI NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_FI "Mega Drive/Genesis FM-kanavan 1 äänenvoimakkuus %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_FI NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_FI "Mega Drive/Genesis FM-kanavan 2 äänenvoimakkuus %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_FI NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_FI "Mega Drive/Genesis FM-kanavan 3 äänenvoimakkuus %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_FI NULL
 #define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_FI NULL
 #define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_FI NULL
 #define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_FI NULL
 #define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_FI NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_FI NULL
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_FI "Master System FM (YM2413) kanavan 0 äänenvoimakkuus %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_FI "Vähennä Master System FM-kanavan 0 äänenvoimakkuutta."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_FI "Master System FM (YM2413) kanavan 1 äänenvoimakkuus %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_FI "Vähennä Master System FM-kanavan 1 äänenvoimakkuutta."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_FI "Master System FM (YM2413) Kanava 2 äänenvoimakkuus %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_FI "Vähennä Master System FM-kanavan 2 äänenvoimakkuutta."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_FI "Master System FM (YM2413) kanavan 3 äänenvoimakkuus %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_FI "Vähennä Master System FM-kanavan 3 äänenvoimakkuutta."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_FI "Master System FM (YM2413) kanavan 4 äänenvoimakkuus %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_FI "Vähennä Master System FM-kanavan 4 äänenvoimakkuutta."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_FI "Master System FM (YM2413) kanavan 5 äänenvoimakkuus %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_FI "Vähennä Master System FM-kanavan 5 äänenvoimakkuutta."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_FI "Master System FM (YM2413) kanavan 6 äänenvoimakkuus %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_FI "Vähennä Master System FM-kanavan 6 äänenvoimakkuutta."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_FI "Master System FM (YM2413) kanavan 7 äänenvoimakkuus %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_FI "Vähennä Master System FM-kanavan 7 äänenvoimakkuutta."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_FI "Master System FM (YM2413) kanavan 8 äänenvoimakkuus %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_FI "Vähennä Master System FM-kanavan 8 äänenvoimakkuutta."
 
 struct retro_core_option_v2_category option_cats_fi[] = {
    {
@@ -47819,14 +47819,14 @@ struct retro_core_options_v2 options_pt_pt = {
 #define CATEGORY_INPUT_INFO_0_RU "Настройки ввода для мыши и/или светового пистолета."
 #define CATEGORY_HACKS_LABEL_RU "Хаки эмуляции"
 #define CATEGORY_HACKS_INFO_0_RU "Настройка разгона процессора и параметров точности эмуляции, влияющих на производительность и совместимость."
-#define CATEGORY_CHANNEL_VOLUME_LABEL_RU "Расширенные настройки громкости"
+#define CATEGORY_CHANNEL_VOLUME_LABEL_RU "Расширенные настройки громкости каналов"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_RU "Индивидуальная настройка громкости аудиоканалов."
 #define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_RU "Модель системы"
 #define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_RU "Запускает загружаемый контент на определённой модели эмулируемой консоли. Режим 'Авто' устанавливает наиболее подходящую систему для текущей игры."
 #define OPTION_VAL_AUTO_RU "Авто"
 #define OPTION_VAL_SG_1000_RU NULL
 #define OPTION_VAL_SG_1000_II_RU NULL
-#define OPTION_VAL_SG_1000_II_RAM_EXT_RU NULL
+#define OPTION_VAL_SG_1000_II_RAM_EXT_RU "SG-1000 II + Расширение ОЗУ"
 #define OPTION_VAL_MARK_III_RU NULL
 #define OPTION_VAL_MASTER_SYSTEM_RU NULL
 #define OPTION_VAL_MASTER_SYSTEM_II_RU NULL
@@ -47839,15 +47839,15 @@ struct retro_core_options_v2 options_pt_pt = {
 #define OPTION_VAL_NTSC_J_RU NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_RU "Загрузочный ROM системы"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_RU "Использовать для эмулируемой системы официальный BIOS/загрузчик, при наличии файла в системном каталоге RetroArch. Отображает перед запуском контента начальную заставку/анимацию загрузки консоли."
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_RU NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_RU NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_RU "CD System BRAM (Требует перезапуск)"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_RU "Определяет, использовать для игр Sega CD/Mega-CD одного региона общий файл сохранения (значение 'Для BIOS') или создавать для каждой игры индивидуальный файл сохранения (значение 'Для игры'). Учитывайте, что Sega CD/Mega-CD имеет ограниченный объём внутренней памяти, достаточный лишь для нескольких игр. Чтобы избежать нехватки места используйте режим 'Для игры'."
 #define OPTION_VAL_PER_BIOS_RU "Для BIOS"
 #define OPTION_VAL_PER_GAME_RU "Для игры"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_RU NULL
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_RU NULL
-#define OPTION_VAL_PER_CART_RU NULL
-#define GENESIS_PLUS_GX_CART_SIZE_LABEL_RU NULL
-#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_RU NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_RU "Резервная карта памяти CD (Требует перезапуск)"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_RU "При работе с содержимым Sega CD/Mega-CD указывает, следует ли использовать единую резервную карту памяти для всех игр (Для карты) или создавать отдельную резервную карту памяти для каждой игры (Для игры)."
+#define OPTION_VAL_PER_CART_RU "Для карты"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_RU "Размер резервной карты памяти CD (Требует перезапуск)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_RU "Задаёт размер резервной карты памяти при запуске содержимого Sega CD/Mega-CD. Полезно при настройке резервной карты памяти на \"Для карты\" чтобы избежать многократного увеличения размера карт."
 #define OPTION_VAL_128K_RU "128 кбит"
 #define OPTION_VAL_256K_RU "256 кбит"
 #define OPTION_VAL_512K_RU "512 кбит"
@@ -47946,10 +47946,10 @@ struct retro_core_options_v2 options_pt_pt = {
 #define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_RU "Инвертирует ось Y для устройства ввода типа MD Mouse."
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_RU "Отключить лимит спрайтов в линии"
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_RU "Убирает ограничение реальной консоли по количеству спрайтов на линии развёртки. Уменьшает мерцание, но может вызывать сбои графики, т.к. в ряде игр аппаратное ограничение используется для создания определённых эффектов."
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_RU NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_RU NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_RU NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_RU NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_RU "Улучшенная вертикальная прокрутка на плитку"
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_RU "Позволяет каждой индивидуальной ячейке прокручиваться вертикально, вместо 16 пикселей по 2 ячейкам, путём усреднения со значением вертикальной прокрутки соседствующей ячейки. Этот хак применим только для некоторых игр, использующих 2-ячеечный режим вертикальной прокрутки."
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_RU "Лимит улучшенной вертикальной прокрутки на плитку"
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_RU "Только при включении опции \"Улучшенная вертикальная прокрутка на плитку\".Регулирует предел улучшения вертикальной прокрутки.Если разница вертикальной прокрутки между соседними плитками превышает этот предел, это улучшение отключается."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_RU "Скорость CPU"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_RU "Разгон эмулируемого CPU. Может уменьшать подтормаживания, но вызывать ошибки."
 #define OPTION_VAL_100_RU NULL
@@ -47973,8 +47973,8 @@ struct retro_core_options_v2 options_pt_pt = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_RU "Эмуляция подвисаний системы на оригинальной консоли при доступе к недопустимому адресу. Следует выключать только при запуске некоторых демо или homebrew, которые используют неправильные режимы для корректной работы."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_RU "Ошибка адресации 68K"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_RU "При попытке невыровненного доступа к памяти центральный процессор Mega Drive/Genesis (Motorola 68000) генерирует прерывание (сбой) по ошибке адресации. Включение опции 'Ошибка адресации 68K' имитирует данное поведение. Опцию необходимо отключать только для запуска хаков, т.к. они обычно разрабатываются на менее точных эмуляторах и могут использовать ошибки доступа к памяти для корректной работы."
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_RU NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_RU NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_RU "Время доступа CD"
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_RU "Симулировать оригинальную аппаратную задержку CD при инициировании чтения или поиска определенного места на загруженном диске. Это требуется некоторым CD-играм, в которых происходит сбой, если данные с компакт-диска становятся доступны слишком быстро, и также устраняет проблемы с рассинхронизацией CD-аудио в некоторых играх. Отключение этой функции может быть полезно в MSU-MD играх, так как делает зацикливание звуковых дорожек CD более плавным."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_RU "Показывать доп. настройки громкости (перезайти в меню)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_RU "Включить настройку низкоуровневых параметров звуковых каналов. Для применения изменений необходимо переключить быстрое меню."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_RU "Громкость PSG канала тона 0 (%)"
@@ -49389,9 +49389,9 @@ struct retro_core_options_v2 options_ru = {
 #define OPTION_VAL_PER_CART_SK NULL
 #define GENESIS_PLUS_GX_CART_SIZE_LABEL_SK NULL
 #define GENESIS_PLUS_GX_CART_SIZE_INFO_0_SK NULL
-#define OPTION_VAL_128K_SK NULL
-#define OPTION_VAL_256K_SK NULL
-#define OPTION_VAL_512K_SK NULL
+#define OPTION_VAL_128K_SK "128 Kbit"
+#define OPTION_VAL_256K_SK "256 Kbit"
+#define OPTION_VAL_512K_SK "512 Kbit"
 #define OPTION_VAL_1MEG_SK "1 Mbit"
 #define OPTION_VAL_2MEG_SK "2 Mbit"
 #define OPTION_VAL_4MEG_SK "4 Mbit"
@@ -49469,7 +49469,7 @@ struct retro_core_options_v2 options_ru = {
 #define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_SK NULL
 #define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_SK "CD-DA hlasitosť"
 #define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_SK NULL
-#define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_SK NULL
+#define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_SK "PCM hlasitosť"
 #define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_SK NULL
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_SK NULL
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_SK NULL
