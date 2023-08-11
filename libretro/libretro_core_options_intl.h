@@ -13956,14 +13956,14 @@ struct retro_core_options_v2 options_da = {
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_DE "Festlegen, welches Add-on zur CD-Audiowiedergabe für unterstützte Mega Drive-/Genesis-Spiele verwendet werden soll."
 #define OPTION_VAL_SEGA_MEGA_CD_DE NULL
 #define OPTION_VAL_MEGASD_DE NULL
-#define OPTION_VAL_NONE_DE "Nein"
+#define OPTION_VAL_NONE_DE "Keins"
 #define GENESIS_PLUS_GX_LOCK_ON_LABEL_DE "Modul Kombination"
 #define GENESIS_PLUS_GX_LOCK_ON_INFO_0_DE "Kombinations-Technologie ist eine Mega Drive/Genesis-Funktion, die es einem älteren Spiel erlaubt, sich mit dem Durchschleifen eines speziellen Moduls für ein erweitertes oder verändertes Gameplay zu vereinen. Diese Option legt fest, welcher Typ eines speziellen 'Kombinations-Moduls' emuliert werden soll. Eine entsprechende Biosdatei muss im Systemverzeichnis von RetroArch vorhanden sein."
 #define OPTION_VAL_GAME_GENIE_DE NULL
 #define OPTION_VAL_ACTION_REPLAY_PRO_DE NULL
 #define OPTION_VAL_SONIC_KNUCKLES_DE NULL
 #define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_DE "Core-bestimmtes Seitenverhältnis"
-#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_DE "Das bevorzugte Seitenverhältnis des Inhalts auswählen. Dies wird nur angewendet, wenn das Seitenverhältnis von RetroArch in den Videoeinstellungen auf \"Core-bestimmtes Seitenverhältnis\" eingestellt ist."
+#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_DE "Das bevorzugte Seitenverhältnis des Inhalts auswählen. Dies wird nur angewendet, wenn das Seitenverhältnis von RetroArch in den Videoeinstellungen auf \"Wie von Core vorgesehen\" eingestellt ist."
 #define OPTION_VAL_NTSC_PAR_DE NULL
 #define OPTION_VAL_PAL_PAR_DE NULL
 #define OPTION_VAL_4_3_DE NULL
@@ -13981,7 +13981,7 @@ struct retro_core_options_v2 options_da = {
 #define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_DE "Erzwingt Game Gear Titel im SMS-Modus mit einer erhöhten Auflösung von 256x192 auszuführen. Kann zusätzliche Inhalte anzeigen, zeigt aber typischerweise Ränder von beschädigten/unerwünschten Bilddaten an."
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_DE "NTSC-Filter Blargg"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_DE "Einen Videofilter anwenden, um verschiedene NTSC-TV-Signale zu imitieren."
-#define OPTION_VAL_MONOCHROME_DE "Einfarbig"
+#define OPTION_VAL_MONOCHROME_DE "Schwarz-weiß"
 #define OPTION_VAL_COMPOSITE_DE NULL
 #define OPTION_VAL_SVIDEO_DE NULL
 #define OPTION_VAL_RGB_DE NULL
@@ -13992,7 +13992,7 @@ struct retro_core_options_v2 options_da = {
 #define OPTION_VAL_SINGLE_FIELD_DE "Einzelfeld"
 #define OPTION_VAL_DOUBLE_FIELD_DE "Doppelfeld"
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_DE NULL
-#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_DE "Überspringen Sie Frames um zu vermeiden, dass Audio-Puffer unterlaufen (Knistern). Verbessert die Leistung auf Kosten der visuellen Glätte. 'Auto' überspringt Frames wenn vom Frontend empfohlen wird. 'Manuell' verwendet die Einstellung 'Frameskip Grenzwert (%)'."
+#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_DE "Überspringt Frames, um zu vermeiden, dass Audio-Puffer unterlaufen (Knistern). Verbessert die Leistung auf Kosten der visuellen Glätte. 'Automatisch' überspringt Frames wenn vom Frontend empfohlen. 'Manuell' verwendet die Einstellung 'Frameskip Grenzwert (%)'."
 #define OPTION_VAL_MANUAL_DE "Manuell"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_DE "Frameskip-Grenzwert (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_DE "Gibt den Audiopuffer-Belegungsschwellenwert (Prozent) an, unter dem Frames übersprungen werden, wenn „Frameskip“ auf „Manuell“ eingestellt ist. Höhere Werte verringern das Risiko von Knistern, da Frames häufiger weggelassen werden."
