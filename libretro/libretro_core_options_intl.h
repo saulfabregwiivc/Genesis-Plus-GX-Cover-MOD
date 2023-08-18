@@ -52442,7 +52442,7 @@ struct retro_core_options_v2 options_sr = {
 #define CATEGORY_INPUT_INFO_0_SV NULL
 #define CATEGORY_HACKS_LABEL_SV NULL
 #define CATEGORY_HACKS_INFO_0_SV NULL
-#define CATEGORY_CHANNEL_VOLUME_LABEL_SV NULL
+#define CATEGORY_CHANNEL_VOLUME_LABEL_SV "Avancerade inställningar för kanalvolym"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_SV NULL
 #define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_SV NULL
@@ -52487,7 +52487,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_GAME_GENIE_SV NULL
 #define OPTION_VAL_ACTION_REPLAY_PRO_SV NULL
 #define OPTION_VAL_SONIC_KNUCKLES_SV NULL
-#define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_SV NULL
+#define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_SV "Kärnspecifikt bildförhållande"
 #define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_SV NULL
 #define OPTION_VAL_NTSC_PAR_SV NULL
 #define OPTION_VAL_PAL_PAR_SV NULL
@@ -52516,10 +52516,10 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_RENDER_INFO_0_SV NULL
 #define OPTION_VAL_SINGLE_FIELD_SV NULL
 #define OPTION_VAL_DOUBLE_FIELD_SV NULL
-#define GENESIS_PLUS_GX_FRAMESKIP_LABEL_SV NULL
-#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_FRAMESKIP_LABEL_SV "Bildruteskippning"
+#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_SV "Hoppa över bildrutor för att undvika ljudbuffert-underkörning (sprakande). Förbättrar prestanda på bekostnad av visuell jämnhet. \"Automatiskt\" hoppar över bildrutor när det rekommenderas av gränssnittet. \"Manuell\" använder inställningen \"Bildrutetröskel (%)\" för att hoppa över bildrutor."
 #define OPTION_VAL_MANUAL_SV NULL
-#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_SV NULL
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_SV "Bildrutetröskel (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_SV "När 'Frameskip' är satt till 'Manuell', ange ljudbuffertens tröskel (i procent) under vilka ramar som kommer att hoppas över. Högre värden minskar risken för hackigt ljud genom att bildrutor tappas oftare."
 #define GENESIS_PLUS_GX_YM2413_LABEL_SV NULL
 #define GENESIS_PLUS_GX_YM2413_INFO_0_SV NULL
