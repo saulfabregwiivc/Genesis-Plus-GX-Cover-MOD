@@ -3124,8 +3124,8 @@ struct retro_core_options_v2 options_ast = {
 #define CATEGORY_SYSTEM_INFO_0_BE NULL
 #define CATEGORY_VIDEO_LABEL_BE "Відэа"
 #define CATEGORY_VIDEO_INFO_0_BE NULL
-#define CATEGORY_AUDIO_LABEL_BE "Аўдыё"
-#define CATEGORY_AUDIO_INFO_0_BE "Змяніць налады прылад аўдыё."
+#define CATEGORY_AUDIO_LABEL_BE "Аўдыя"
+#define CATEGORY_AUDIO_INFO_0_BE "Змяніць налады прылад аўдыя."
 #define CATEGORY_INPUT_LABEL_BE "Увод"
 #define CATEGORY_INPUT_INFO_0_BE NULL
 #define CATEGORY_HACKS_LABEL_BE NULL
@@ -3227,7 +3227,7 @@ struct retro_core_options_v2 options_ast = {
 #define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_BE "Выбраць стэрэа або мона прайграванне гуку."
 #define OPTION_VAL_STEREO_BE "Стэрэа"
 #define OPTION_VAL_MONO_BE "Мона"
-#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_BE "Аўдыёфільтр"
+#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_BE "Аўдыяфільтр"
 #define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_BE NULL
 #define OPTION_VAL_LOW_PASS_BE NULL
 #define OPTION_VAL_EQ_BE NULL
