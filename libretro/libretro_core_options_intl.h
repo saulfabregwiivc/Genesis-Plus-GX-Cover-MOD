@@ -52435,7 +52435,7 @@ struct retro_core_options_v2 options_sr = {
 #define CATEGORY_SYSTEM_LABEL_SV NULL
 #define CATEGORY_SYSTEM_INFO_0_SV NULL
 #define CATEGORY_VIDEO_LABEL_SV "Bild"
-#define CATEGORY_VIDEO_INFO_0_SV NULL
+#define CATEGORY_VIDEO_INFO_0_SV "Ändra bildförhållande, beskärning, videofilter och inställningar för bildruteskippning."
 #define CATEGORY_AUDIO_LABEL_SV "Ljud"
 #define CATEGORY_AUDIO_INFO_0_SV NULL
 #define CATEGORY_INPUT_LABEL_SV "Inmatning"
