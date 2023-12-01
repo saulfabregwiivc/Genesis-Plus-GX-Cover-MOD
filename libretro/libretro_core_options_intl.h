@@ -9358,7 +9358,7 @@ struct retro_core_options_v2 options_cht = {
 #define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_CS "Vynutí spuštění titulů pro Game Gear v režimu SMS se zvýšeným rozlišením 256x192. Může zobrazit další obsah, ale obvykle zobrazí okraj poškozených/nežádoucích obrazových dat."
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_CS "Blargg NTSC Filtr"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_CS "Použijte video filtr pro napodobení různých televizních signálů NTSC."
-#define OPTION_VAL_MONOCHROME_CS NULL
+#define OPTION_VAL_MONOCHROME_CS "Jednobarevné"
 #define OPTION_VAL_COMPOSITE_CS "Kompozitní"
 #define OPTION_VAL_SVIDEO_CS NULL
 #define OPTION_VAL_RGB_CS NULL
@@ -52434,19 +52434,19 @@ struct retro_core_options_v2 options_sr = {
 
 #define CATEGORY_SYSTEM_LABEL_SV NULL
 #define CATEGORY_SYSTEM_INFO_0_SV NULL
-#define CATEGORY_VIDEO_LABEL_SV "Bild"
-#define CATEGORY_VIDEO_INFO_0_SV "Ändra bildförhållande, beskärning, videofilter och inställningar för bildruteskippning."
+#define CATEGORY_VIDEO_LABEL_SV NULL
+#define CATEGORY_VIDEO_INFO_0_SV "Ändra bildformat, beskärning, videofilter och inställningar för bildruteskippning."
 #define CATEGORY_AUDIO_LABEL_SV "Ljud"
 #define CATEGORY_AUDIO_INFO_0_SV NULL
 #define CATEGORY_INPUT_LABEL_SV "Inmatning"
 #define CATEGORY_INPUT_INFO_0_SV NULL
-#define CATEGORY_HACKS_LABEL_SV NULL
+#define CATEGORY_HACKS_LABEL_SV "Emulator Hacks"
 #define CATEGORY_HACKS_INFO_0_SV NULL
 #define CATEGORY_CHANNEL_VOLUME_LABEL_SV "Avancerade inställningar för kanalvolym"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_SV NULL
 #define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_SV NULL
-#define OPTION_VAL_AUTO_SV "Automatiskt"
+#define OPTION_VAL_AUTO_SV NULL
 #define OPTION_VAL_SG_1000_SV NULL
 #define OPTION_VAL_SG_1000_II_SV NULL
 #define OPTION_VAL_SG_1000_II_RAM_EXT_SV NULL
@@ -52487,16 +52487,16 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_GAME_GENIE_SV NULL
 #define OPTION_VAL_ACTION_REPLAY_PRO_SV NULL
 #define OPTION_VAL_SONIC_KNUCKLES_SV NULL
-#define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_SV "Kärnspecifikt bildförhållande"
-#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_SV "Kärnspecifikt bildformat"
+#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_SV "Välj föredraget bildformat för innehåll. Detta kommer endast att tillämpas när RetroArchs bildformat är inställt på \"Kärnspecifikt\" i Video-inställningarna."
 #define OPTION_VAL_NTSC_PAR_SV NULL
 #define OPTION_VAL_PAL_PAR_SV NULL
 #define OPTION_VAL_4_3_SV NULL
-#define OPTION_VAL_UNCORRECTED_SV NULL
+#define OPTION_VAL_UNCORRECTED_SV "Okorrigerad"
 #define GENESIS_PLUS_GX_OVERSCAN_LABEL_SV "Ramar"
 #define GENESIS_PLUS_GX_OVERSCAN_INFO_0_SV NULL
 #define OPTION_VAL_TOP_BOTTOM_SV NULL
-#define OPTION_VAL_LEFT_RIGHT_SV "Vänster/höger"
+#define OPTION_VAL_LEFT_RIGHT_SV "Vänster/Höger"
 #define OPTION_VAL_FULL_SV NULL
 #define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_SV NULL
 #define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_SV NULL
@@ -52504,7 +52504,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_LEFT_RIGHT_BORDERS_SV NULL
 #define GENESIS_PLUS_GX_GG_EXTRA_LABEL_SV NULL
 #define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_SV NULL
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_SV "Blargg NTSC-filter"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_SV NULL
 #define OPTION_VAL_MONOCHROME_SV "Monokrom"
 #define OPTION_VAL_COMPOSITE_SV "Komposit"
@@ -52516,10 +52516,10 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_RENDER_INFO_0_SV NULL
 #define OPTION_VAL_SINGLE_FIELD_SV NULL
 #define OPTION_VAL_DOUBLE_FIELD_SV NULL
-#define GENESIS_PLUS_GX_FRAMESKIP_LABEL_SV "Bildruteskippning"
+#define GENESIS_PLUS_GX_FRAMESKIP_LABEL_SV NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_SV "Hoppa över bildrutor för att undvika ljudbuffert-underkörning (sprakande). Förbättrar prestanda på bekostnad av visuell jämnhet. \"Automatiskt\" hoppar över bildrutor när det rekommenderas av gränssnittet. \"Manuell\" använder inställningen \"Bildrutetröskel (%)\" för att hoppa över bildrutor."
 #define OPTION_VAL_MANUAL_SV NULL
-#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_SV "Bildrutetröskel (%)"
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_SV "Frameskip Tröskelvärde (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_SV "När 'Frameskip' är satt till 'Manuell', ange ljudbuffertens tröskel (i procent) under vilka ramar som kommer att hoppas över. Högre värden minskar risken för hackigt ljud genom att bildrutor tappas oftare."
 #define GENESIS_PLUS_GX_YM2413_LABEL_SV NULL
 #define GENESIS_PLUS_GX_YM2413_INFO_0_SV NULL
@@ -52575,23 +52575,23 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_SV "CPU-hastighet"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_SV NULL
-#define OPTION_VAL_100_SV "100 %"
-#define OPTION_VAL_125_SV "125 %"
-#define OPTION_VAL_150_SV "150 %"
-#define OPTION_VAL_175_SV "175 %"
-#define OPTION_VAL_200_SV "200 %"
+#define OPTION_VAL_100_SV NULL
+#define OPTION_VAL_125_SV NULL
+#define OPTION_VAL_150_SV NULL
+#define OPTION_VAL_175_SV NULL
+#define OPTION_VAL_200_SV NULL
 #define OPTION_VAL_225_SV NULL
-#define OPTION_VAL_250_SV "250 %"
+#define OPTION_VAL_250_SV NULL
 #define OPTION_VAL_275_SV NULL
-#define OPTION_VAL_300_SV "300 %"
+#define OPTION_VAL_300_SV NULL
 #define OPTION_VAL_325_SV NULL
-#define OPTION_VAL_350_SV "350 %"
+#define OPTION_VAL_350_SV NULL
 #define OPTION_VAL_375_SV NULL
-#define OPTION_VAL_400_SV "400 %"
+#define OPTION_VAL_400_SV NULL
 #define OPTION_VAL_425_SV NULL
-#define OPTION_VAL_450_SV "450 %"
+#define OPTION_VAL_450_SV NULL
 #define OPTION_VAL_475_SV NULL
-#define OPTION_VAL_500_SV "500 %"
+#define OPTION_VAL_500_SV NULL
 #define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_SV NULL
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_SV NULL
