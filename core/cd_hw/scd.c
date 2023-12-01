@@ -586,14 +586,10 @@ static unsigned int scd_read_byte(unsigned int address)
     return scd.regs[0x58>>1].byte.h;
   }
 
-  /* CDC register data (controlled by BIOS, byte access only ?) */
+  /* CDC register data */
   if (address == 0x07)
   {
-    unsigned int data = cdc_reg_r();
-#ifdef LOG_CDC
-    error("CDC register %X read 0x%02X (%X)\n", scd.regs[0x04>>1].byte.l & 0x0F, data, s68k.pc);
-#endif
-    return data;
+    return cdc_reg_r();
   }
 
   /* LED status */
@@ -725,6 +721,12 @@ static unsigned int scd_read_word(unsigned int address)
     data = data | (((code >> (bits & 4)) << 12) & 0xf000);
 
     return data;
+  }
+
+  /* CDC register data */
+  if (address == 0x06)
+  {
+    return cdc_reg_r();
   }
 
   /* MAIN-CPU communication words */
@@ -1038,6 +1040,12 @@ static void scd_write_byte(unsigned int address, unsigned int data)
       return;
     }
 
+    case 0x05: /* CDC register address */
+    {
+      scd.regs[0x04 >> 1].byte.l = data & cdc.ar_mask;
+      return;
+    }
+
     case 0x07: /* CDC register write */
     {
       cdc_reg_w(data);
@@ -1341,6 +1349,12 @@ static void scd_write_word(unsigned int address, unsigned int data)
       return;
     }
 
+    case 0x04: /* CDC mode & register address */
+    {
+      scd.regs[0x04 >> 1].w = data & (0x0700 | cdc.ar_mask);
+      return;
+    }
+
     case 0x06: /* CDC register write */
     {
       cdc_reg_w(data);
@@ -1408,7 +1422,7 @@ static void scd_write_word(unsigned int address, unsigned int data)
     case 0x34: /* CD Fader */
     {
       /* Wondermega hardware (CXD2554M digital filter) */
-      if (cdd.type == CD_TYPE_WONDERMEGA)
+      if (scd.type == CD_TYPE_WONDERMEGA)
       {
         /* only MSB is latched by CXD2554M chip, LSB is ignored (8-bit digital filter) */
         /* attenuator data is 7-bit only (bits 0-7) */
@@ -1419,7 +1433,7 @@ static void scd_write_word(unsigned int address, unsigned int data)
       }
 
       /* Wondermega M2 / X'Eye hardware (SM5841A digital filter) */
-      else if (cdd.type == CD_TYPE_WONDERMEGA_M2)
+      else if (scd.type == CD_TYPE_WONDERMEGA_M2)
       {
         /* only MSB is latched by SM5841A chip, LSB is ignored (8-bit digital filter) */
         data = data >> 8;
@@ -1718,6 +1732,7 @@ void scd_reset(int hard)
     scd.dmna = 0;
 
     /* H-INT default vector */
+    *(uint16 *)(m68k.memory_map[scd.cartridge.boot].base + 0x70) = 0xFFFF;
     *(uint16 *)(m68k.memory_map[scd.cartridge.boot].base + 0x72) = 0xFFFF;
 
     /* Power ON initial values (MAIN-CPU side) */
