@@ -9294,7 +9294,7 @@ struct retro_core_options_v2 options_cht = {
 #define CATEGORY_INPUT_INFO_0_CS "Změna nastavení světelné pistole a/nebo vstupu myši."
 #define CATEGORY_HACKS_LABEL_CS NULL
 #define CATEGORY_HACKS_INFO_0_CS "Změna nastavení přetaktování procesoru a přesnosti emulace, které ovlivňují výkon a kompatibilitu na nízké úrovni."
-#define CATEGORY_CHANNEL_VOLUME_LABEL_CS "Rozšířené Nastavení Hlasitosti Kanálů"
+#define CATEGORY_CHANNEL_VOLUME_LABEL_CS "Rozšířené nastavení hlasitosti kanálů"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_CS "Změna hlasitosti jednotlivých hardwarových zvukových kanálů."
 #define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_CS "Systémový Hardware"
 #define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_CS "Spustí načtený obsah s konkrétní emulovanou konzolí. 'Auto' vybere nejvhodnější systém pro aktuální hru."
@@ -9339,7 +9339,7 @@ struct retro_core_options_v2 options_cht = {
 #define OPTION_VAL_GAME_GENIE_CS NULL
 #define OPTION_VAL_ACTION_REPLAY_PRO_CS "Přehrávání Akce (Pro)"
 #define OPTION_VAL_SONIC_KNUCKLES_CS NULL
-#define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_CS "Poměr Stran Poskytnuté-Jádro"
+#define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_CS "Poměr stran poskytovaný jádrem"
 #define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_CS "Zvolte preferovaný poměr stran obsahu. To se použije pouze v případě, že je poměr stran aplikace RetroArch v nastavení videa nastaven na hodnotu 'Poskytnuté Jádro'."
 #define OPTION_VAL_NTSC_PAR_CS NULL
 #define OPTION_VAL_PAL_PAR_CS NULL
@@ -9371,7 +9371,7 @@ struct retro_core_options_v2 options_cht = {
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_CS NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_CS "Přeskočení snímků, aby se zabránilo nedostatečnému využití vyrovnávací paměti zvuku (praskání). Zlepšuje výkon na úkor vizuální plynulosti. Funkce 'Auto' přeskakuje snímky, pokud to doporučí frontend. 'Ruční' využívá nastavení 'Práh přeskakování snímků (%)'."
 #define OPTION_VAL_MANUAL_CS "Ruční"
-#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_CS "Hraniční Hodnota Frameskip (%)"
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_CS "Prahová hodnota Frameskip (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_CS "Pokud je položka 'Frameskip' nastavena na hodnotu 'Ruční', určuje práh obsazení vyrovnávací paměti zvuku (v procentech), pod kterým budou snímky přeskočeny. Vyšší hodnoty snižují riziko praskání tím, že způsobují častější vynechávání snímků."
 #define GENESIS_PLUS_GX_YM2413_LABEL_CS NULL
 #define GENESIS_PLUS_GX_YM2413_INFO_0_CS "Umožňuje emulaci zvukové jednotky FM používané v některých hrách Sega Mark III/Master System pro lepší zvukový výstup."
@@ -9391,7 +9391,7 @@ struct retro_core_options_v2 options_cht = {
 #define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_CS "Vyberte stereofonní nebo monofonní přehrávání zvuku."
 #define OPTION_VAL_STEREO_CS NULL
 #define OPTION_VAL_MONO_CS NULL
-#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_CS "Audio Filtr"
+#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_CS "Filtr zvuku"
 #define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_CS "Povolte dolní propust zvukového filtru pro lepší simulaci charakteristického zvuku modelu 1 Mega Drive/Genesis."
 #define OPTION_VAL_LOW_PASS_CS "Nízko-Propustný"
 #define OPTION_VAL_EQ_CS NULL
@@ -44799,7 +44799,7 @@ struct retro_core_options_v2 options_pl = {
 #define OPTION_VAL_LEFT_RIGHT_BORDERS_PT_BR "Bordas esquerda e direita"
 #define GENESIS_PLUS_GX_GG_EXTRA_LABEL_PT_BR "Tela estendida do Game Gear"
 #define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_PT_BR "Força os títulos do Game Gear rodarem no modo 'SMS' com uma resolução aumentada de 256x192. Pode mostrar conteúdo adicional, mas geralmente exibe uma borda com dados corrompidos ou indesejados na imagem."
-#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_PT_BR "Filtro Blargg NTSC"
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_PT_BR "Filtro NTSC do Blargg"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_PT_BR "Aplica um filtro de vídeo para imitar vários sinais de TV NTSC."
 #define OPTION_VAL_MONOCHROME_PT_BR "Monocromático"
 #define OPTION_VAL_COMPOSITE_PT_BR "Composto"
@@ -52488,7 +52488,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_ACTION_REPLAY_PRO_SV NULL
 #define OPTION_VAL_SONIC_KNUCKLES_SV NULL
 #define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_SV "Kärnspecifikt bildformat"
-#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_SV "Välj föredraget bildformat för innehåll. Detta kommer endast att tillämpas när RetroArchs bildformat är inställt på \"Kärnspecifikt\" i Video-inställningarna."
+#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_SV "Välj det föredragna bildformatet för Innehållet. Detta kommer endast att tillämpas när RetroArchs bildformat är inställt på \"Kärnspecifikt\" i Video-inställningarna."
 #define OPTION_VAL_NTSC_PAR_SV NULL
 #define OPTION_VAL_PAL_PAR_SV NULL
 #define OPTION_VAL_4_3_SV NULL
@@ -52510,7 +52510,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_COMPOSITE_SV "Komposit"
 #define OPTION_VAL_SVIDEO_SV NULL
 #define OPTION_VAL_RGB_SV NULL
-#define GENESIS_PLUS_GX_LCD_FILTER_LABEL_SV NULL
+#define GENESIS_PLUS_GX_LCD_FILTER_LABEL_SV "LCD-spökfilter"
 #define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_RENDER_LABEL_SV NULL
 #define GENESIS_PLUS_GX_RENDER_INFO_0_SV NULL
@@ -52518,7 +52518,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_DOUBLE_FIELD_SV NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_SV NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_SV "Hoppa över bildrutor för att undvika ljudbuffert-underkörning (sprakande). Förbättrar prestanda på bekostnad av visuell jämnhet. \"Automatiskt\" hoppar över bildrutor när det rekommenderas av gränssnittet. \"Manuell\" använder inställningen \"Bildrutetröskel (%)\" för att hoppa över bildrutor."
-#define OPTION_VAL_MANUAL_SV NULL
+#define OPTION_VAL_MANUAL_SV "Manuell"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_SV "Frameskip Tröskelvärde (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_SV "När 'Frameskip' är satt till 'Manuell', ange ljudbuffertens tröskel (i procent) under vilka ramar som kommer att hoppas över. Högre värden minskar risken för hackigt ljud genom att bildrutor tappas oftare."
 #define GENESIS_PLUS_GX_YM2413_LABEL_SV NULL
