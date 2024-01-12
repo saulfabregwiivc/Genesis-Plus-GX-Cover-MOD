@@ -391,7 +391,7 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
          { "none",         OPTION_VAL_NONE_AR },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -1932,7 +1932,7 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
          { "none",         OPTION_VAL_NONE_AST },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -3473,7 +3473,7 @@ struct retro_core_option_v2_definition option_defs_be[] = {
          { "none",         OPTION_VAL_NONE_BE },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -5014,7 +5014,7 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
          { "none",         OPTION_VAL_NONE_CA },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -6555,7 +6555,7 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
          { "none",         OPTION_VAL_NONE_CHS },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -8096,7 +8096,7 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
          { "none",         OPTION_VAL_NONE_CHT },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -9637,7 +9637,7 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
          { "none",         OPTION_VAL_NONE_CS },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -11178,7 +11178,7 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
          { "none",         OPTION_VAL_NONE_CY },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -12719,7 +12719,7 @@ struct retro_core_option_v2_definition option_defs_da[] = {
          { "none",         OPTION_VAL_NONE_DA },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -14260,7 +14260,7 @@ struct retro_core_option_v2_definition option_defs_de[] = {
          { "none",         OPTION_VAL_NONE_DE },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -15801,7 +15801,7 @@ struct retro_core_option_v2_definition option_defs_el[] = {
          { "none",         OPTION_VAL_NONE_EL },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -17342,7 +17342,7 @@ struct retro_core_option_v2_definition option_defs_en[] = {
          { "none",         OPTION_VAL_NONE_EN },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -18883,7 +18883,7 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
          { "none",         OPTION_VAL_NONE_EO },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -20424,7 +20424,7 @@ struct retro_core_option_v2_definition option_defs_es[] = {
          { "none",         OPTION_VAL_NONE_ES },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -21965,7 +21965,7 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
          { "none",         OPTION_VAL_NONE_FA },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -23506,7 +23506,7 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
          { "none",         OPTION_VAL_NONE_FI },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -25047,7 +25047,7 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
          { "none",         OPTION_VAL_NONE_FR },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -26588,7 +26588,7 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
          { "none",         OPTION_VAL_NONE_GL },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -28129,7 +28129,7 @@ struct retro_core_option_v2_definition option_defs_he[] = {
          { "none",         OPTION_VAL_NONE_HE },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -29670,7 +29670,7 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
          { "none",         OPTION_VAL_NONE_HR },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -31211,7 +31211,7 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
          { "none",         OPTION_VAL_NONE_HU },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -32752,7 +32752,7 @@ struct retro_core_option_v2_definition option_defs_id[] = {
          { "none",         OPTION_VAL_NONE_ID },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -34293,7 +34293,7 @@ struct retro_core_option_v2_definition option_defs_it[] = {
          { "none",         OPTION_VAL_NONE_IT },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -35537,42 +35537,42 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_ACTION_REPLAY_PRO_JA NULL
 #define OPTION_VAL_SONIC_KNUCKLES_JA NULL
 #define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_JA "コア提供アスペクト比"
-#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_JA "優先されるコンテンツのアスペクト比を選択します。RetroArch のアスペクト比がビデオ設定で [コア提供] に設定されている場合にのみ適用されます。"
 #define OPTION_VAL_NTSC_PAR_JA NULL
 #define OPTION_VAL_PAL_PAR_JA NULL
 #define OPTION_VAL_4_3_JA NULL
-#define OPTION_VAL_UNCORRECTED_JA NULL
-#define GENESIS_PLUS_GX_OVERSCAN_LABEL_JA NULL
+#define OPTION_VAL_UNCORRECTED_JA "補正なし"
+#define GENESIS_PLUS_GX_OVERSCAN_LABEL_JA "外枠"
 #define GENESIS_PLUS_GX_OVERSCAN_INFO_0_JA NULL
 #define OPTION_VAL_TOP_BOTTOM_JA "上/下"
 #define OPTION_VAL_LEFT_RIGHT_JA "左/右"
-#define OPTION_VAL_FULL_JA NULL
+#define OPTION_VAL_FULL_JA "フル"
 #define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_JA NULL
 #define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_JA NULL
-#define OPTION_VAL_LEFT_BORDER_JA NULL
-#define OPTION_VAL_LEFT_RIGHT_BORDERS_JA NULL
+#define OPTION_VAL_LEFT_BORDER_JA "左枠のみ"
+#define OPTION_VAL_LEFT_RIGHT_BORDERS_JA "左右の枠"
 #define GENESIS_PLUS_GX_GG_EXTRA_LABEL_JA NULL
 #define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_JA "Blragg NTSC フィルター"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_JA NULL
-#define OPTION_VAL_MONOCHROME_JA "モノクローム"
+#define OPTION_VAL_MONOCHROME_JA NULL
 #define OPTION_VAL_COMPOSITE_JA "コンポジット"
 #define OPTION_VAL_SVIDEO_JA "S端子"
 #define OPTION_VAL_RGB_JA NULL
-#define GENESIS_PLUS_GX_LCD_FILTER_LABEL_JA NULL
+#define GENESIS_PLUS_GX_LCD_FILTER_LABEL_JA "液晶ディスプレイ残像フィルター"
 #define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_RENDER_LABEL_JA NULL
 #define GENESIS_PLUS_GX_RENDER_INFO_0_JA NULL
-#define OPTION_VAL_SINGLE_FIELD_JA NULL
-#define OPTION_VAL_DOUBLE_FIELD_JA NULL
+#define OPTION_VAL_SINGLE_FIELD_JA "シングルフィールド"
+#define OPTION_VAL_DOUBLE_FIELD_JA "ダブルフィールド"
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_JA "フレームスキップ"
 #define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_JA "フレームをスキップしてオーディオバッファアンダーラン (音割れ) を回避します。視覚的な滑らかさを犠牲にしてパフォーマンスを向上させます。 「自動」は、フロントエンドにアドバイスされたときにフレームをスキップします。「マニュアル」は、「フレームスキップ閾値 (%)」設定を使用します。"
 #define OPTION_VAL_MANUAL_JA "手動"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_JA "フレームスキップ閾値 (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_JA "'フレームスキップ' が '手動' に設定されている場合, フレームがスキップされるオーディオバッファ占有しきい値 (%) を指定します. 値を大きくすると, フレームを頻繁に落とすことでクラッキングが発生するリスクが低下します."
-#define GENESIS_PLUS_GX_YM2413_LABEL_JA NULL
+#define GENESIS_PLUS_GX_YM2413_LABEL_JA "マスターシステム FM (YM2413)"
 #define GENESIS_PLUS_GX_YM2413_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_YM2413_CORE_LABEL_JA NULL
+#define GENESIS_PLUS_GX_YM2413_CORE_LABEL_JA "マスターシステム FM (YM2413) コア"
 #define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_JA NULL
 #define OPTION_VAL_MAME_JA NULL
 #define OPTION_VAL_NUKED_JA NULL
@@ -35600,7 +35600,7 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_JA "CD-DA 音量"
 #define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_JA "PCM音量"
+#define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_JA "PCM 音量"
 #define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_JA "EQ 低"
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_JA NULL
@@ -35614,7 +35614,7 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_TOUCHSCREEN_JA "タッチスクリーン"
 #define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_JA NULL
 #define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_JA NULL
+#define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_JA "マウスの Y 軸を反転"
 #define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_JA NULL
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_JA NULL
@@ -35622,7 +35622,7 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_JA NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_OVERCLOCK_LABEL_JA "CPU速度"
+#define GENESIS_PLUS_GX_OVERCLOCK_LABEL_JA "CPU 速度"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_JA NULL
 #define OPTION_VAL_100_JA NULL
 #define OPTION_VAL_125_JA NULL
@@ -35643,50 +35643,50 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_500_JA NULL
 #define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_JA NULL
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_JA NULL
+#define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_JA "68K アドレスエラー"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_CD_LATENCY_LABEL_JA NULL
 #define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_JA NULL
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_JA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_JA "PSG トーンチャンネル 0 音量 %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_JA "PSG トーンチャンネル 0 の音量を下げます。"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_JA "PSG トーンチャンネル 1 音量 %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_JA "PSG トーンチャンネル 1 の音量を下げます。"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_JA "PSG トーンチャンネル 2 音量 %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_JA "PSG トーンチャンネル 2 の音量を下げます。"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_JA "PSG ノイズチャンネル 3 音量 %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_JA "PSG ノイズチャンネル 3 の音量を下げます。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 0 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 0 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 1 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 1 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 2 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 2 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 3 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 3 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 4 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 4 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 5 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 5 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_JA "マスターシステム FM (YM2413) チャンネル 0 音量 %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_JA "マスターシステム FM チャンネル 0 の音量を下げます。"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_JA "マスターシステム FM (YM2413) チャンネル 1 音量 %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_JA "マスターシステム FM チャンネル 1 の音量を下げます。"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_JA "マスターシステム FM (YM2413) チャンネル 2 音量 %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_JA "マスターシステム FM チャンネル 2 の音量を下げます。"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_JA "マスターシステム FM (YM2413) チャンネル 3 音量 %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_JA "マスターシステム FM チャンネル 3 の音量を下げます。"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_JA "マスターシステム FM (YM2413) チャンネル 4 音量 %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_JA "マスターシステム FM チャンネル 4 の音量を下げます。"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_JA "マスターシステム FM (YM2413) チャンネル 5 音量 %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_JA "マスターシステム FM チャンネル 5 の音量を下げます。"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_JA "マスターシステム FM (YM2413) チャンネル 6 音量 %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_JA "マスターシステム FM チャンネル 6 の音量を下げます。"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_JA "マスターシステム FM (YM2413) チャンネル 7 音量 %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_JA "マスターシステム FM チャンネル 7 の音量を下げます。"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_JA "マスターシステム FM (YM2413) チャンネル 8 音量 %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_JA "マスターシステム FM チャンネル 8 の音量を下げます。"
 
 struct retro_core_option_v2_category option_cats_ja[] = {
    {
@@ -35834,7 +35834,7 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
          { "none",         OPTION_VAL_NONE_JA },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -37375,7 +37375,7 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
          { "none",         OPTION_VAL_NONE_KO },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -38916,7 +38916,7 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
          { "none",         OPTION_VAL_NONE_NL },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -40457,7 +40457,7 @@ struct retro_core_option_v2_definition option_defs_no[] = {
          { "none",         OPTION_VAL_NONE_NO },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -41998,7 +41998,7 @@ struct retro_core_option_v2_definition option_defs_or[] = {
          { "none",         OPTION_VAL_NONE_OR },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -43539,7 +43539,7 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
          { "none",         OPTION_VAL_NONE_PL },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -45080,7 +45080,7 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
          { "none",         OPTION_VAL_NONE_PT_BR },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -46621,7 +46621,7 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
          { "none",         OPTION_VAL_NONE_PT_PT },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -48162,7 +48162,7 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
          { "none",         OPTION_VAL_NONE_RU },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -49703,7 +49703,7 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
          { "none",         OPTION_VAL_NONE_SK },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -51244,7 +51244,7 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
          { "none",         OPTION_VAL_NONE_SR },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -52785,7 +52785,7 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
          { "none",         OPTION_VAL_NONE_SV },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -54326,7 +54326,7 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
          { "none",         OPTION_VAL_NONE_TR },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -55867,7 +55867,7 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
          { "none",         OPTION_VAL_NONE_UK },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -57408,7 +57408,7 @@ struct retro_core_option_v2_definition option_defs_val[] = {
          { "none",         OPTION_VAL_NONE_VAL },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
@@ -58949,7 +58949,7 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
          { "none",         OPTION_VAL_NONE_VN },
          { NULL, NULL },
       },
-      "disabled"
+      "auto"
    },
    {
       "genesis_plus_gx_lock_on",
