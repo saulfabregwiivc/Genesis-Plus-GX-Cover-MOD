@@ -35482,9 +35482,9 @@ struct retro_core_options_v2 options_it = {
 /* RETRO_LANGUAGE_JA */
 
 #define CATEGORY_SYSTEM_LABEL_JA "システム"
-#define CATEGORY_SYSTEM_INFO_0_JA "基本ハードウェアの選択、リージョン、BIOS、Sega CD/Mega-CDセーブファイルの設定を変更します。"
+#define CATEGORY_SYSTEM_INFO_0_JA "基本となるハードウェアの選択、地域、BIOS およびメガCD/Sega CD セーブファイルの設定を変更します。"
 #define CATEGORY_VIDEO_LABEL_JA "ビデオ"
-#define CATEGORY_VIDEO_INFO_0_JA "アスペクト比、表示トリミング、ビデオフィルター、フレームスキップの設定を変更します。"
+#define CATEGORY_VIDEO_INFO_0_JA "アスペクト比、ディスプレイのトリミング、ビデオフィルターおよびフレームスキップの設定を変更します。"
 #define CATEGORY_AUDIO_LABEL_JA "オーディオ"
 #define CATEGORY_AUDIO_INFO_0_JA "オーディオデバイスの設定を変更します。"
 #define CATEGORY_INPUT_LABEL_JA "入力"
@@ -35500,16 +35500,16 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_SG_1000_II_JA NULL
 #define OPTION_VAL_SG_1000_II_RAM_EXT_JA NULL
 #define OPTION_VAL_MARK_III_JA NULL
-#define OPTION_VAL_MASTER_SYSTEM_JA NULL
-#define OPTION_VAL_MASTER_SYSTEM_II_JA NULL
+#define OPTION_VAL_MASTER_SYSTEM_JA "マスターシステム"
+#define OPTION_VAL_MASTER_SYSTEM_II_JA "マスターシステム II"
 #define OPTION_VAL_GAME_GEAR_JA "ゲームギア"
-#define OPTION_VAL_MEGA_DRIVE_GENESIS_JA NULL
+#define OPTION_VAL_MEGA_DRIVE_GENESIS_JA "メガドライブ/Genesis"
 #define GENESIS_PLUS_GX_REGION_DETECT_LABEL_JA "システム地域"
 #define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_JA NULL
 #define OPTION_VAL_NTSC_U_JA NULL
 #define OPTION_VAL_PAL_JA NULL
 #define OPTION_VAL_NTSC_J_JA NULL
-#define GENESIS_PLUS_GX_BIOS_LABEL_JA "システムブートROM"
+#define GENESIS_PLUS_GX_BIOS_LABEL_JA "システムブート ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_JA NULL
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_JA NULL
@@ -35537,7 +35537,7 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_ACTION_REPLAY_PRO_JA NULL
 #define OPTION_VAL_SONIC_KNUCKLES_JA NULL
 #define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_JA "コア提供アスペクト比"
-#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_JA "優先されるコンテンツのアスペクト比を選択します。RetroArch のアスペクト比がビデオ設定で [コア提供] に設定されている場合にのみ適用されます。"
+#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_JA "コンテンツの優先アスペクト比を選択します。RetroArch のアスペクト比がビデオ設定で [コア提供] に設定されている場合にのみ適用されます。"
 #define OPTION_VAL_NTSC_PAR_JA NULL
 #define OPTION_VAL_PAL_PAR_JA NULL
 #define OPTION_VAL_4_3_JA NULL
@@ -35548,12 +35548,12 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_LEFT_RIGHT_JA "左/右"
 #define OPTION_VAL_FULL_JA "フル"
 #define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_JA NULL
-#define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_JA "マスターシステムのゲームを実行する際、画面の左側から 8 ピクセル、または左側と右側の両方から 8 ピクセルを切り取ります。"
 #define OPTION_VAL_LEFT_BORDER_JA "左枠のみ"
 #define OPTION_VAL_LEFT_RIGHT_BORDERS_JA "左右の枠"
 #define GENESIS_PLUS_GX_GG_EXTRA_LABEL_JA NULL
 #define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_JA "Blragg NTSC フィルター"
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_JA "Blargg NTSC フィルター"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_JA NULL
 #define OPTION_VAL_MONOCHROME_JA NULL
 #define OPTION_VAL_COMPOSITE_JA "コンポジット"
@@ -35568,7 +35568,7 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_JA "フレームスキップ"
 #define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_JA "フレームをスキップしてオーディオバッファアンダーラン (音割れ) を回避します。視覚的な滑らかさを犠牲にしてパフォーマンスを向上させます。 「自動」は、フロントエンドにアドバイスされたときにフレームをスキップします。「マニュアル」は、「フレームスキップ閾値 (%)」設定を使用します。"
 #define OPTION_VAL_MANUAL_JA "手動"
-#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_JA "フレームスキップ閾値 (%)"
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_JA "フレームスキップしきい値 (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_JA "'フレームスキップ' が '手動' に設定されている場合, フレームがスキップされるオーディオバッファ占有しきい値 (%) を指定します. 値を大きくすると, フレームを頻繁に落とすことでクラッキングが発生するリスクが低下します."
 #define GENESIS_PLUS_GX_YM2413_LABEL_JA "マスターシステム FM (YM2413)"
 #define GENESIS_PLUS_GX_YM2413_INFO_0_JA NULL
@@ -35576,7 +35576,7 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_JA NULL
 #define OPTION_VAL_MAME_JA NULL
 #define OPTION_VAL_NUKED_JA NULL
-#define GENESIS_PLUS_GX_YM2612_LABEL_JA NULL
+#define GENESIS_PLUS_GX_YM2612_LABEL_JA "メガドライブ/Genesis FM"
 #define GENESIS_PLUS_GX_YM2612_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_YM2612_INFO_1_JA NULL
 #define OPTION_VAL_MAME_YM2612_JA NULL
@@ -35588,7 +35588,7 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_JA NULL
 #define OPTION_VAL_STEREO_JA "ステレオ"
 #define OPTION_VAL_MONO_JA "モノラル"
-#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_JA "オーディオフィルタ"
+#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_JA "オーディオフィルター"
 #define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_JA NULL
 #define OPTION_VAL_LOW_PASS_JA "ローパス"
 #define OPTION_VAL_EQ_JA NULL
@@ -35645,9 +35645,9 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_JA "68K アドレスエラー"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_JA NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_JA "CD アクセス時間"
 #define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_JA NULL
+#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_JA "高度なオーディオ音量設定を表示 (メニューを再表示)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_JA "PSG トーンチャンネル 0 音量 %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_JA "PSG トーンチャンネル 0 の音量を下げます。"
