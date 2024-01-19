@@ -2,7 +2,7 @@
  *  Genesis Plus
  *  Mega CD / Sega CD hardware
  *
- *  Copyright (C) 2012-2023  Eke-Eke (Genesis Plus GX)
+ *  Copyright (C) 2012-2024  Eke-Eke (Genesis Plus GX)
  *
  *  Redistribution and use of this code or any derivative works are permitted
  *  provided that the following conditions are met:
@@ -84,7 +84,7 @@ static void s68k_lockup_w_8 (unsigned int address, unsigned int data)
 #ifdef LOGERROR
   error ("[SUB 68k] Lockup write8 %08X = %02X (%08X)\n", address, data, s68k.pc);
 #endif
-  s68k_pulse_wait();
+  s68k_pulse_wait(address, 1);
 }
 
 static void s68k_lockup_w_16 (unsigned int address, unsigned int data)
@@ -92,7 +92,7 @@ static void s68k_lockup_w_16 (unsigned int address, unsigned int data)
 #ifdef LOGERROR
   error ("[SUB 68k] Lockup write16 %08X = %04X (%08X)\n", address, data, s68k.pc);
 #endif
-  s68k_pulse_wait();
+  s68k_pulse_wait(address, 1);
 }
 
 static unsigned int s68k_lockup_r_8 (unsigned int address)
@@ -100,7 +100,7 @@ static unsigned int s68k_lockup_r_8 (unsigned int address)
 #ifdef LOGERROR
   error ("[SUB 68k] Lockup read8 %08X.b (%08X)\n", address, s68k.pc);
 #endif
-  s68k_pulse_wait();
+  s68k_pulse_wait(address, 0);
   return 0xff;
 }
 
@@ -109,7 +109,7 @@ static unsigned int s68k_lockup_r_16 (unsigned int address)
 #ifdef LOGERROR
   error ("[SUB 68k] Lockup read16 %08X.w (%08X)\n", address, s68k.pc);
 #endif
-  s68k_pulse_wait();
+  s68k_pulse_wait(address, 0);
   return 0xffff;
 }
 
@@ -682,7 +682,7 @@ static unsigned int scd_read_word(unsigned int address)
   /* CDC host data (word access only ?) */
   if (address == 0x08)
   {
-    return cdc_host_r();
+    return cdc_host_r(CDC_SUB_CPU_ACCESS);
   }
 
   /* LED & RESET status */
