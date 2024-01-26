@@ -135,12 +135,6 @@ void prg_ram_dma_w(unsigned int length)
   /* update DMA source address */
   cdc.dac.w += (words << 1);
 
-  /* check PRG-RAM write protected area */
-  if (dst_index < (scd.regs[0x02>>1].byte.h << 9))
-  {
-    return;
-  }
-
   /* DMA transfer */
   while (words--)
   {
@@ -1005,6 +999,17 @@ static void scd_write_byte(unsigned int address, unsigned int data)
               gfx_update(s68k.cycles);
             }
 
+            /* check if CDC DMA to 2M Word-RAM is running */
+            if (cdc.dma_w == word_ram_2M_dma_w)
+            {
+              /* synchronize CDC DMA with SUB-CPU */
+              cdc_dma_update(s68k.cycles);
+
+              /* halt CDC DMA to 2M Word-RAM */
+              cdc.dma_w = 0;
+              cdc.halted_dma_w = word_ram_2M_dma_w;
+            }
+
             /* Word-RAM is returned to MAIN-CPU */
             scd.dmna = 0;
 
@@ -1037,6 +1042,24 @@ static void scd_write_byte(unsigned int address, unsigned int data)
 
       /* update PM0-1 & MODE bits */
       scd.regs[0x02 >> 1].byte.l = (scd.regs[0x02 >> 1].byte.l & ~0x1c) | (data & 0x1c);
+      return;
+    }
+
+    case 0x04: /* CDC mode */
+    {
+      scd.regs[0x04 >> 1].byte.h = data & 0x07;
+
+      /* synchronize CDC DMA (if running) with SUB-CPU */
+      if (cdc.dma_w)
+      {
+        cdc_dma_update(s68k.cycles);
+      }
+
+      /* reinitialize CDC data transfer destination (verified on real hardware, cf. Krikzz's mcd-verificator) */
+      cdc_dma_init();
+
+      /* reset CDC DMA address (verified on real hardware, cf. Krikzz's mcd-verificator) */
+      scd.regs[0x0a >> 1].w = 0;
       return;
     }
 
@@ -1314,6 +1337,17 @@ static void scd_write_word(unsigned int address, unsigned int data)
               gfx_update(s68k.cycles);
             }
 
+            /* check if CDC DMA to 2M Word-RAM is running */
+            if (cdc.dma_w == word_ram_2M_dma_w)
+            {
+              /* synchronize CDC DMA with SUB-CPU */
+              cdc_dma_update(s68k.cycles);
+
+              /* halt CDC DMA to 2M Word-RAM */
+              cdc.dma_w = 0;
+              cdc.halted_dma_w = word_ram_2M_dma_w;
+            }
+
             /* Word-RAM is returned to MAIN-CPU */
             scd.dmna = 0;
 
@@ -1352,12 +1386,31 @@ static void scd_write_word(unsigned int address, unsigned int data)
     case 0x04: /* CDC mode & register address */
     {
       scd.regs[0x04 >> 1].w = data & (0x0700 | cdc.ar_mask);
+
+      /* synchronize CDC DMA (if running) with SUB-CPU */
+      if (cdc.dma_w)
+      {
+        cdc_dma_update(s68k.cycles);
+      }
+
+      /* reinitialize CDC data transfer destination (verified on real hardware, cf. Krikzz's mcd-verificator) */
+      cdc_dma_init();
+
+      /* reset CDC DMA address (verified on real hardware, cf. Krikzz's mcd-verificator) */
+      scd.regs[0x0a >> 1].w = 0;
       return;
     }
 
     case 0x06: /* CDC register write */
     {
       cdc_reg_w(data);
+      return;
+    }
+
+    case 0x08: /* CDC host data */
+    {
+      /* CDC data is also read (although unused) on write access (verified on real hardware, cf. Krikzz's mcd-verificator) */
+      cdc_host_r(CDC_SUB_CPU_ACCESS);
       return;
     }
 
@@ -1838,16 +1891,6 @@ void scd_update(unsigned int cycles)
   int s68k_run_cycles;
   int s68k_end_cycles = scd.cycles + SCYCLES_PER_LINE;
 
-  /* update CDC DMA transfer */
-  if (cdc.dma_w)
-  {
-    /* check if Word-RAM is returned to SUB-CPU in 2M mode */
-    if ((cdc.dma_w != word_ram_2M_dma_w) || scd.dmna)
-    {
-      cdc_dma_update();
-    }
-  }
-
   /* run both CPU in sync until end of line */
   do
   {
@@ -1923,10 +1966,15 @@ void scd_update(unsigned int cycles)
   }
   while ((m68k.cycles < cycles) || (s68k.cycles < s68k_end_cycles));
 
-  /* GFX processing */
+  /* update CDC DMA processing (if running) */
+  if (cdc.dma_w)
+  {
+    cdc_dma_update(scd.cycles);
+  }
+
+  /* update GFX processing (if started) */
   if (scd.regs[0x58>>1].byte.h & 0x80)
   {
-    /* update graphics operation if running */
     gfx_update(scd.cycles);
   }
 }
