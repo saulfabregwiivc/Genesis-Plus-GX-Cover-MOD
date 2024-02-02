@@ -35482,7 +35482,7 @@ struct retro_core_options_v2 options_it = {
 /* RETRO_LANGUAGE_JA */
 
 #define CATEGORY_SYSTEM_LABEL_JA "システム"
-#define CATEGORY_SYSTEM_INFO_0_JA "基本となるハードウェアの選択、地域、BIOS およびメガCD/Sega CD セーブファイルの設定を変更します。"
+#define CATEGORY_SYSTEM_INFO_0_JA "基本となるハードウェアの選択、地域、BIOS およびメガ CD セーブファイルの設定を変更します。"
 #define CATEGORY_VIDEO_LABEL_JA "ビデオ"
 #define CATEGORY_VIDEO_INFO_0_JA "アスペクト比、画面のトリミング、ビデオフィルターおよびフレームスキップの設定を変更します。"
 #define CATEGORY_AUDIO_LABEL_JA "オーディオ"
@@ -35490,7 +35490,7 @@ struct retro_core_options_v2 options_it = {
 #define CATEGORY_INPUT_LABEL_JA "入力"
 #define CATEGORY_INPUT_INFO_0_JA "ライトガンやマウスの入力設定を変更します。"
 #define CATEGORY_HACKS_LABEL_JA "エミュレーションハック"
-#define CATEGORY_HACKS_INFO_0_JA "低水準パフォーマンスと互換性に影響を与えるプロセッサのオーバークロックとエミュレーションの精度設定を変更します。"
+#define CATEGORY_HACKS_INFO_0_JA "低レベルパフォーマンスと互換性に影響を与えるプロセッサのオーバークロックとエミュレーションの精度設定を変更します。"
 #define CATEGORY_CHANNEL_VOLUME_LABEL_JA "高度なチャンネル音量設定"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_JA "個々のハードウェアオーディオチャンネルの音量を変更します。"
 #define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_JA "システムハードウェア"
@@ -35499,43 +35499,43 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_SG_1000_JA NULL
 #define OPTION_VAL_SG_1000_II_JA NULL
 #define OPTION_VAL_SG_1000_II_RAM_EXT_JA NULL
-#define OPTION_VAL_MARK_III_JA NULL
+#define OPTION_VAL_MARK_III_JA "マーク III"
 #define OPTION_VAL_MASTER_SYSTEM_JA "マスターシステム"
 #define OPTION_VAL_MASTER_SYSTEM_II_JA "マスターシステム II"
 #define OPTION_VAL_GAME_GEAR_JA "ゲームギア"
-#define OPTION_VAL_MEGA_DRIVE_GENESIS_JA "メガドライブ/Genesis"
+#define OPTION_VAL_MEGA_DRIVE_GENESIS_JA "メガドライブ"
 #define GENESIS_PLUS_GX_REGION_DETECT_LABEL_JA "システム地域"
-#define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_JA "システムがどの地域からのものかを指定します。ゲームギア以外のコンソールでは、[PAL] は 50 Hz、[NTSC] は 60Hz で実行されます。間違った地域を選択した場合、ゲームは通常よりも速く、または遅く実行されることがあります。"
 #define OPTION_VAL_NTSC_U_JA NULL
 #define OPTION_VAL_PAL_JA NULL
 #define OPTION_VAL_NTSC_J_JA NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_JA "システムブート ROM"
-#define GENESIS_PLUS_GX_BIOS_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_JA NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_BIOS_INFO_0_JA "エミュレートされたハードウェアで公式の BIOS/ブートローダーを使用します。RetroArch のシステムディレクトリにファイルが存在する場合、コンテンツのロード時にコンソール固有の起動画面/アニメーションを表示してからコンテンツを実行します。"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_JA "CD システム BRAM (再起動が必要)"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_JA "メガ CD コンテンツを実行する際に、地域ごと (BIOS ごと) にすべてのゲーム間で 1 つのセーブファイルを共有するか、ゲームごとに別のセーブファイルを作成するかを指定します (ゲームごと)。メガ CD は内部ストレージが限られており、多くのタイトルを保存するには十分ではありません。容量不足を回避するために、[ゲームごと] に設定しておくことを推奨します。"
 #define OPTION_VAL_PER_BIOS_JA "BIOS ごと"
 #define OPTION_VAL_PER_GAME_JA "ゲームごと"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_JA NULL
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_JA NULL
-#define OPTION_VAL_PER_CART_JA NULL
-#define GENESIS_PLUS_GX_CART_SIZE_LABEL_JA NULL
-#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_JA "CD バックアップカートリッジ BRAM (再起動が必要)"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_JA "メガ CD コンテンツを実行する際に、すべてのゲームで 1 つのバックアップ RAM カートリッジを共有する (カートリッジごと) か、ゲームごとに別のバックアップ RAM カートリッジを作成するか (ゲームごと) を指定します。"
+#define OPTION_VAL_PER_CART_JA "カートリッジごと"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_JA "CD バックアップカートリッジ BRAM サイズ (再起動が必要)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_JA "メガ CD コンテンツを実行する際のバックアップ RAM カートリッジのサイズを設定します。ゲームごとにバックアップ RAM カートリッジを作成する設定にしている場合、カートリッジサイズの増大を抑えることができます。"
 #define OPTION_VAL_128K_JA NULL
 #define OPTION_VAL_256K_JA NULL
 #define OPTION_VAL_512K_JA NULL
 #define OPTION_VAL_1MEG_JA NULL
 #define OPTION_VAL_2MEG_JA NULL
 #define OPTION_VAL_4MEG_JA NULL
-#define GENESIS_PLUS_GX_ADD_ON_LABEL_JA NULL
-#define GENESIS_PLUS_GX_ADD_ON_INFO_0_JA NULL
-#define OPTION_VAL_SEGA_MEGA_CD_JA NULL
+#define GENESIS_PLUS_GX_ADD_ON_LABEL_JA "CD アドオン (MD モード) (再起動が必要)"
+#define GENESIS_PLUS_GX_ADD_ON_INFO_0_JA "対応するメガドライブゲームで CD オーディオ再生に使用するアドオンを指定します。"
+#define OPTION_VAL_SEGA_MEGA_CD_JA "メガ CD"
 #define OPTION_VAL_MEGASD_JA NULL
 #define OPTION_VAL_NONE_JA "なし"
-#define GENESIS_PLUS_GX_LOCK_ON_LABEL_JA NULL
-#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_LOCK_ON_LABEL_JA "ロックオンカートリッジ"
+#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_JA "ロックオンシステムとは、特殊な構造をしたカートリッジの上部にある端子に他のカートリッジを接続することで、もとのゲームに新たな内容や機能を追加するメガドライブの機能です。このオプションは、エミュレートする特殊な [ロックオン] カートリッジの種類を指定します。RetroArch のシステムディレクトリに対応する BIOS ファイルが存在する必要があります。"
 #define OPTION_VAL_GAME_GENIE_JA NULL
-#define OPTION_VAL_ACTION_REPLAY_PRO_JA NULL
-#define OPTION_VAL_SONIC_KNUCKLES_JA NULL
+#define OPTION_VAL_ACTION_REPLAY_PRO_JA "アクションリプレイ (Pro)"
+#define OPTION_VAL_SONIC_KNUCKLES_JA "ソニック & ナックルズ"
 #define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_JA "コア提供アスペクト比"
 #define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_JA "コンテンツの優先アスペクト比を選択します。RetroArch のアスペクト比がビデオ設定で [コア提供] に設定されている場合にのみ適用されます。"
 #define OPTION_VAL_NTSC_PAR_JA NULL
@@ -35543,49 +35543,49 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_4_3_JA NULL
 #define OPTION_VAL_UNCORRECTED_JA "補正なし"
 #define GENESIS_PLUS_GX_OVERSCAN_LABEL_JA "外枠"
-#define GENESIS_PLUS_GX_OVERSCAN_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_OVERSCAN_INFO_0_JA "これを有効にすると、画面の上下と左右のオーバースキャン領域を表示できます。これらは通常、標準画質テレビの端にあるベゼルによって隠されます。"
 #define OPTION_VAL_TOP_BOTTOM_JA "上/下"
 #define OPTION_VAL_LEFT_RIGHT_JA "左/右"
 #define OPTION_VAL_FULL_JA "フル"
-#define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_JA NULL
+#define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_JA "マスターシステムの横枠を隠す"
 #define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_JA "マスターシステムのゲームを実行する際、画面の左側から 8 ピクセル、または左側と右側の両方から 8 ピクセルを切り取ります。"
 #define OPTION_VAL_LEFT_BORDER_JA "左枠のみ"
 #define OPTION_VAL_LEFT_RIGHT_BORDERS_JA "左右の枠"
-#define GENESIS_PLUS_GX_GG_EXTRA_LABEL_JA NULL
-#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_GG_EXTRA_LABEL_JA "ゲームギア拡張画面"
+#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_JA "ゲームギアタイトルを強制的に SMS モードで実行し、解像度を 256x192 に向上させます。追加のコンテンツを表示することもありますが、通常は破損した/不要なイメージデータが外枠として表示されます。"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_JA "Blargg NTSC フィルター"
-#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_JA NULL
-#define OPTION_VAL_MONOCHROME_JA NULL
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_JA "さまざまな NTSC TV 信号を再現するためにビデオフィルターを適用します。"
+#define OPTION_VAL_MONOCHROME_JA "白黒"
 #define OPTION_VAL_COMPOSITE_JA "コンポジット"
 #define OPTION_VAL_SVIDEO_JA "S端子"
 #define OPTION_VAL_RGB_JA NULL
 #define GENESIS_PLUS_GX_LCD_FILTER_LABEL_JA "液晶ディスプレイ残像フィルター"
-#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_RENDER_LABEL_JA NULL
+#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_JA "ゲームギアの液晶ディスプレイの残像感を再現するために、イメージに [残像] フィルターを適用します。"
+#define GENESIS_PLUS_GX_RENDER_LABEL_JA "インターレースモード 2 出力"
 #define GENESIS_PLUS_GX_RENDER_INFO_0_JA NULL
 #define OPTION_VAL_SINGLE_FIELD_JA "シングルフィールド"
 #define OPTION_VAL_DOUBLE_FIELD_JA "ダブルフィールド"
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_JA "フレームスキップ"
-#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_JA "フレームをスキップしてオーディオバッファアンダーラン (音割れ) を回避します。視覚的な滑らかさを犠牲にしてパフォーマンスを向上させます。 「自動」は、フロントエンドにアドバイスされたときにフレームをスキップします。「マニュアル」は、「フレームスキップ閾値 (%)」設定を使用します。"
+#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_JA "フレームをスキップしてオーディオバッファアンダーラン (音割れ) を回避します。視覚的な滑らかさを犠牲にしてパフォーマンスを向上させます。[自動] はフロントエンドによって指示された場合にフレームをスキップします。[手動] は [フレームスキップしきい値 (%)] 設定を使用します。"
 #define OPTION_VAL_MANUAL_JA "手動"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_JA "フレームスキップしきい値 (%)"
-#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_JA "'フレームスキップ' が '手動' に設定されている場合, フレームがスキップされるオーディオバッファ占有しきい値 (%) を指定します. 値を大きくすると, フレームを頻繁に落とすことでクラッキングが発生するリスクが低下します."
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_JA "[フレームスキップ] が [手動] に設定されている場合、フレームがスキップされるオーディオバッファ占有しきい値 (%) を指定します。値を高くするほど、より頻繁にフレームを落とすことで音割れが発生するリスクを軽減します。"
 #define GENESIS_PLUS_GX_YM2413_LABEL_JA "マスターシステム FM (YM2413)"
-#define GENESIS_PLUS_GX_YM2413_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_YM2413_INFO_0_JA "いくつかのセガ・マークIII/マスターシステムゲームで使用される FM サウンドのエミュレーションを有効にして、オーディオ出力を強化します。"
 #define GENESIS_PLUS_GX_YM2413_CORE_LABEL_JA "マスターシステム FM (YM2413) コア"
-#define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_JA "セガ・マーク III/マスターシステムの FM サウンドユニットをエミュレートするために使用する方式を選択します。[MAME] オプションは高速で、ほとんどのシステムで最高速度で動作します。[Nuked] オプションはサイクル精度が高く、非常に高品質ですが、高い CPU 性能を要求します。"
 #define OPTION_VAL_MAME_JA NULL
 #define OPTION_VAL_NUKED_JA NULL
-#define GENESIS_PLUS_GX_YM2612_LABEL_JA "メガドライブ/Genesis FM"
-#define GENESIS_PLUS_GX_YM2612_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_YM2612_INFO_1_JA NULL
+#define GENESIS_PLUS_GX_YM2612_LABEL_JA "メガドライブ FM"
+#define GENESIS_PLUS_GX_YM2612_INFO_0_JA "メガドライブの FM シンセサイザーをエミュレートするために使用する方式を選択します。[MAME] オプションは高速で、ほとんどのシステムで最高速度で動作します。[Nuked] はサイクル精度が高く、非常に高品質ですが、高い CPU 性能を要求します。YM2612 チップは初期型メガドライブ/Genesis で使用され、YM3438 は後期型メガドライブ/Genesis で使用されました。"
+#define GENESIS_PLUS_GX_YM2612_INFO_1_JA "メガドライブの FM シンセサイザーをエミュレートするために使用する方式を選択します。YM2612 チップは初期型メガドライブで使用され、YM3438 は後期型メガドライブで使用されました。"
 #define OPTION_VAL_MAME_YM2612_JA NULL
 #define OPTION_VAL_MAME_ASIC_YM3438_JA NULL
 #define OPTION_VAL_MAME_ENHANCED_YM3438_JA NULL
 #define OPTION_VAL_NUKED_YM2612_JA NULL
 #define OPTION_VAL_NUKED_YM3438_JA NULL
-#define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_JA NULL
-#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_JA "サウンド出力"
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_JA "サウンド再生をステレオにするかモノラルにするかを選択します。"
 #define OPTION_VAL_STEREO_JA "ステレオ"
 #define OPTION_VAL_MONO_JA "モノラル"
 #define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_JA "オーディオフィルター"
@@ -35596,34 +35596,34 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_PSG_PREAMP_LABEL_JA "PSG プリアンプレベル"
 #define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_FM_PREAMP_LABEL_JA "FMプリアンプレベル"
+#define GENESIS_PLUS_GX_FM_PREAMP_LABEL_JA "FM プリアンプレベル"
 #define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_JA "CD-DA 音量"
 #define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_JA "PCM 音量"
 #define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_JA "EQ 低"
-#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_JA "内部オーディオイコライザの低音域を調整します。"
 #define GENESIS_PLUS_GX_AUDIO_EQ_MID_LABEL_JA "EQ 中"
-#define GENESIS_PLUS_GX_AUDIO_EQ_MID_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_MID_INFO_0_JA "内部オーディオイコライザの中音域を調整します。"
 #define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_LABEL_JA "EQ 高"
-#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_JA "内部オーディオイコライザの高音域を調整します。"
 #define GENESIS_PLUS_GX_GUN_INPUT_LABEL_JA "ライトガン入力"
 #define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_JA NULL
 #define OPTION_VAL_LIGHTGUN_JA "ライトガン"
 #define OPTION_VAL_TOUCHSCREEN_JA "タッチスクリーン"
-#define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_JA NULL
+#define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_JA "ライトガンクロスヘアを表示"
 #define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_JA "マウスの Y 軸を反転"
 #define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_JA NULL
+#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_JA "ラインごとのスプライト制限を削除"
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_JA NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_JA NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_JA "CPU 速度"
-#define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_JA "エミュレートされた CPU をオーバークロックします。実行速度の低下を軽減できますが、不具合を引き起こす可能性があります。"
 #define OPTION_VAL_100_JA NULL
 #define OPTION_VAL_125_JA NULL
 #define OPTION_VAL_150_JA NULL
@@ -35648,7 +35648,7 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_CD_LATENCY_LABEL_JA "CD アクセス時間"
 #define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_JA "高度なオーディオ音量設定を表示 (メニューを再表示)"
-#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_JA "低レベルオーディオチャンネルパラメータの設定を有効にします。注意: この設定を反映するにはクイックメニューを切り替える必要があります。"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_JA "PSG トーンチャンネル 0 音量 %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_JA "PSG トーンチャンネル 0 の音量を下げます。"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_JA "PSG トーンチャンネル 1 音量 %"
@@ -35657,18 +35657,18 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_JA "PSG トーンチャンネル 2 の音量を下げます。"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_JA "PSG ノイズチャンネル 3 音量 %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_JA "PSG ノイズチャンネル 3 の音量を下げます。"
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 0 音量 %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 0 の音量を下げます。MAME FM エミュレータでのみ動作します。"
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 1 音量 %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 1 の音量を下げます。MAME FM エミュレータでのみ動作します。"
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 2 音量 %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 2 の音量を下げます。MAME FM エミュレータでのみ動作します。"
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 3 音量 %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 3 の音量を下げます。MAME FM エミュレータでのみ動作します。"
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 4 音量 %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 4 の音量を下げます。MAME FM エミュレータでのみ動作します。"
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_JA "メガドライブ/Genesis FM チャンネル 5 音量 %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_JA "メガドライブ/Genesis FM チャンネル 5 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_JA "メガドライブ FM チャンネル 0 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_JA "メガドライブ FM チャンネル 0 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_JA "メガドライブ FM チャンネル 1 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_JA "メガドライブ FM チャンネル 1 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_JA "メガドライブ FM チャンネル 2 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_JA "メガドライブ FM チャンネル 2 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_JA "メガドライブ FM チャンネル 3 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_JA "メガドライブ FM チャンネル 3 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_JA "メガドライブ FM チャンネル 4 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_JA "メガドライブ FM チャンネル 4 の音量を下げます。MAME FM エミュレータでのみ動作します。"
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_JA "メガドライブ FM チャンネル 5 音量 %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_JA "メガドライブ FM チャンネル 5 の音量を下げます。MAME FM エミュレータでのみ動作します。"
 #define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_JA "マスターシステム FM (YM2413) チャンネル 0 音量 %"
 #define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_JA "マスターシステム FM チャンネル 0 の音量を下げます。"
 #define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_JA "マスターシステム FM (YM2413) チャンネル 1 音量 %"
