@@ -1988,9 +1988,11 @@ void scd_end_frame(unsigned int cycles)
   /* adjust Stopwatch counter for next frame (can be negative) */
   scd.stopwatch += (ticks * TIMERS_SCYCLES_RATIO) - cycles;
 
-  /* adjust SUB-CPU & GPU cycle counters for next frame */
-  s68k.cycles -= cycles;
-  gfx.cycles  -= cycles;
+  /* adjust SUB-CPU, GPU and CDC cycle counters for next frame */
+  s68k.cycles   -= cycles;
+  gfx.cycles    -= cycles;
+  cdc.cycles[0] -= cycles;
+  cdc.cycles[1] -= cycles;
 
   /* reset CPU registers polling */
   m68k.poll.cycle = 0;
@@ -2348,24 +2350,18 @@ int scd_68k_irq_ack(int level)
   error("INT ack level %d  (%X)\n", level, s68k.pc);
 #endif
 
-#if 0
-  /* level 5 interrupt is normally acknowledged by CDC */
-  if (level != 5)
-#endif
+  /* clear pending interrupt flag */
+  scd.pending &= ~(1 << level);
+
+  /* level 2 interrupt acknowledge */
+  if (level == 2)
   {
-    /* clear pending interrupt flag */
-    scd.pending &= ~(1 << level);
-
-    /* level 2 interrupt acknowledge */
-    if (level == 2)
-    {
-      /* clear IFL2 flag */
-      scd.regs[0x00].byte.h &= ~0x01;
-    }
-
-    /* update IRQ level */
-    s68k_update_irq((scd.pending & scd.regs[0x32>>1].byte.l) >> 1);
+    /* clear IFL2 flag */
+    scd.regs[0x00].byte.h &= ~0x01;
   }
+
+  /* update IRQ level */
+  s68k_update_irq((scd.pending & scd.regs[0x32>>1].byte.l) >> 1);
 
   return M68K_INT_ACK_AUTOVECTOR;
 }
