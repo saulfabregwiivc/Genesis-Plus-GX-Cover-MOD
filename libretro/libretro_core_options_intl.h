@@ -44728,15 +44728,15 @@ struct retro_core_options_v2 options_pl = {
 /* RETRO_LANGUAGE_PT_BR */
 
 #define CATEGORY_SYSTEM_LABEL_PT_BR "Sistema"
-#define CATEGORY_SYSTEM_INFO_0_PT_BR "Altera as configurações do hardware base, da região, da BIOS e do arquivo de salvamento do Sega CD."
+#define CATEGORY_SYSTEM_INFO_0_PT_BR "Altera as configurações de seleção de hardware básica, região, BIOS e arquivo de salvamento do Sega CD/Mega-CD."
 #define CATEGORY_VIDEO_LABEL_PT_BR "Vídeo"
-#define CATEGORY_VIDEO_INFO_0_PT_BR "Altera a proporção da tela, o corte, o filtro de vídeo e as configurações do salto de quadros."
+#define CATEGORY_VIDEO_INFO_0_PT_BR "Altera as configurações de proporção de tela, corte de tela, filtro de vídeo e pulo de quadro."
 #define CATEGORY_AUDIO_LABEL_PT_BR "Áudio"
-#define CATEGORY_AUDIO_INFO_0_PT_BR "Altera as configurações do dispositivo de áudio."
+#define CATEGORY_AUDIO_INFO_0_PT_BR "Altera as configurações de dispositivo de áudio."
 #define CATEGORY_INPUT_LABEL_PT_BR "Entrada"
-#define CATEGORY_INPUT_INFO_0_PT_BR "Altera as configurações da pistola de luz e entrada do mouse."
+#define CATEGORY_INPUT_INFO_0_PT_BR "Altera as configurações de entrada de pistola de luz e/ou mouse."
 #define CATEGORY_HACKS_LABEL_PT_BR "Hacks de emulação"
-#define CATEGORY_HACKS_INFO_0_PT_BR "Altera os parâmetros de overclock do processador e da precisão da emulação que afetam o desempenho e a compatibilidade."
+#define CATEGORY_HACKS_INFO_0_PT_BR "Altera as configurações de precisão de emulação e velocidade do processador (overclock), que afetam o desempenho de baixo nível e compatibilidade."
 #define CATEGORY_CHANNEL_VOLUME_LABEL_PT_BR "Configurações avançadas de volume de canais"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_PT_BR "Altera o volume de cada canal de áudio individualmente no hardware."
 #define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_PT_BR "Hardware do sistema"
@@ -44744,12 +44744,12 @@ struct retro_core_options_v2 options_pl = {
 #define OPTION_VAL_AUTO_PT_BR "Automático"
 #define OPTION_VAL_SG_1000_PT_BR NULL
 #define OPTION_VAL_SG_1000_II_PT_BR NULL
-#define OPTION_VAL_SG_1000_II_RAM_EXT_PT_BR NULL
+#define OPTION_VAL_SG_1000_II_RAM_EXT_PT_BR "SG-1000 II + Ext. de RAM"
 #define OPTION_VAL_MARK_III_PT_BR NULL
 #define OPTION_VAL_MASTER_SYSTEM_PT_BR NULL
 #define OPTION_VAL_MASTER_SYSTEM_II_PT_BR NULL
 #define OPTION_VAL_GAME_GEAR_PT_BR NULL
-#define OPTION_VAL_MEGA_DRIVE_GENESIS_PT_BR "Mega Drive"
+#define OPTION_VAL_MEGA_DRIVE_GENESIS_PT_BR NULL
 #define GENESIS_PLUS_GX_REGION_DETECT_LABEL_PT_BR "Região do sistema"
 #define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_PT_BR "Define de qual região o sistema é. Para outros consoles que não sejam o Game Gear, o 'PAL' é 50hz enquanto o 'NTSC' é 60hz. Os jogos podem rodar mais rápido ou mais lento do que o normal caso a região incorreta seja selecionada."
 #define OPTION_VAL_NTSC_U_PT_BR NULL
@@ -44766,15 +44766,15 @@ struct retro_core_options_v2 options_pl = {
 #define OPTION_VAL_PER_CART_PT_BR NULL
 #define GENESIS_PLUS_GX_CART_SIZE_LABEL_PT_BR NULL
 #define GENESIS_PLUS_GX_CART_SIZE_INFO_0_PT_BR NULL
-#define OPTION_VAL_128K_PT_BR NULL
-#define OPTION_VAL_256K_PT_BR NULL
-#define OPTION_VAL_512K_PT_BR NULL
-#define OPTION_VAL_1MEG_PT_BR NULL
-#define OPTION_VAL_2MEG_PT_BR NULL
-#define OPTION_VAL_4MEG_PT_BR NULL
+#define OPTION_VAL_128K_PT_BR "128 Kbit"
+#define OPTION_VAL_256K_PT_BR "256 Kbit"
+#define OPTION_VAL_512K_PT_BR "512 Kbit"
+#define OPTION_VAL_1MEG_PT_BR "1 Mbit"
+#define OPTION_VAL_2MEG_PT_BR "2 Mbit"
+#define OPTION_VAL_4MEG_PT_BR "4 Mbit"
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_PT_BR "Módulo de CD (modo MD) (requer reinício)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_PT_BR "Especifique qual módulo usar para reprodução de áudio de CD com jogos suportados do Mega Drive."
-#define OPTION_VAL_SEGA_MEGA_CD_PT_BR "Sega CD"
+#define OPTION_VAL_SEGA_MEGA_CD_PT_BR "Sega CD/Mega-CD"
 #define OPTION_VAL_MEGASD_PT_BR NULL
 #define OPTION_VAL_NONE_PT_BR "Nenhum"
 #define GENESIS_PLUS_GX_LOCK_ON_LABEL_PT_BR "Cartucho Lock-On"
