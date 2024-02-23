@@ -53,6 +53,7 @@ Genesis Plus GX 1.7.5 (xx/xx/xxxx) (Eke-Eke)
 * fixed BOOT ROM level 4 interrupt vector upper word value (verified on real hardware, cf. Krikzz's mcd-verificator)
 * fixed access to "write-only" communication flags (verified on real hardware by Notaz)
 * fixed access to Sub-CPU "read-only" communication registers (fixes Round 5 Boss freeze in Streets of Rage / Sega Classics Arcade Collection)
+* fixed byte access to word-only registers (verified on real hardware, cf. Krikzz's mcd-verificator)
 * fixed byte access to memory mode, timer and font color registers at even address (verified on real hardware, cf. Krikzz's mcd-verificator)
 * fixed byte access to font data registers
 * fixed memory mode register bits masking when read from MAIN-CPU and SUB-CPU (verified on real hardware, cf. Krikzz's mcd-verificator)
@@ -73,12 +74,15 @@ Genesis Plus GX 1.7.5 (xx/xx/xxxx) (Eke-Eke)
 * added support for some new unlicensed games with copy protection (Thunderbolt II, Tom Clown, Chaoji Puke / Super Poker, Rock Heaven, Rock World)
 * added support for Everdrive extended SSF mapper
 * added support for MegaSD CD hardware overlay (MD+ hacks) and extended SSF2 / ROM write mappers
+* added emulation of Z80 halt when accessing 68k bus during DMA from 68k bus
+* added basic emulation of 68k bus access refresh delays (fixes Super Airwolf graphical glitch during intro & some Krikzz's mcd-verificator timing tests)
 * added (very basic) emulation of Flashkit MD hardware
 * added emulation of Micro Machines USA on-board TMSS bypass logic hardware
 * added SRAM support for games larger than 8MB
 * improved console region auto-detection for a few PAL-only games (The Smurfs Travel the World & Williams Arcade's Greatest Hits)
 * improved I2C EEPROM boards emulation accuracy
 * improved SVP memory handlers accuracy (fixes Virtua Racing debug mode)
+* improved accuracy of 68k access to Z80 bus delays
 * fixed Realtec mapper behavior on soft-reset and with TMSS hardware
 * fixed Game Genie / Pro Action Replay lock-on support when Mega CD hardware is enabled 
 * fixed Game Genie / Pro Action Replay lock-on support with games larger than 8MB
@@ -118,7 +122,8 @@ Genesis Plus GX 1.7.5 (xx/xx/xxxx) (Eke-Eke)
 [Core/CPU]
 ---------------
 * added Z80 wait-states on 68k bus access (fixes Remute Red Eyes demo)
-* improved 68k auto-vectored interrupts acknowledge cycle timing accuracy (Bubsy background color corruption during cutscenes)
+* improved 68k auto-vectored interrupts acknowledge cycle timing accuracy (fixes Bubsy background color corruption during cutscenes & Pacman 2 - New Adventures crashes during Pac-Jr minigame levels transitions)
+* improved 68k MOVEM instruction accuracy (implements extra read cycle from memory as verified on real hardware)
 * fixed 68k undocumented behaviors for ABCD/SBCD/NBCD instructions (thanks to Flamewing for his test ROM)
 * fixed 68k timing of BTST Dn,#Imm instruction (verified by Flamewing in original microcode)
 * fixed 68k timings of ANDI.L #Imm,Dn, ADDQ.W #Imm,An and TAS instructions (cf. Yacht.txt)
@@ -156,6 +161,7 @@ Genesis Plus GX 1.7.5 (xx/xx/xxxx) (Eke-Eke)
 * improved H-Counter accuracy in H32 mode
 * improved VDP status timing accuracy
 * improved HBLANK flag timing accuracy (verified on real hardware by Nemesis)
+* improved VINT timing accuracy in H32 mode (verified on real hardware by Nemesis)
 * improved DMA timing accuracy during blanking (verified on real hardware by Mask of Destiny)
 * improved accuracy of Master System color palette brightness range (verified against real hardware)
 * fixed misaligned buffer writes in Mode 4 when -DALIGN_LONG option is used
@@ -164,9 +170,9 @@ Genesis Plus GX 1.7.5 (xx/xx/xxxx) (Eke-Eke)
 * fixed Mode 1 rendering (TMS99xx "text" mode)
 * fixed Master System II extended video modes sprite parsing (fixes Mega Man 2 demo)
 * fixed Game Gear display rendering regression when left/right borders were disabled
-* fixed 68k cycles delay on invalid VRAM writes (fixes "Microcosm" intro loop)
 * fixed address/code potential corruption by one-instruction execution delay after HV interrupts activation (fixes Pugsy's Pyramids stage boss) 
 * optimized tile caching
+* reverted FIFO access timings hack when using invalid write code value
 
 [Core/Sound]
 ---------------
