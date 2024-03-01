@@ -35490,7 +35490,7 @@ struct retro_core_options_v2 options_it = {
 #define CATEGORY_INPUT_LABEL_JA "入力"
 #define CATEGORY_INPUT_INFO_0_JA "ライトガンやマウスの入力設定を変更します。"
 #define CATEGORY_HACKS_LABEL_JA "エミュレーションハック"
-#define CATEGORY_HACKS_INFO_0_JA "低レベルパフォーマンスと互換性に影響を与えるプロセッサのオーバークロックとエミュレーションの精度設定を変更します。"
+#define CATEGORY_HACKS_INFO_0_JA "低レベルパフォーマンスと互換性に影響する、プロセッサのオーバークロックとエミュレーション精度の設定を変更します。"
 #define CATEGORY_CHANNEL_VOLUME_LABEL_JA "高度なチャンネル音量設定"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_JA "個々のハードウェアオーディオチャンネルの音量を変更します。"
 #define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_JA "システムハードウェア"
@@ -35617,7 +35617,7 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_JA "マウスの Y 軸を反転"
 #define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_JA "ラインごとのスプライト制限を削除"
-#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_JA "スキャンラインごとに存在するスプライトの数の制限を解除します。チラつきを軽減しますが、ハードウェア制限を利用して特殊な効果を生成するゲームもあり、視覚的な問題を引き起こす可能性があります。"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_JA NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_JA NULL
@@ -44812,10 +44812,10 @@ struct retro_core_options_v2 options_pl = {
 #define OPTION_VAL_SINGLE_FIELD_PT_BR "Campo único"
 #define OPTION_VAL_DOUBLE_FIELD_PT_BR "Campo duplo"
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_PT_BR "Pulo de quadro"
-#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_PT_BR "Ignora quadros para evitar o esvaziamento do buffer do áudio (corte no áudio). Melhora o desempenho ao custo da suavidade visual. A opção \"Automático\" ignora os quadros quando aconselhado pela interface. \"Manual\" usa a configuração \"Limite do pulo de quadro (%)\"."
+#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_PT_BR "Ignora quadros para evitar o esvaziamento da memória intermédia (buffer) do áudio (corte no áudio). Melhora o desempenho ao custo da suavidade visual. A opção \"Automático\" ignora os quadros quando aconselhado pela interface. \"Manual\" usa a configuração \"Limite do pulo de quadro (%)\"."
 #define OPTION_VAL_MANUAL_PT_BR NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_PT_BR "Limite do pulo de quadro (%)"
-#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_PT_BR "Ao configurar \"Pulo de quadro\" como \"Manual\", especifica o limite do buffer de áudio em porcentagem, os quadros fora da porcentagem serão ignorados. Valores maiores reduzem o risco de engasgo por descartar quadros com mais frequência."
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_PT_BR "Ao configurar \"Pulo de quadro\" como \"Manual\", especifica o limite da memória intermédia (buffer) de áudio em porcentagem, os quadros fora da porcentagem serão ignorados. Valores maiores reduzem o risco de engasgo por descartar quadros com mais frequência."
 #define GENESIS_PLUS_GX_YM2413_LABEL_PT_BR "Som FM do Master System (YM2413)"
 #define GENESIS_PLUS_GX_YM2413_INFO_0_PT_BR "Ativa a emulação da Unidade de Som FM (FM Sound Unit), usada por alguns jogos de Sega Mark III/Master System para obter uma saída de áudio otimizada."
 #define GENESIS_PLUS_GX_YM2413_CORE_LABEL_PT_BR "Núcleo do som FM do Master System (YM2413)"
