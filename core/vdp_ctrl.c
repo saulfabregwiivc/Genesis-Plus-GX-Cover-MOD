@@ -625,7 +625,7 @@ int vdp_context_load(uint8 *state)
 
 void vdp_dma_update(unsigned int cycles)
 {
-  unsigned int dma_cycles, dma_bytes;
+  int dma_cycles, dma_bytes;
 
   /* DMA transfer rate (bytes per line) 
 
@@ -660,6 +660,12 @@ void vdp_dma_update(unsigned int cycles)
   {
     if (rate == 166) rate = 161;      /* 5 refresh slots per line in H32 mode when display is off */
     else if (rate == 204) rate = 198; /* 6 refresh slots per line in H40 mode when display is off */
+  }
+
+  /* Adjust DMA start cycle for DMA fill to take in account intial data port write */
+  else if (dmafill)
+  {
+    cycles += (2 * (MCYCLES_PER_LINE / rate));
   }
 
   /* Available DMA cycles */
@@ -724,7 +730,7 @@ void vdp_dma_update(unsigned int cycles)
   }
 
   /* Process DMA */
-  if (dma_bytes)
+  if (dma_bytes > 0)
   {
     /* Update DMA length */
     dma_length -= dma_bytes;
@@ -2487,9 +2493,6 @@ static void vdp_68k_data_w_m5(unsigned int data)
   /* Check if DMA Fill is pending */
   if (dmafill)
   {
-    /* Clear DMA Fill pending flag */
-    dmafill = 0;
-
     /* DMA length */
     dma_length = (reg[20] << 8) | reg[19];
 
@@ -2499,11 +2502,11 @@ static void vdp_68k_data_w_m5(unsigned int data)
       dma_length = 0x10000;
     }
 
-    /* Take into account initial data word processing */
-    dma_length += 2;
-
     /* Trigger DMA */
     vdp_dma_update(m68k.cycles);
+
+    /* Clear DMA Fill pending flag */
+    dmafill = 0;
   }
 }
 
