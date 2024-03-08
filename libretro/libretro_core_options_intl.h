@@ -35589,19 +35589,19 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_STEREO_JA "ステレオ"
 #define OPTION_VAL_MONO_JA "モノラル"
 #define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_JA "オーディオフィルター"
-#define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_JA "モデル 1 メガドライブの特徴的な音をよりよくシミュレートするために、ローパスオーディオフィルターを有効にします。"
 #define OPTION_VAL_LOW_PASS_JA "ローパス"
 #define OPTION_VAL_EQ_JA NULL
 #define GENESIS_PLUS_GX_LOWPASS_RANGE_LABEL_JA "ローパスフィルター %"
-#define GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_JA "ローパスオーディオフィルターのカットオフ周波数を指定します。値を大きくするほど、高周波スペクトルの広い範囲が減衰するため、フィルターの「強さ」を感じやすくなります。"
 #define GENESIS_PLUS_GX_PSG_PREAMP_LABEL_JA "PSG プリアンプレベル"
-#define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_JA "エミュレートされた SN76496 4 チャンネルプログラマブルサウンドジェネレータのオーディオプリアンプレベルを設定します。このサウンドジェネレータは、SG-1000、セガ・マーク III、マスターシステム、ゲームギアおよびメガドライブに搭載されています。"
 #define GENESIS_PLUS_GX_FM_PREAMP_LABEL_JA "FM プリアンプレベル"
-#define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_JA "エミュレートされたメガドライブ FM サウンドシンセサイザーまたはセガ・マーク III/マスターシステム FM サウンドユニットのオーディオプリアンプレベルを設定します。"
 #define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_JA "CD-DA 音量"
-#define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_JA "エミュレートされた CD オーディオ再生出力のミキシング音量を調整します。"
 #define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_JA "PCM 音量"
-#define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_JA "エミュレートされたメガ CD RF5C164 PCM サウンドジェネレータのミキシングボリュームを調整します。"
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_JA "EQ 低"
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_JA "内部オーディオイコライザの低音域を調整します。"
 #define GENESIS_PLUS_GX_AUDIO_EQ_MID_LABEL_JA "EQ 中"
@@ -35609,18 +35609,18 @@ struct retro_core_options_v2 options_it = {
 #define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_LABEL_JA "EQ 高"
 #define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_JA "内部オーディオイコライザの高音域を調整します。"
 #define GENESIS_PLUS_GX_GUN_INPUT_LABEL_JA "ライトガン入力"
-#define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_JA "マウス操作の [ライトガン] または [タッチスクリーン] 入力を使用します。"
 #define OPTION_VAL_LIGHTGUN_JA "ライトガン"
 #define OPTION_VAL_TOUCHSCREEN_JA "タッチスクリーン"
 #define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_JA "ライトガンクロスヘアを表示"
-#define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_JA "入力デバイスの種類に [MD Menacer]、[MD Justifiers] または [MS Light Phaser] が設定されている場合、ライトガンのクロスヘアを表示します。"
 #define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_JA "マウスの Y 軸を反転"
-#define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_JA "[MD Mouse] 入力デバイスの Y 軸を反転します。"
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_JA "ラインごとのスプライト制限を削除"
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_JA "スキャンラインごとに存在するスプライトの数の制限を解除します。チラつきを軽減しますが、ハードウェア制限を利用して特殊な効果を生成するゲームもあり、視覚的な問題を引き起こす可能性があります。"
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_JA NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_JA "タイルごとの垂直スクロールの拡張"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_JA NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_JA NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_JA "タイルごとの垂直スクロールの拡張制限"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_JA NULL
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_JA "CPU 速度"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_JA "エミュレートされた CPU をオーバークロックします。実行速度の低下を軽減できますが、不具合を引き起こす可能性があります。"
@@ -35641,12 +35641,12 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_450_JA NULL
 #define OPTION_VAL_475_JA NULL
 #define OPTION_VAL_500_JA NULL
-#define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_JA NULL
-#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_JA "システムロック"
+#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_JA "不正なアドレスアクセスを実行する際に実際のハードウェア上で発生するシステムロックをエミュレートします。正常に動作させるために不正な動作に依存する特定のデモや Homebrew をプレイする場合にのみ無効にすることをお勧めします。"
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_JA "68K アドレスエラー"
-#define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_JA "メガドライブのメイン CPU (Motorola 68000) は、アラインされていないメモリアクセスを実行しようとするとアドレスエラー例外を生成します。有効にすると、この動作をシミュレートします。 ROM ハックをプレイする場合にのみ無効にしてください。精度の低いエミュレータで開発された ROM ハックは、正しく動作させるために無効な RAM アクセスに依存することがあります。"
 #define GENESIS_PLUS_GX_CD_LATENCY_LABEL_JA "CD アクセス時間"
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_JA "ロードされたディスクの特定領域への読み込みまたはシークを開始する際に、元の CD ハードウェアの遅延をシミュレートします。CD データが利用可能になるタイミングが早すぎるとクラッシュするゲームや、一部のゲームで発生する CD オーディオの同期ずれを修正するために必要となります。"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_JA "高度なオーディオ音量設定を表示 (メニューを再表示)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_JA "低レベルオーディオチャンネルパラメータの設定を有効にします。注意: この設定を反映するにはクイックメニューを切り替える必要があります。"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_JA "PSG トーンチャンネル 0 音量 %"
