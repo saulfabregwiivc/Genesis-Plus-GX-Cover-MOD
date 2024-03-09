@@ -352,8 +352,10 @@ void system_frame_gen(int do_skip)
   mcycles_vdp = 0;
 
   /* reset VDP FIFO */
-  fifo_write_cnt = 0;
-  fifo_slots = 0;
+  fifo_cycles[0] = 0;
+  fifo_cycles[1] = 0;
+  fifo_cycles[2] = 0;
+  fifo_cycles[3] = 0;
 
   /* check if display setings have changed during previous frame */
   if (bitmap.viewport.changed & 2)
@@ -438,8 +440,8 @@ void system_frame_gen(int do_skip)
   /* clear DMA Busy, FIFO FULL & field flags */
   status &= 0xFEED;
 
-  /* set VBLANK & FIFO EMPTY flags */
-  status |= 0x0208;
+  /* set VBLANK flag */
+  status |= 0x08;
 
   /* check interlaced modes */
   if (interlaced)
@@ -693,8 +695,10 @@ void system_frame_scd(int do_skip)
   scd.cycles = 0;
 
   /* reset VDP FIFO */
-  fifo_write_cnt = 0;
-  fifo_slots = 0;
+  fifo_cycles[0] = 0;
+  fifo_cycles[1] = 0;
+  fifo_cycles[2] = 0;
+  fifo_cycles[3] = 0;
 
   /* check if display setings have changed during previous frame */
   if (bitmap.viewport.changed & 2)
@@ -779,8 +783,8 @@ void system_frame_scd(int do_skip)
   /* clear DMA Busy, FIFO FULL & field flags */
   status &= 0xFEED;
 
-  /* set VBLANK & FIFO EMPTY flags */
-  status |= 0x0208;
+  /* set VBLANK flag */
+  status |= 0x08;
 
   /* check interlaced modes */
   if (interlaced)
@@ -1018,8 +1022,10 @@ void system_frame_sms(int do_skip)
   mcycles_vdp = 0;
 
   /* reset VDP FIFO */
-  fifo_write_cnt = 0;
-  fifo_slots = 0;
+  fifo_cycles[0] = 0;
+  fifo_cycles[1] = 0;
+  fifo_cycles[2] = 0;
+  fifo_cycles[3] = 0;
 
   /* check if display settings has changed during previous frame */
   if (bitmap.viewport.changed & 2)
