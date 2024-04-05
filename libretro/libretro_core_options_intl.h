@@ -49363,7 +49363,7 @@ struct retro_core_options_v2 options_pt_pt = {
 #define CATEGORY_CHANNEL_VOLUME_LABEL_RU "Расширенные настройки громкости каналов"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_RU "Индивидуальная настройка громкости аудиоканалов."
 #define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_RU "Модель системы"
-#define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_RU "Запуск контента на эмулируемой консоли определённой модели. Режим 'Авто' выбирает наиболее подходящую систему для текущей игры."
+#define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_RU "Запуск контента на эмулируемой консоли указанной модели. В режиме 'Автоматически' будет выбрана наиболее подходящая система для текущей игры."
 #define OPTION_VAL_AUTO_RU "Автоматически"
 #define OPTION_VAL_SG_1000_RU NULL
 #define OPTION_VAL_SG_1000_II_RU NULL
@@ -49435,7 +49435,7 @@ struct retro_core_options_v2 options_pt_pt = {
 #define OPTION_VAL_SINGLE_FIELD_RU "Одно поле"
 #define OPTION_VAL_DOUBLE_FIELD_RU "Два поля"
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_RU "Пропуск кадров"
-#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_RU "Пропускать кадры, чтобы избежать появления треска при опустошении аудиобуфера. Улучшает производительность, но снижает плавность изображения. В режиме 'Авто' пропуск кадров регулируется фронтендом. В режиме 'Вручную' используется значение опции 'Граница пропуска кадров (%)'."
+#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_RU "Пропускать кадры для избежания треска при опустошении аудиобуфера. Улучшает производительность, но снижает плавность изображения. В режиме 'Автоматически' пропуск кадров регулируется фронтендом. В режиме 'Вручную' используется настройка 'Граница пропуска кадров (%)'."
 #define OPTION_VAL_MANUAL_RU "Вручную"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_RU "Граница пропуска кадров (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_RU "Устанавливает порог заполнения аудиобуфера ниже которого будет включаться пропуск кадров, если для опции 'Пропуск кадров' выбрано значение 'Вручную'. Большие значения снижают вероятность появления треска за счёт более частого пропуска кадров."
@@ -49471,12 +49471,12 @@ struct retro_core_options_v2 options_pt_pt = {
 #define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_RU "Регулировка уровня громкости на выходе эмулируемого CD-аудио."
 #define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_RU "Громкость PCM"
 #define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_RU "Регулировка громкости звука на выходе эмулируемого PCM генератора RF5C164 Sega CD/Mega-CD."
-#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_RU "EQ низ"
-#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_RU "Регулировка нижнечастотного диапазона встроенного эквалайзера звука."
-#define GENESIS_PLUS_GX_AUDIO_EQ_MID_LABEL_RU "EQ середина"
-#define GENESIS_PLUS_GX_AUDIO_EQ_MID_INFO_0_RU "Регулировка среднечастотного диапазона встроенного эквалайзера звука."
-#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_LABEL_RU "EQ верх"
-#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_RU "Регулировка верхнечастотного диапазона встроенного эквалайзера звука."
+#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_RU "Настройка нижних частот"
+#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_RU "Регулировка нижнечастотного диапазона для встроенного эквалайзера звука."
+#define GENESIS_PLUS_GX_AUDIO_EQ_MID_LABEL_RU "Настройка средних частот"
+#define GENESIS_PLUS_GX_AUDIO_EQ_MID_INFO_0_RU "Регулировка среднечастотного диапазона для встроенного эквалайзера звука."
+#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_LABEL_RU "Настройка верхних частот"
+#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_RU "Регулировка верхнечастотного диапазона для встроенного эквалайзера звука."
 #define GENESIS_PLUS_GX_GUN_INPUT_LABEL_RU "Источник светового пистолета"
 #define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_RU "Использовать для светового пистолета мышь или ввод с сенсорного экрана."
 #define OPTION_VAL_LIGHTGUN_RU "Световой пистолет"
@@ -49492,7 +49492,7 @@ struct retro_core_options_v2 options_pt_pt = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_RU "Предел улучшения верт. скроллинга тайлов"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_RU "Только при вкл. \"Улучшенный верт. скроллинг тайлов\". Регулирует предел улучшения верт. скроллинга. Если значение vscroll между соседними тайлами превышает установленное ограничение, улучшение отключается."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_RU "Скорость CPU"
-#define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_RU "Разгон эмулируемого CPU. Может уменьшать подтормаживания, но вызывать ошибки."
+#define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_RU "Разгон эмулируемого процесса. Может уменьшить замедления, но также приводить к сбоям."
 #define OPTION_VAL_100_RU NULL
 #define OPTION_VAL_125_RU NULL
 #define OPTION_VAL_150_RU NULL
