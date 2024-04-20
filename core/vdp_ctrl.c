@@ -2197,7 +2197,7 @@ static void vdp_bus_w(unsigned int data)
       }
 
 #ifdef HOOK_CPU
-      if (cpu_hook)
+      if (UNLIKELY(cpu_hook))
         cpu_hook(HOOK_VRAM_W, 2, addr, data);
 #endif
 
@@ -2246,7 +2246,7 @@ static void vdp_bus_w(unsigned int data)
       }
 
 #ifdef HOOK_CPU
-      if (cpu_hook)
+      if (UNLIKELY(cpu_hook))
         cpu_hook(HOOK_CRAM_W, 2, addr, data);
 #endif
 
@@ -2272,7 +2272,7 @@ static void vdp_bus_w(unsigned int data)
       }
 
 #ifdef HOOK_CPU
-      if (cpu_hook)
+      if (UNLIKELY(cpu_hook))
         cpu_hook(HOOK_VSRAM_W, 2, addr, data);
 #endif
 
@@ -2483,7 +2483,7 @@ static unsigned int vdp_68k_data_r_m5(void)
       data = *(uint16 *)&vram[addr & 0xFFFE];
 
 #ifdef HOOK_CPU
-      if (cpu_hook)
+      if (UNLIKELY(cpu_hook))
         cpu_hook(HOOK_VRAM_R, 2, addr, data);
 #endif
 
@@ -2512,7 +2512,7 @@ static unsigned int vdp_68k_data_r_m5(void)
       data |= (fifo[fifo_idx] & ~0x7FF);
 
 #ifdef HOOK_CPU
-      if (cpu_hook)
+      if (UNLIKELY(cpu_hook))
         cpu_hook(HOOK_VSRAM_R, 2, addr, data);
 #endif
 
@@ -2534,7 +2534,7 @@ static unsigned int vdp_68k_data_r_m5(void)
       data |= (fifo[fifo_idx] & ~0xEEE);
 
 #ifdef HOOK_CPU
-      if (cpu_hook)
+      if (UNLIKELY(cpu_hook))
         cpu_hook(HOOK_CRAM_R, 2, addr, data);
 #endif
 
@@ -2553,7 +2553,7 @@ static unsigned int vdp_68k_data_r_m5(void)
       data |= (fifo[fifo_idx] & ~0xFF);
 
 #ifdef HOOK_CPU
-      if (cpu_hook)
+      if (UNLIKELY(cpu_hook))
         cpu_hook(HOOK_VRAM_R, 2, addr, data);
 #endif
 
