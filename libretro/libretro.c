@@ -3806,6 +3806,8 @@ void retro_run(void)
    bool updated = false;
    int vwoffset = 0;
    int bmdoffset = 0;
+   int soundbuffer_size = 0;
+
    is_running = true;
 
 #ifdef HAVE_OVERCLOCK
@@ -3894,6 +3896,8 @@ void retro_run(void)
       system_frame_sms(do_skip);
    }
 
+   soundbuffer_size = audio_update(soundbuffer);
+
    if (bitmap.viewport.changed & 9)
    {
       bool geometry_updated = update_viewport();
@@ -3956,7 +3960,7 @@ void retro_run(void)
         video_cb(NULL, vwidth - vwoffset, vheight, 720 * 2);
    }
 
-   audio_cb(soundbuffer, audio_update(soundbuffer));
+   audio_cb(soundbuffer, soundbuffer_size);
 }
 
 #undef  CHUNKSIZE
