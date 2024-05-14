@@ -397,6 +397,16 @@ int cdd_load(char *filename, char *header)
       return -1;
     }
 
+#ifdef __LIBRETRO__
+    if (config.cd_precache)
+    {
+      log_cb(RETRO_LOG_INFO, "Pre-caching \"%s\" ...\n", filename);
+      if (chd_precache(cdd.chd.file) != CHDERR_NONE)
+        return -1;
+      log_cb(RETRO_LOG_INFO, "Pre-cache done.\n");
+    }
+#endif
+
     /* retrieve CHD header */
     head = chd_get_header(cdd.chd.file);
 

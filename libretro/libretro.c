@@ -152,7 +152,7 @@ static const void *g_rom_data = NULL;
 static size_t g_rom_size      = 0;
 static char *save_dir         = NULL;
 
-static retro_log_printf_t log_cb;
+retro_log_printf_t log_cb;
 static retro_video_refresh_t video_cb;
 static retro_input_poll_t input_poll_cb;
 static retro_input_state_t input_state_cb;
@@ -400,7 +400,7 @@ int load_archive(char *filename, unsigned char *buffer, int maxsize, char *exten
     if (!strcmp(filename,CD_BIOS_US) || !strcmp(filename,CD_BIOS_EU) || !strcmp(filename,CD_BIOS_JP)) 
     {
        if (log_cb)
-          log_cb(RETRO_LOG_ERROR, "Unable to open CD BIOS: %s.\n", filename);
+          log_cb(RETRO_LOG_ERROR, "Unable to open CD BIOS: \"%s\".\n", filename);
        return 0;
     }
 
@@ -426,7 +426,7 @@ int load_archive(char *filename, unsigned char *buffer, int maxsize, char *exten
     size = maxsize;
 
   if (log_cb)
-    log_cb(RETRO_LOG_INFO, "INFORMATION - Loading %d bytes ...\n", size);
+    log_cb(RETRO_LOG_INFO, "Loading %d bytes ...\n", size);
 
   /* Read into buffer */
   left = size;
@@ -1708,6 +1708,15 @@ static void check_variables(bool first_run)
       config.cd_latency = 1;
     else
       config.cd_latency = 0;
+  }
+
+  var.key = "genesis_plus_gx_cd_precache";
+  environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var);
+  {
+    if (!var.value || !strcmp(var.value, "disabled"))
+      config.cd_precache = 0;
+    else
+      config.cd_precache = 1;
   }
 
   var.key = "genesis_plus_gx_add_on";

@@ -936,9 +936,9 @@ struct retro_core_option_v2_definition option_defs_us[] = {
    },
    {
       "genesis_plus_gx_cd_latency",
-      "CD access time",
+      "CD Access Time",
       NULL,
-        "Simulate original CD hardware latency when initiating a read or seeking to a specific location on loaded disc. This is required by a few CD games that crash if CD data is available too soon and also fixes CD audio desync issues in some games. Disabling this can be useful with MSU-MD games as it makes CD audio tracks loops more seamless.",
+      "Simulate original CD hardware latency when initiating a read or seeking to a specific location on loaded disc. This is required by a few CD games that crash if CD data is available too soon and also fixes CD audio desync issues in some games. Disabling this can be useful with MSU-MD games as it makes CD audio tracks loops more seamless.",
       NULL,
       "hacks",
       {
@@ -947,6 +947,20 @@ struct retro_core_option_v2_definition option_defs_us[] = {
          { NULL, NULL },
       },
       "enabled"
+   },
+   {
+      "genesis_plus_gx_cd_precache",
+      "CD Image Cache",
+      NULL,
+      "Load CD image to memory on startup. CHD supported only. Restart Required.",
+      NULL,
+      "hacks",
+      {
+         { "disabled", NULL },
+         { "enabled",  NULL },
+         { NULL, NULL },
+      },
+      "disabled"
    },
 #ifdef USE_PER_SOUND_CHANNELS_CONFIG
    {
