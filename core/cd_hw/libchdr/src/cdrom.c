@@ -18,7 +18,7 @@
 #include <assert.h>
 #include <string.h>
 
-#include <libchdr/cdrom.h>
+#include "cdrom.h"
 
 #ifdef WANT_RAW_DATA_SECTOR
 

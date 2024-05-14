@@ -11,7 +11,7 @@
 #include <assert.h>
 #include <string.h>
 
-#include <libchdr/flac.h>
+#include "flac.h"
 #define DR_FLAC_IMPLEMENTATION
 #include <dr_libs/dr_flac.h>
 
