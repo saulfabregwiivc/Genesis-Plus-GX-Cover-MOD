@@ -42,12 +42,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-
-#include <libchdr/chd.h>
-#include <libchdr/cdrom.h>
-#include <libchdr/flac.h>
-#include <libchdr/huffman.h>
-
+#include "types.h"
+#include "osd.h"
+#include "macros.h"
+#include "chd.h"
+#include "cdrom.h"
+#include "flac.h"
+#include "huffman.h"
 #include "zlib.h"
 #include "LzmaEnc.h"
 #include "LzmaDec.h"
