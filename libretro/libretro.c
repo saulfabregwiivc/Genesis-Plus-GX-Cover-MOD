@@ -127,7 +127,12 @@ char CART_BRAM[256];
 
 static int vwidth;
 static int vheight;
+static int vwoffset;
+static int bmdoffset;
+static unsigned int max_width;
+static unsigned int max_height;
 static double vaspect_ratio;
+static double retro_fps;
 
 static uint32_t brm_crc[2];
 static uint8_t brm_format[0x40] =
@@ -140,11 +145,10 @@ static uint8_t brm_format[0x40] =
 uint8_t cart_size;
 
 static bool is_running = 0;
+static bool restart_eq = false;
 static uint8_t temp[0x10000];
 static int16 soundbuffer[3068];
 static uint16_t bitmap_data_[720 * 576];
-
-static bool restart_eq = false;
 
 static char g_rom_dir[256];
 static char g_rom_name[256];
@@ -1240,6 +1244,7 @@ static double calculate_display_aspect_ratio(void)
 {
    double videosamplerate, dotrate;
    bool is_h40 = false;
+
    if (config.aspect_ratio == 0)
    {
       if ((system_hw == SYSTEM_GG || system_hw == SYSTEM_GGMS) && config.overscan == 0 && config.gg_extra == 0)
@@ -1260,18 +1265,64 @@ static double calculate_display_aspect_ratio(void)
    else
       videosamplerate = vdp_pal ? 14750000.0 : 135000000.0 / 11.0;
 
-   return (videosamplerate / dotrate) * ((double)vwidth / ((double)vheight * 2.0));
+   return (videosamplerate / dotrate) * ((double)(vwidth - vwoffset) / ((double)vheight * 2.0));
+}
+
+static bool update_geometry(void)
+{
+   struct retro_system_av_info info;
+   bool update_av_info = false;
+
+   retro_get_system_av_info(&info);
+
+   if (     info.geometry.max_width > max_width
+         || info.geometry.max_height > max_height)
+   {
+      update_av_info = true;
+      max_width  = info.geometry.max_width;
+      max_height = info.geometry.max_height;
+   }
+
+   if (info.timing.fps != retro_fps)
+   {
+      update_av_info = true;
+      retro_fps = info.timing.fps;
+   }
+
+   if (update_av_info)
+      environ_cb(RETRO_ENVIRONMENT_SET_SYSTEM_AV_INFO, &info);
+   else
+      environ_cb(RETRO_ENVIRONMENT_SET_GEOMETRY, &info);
 }
 
 static bool update_viewport(void)
 {
-  int ow = vwidth;
-  int oh = vheight;
-  double oar = vaspect_ratio;
+   int ow = vwidth;
+   int oh = vheight;
+   double oar = vaspect_ratio;
 
-  vwidth  = bitmap.viewport.w + (bitmap.viewport.x * 2);
-  vheight = bitmap.viewport.h + (bitmap.viewport.y * 2);
-  vaspect_ratio = calculate_display_aspect_ratio();
+   if ((system_hw == SYSTEM_GG) && !config.gg_extra)
+      bitmap.viewport.x = (config.overscan & 2) ? 14 : -48;
+   else
+      bitmap.viewport.x = (config.overscan & 2) * 7;
+
+   if (     (config.left_border != 0)
+         && (reg[0] & 0x20)
+         && (bitmap.viewport.x == 0)
+         && ((system_hw == SYSTEM_MARKIII) || (system_hw & SYSTEM_SMS) || (system_hw == SYSTEM_PBC)))
+   {
+      bmdoffset = (16 + (config.ntsc ? 24 : 0));
+      if (config.left_border == 1)
+         vwoffset = (8 + (config.ntsc ? 12 : 0));
+      else
+         vwoffset = (16 + (config.ntsc ? 24 : 0));
+   }
+   else
+      bmdoffset = vwoffset = 0;
+
+   vwidth  = bitmap.viewport.w + (bitmap.viewport.x * 2);
+   vheight = bitmap.viewport.h + (bitmap.viewport.y * 2);
+   vaspect_ratio = calculate_display_aspect_ratio();
 
    if (config.ntsc)
    {
@@ -1285,6 +1336,7 @@ static bool update_viewport(void)
    {
       vheight = vheight * 2;
    }
+
    return ((ow != vwidth) || (oh != vheight) || (oar != vaspect_ratio));
 }
 
@@ -2230,13 +2282,7 @@ static void check_variables(bool first_run)
   }
 
   if (update_viewports)
-  {
     bitmap.viewport.changed = 11;
-    if ((system_hw == SYSTEM_GG) && !config.gg_extra)
-      bitmap.viewport.x = (config.overscan & 2) ? 14 : -48;
-    else
-      bitmap.viewport.x = (config.overscan & 2) * 7 ;
-  }
 
   /* Reinitialise frameskipping, if required */
   if ((update_frameskip || reinit) && !first_run)
@@ -3086,36 +3132,46 @@ void retro_get_system_info(struct retro_system_info *info)
 
 void retro_get_system_av_info(struct retro_system_av_info *info)
 {
-   info->geometry.base_width    = vwidth;
-   info->geometry.base_height   = bitmap.viewport.h + (2 * bitmap.viewport.y);
+   int max_border_width       = 14 * 2;
+   info->geometry.base_width  = vwidth;
+   info->geometry.base_height = vheight;
+
    /* Set maximum dimensions based upon emulated system/config */
    if ((system_hw & SYSTEM_PBC) == SYSTEM_MD)
    {
       /* 16 bit system */
       if (config.ntsc) {
-         info->geometry.max_width = MD_NTSC_OUT_WIDTH(320 + (bitmap.viewport.x * 2));
+         info->geometry.max_width = MD_NTSC_OUT_WIDTH(320 + max_border_width);
       } else {
-         info->geometry.max_width = 320 + (bitmap.viewport.x * 2);
+         info->geometry.max_width = 320 + max_border_width;
       }
       if (config.render) {
-         info->geometry.max_height = 480 + (vdp_pal * 96 * (config.overscan & 1));
+         info->geometry.max_height = 480 + (vdp_pal * 96);
       } else {
-         info->geometry.max_height = 240 + (vdp_pal * 48 * (config.overscan & 1));
+         info->geometry.max_height = 240 + (vdp_pal * 48);
       }
    }
    else
    {
       /* 8 bit system */
       if (config.ntsc) {
-         info->geometry.max_width = SMS_NTSC_OUT_WIDTH(256 + (bitmap.viewport.x * 2));
+         info->geometry.max_width = SMS_NTSC_OUT_WIDTH(256 + max_border_width);
       } else {
-         info->geometry.max_width = 256 + (bitmap.viewport.x * 2);
+         info->geometry.max_width = 256 + max_border_width;
       }
-      info->geometry.max_height = 240 + (vdp_pal * 48 * (config.overscan & 1));
+      info->geometry.max_height = 240 + (vdp_pal * 48);
    }
+
    info->geometry.aspect_ratio  = vaspect_ratio;
    info->timing.fps             = (double)(system_clock) / (double)lines_per_frame / (double)MCYCLES_PER_LINE;
    info->timing.sample_rate     = SOUND_FREQUENCY;
+
+   if (!retro_fps)
+      retro_fps = info->timing.fps;
+   if (!max_width)
+      max_width = info->geometry.max_width;
+   if (!max_height)
+      max_height = info->geometry.max_height;
 }
 
 void retro_set_controller_port_device(unsigned port, unsigned device)
@@ -3813,8 +3869,6 @@ void retro_run(void)
    int result = -1;
    int do_skip = 0;
    bool updated = false;
-   int vwoffset = 0;
-   int bmdoffset = 0;
    int soundbuffer_size = 0;
 
    is_running = true;
@@ -3911,19 +3965,9 @@ void retro_run(void)
    {
       bool geometry_updated = update_viewport();
       bitmap.viewport.changed &= ~1;
-      if (bitmap.viewport.changed & 8)
-      {
-        struct retro_system_av_info info;
-        bitmap.viewport.changed &= ~8; 
-        retro_get_system_av_info(&info);
-        environ_cb(RETRO_ENVIRONMENT_SET_SYSTEM_AV_INFO, &info);
-      }
-      else if (geometry_updated)
-      {
-        struct retro_system_av_info info;
-        retro_get_system_av_info(&info);
-        environ_cb(RETRO_ENVIRONMENT_SET_GEOMETRY, &info.geometry);
-      }
+      bitmap.viewport.changed &= ~8;
+      if (geometry_updated)
+         update_geometry();
    }
 
    if (config.gun_cursor)
@@ -3946,28 +3990,15 @@ void retro_run(void)
          draw_cursor(input.analog[5][0], input.analog[5][1], 0xf800);
       }
    }
-   
-   if ((config.left_border != 0) && (reg[0] & 0x20) && (bitmap.viewport.x == 0) && ((system_hw == SYSTEM_MARKIII) || (system_hw & SYSTEM_SMS) || (system_hw == SYSTEM_PBC)))
-   {
-       bmdoffset = (16 + (config.ntsc ? 24 : 0));
-       if (config.left_border == 1)
-           vwoffset = (8 + (config.ntsc ? 12 : 0));
-       else
-           vwoffset = (16 + (config.ntsc ? 24 : 0));
-   }
 
    /* LED interface */
    if (led_state_cb)
-	   retro_led_interface();
+      retro_led_interface();
 
    if (!do_skip)
-   {
-        video_cb(bitmap.data + bmdoffset, vwidth - vwoffset, vheight, 720 * 2);	
-   }
+      video_cb(bitmap.data + bmdoffset, vwidth - vwoffset, vheight, 720 * 2);
    else
-   {
-        video_cb(NULL, vwidth - vwoffset, vheight, 720 * 2);
-   }
+      video_cb(NULL, vwidth - vwoffset, vheight, 720 * 2);
 
    audio_cb(soundbuffer, soundbuffer_size);
 }
