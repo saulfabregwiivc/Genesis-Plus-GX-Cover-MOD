@@ -3672,6 +3672,8 @@ bool retro_load_game(const struct retro_game_info *info)
 
    if (system_hw == SYSTEM_MCD)
       bram_load();
+   else
+      environ_cb(RETRO_ENVIRONMENT_SET_DISK_CONTROL_INTERFACE, NULL);
 
    update_viewport();
 
