@@ -34713,7 +34713,7 @@ struct retro_core_options_v2 options_hu = {
 #define CATEGORY_SYSTEM_LABEL_ID "Sistem"
 #define CATEGORY_SYSTEM_INFO_0_ID "Mengubah peranti keras dasar, daerah, BIOS, dan pengaturan simpanan Sega CD/Mega-CD."
 #define CATEGORY_VIDEO_LABEL_ID NULL
-#define CATEGORY_VIDEO_INFO_0_ID NULL
+#define CATEGORY_VIDEO_INFO_0_ID "Mengubah pengaturan rasio aspek, pangkas layar, saring video, dan pelewatan bingkai."
 #define CATEGORY_AUDIO_LABEL_ID "Suara"
 #define CATEGORY_AUDIO_INFO_0_ID NULL
 #define CATEGORY_INPUT_LABEL_ID "Masukan"
@@ -34821,7 +34821,7 @@ struct retro_core_options_v2 options_hu = {
 #define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_ID NULL
 #define OPTION_VAL_STEREO_ID NULL
 #define OPTION_VAL_MONO_ID NULL
-#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_ID NULL
+#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_ID "Saring Audio"
 #define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_ID NULL
 #define OPTION_VAL_LOW_PASS_ID NULL
 #define OPTION_VAL_EQ_ID NULL
@@ -34844,7 +34844,7 @@ struct retro_core_options_v2 options_hu = {
 #define GENESIS_PLUS_GX_GUN_INPUT_LABEL_ID NULL
 #define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_ID NULL
 #define OPTION_VAL_LIGHTGUN_ID NULL
-#define OPTION_VAL_TOUCHSCREEN_ID NULL
+#define OPTION_VAL_TOUCHSCREEN_ID "Layar Sentuh"
 #define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_ID NULL
 #define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_ID NULL
 #define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_ID NULL
