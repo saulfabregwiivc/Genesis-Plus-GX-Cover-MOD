@@ -37890,8 +37890,8 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_NTSC_U_JA NULL
 #define OPTION_VAL_PAL_JA NULL
 #define OPTION_VAL_NTSC_J_JA NULL
-#define GENESIS_PLUS_GX_VDP_MODE_LABEL_JA NULL
-#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_JA NULL
+#define GENESIS_PLUS_GX_VDP_MODE_LABEL_JA "強制 VDP モード"
+#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_JA "VDP モードをオーバーライドして、システム地域に関係なく 60Hz (NTSC) または 50Hz (PAL) で強制的に実行します。"
 #define OPTION_VAL_60HZ_JA NULL
 #define OPTION_VAL_50HZ_JA NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_JA "システムブート ROM"
@@ -39466,8 +39466,8 @@ struct retro_core_options_v2 options_ja = {
 #define OPTION_VAL_NTSC_U_KO NULL
 #define OPTION_VAL_PAL_KO NULL
 #define OPTION_VAL_NTSC_J_KO NULL
-#define GENESIS_PLUS_GX_VDP_MODE_LABEL_KO NULL
-#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_KO NULL
+#define GENESIS_PLUS_GX_VDP_MODE_LABEL_KO "강제 VDP 모드"
+#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_KO "VDP 모드를 재정의하여 시스템 지역에 관계없이, 60Hz (NTSC) 또는 50Hz (PAL) 에서 강제로 실행되도록 합니다."
 #define OPTION_VAL_60HZ_KO NULL
 #define OPTION_VAL_50HZ_KO NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_KO "시스템 부트 롬"
@@ -39606,10 +39606,10 @@ struct retro_core_options_v2 options_ja = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_KO "실제 하드웨어에서 잘못된 주소에 접근 시 발생하는 시스템 중단을 구현합니다. 이러한 미정의 행동을 올바르게 활용하는 일부 데모 또는 홈브루를 구동할 때만 비활성화되어야 합니다."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_KO "68K 주소 오류"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_KO "Mega Drive/Genesis의 주 CPU(Motorola 68000)는 정렬되지 않은 메모리 접근을 수행할 경우 주소 오류 예외(크래시)를 발생시킵니다. 이 옵션을 활성화하면 이 동작이 구현됩니다. 부정확한 에뮬레이터에서 개발되어 잘못된 메모리 접근을 활용하는 일부 ROM 핵을 구동할 때만 비활성화되어야 합니다."
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_KO NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_KO "CD 접속 시간"
 #define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_KO "읽기를 시작하거나 불러온 디스크의 특정 위치를 찾을 때 원본 CD 하드웨어 대기 시간을 시뮬레이션합니다. CD 데이터를 너무 빨리 불러와서 충돌이 발생하는 일부 CD 게임에 필요하며 또한 CD 오디오 비동기화 문제도 수정합니다. 이 기능을 비활성화하면 CD 오디오 트랙이 더 매끄럽게 반복되므로 MSU-MD 게임에 유용할 수 있습니다."
-#define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_KO NULL
-#define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_KO NULL
+#define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_KO "CD 이미지 캐시"
+#define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_KO "시작 시 CD 이미지를 메모리에 로드합니다. CHD만 지원됩니다. 다시 시작이 필요합니다."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_KO "고급 오디오 볼륨 설정 표시 (메뉴 다시 열기 필요)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_KO "저수준 오디오 채널 변수 설정을 활성화합니다. 주의: 이 설정은 빠른 메뉴를 껐다 켜야 반영됩니다."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_KO "PSG 소리 채널 0 볼륨 %"
