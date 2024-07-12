@@ -28434,8 +28434,8 @@ struct retro_core_options_v2 options_fr = {
 #define OPTION_VAL_NTSC_U_GL NULL
 #define OPTION_VAL_PAL_GL NULL
 #define OPTION_VAL_NTSC_J_GL NULL
-#define GENESIS_PLUS_GX_VDP_MODE_LABEL_GL NULL
-#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_GL NULL
+#define GENESIS_PLUS_GX_VDP_MODE_LABEL_GL "Forzar o Modo VDP"
+#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_GL "Sobrescribe o modo VDP para forzalo a funcionar a 60Hz (NTSC) ou 50Hz (PAL), independentemente da rexión do sistema."
 #define OPTION_VAL_60HZ_GL NULL
 #define OPTION_VAL_50HZ_GL NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_GL "ROM de arranque do sistema"
@@ -28574,10 +28574,10 @@ struct retro_core_options_v2 options_fr = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_GL "Emule os bloqueos do sistema que se producen no hardware real cando se realiza un acceso ilegal a enderezos. Isto só debería desactivarse cando se reproducen certas demostracións e homebrew que dependen dun comportamento ilegal para o correcto funcionamento."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_GL "Erro de enderezo 68K"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_GL "A CPU principal de Mega Drive/Genesis (Motorola 68000) xera unha excepción de erro de enderezo (falla) ao tentar realizar un acceso á memoria non aliñado. Activar isto simulará este comportamento. Só debería desactivarse cando se reproducen hackeos de ROM, xa que normalmente se desenvolven mediante emuladores menos precisos e poden depender dun acceso RAM non válido para o correcto funcionamento."
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_GL NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_GL "Tempo de Acceso ao CD"
 #define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_GL "Simula a latencia do hardware do CD orixinal ao iniciar unha lectura ou buscar unha localización específica no disco cargado. Isto é necesario para algúns xogos de CD que fallan se os datos do CD están dispoñibles demasiado pronto e tamén solucionan os problemas de desincronización de audio de CD nalgúns xogos. Desactivar isto pode ser útil cos xogos de MSU-MD, xa que fai que as pistas de audio do CD sexan máis fluidas."
-#define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_GL NULL
-#define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_GL NULL
+#define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_GL "Caché da Imaxe do CD"
+#define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_GL "Cargar a imaxe do CD na memoria ao iniciar. Soporte CHD unicamente. Reinicio necesario."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_GL "Mostrar configuración avanzada de volume de audio (volver abrir o menú)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_GL "Activa a configuración dos parámetros da canle de audio de baixo nivel. NOTA: Debe activarse o menú rápido para que esta configuración teña efecto."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_GL "Canle de tons do PSG 0 % de volume"
