@@ -1644,8 +1644,8 @@ struct retro_core_options_v2 options_ar = {
 #define OPTION_VAL_NTSC_J_AST NULL
 #define GENESIS_PLUS_GX_VDP_MODE_LABEL_AST NULL
 #define GENESIS_PLUS_GX_VDP_MODE_INFO_0_AST NULL
-#define OPTION_VAL_60HZ_AST NULL
-#define OPTION_VAL_50HZ_AST NULL
+#define OPTION_VAL_60HZ_AST "60 Hz"
+#define OPTION_VAL_50HZ_AST "50 Hz"
 #define GENESIS_PLUS_GX_BIOS_LABEL_AST NULL
 #define GENESIS_PLUS_GX_BIOS_INFO_0_AST NULL
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_AST NULL
@@ -1669,7 +1669,7 @@ struct retro_core_options_v2 options_ar = {
 #define OPTION_VAL_MEGASD_AST NULL
 #define OPTION_VAL_NONE_AST NULL
 #define GENESIS_PLUS_GX_LOCK_ON_LABEL_AST "Lock-On de cartuchos"
-#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_AST "La teunoloxía Lock-On ye una carauterística de Mega Drive que permitía a los xuegos conectase al puertu d'interconexón d'un cartuchu especial p'aumenta o alteriar el so conteníu. Esta opción especifica qué tipu de cartuchu Lock-On especial hai qu'emular. Los ficheros de BIOS correspondientes han tar nel direutoriu «system» de RetroArch."
+#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_AST "La teunoloxía Lock-On ye una función de Mega Drive que permitía a los xuegos conectase al puertu d'interconexón d'un cartuchu especial p'aumenta o alteriar el so conteníu. Esta opción especifica qué tipu de cartuchu Lock-On especial hai qu'emular. Los ficheros de BIOS correspondientes han tar nel direutoriu «system» de RetroArch."
 #define OPTION_VAL_GAME_GENIE_AST NULL
 #define OPTION_VAL_ACTION_REPLAY_PRO_AST NULL
 #define OPTION_VAL_SONIC_KNUCKLES_AST NULL
@@ -1702,7 +1702,7 @@ struct retro_core_options_v2 options_ar = {
 #define GENESIS_PLUS_GX_RENDER_INFO_0_AST NULL
 #define OPTION_VAL_SINGLE_FIELD_AST "Campu únicu"
 #define OPTION_VAL_DOUBLE_FIELD_AST "Campu doble"
-#define GENESIS_PLUS_GX_FRAMESKIP_LABEL_AST NULL
+#define GENESIS_PLUS_GX_FRAMESKIP_LABEL_AST "Saltu de cuadros"
 #define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_AST NULL
 #define OPTION_VAL_MANUAL_AST NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_AST NULL
@@ -1759,7 +1759,7 @@ struct retro_core_options_v2 options_ar = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_AST NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_AST NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_AST NULL
-#define GENESIS_PLUS_GX_OVERCLOCK_LABEL_AST NULL
+#define GENESIS_PLUS_GX_OVERCLOCK_LABEL_AST "Velocidá de la CPU"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_AST NULL
 #define OPTION_VAL_100_AST NULL
 #define OPTION_VAL_125_AST NULL
@@ -1778,8 +1778,8 @@ struct retro_core_options_v2 options_ar = {
 #define OPTION_VAL_450_AST NULL
 #define OPTION_VAL_475_AST NULL
 #define OPTION_VAL_500_AST NULL
-#define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_AST NULL
-#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_AST NULL
+#define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_AST "Bloqueos del sistema"
+#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_AST "Emula los bloqueos del sistema que se producen nel hardware real cuando s'accede a direiciones illegales. Esta opción namás habría desactivase cuando se xueguen ciertes demos y programes homebrew que s'enconten nel comportamientu illegal pa funcionar correutamente."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_AST NULL
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_AST NULL
 #define GENESIS_PLUS_GX_CD_LATENCY_LABEL_AST NULL
