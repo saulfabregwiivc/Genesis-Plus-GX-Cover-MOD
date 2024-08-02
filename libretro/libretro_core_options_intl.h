@@ -39467,7 +39467,7 @@ struct retro_core_options_v2 options_ja = {
 #define OPTION_VAL_PAL_KO NULL
 #define OPTION_VAL_NTSC_J_KO NULL
 #define GENESIS_PLUS_GX_VDP_MODE_LABEL_KO "강제 VDP 모드"
-#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_KO NULL
+#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_KO "VDP 모드를 재정의하여 시스템 지역에 관계없이 NTSC 60Hz 또는 PAL 50Hz에서 강제로 실행되도록 합니다."
 #define OPTION_VAL_60HZ_KO NULL
 #define OPTION_VAL_50HZ_KO NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_KO "시스템 부트 롬"
