@@ -25282,10 +25282,10 @@ struct retro_core_options_v2 options_fa = {
 #define OPTION_VAL_NTSC_U_FI NULL
 #define OPTION_VAL_PAL_FI NULL
 #define OPTION_VAL_NTSC_J_FI NULL
-#define GENESIS_PLUS_GX_VDP_MODE_LABEL_FI NULL
+#define GENESIS_PLUS_GX_VDP_MODE_LABEL_FI "Pakota VDP-tila"
 #define GENESIS_PLUS_GX_VDP_MODE_INFO_0_FI NULL
-#define OPTION_VAL_60HZ_FI NULL
-#define OPTION_VAL_50HZ_FI NULL
+#define OPTION_VAL_60HZ_FI "NTSC (60 Hz)"
+#define OPTION_VAL_50HZ_FI "PAL (50 Hz)"
 #define GENESIS_PLUS_GX_BIOS_LABEL_FI "Järjestelmän käynnistys ROM"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_FI "Käytä virallista BIOS/bootloader-ohjelmaa emuloiduille laitteelle, jos sellainen löytyy RetroArchin järjestelmäkansiosta. Näyttää konsolikohtaisen käynnistyslatauksen/animaation ja ajaa sitten ladatun sisällön."
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_FI "CD-järjestelmän BRAM (uudelleenkäynnistys vaaditaan)"
