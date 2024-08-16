@@ -3193,7 +3193,7 @@ struct retro_core_options_v2 options_ast = {
 #define CATEGORY_SYSTEM_LABEL_BE "Сістэма"
 #define CATEGORY_SYSTEM_INFO_0_BE NULL
 #define CATEGORY_VIDEO_LABEL_BE "Відэа"
-#define CATEGORY_VIDEO_INFO_0_BE NULL
+#define CATEGORY_VIDEO_INFO_0_BE "Налады суадносін бакоў, кадравання, графічных фільтраў і пропуску кадраў."
 #define CATEGORY_AUDIO_LABEL_BE "Аўдыя"
 #define CATEGORY_AUDIO_INFO_0_BE "Змяніць налады аўдыяпрылады."
 #define CATEGORY_INPUT_LABEL_BE "Увод"
@@ -3254,7 +3254,7 @@ struct retro_core_options_v2 options_ast = {
 #define OPTION_VAL_NTSC_PAR_BE NULL
 #define OPTION_VAL_PAL_PAR_BE NULL
 #define OPTION_VAL_4_3_BE NULL
-#define OPTION_VAL_UNCORRECTED_BE NULL
+#define OPTION_VAL_UNCORRECTED_BE "Без карэкцыі"
 #define GENESIS_PLUS_GX_OVERSCAN_LABEL_BE "Межы"
 #define GENESIS_PLUS_GX_OVERSCAN_INFO_0_BE NULL
 #define OPTION_VAL_TOP_BOTTOM_BE "Зверху/знізу"
@@ -3279,10 +3279,10 @@ struct retro_core_options_v2 options_ast = {
 #define OPTION_VAL_SINGLE_FIELD_BE "Адзінкавае поле"
 #define OPTION_VAL_DOUBLE_FIELD_BE "Двайное поле"
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_BE "Прапусканне кадраў"
-#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_BE "Прапускаць кадры, каб пазбегнуць з'яўлення (трэска) пры спусташэнні аўдыёбуфера. Паляпшае прадукцыйнасць, але зніжае плаўнасць выявы. У рэжыме 'Аўта' пропуск кадраў рэгулюецца франтэндам. У рэжыме 'Уручную' выкарыстоўваецца значэнне опцыі 'Мяжа пропуску кадраў (%)'."
 #define OPTION_VAL_MANUAL_BE NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_BE "Парог прапускання кадраў (%)"
-#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_BE "Усталёўвае парог запаўнення аўдыёбуфера (у працэнтах), ніжэй за які будзе ўключацца пропуск кадраў, калі для параметра 'Пропуск кадраў' выбраны рэжым 'Уручную'. Вялікія значэнні змяншаюць верагоднасць з'яўлення трэска за рахунак больш частага пропуску кадраў."
 #define GENESIS_PLUS_GX_YM2413_LABEL_BE NULL
 #define GENESIS_PLUS_GX_YM2413_INFO_0_BE NULL
 #define GENESIS_PLUS_GX_YM2413_CORE_LABEL_BE "Ядро Master System FM (YM2413)"
