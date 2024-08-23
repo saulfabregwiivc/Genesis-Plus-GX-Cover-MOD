@@ -3198,7 +3198,7 @@ struct retro_core_options_v2 options_ast = {
 #define CATEGORY_AUDIO_INFO_0_BE "Змяніць налады аўдыяпрылады."
 #define CATEGORY_INPUT_LABEL_BE "Увод"
 #define CATEGORY_INPUT_INFO_0_BE NULL
-#define CATEGORY_HACKS_LABEL_BE NULL
+#define CATEGORY_HACKS_LABEL_BE "Хакі эмуляцыі"
 #define CATEGORY_HACKS_INFO_0_BE NULL
 #define CATEGORY_CHANNEL_VOLUME_LABEL_BE "Пашыраныя налады гучнасці каналаў"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_BE NULL
@@ -3250,7 +3250,7 @@ struct retro_core_options_v2 options_ast = {
 #define OPTION_VAL_ACTION_REPLAY_PRO_BE NULL
 #define OPTION_VAL_SONIC_KNUCKLES_BE NULL
 #define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_BE "Забяспечаныя ядром суадносіны бакоў"
-#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_BE NULL
+#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_BE "Выбар пераважных суадносін бакоў кантэнту. Ужываецца толькі пры выбары рэжыму суадносін бакоў 'Налада ядра' у наладах відэа RetroArch."
 #define OPTION_VAL_NTSC_PAR_BE NULL
 #define OPTION_VAL_PAL_PAR_BE NULL
 #define OPTION_VAL_4_3_BE NULL
@@ -28435,7 +28435,7 @@ struct retro_core_options_v2 options_fr = {
 #define OPTION_VAL_PAL_GL NULL
 #define OPTION_VAL_NTSC_J_GL NULL
 #define GENESIS_PLUS_GX_VDP_MODE_LABEL_GL "Forzar o Modo VDP"
-#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_GL NULL
+#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_GL "Sustituír o modo VDP para forzalo a funcionar a 60Hz NTSC ou 50Hz PAL, independentemente da rexión do sistema."
 #define OPTION_VAL_60HZ_GL NULL
 #define OPTION_VAL_50HZ_GL NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_GL "ROM de arranque do sistema"
