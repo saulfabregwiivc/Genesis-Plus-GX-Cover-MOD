@@ -4768,11 +4768,11 @@ struct retro_core_options_v2 options_be = {
 
 #define CATEGORY_SYSTEM_LABEL_BG NULL
 #define CATEGORY_SYSTEM_INFO_0_BG NULL
-#define CATEGORY_VIDEO_LABEL_BG NULL
+#define CATEGORY_VIDEO_LABEL_BG "Видео"
 #define CATEGORY_VIDEO_INFO_0_BG NULL
-#define CATEGORY_AUDIO_LABEL_BG NULL
+#define CATEGORY_AUDIO_LABEL_BG "Звук"
 #define CATEGORY_AUDIO_INFO_0_BG NULL
-#define CATEGORY_INPUT_LABEL_BG NULL
+#define CATEGORY_INPUT_LABEL_BG "Вход"
 #define CATEGORY_INPUT_INFO_0_BG NULL
 #define CATEGORY_HACKS_LABEL_BG NULL
 #define CATEGORY_HACKS_INFO_0_BG NULL
@@ -6345,7 +6345,7 @@ struct retro_core_options_v2 options_bg = {
 #define CATEGORY_SYSTEM_LABEL_CA "Sistema"
 #define CATEGORY_SYSTEM_INFO_0_CA NULL
 #define CATEGORY_VIDEO_LABEL_CA "Vídeo"
-#define CATEGORY_VIDEO_INFO_0_CA NULL
+#define CATEGORY_VIDEO_INFO_0_CA "Canvia la relació d'aspecte, retalls de la imatge, filtre de vídeo i l'omissió de fotogrames."
 #define CATEGORY_AUDIO_LABEL_CA "Àudio"
 #define CATEGORY_AUDIO_INFO_0_CA NULL
 #define CATEGORY_INPUT_LABEL_CA "Dispositius de joc"
@@ -6402,7 +6402,7 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_ACTION_REPLAY_PRO_CA NULL
 #define OPTION_VAL_SONIC_KNUCKLES_CA NULL
 #define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_CA "Relació d'aspecte proveïda pel nucli"
-#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_CA "Escull la relació d'aspecte preferida. Aquesta relació d'aspecte només s'aplicarà si la relació d'aspecte a RetroArch està fixada a 'Core provided' en la configuració de vídeo."
 #define OPTION_VAL_NTSC_PAR_CA NULL
 #define OPTION_VAL_PAL_PAR_CA NULL
 #define OPTION_VAL_4_3_CA NULL
@@ -6421,7 +6421,7 @@ struct retro_core_options_v2 options_bg = {
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_CA "Filtre Blargg NTSC"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_CA NULL
 #define OPTION_VAL_MONOCHROME_CA "Monocrom"
-#define OPTION_VAL_COMPOSITE_CA NULL
+#define OPTION_VAL_COMPOSITE_CA "Composició"
 #define OPTION_VAL_SVIDEO_CA NULL
 #define OPTION_VAL_RGB_CA NULL
 #define GENESIS_PLUS_GX_LCD_FILTER_LABEL_CA NULL
@@ -6431,7 +6431,7 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_SINGLE_FIELD_CA NULL
 #define OPTION_VAL_DOUBLE_FIELD_CA NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_CA "Ometre fotogrames"
-#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_CA "Omet fotogrames per no saturar la memòria intermèdia de l'àudio. Millora el rendiment a canvi de perdre fluïdesa visual. Selecció automàtica omet fotogrames a petició del front-end. El valor manual ajusta el llindar d'omissió de fotogrames (%)."
 #define OPTION_VAL_MANUAL_CA NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_CA "Llindar d'omissió de fotogrames (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_CA "Si l'omissió de fotogrames està fixada a 'Manual', aquesta opció selecciona el llindar inferior de la memòria intermèdia de l'àudio (en percentatge) per sota del no s'ometrà cap fotograma. Un valor més alt redueix el risc dels errors d'àudio, ometent fotogrames amb més freqüència."
@@ -50483,11 +50483,11 @@ struct retro_core_options_v2 options_pt_pt = {
 #define CATEGORY_CHANNEL_VOLUME_LABEL_RU "Расширенные настройки громкости каналов"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_RU "Индивидуальная настройка громкости аудиоканалов."
 #define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_RU "Модель системы"
-#define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_RU "Запуск контента на эмулируемой консоли указанной модели. В режиме 'Автоматически' будет выбрана наиболее подходящая система для текущей игры."
+#define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_RU "Запуск контента на эмулируемой консоли указанной модели. В режиме 'Автоматически' будет выбрана система, наиболее подходящая для текущей игры."
 #define OPTION_VAL_AUTO_RU "Автоматически"
 #define OPTION_VAL_SG_1000_RU NULL
 #define OPTION_VAL_SG_1000_II_RU NULL
-#define OPTION_VAL_SG_1000_II_RAM_EXT_RU "SG-1000 II + Расширение ОЗУ"
+#define OPTION_VAL_SG_1000_II_RAM_EXT_RU "SG-1000 II + расш. RAM"
 #define OPTION_VAL_MARK_III_RU NULL
 #define OPTION_VAL_MASTER_SYSTEM_RU NULL
 #define OPTION_VAL_MASTER_SYSTEM_II_RU NULL
@@ -50503,16 +50503,16 @@ struct retro_core_options_v2 options_pt_pt = {
 #define OPTION_VAL_60HZ_RU "NTSC (60 Гц)"
 #define OPTION_VAL_50HZ_RU "PAL (50 Гц)"
 #define GENESIS_PLUS_GX_BIOS_LABEL_RU "Загрузочный образ системы"
-#define GENESIS_PLUS_GX_BIOS_INFO_0_RU "Использовать официальный BIOS/загрузчик эмулируемой консоли при наличии файла в системном каталоге RetroArch. Отображает стартовую анимацию загрузки консоли перед запуском контента."
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_RU "Сист. резервная память Sega CD (требуется перезапуск)"
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_RU "Определяет, использовать для игр Sega CD/Mega-CD одного региона единый файл сохранения (значение 'Общая по BIOS') или создавать отдельные файлы сохранения (значение 'Индивидуально для игры'). Учитывайте, что объём внутренней памяти Sega CD/Mega-CD достаточен лишь для нескольких игр. Чтобы избежать нехватки места используйте режим 'Для игры'."
-#define OPTION_VAL_PER_BIOS_RU "Общая по BIOS"
-#define OPTION_VAL_PER_GAME_RU "Индивидуально для игры"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_RU "Картридж резервной памяти Sega CD (требуется перезапуск)"
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_RU "При запуске контента Sega CD/Mega-CD указывает, следует ли использовать для всех игр единый картридж резервной памяти (значение 'Общий для всех игр') или создавать отдельные файлы резервной памяти (значение 'Индивидуально для игры')."
+#define GENESIS_PLUS_GX_BIOS_INFO_0_RU "Использовать официальный BIOS/загрузчик эмулируемой консоли, если файл присутствует в системном каталоге RetroArch. Отображает начальную анимацию загрузки консоли перед запуском контента."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_RU "Резервная память Sega CD (требуется перезапуск)"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_RU "При запуске игр Sega CD/Mega-CD одного региона использовать общий файл сохранения (режим 'По региону BIOS') или создавать отдельные сохранения (режим 'Для каждой игры'). Sega CD/Mega-CD имеет малый объём внутренней памяти. Чтобы избежать нехватки места, используйте режим 'Для каждой игры'."
+#define OPTION_VAL_PER_BIOS_RU "По региону BIOS"
+#define OPTION_VAL_PER_GAME_RU "Для каждой игры"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_RU "Картридж резерв. памяти Sega CD (требуется перезапуск)"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_RU "При запуске контента Sega CD/Mega-CD использовать для всех игр один картридж резервной памяти (режим 'Общий для всех игр') или создавать отдельные файлы (режим 'Для каждой игры')."
 #define OPTION_VAL_PER_CART_RU "Общий для всех игр"
-#define GENESIS_PLUS_GX_CART_SIZE_LABEL_RU "Размер картриджа резервной памяти Sega CD (требуется перезапуск)"
-#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_RU "Устанавливает размер картриджа резервной памяти для контента Sega CD/Mega-CD. Полезно в режиме резервной памяти 'Индивидуально для игры', чтобы избежать создания файлов большого размера."
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_RU "Объём картриджа резерв. памяти Sega CD (требуется перезапуск)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_RU "Объём картриджа резерв. памяти при запуске игр Sega CD/Mega-CD. Используйте в режиме 'Для каждой игры', чтобы избежать создания файлов большого размера."
 #define OPTION_VAL_128K_RU "128 кбит"
 #define OPTION_VAL_256K_RU "256 кбит"
 #define OPTION_VAL_512K_RU "512 кбит"
@@ -50525,12 +50525,12 @@ struct retro_core_options_v2 options_pt_pt = {
 #define OPTION_VAL_MEGASD_RU NULL
 #define OPTION_VAL_NONE_RU "Нет"
 #define GENESIS_PLUS_GX_LOCK_ON_LABEL_RU "Картридж Lock-On"
-#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_RU "Технология Lock-On - это расширение Mega Drive/Genesis, которое позволяло подключать старые игры через специальный картридж для получения расширенного или изменённого геймплея. Данная опция устанавливает тип эмулируемого картриджа 'lock-on'. Соответствующий файл bios должен присутствовать в системном каталоге RetroArch."
+#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_RU "Lock-On - это дополнение для Mega Drive/Genesis, которое позволяло получить расширенный геймплей при подключении игр в порт специального картриджа. Данная опция указывает тип эмулируемого картриджа 'lock-on'. Соответствующий файл bios должен находиться в системном каталоге RetroArch."
 #define OPTION_VAL_GAME_GENIE_RU NULL
 #define OPTION_VAL_ACTION_REPLAY_PRO_RU NULL
 #define OPTION_VAL_SONIC_KNUCKLES_RU NULL
 #define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_RU "Соотношение сторон ядра"
-#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_RU "Выбор предпочтительного соотношения сторон контента. Учитывается, только если в настройках видео RetroArch для соотношения сторон задано значение 'По выбору ядра'."
+#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_RU "Выбор предпочтительного соотношения сторон контента. Применяется только в режиме соотношения сторон 'По выбору ядра' в настройках масштабирования RetroArch."
 #define OPTION_VAL_NTSC_PAR_RU NULL
 #define OPTION_VAL_PAL_PAR_RU NULL
 #define OPTION_VAL_4_3_RU NULL
@@ -50545,33 +50545,33 @@ struct retro_core_options_v2 options_pt_pt = {
 #define OPTION_VAL_LEFT_BORDER_RU "Только граница слева"
 #define OPTION_VAL_LEFT_RIGHT_BORDERS_RU "Границы слева и справа"
 #define GENESIS_PLUS_GX_GG_EXTRA_LABEL_RU "Расширение экрана Game Gear"
-#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_RU "Принудительный запуск игр Game Gear в режиме SMS в повышенном разрешении 256x192. Может расширять область изображения, но чаще приводит к появлению артефактов вокруг экрана."
-#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_RU "NTSC-фильтры Blargg'а"
-#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_RU "Применяет видеофильтр для имитации различных сигналов NTSC ТВ."
+#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_RU "Форсировать запуск игр Game Gear в режиме SMS с повышенным разрешением 256x192. Может расширять область отображения, но часто приводит к появлению артефактов вокруг экрана."
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_RU "NTSC-фильтр Blargg'а"
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_RU "Применяет фильтр изображения для имитации различных NTSC ТВ-сигналов."
 #define OPTION_VAL_MONOCHROME_RU "Монохромный"
-#define OPTION_VAL_COMPOSITE_RU "Композит"
+#define OPTION_VAL_COMPOSITE_RU "Композитный"
 #define OPTION_VAL_SVIDEO_RU NULL
 #define OPTION_VAL_RGB_RU NULL
 #define GENESIS_PLUS_GX_LCD_FILTER_LABEL_RU "Ghosting-фильтр LCD"
-#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_RU "Применяет к изображению фильтр 'двоения' для имитации особенностей ЖК-дисплеев Game Gear и Genesis Nomad."
-#define GENESIS_PLUS_GX_RENDER_LABEL_RU "Режим Interlaced Mode 2"
-#define GENESIS_PLUS_GX_RENDER_INFO_0_RU "Interlaced Mode 2 позволяет Mega Drive/Genesis выводить изображение с удвоенной высотой (в высоком разрешении) 320x448 путём дорисовки в каждом кадре дополнительных строк развёртки (как в режиме мультиплеера в 'Sonic The Hedgehog 2' и 'Combat Cars'). Режим 'Два поля' имитирует оригинальную консоль, выдавая чёткую картинку с артефактами мерцания/чересстрочности. В режиме 'Одно поле' применяется фильтр деинтерлейсинга, который стабилизирует изображение, но добавляет небольшое размытие."
+#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_RU "Применяет к изображению ghosting-фильтр (эффект двоения) для имитации ЖК-дисплеев Game Gear и Genesis Nomad."
+#define GENESIS_PLUS_GX_RENDER_LABEL_RU "Вывод в Interlaced Mode 2"
+#define GENESIS_PLUS_GX_RENDER_INFO_0_RU "Interlaced Mode 2 позволяет Mega Drive/Genesis выводить изображение с удвоенной высотой 320x448 путём дорисовки в каждом кадре доп. строк развёртки (исп. в мультиплеере 'Sonic The Hedgehog 2' и 'Combat Cars'). Режим 'Два поля' имитирует ориг. консоль, с резким изображением и артефактами чересстрочности/мерцания. Режим 'Одно поле' исп. деинтерлейсинг, который стабилизирует изображение, но вносит небольшое размытие."
 #define OPTION_VAL_SINGLE_FIELD_RU "Одно поле"
 #define OPTION_VAL_DOUBLE_FIELD_RU "Два поля"
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_RU "Пропуск кадров"
-#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_RU "Пропускать кадры для избежания треска при опустошении аудиобуфера. Улучшает производительность, но снижает плавность изображения. В режиме 'Автоматически' пропуск кадров регулируется фронтендом. В режиме 'Вручную' используется настройка 'Граница пропуска кадров (%)'."
+#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_RU "Пропускать кадры, чтобы избежать искажений звука при опустошении аудиобуфера. Улучшает производительность, но визуально снижает плавность геймплея. В режиме 'Автоматически' пропуск кадров регулируется фронтендом. В режиме 'Вручную' исп. опция 'Граница пропуска кадров (%)'."
 #define OPTION_VAL_MANUAL_RU "Вручную"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_RU "Граница пропуска кадров (%)"
-#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_RU "Устанавливает порог заполнения аудиобуфера ниже которого будет включаться пропуск кадров, если для опции 'Пропуск кадров' выбрано значение 'Вручную'. Большие значения снижают вероятность появления треска за счёт более частого пропуска кадров."
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_RU "Порог заполнения аудиобуфера ниже которого вкл. пропуск кадров, если для опции 'Пропуск кадров' установлено значение 'Вручную'. Более высокие значения снижают вероятность искажения звука за счёт более частого пропуска кадров."
 #define GENESIS_PLUS_GX_YM2413_LABEL_RU NULL
 #define GENESIS_PLUS_GX_YM2413_INFO_0_RU "Включает эмуляцию FM Sound Unit, используемого для улучшения звука в некоторых играх Sega Mark III/Master System."
 #define GENESIS_PLUS_GX_YM2413_CORE_LABEL_RU "Ядро Master System FM (YM2413)"
-#define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_RU "Выбор способа эмуляции FM Sound Unit моделей Sega Mark III/Master System. Режим 'MAME' быстрый и выдаёт полную скорость на большинстве устройств. 'Nuked' обеспечивает потактовую точность, очень высокое качество, но предъявляет повышенные требования к CPU."
+#define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_RU "Выбор метода эмуляции FM Sound Unit в Sega Mark III/Master System. 'MAME' обеспечивает высокую скорость без замедлений на большинстве устройств. 'Nuked' обеспечивает потактовую точность с очень высоким качеством, но предъявляет повышенные требования к CPU."
 #define OPTION_VAL_MAME_RU NULL
 #define OPTION_VAL_NUKED_RU NULL
 #define GENESIS_PLUS_GX_YM2612_LABEL_RU NULL
-#define GENESIS_PLUS_GX_YM2612_INFO_0_RU "Выбор способа эмуляции FM-синтезатора (основного генератора звука) Mega Drive/Genesis. Режимы 'MAME' быстрые и работают без замедлений на большинстве устройств. 'Nuked' обеспечивают потактовую точность, очень высокое качество, но предъявляют повышенные требования к CPU. Чип YM2612 используется в оригинальной Mega Drive/Genesis Model 1. YM3438 используется в более поздних моделях Mega Drive/Genesis."
-#define GENESIS_PLUS_GX_YM2612_INFO_1_RU "Выбор способа эмуляции FM-синтезатора (основного генератора звука) Mega Drive/Genesis. Чип YM2612 используется в оригинальной Mega Drive/Genesis Model 1. YM3438 используется в более поздних моделях Mega Drive/Genesis."
+#define GENESIS_PLUS_GX_YM2612_INFO_0_RU "Выбор метода эмуляции FM-синтезатора Mega Drive/Genesis. Режимы 'MAME' обеспечивают высокую скорость без замедлений на большинстве устройств. 'Nuked' обеспечивают потактовую точность с очень высоким качеством, но предъявляют повышенные требования к CPU. Чип YM2612 исп. в ориг. Mega Drive/Genesis модели 1, а YM3438 в более поздних моделях Mega Drive/Genesis."
+#define GENESIS_PLUS_GX_YM2612_INFO_1_RU "Выбор метода эмуляции FM-синтезатора (основного генератора звука) Mega Drive/Genesis. Микросхема YM2612 используется в оригинальной Mega Drive/Genesis модели 1, а YM3438 в более поздних моделях Mega Drive/Genesis."
 #define OPTION_VAL_MAME_YM2612_RU NULL
 #define OPTION_VAL_MAME_ASIC_YM3438_RU NULL
 #define OPTION_VAL_MAME_ENHANCED_YM3438_RU "MAME (улучшенный YM3438)"
@@ -50582,7 +50582,7 @@ struct retro_core_options_v2 options_pt_pt = {
 #define OPTION_VAL_STEREO_RU "Стерео"
 #define OPTION_VAL_MONO_RU "Моно"
 #define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_RU "Аудиофильтр"
-#define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_RU "Включает фильтр нижних частот для лучшей имитации особенностей звучания Mega Drive/Genesis Model 1."
+#define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_RU "Включает фильтр нижних частот для лучшей имитации характеристик звука Mega Drive/Genesis модели 1."
 #define OPTION_VAL_LOW_PASS_RU "Низкочастотный"
 #define OPTION_VAL_EQ_RU "Эквалайзер"
 #define GENESIS_PLUS_GX_LOWPASS_RANGE_LABEL_RU "Фильтр нижних частот (%)"
@@ -50639,7 +50639,7 @@ struct retro_core_options_v2 options_pt_pt = {
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_RU "Ошибка адресации 68K"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_RU "При попытке невыровненного доступа к памяти центральный процессор Mega Drive/Genesis (Motorola 68000) генерирует прерывание (сбой) по ошибке адресации. Включение опции 'Ошибка адресации 68K' имитирует данное поведение. Опцию необходимо отключать только для запуска хаков, т.к. они обычно разрабатываются на менее точных эмуляторах и могут использовать ошибки доступа к памяти для корректной работы."
 #define GENESIS_PLUS_GX_CD_LATENCY_LABEL_RU "Время доступа к CD"
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_RU "Имитация задержки оригинального оборудования CD при чтении или поиске определенного места загруженного диска. Требуется для некоторых игр на CD, зависающих при слишком быстром доступе к данным, а также устраняет рассинхронизацию CD-аудио. Рекомендуется отключать c играми MSU-MD, т.к. обеспечивает более плавный повтор аудиодорожек."
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_RU "Имитация задержки физ. CD-привода при операциях чтения или поиска определенного сектора диска. Требуется для отдельных CD-игр, зависающих при слишком быстром получении данных, а также устраняет рассинхронизацию CD-аудио. Рекомендуется откл. для игр MSU-MD, т.к. обеспечивает плавный повтор аудиодорожек."
 #define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_RU "Кэшировать образ CD"
 #define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_RU "При запуске загружать образ CD в память. Поддерживаются только CHD. Требуется перезапуск."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_RU "Показывать доп. настройки громкости (при повт. вызове меню)"
