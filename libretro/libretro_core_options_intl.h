@@ -6347,7 +6347,7 @@ struct retro_core_options_v2 options_bg = {
 #define CATEGORY_VIDEO_LABEL_CA "Vídeo"
 #define CATEGORY_VIDEO_INFO_0_CA "Canvia la relació d'aspecte, retalls de la imatge, filtre de vídeo i l'omissió de fotogrames."
 #define CATEGORY_AUDIO_LABEL_CA "Àudio"
-#define CATEGORY_AUDIO_INFO_0_CA NULL
+#define CATEGORY_AUDIO_INFO_0_CA "Canviar les opcions del mesclador d'àudio."
 #define CATEGORY_INPUT_LABEL_CA "Entrada"
 #define CATEGORY_INPUT_INFO_0_CA NULL
 #define CATEGORY_HACKS_LABEL_CA "Correccions de l'emulació"
@@ -6376,7 +6376,7 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_50HZ_CA "PAL (50 Hz)"
 #define GENESIS_PLUS_GX_BIOS_LABEL_CA "ROM d'arrencada del sistema"
 #define GENESIS_PLUS_GX_BIOS_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CA NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CA "BRAM del sistema CD (Es requereix reinici)"
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CA NULL
 #define OPTION_VAL_PER_BIOS_CA "Per BIOS"
 #define OPTION_VAL_PER_GAME_CA "Per joc"
@@ -6412,11 +6412,11 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_TOP_BOTTOM_CA "Superior/Inferior"
 #define OPTION_VAL_LEFT_RIGHT_CA "Esquerre/Dreta"
 #define OPTION_VAL_FULL_CA "Complet"
-#define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_CA NULL
+#define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_CA "Amaga les vores de Master System"
 #define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_CA NULL
 #define OPTION_VAL_LEFT_BORDER_CA "Només la vora esquerre"
 #define OPTION_VAL_LEFT_RIGHT_BORDERS_CA "Vores esquerra i dreta"
-#define GENESIS_PLUS_GX_GG_EXTRA_LABEL_CA NULL
+#define GENESIS_PLUS_GX_GG_EXTRA_LABEL_CA "Pantalla ampliada de la Game Gear"
 #define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_CA NULL
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_CA "Filtre Blargg NTSC"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_CA "Aplica un filtre de vídeo per imitar el senyal de les televisions NTSC."
@@ -6426,7 +6426,7 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_RGB_CA NULL
 #define GENESIS_PLUS_GX_LCD_FILTER_LABEL_CA "Filtre d'efecte fantasma del LCD"
 #define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_RENDER_LABEL_CA NULL
+#define GENESIS_PLUS_GX_RENDER_LABEL_CA "Mode d'entrellaçament de vídeo 2"
 #define GENESIS_PLUS_GX_RENDER_INFO_0_CA NULL
 #define OPTION_VAL_SINGLE_FIELD_CA "Camp únic"
 #define OPTION_VAL_DOUBLE_FIELD_CA "Dos camps"
@@ -6437,7 +6437,7 @@ struct retro_core_options_v2 options_bg = {
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_CA "Si l'omissió de fotogrames està fixada a 'Manual', aquesta opció selecciona el llindar inferior de la memòria intermèdia de l'àudio (en percentatge) per sota del no s'ometrà cap fotograma. Un valor més alt redueix el risc dels errors d'àudio, ometent fotogrames amb més freqüència."
 #define GENESIS_PLUS_GX_YM2413_LABEL_CA NULL
 #define GENESIS_PLUS_GX_YM2413_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_YM2413_CORE_LABEL_CA NULL
+#define GENESIS_PLUS_GX_YM2413_CORE_LABEL_CA "Nucli del Master System FM (YM2413)"
 #define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_CA NULL
 #define OPTION_VAL_MAME_CA NULL
 #define OPTION_VAL_NUKED_CA NULL
@@ -6450,7 +6450,7 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_NUKED_YM2612_CA NULL
 #define OPTION_VAL_NUKED_YM3438_CA NULL
 #define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_CA "Sortida d'àudio"
-#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_CA "Selecciona estèreo o mono a la sortida d'àudio."
 #define OPTION_VAL_STEREO_CA "Estèreo"
 #define OPTION_VAL_MONO_CA NULL
 #define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_CA "Filtre d'àudio"
@@ -6477,13 +6477,13 @@ struct retro_core_options_v2 options_bg = {
 #define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_CA "Fes servir una pistola de llum controlada per ratolí o per pantalla tàctil."
 #define OPTION_VAL_LIGHTGUN_CA "Pistola de llum"
 #define OPTION_VAL_TOUCHSCREEN_CA "Pantalla tàctil"
-#define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_CA NULL
+#define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_CA "Mostrar el mira de les pistoles de llum"
 #define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_CA NULL
 #define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_CA "Invertir l'eix Y del ratolí"
 #define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_CA NULL
+#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_CA "Volum del canal 3 del PSG %"
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_CA NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_CA "Millorar el desplaçament vertical de tiles"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_CA NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_CA NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CA NULL
@@ -6516,13 +6516,13 @@ struct retro_core_options_v2 options_bg = {
 #define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_CA NULL
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_CA NULL
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_CA NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_CA "Volum del canal 0 del PSG %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_CA NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_CA "Volum del canal 1 del PSG %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_CA NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_CA "Volum del canal 2 del PSG %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_CA NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_CA "Volum del canal 3 del PSG %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_CA NULL
 #define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_CA NULL
 #define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_CA NULL
@@ -55226,7 +55226,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_NTSC_U_SV NULL
 #define OPTION_VAL_PAL_SV NULL
 #define OPTION_VAL_NTSC_J_SV NULL
-#define GENESIS_PLUS_GX_VDP_MODE_LABEL_SV NULL
+#define GENESIS_PLUS_GX_VDP_MODE_LABEL_SV "Tvinga VDP-läge"
 #define GENESIS_PLUS_GX_VDP_MODE_INFO_0_SV NULL
 #define OPTION_VAL_60HZ_SV NULL
 #define OPTION_VAL_50HZ_SV NULL
@@ -55235,7 +55235,7 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_SV "CD-System BRAM (Kräver omstart)"
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_SV NULL
 #define OPTION_VAL_PER_BIOS_SV NULL
-#define OPTION_VAL_PER_GAME_SV NULL
+#define OPTION_VAL_PER_GAME_SV "Per-Spel"
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_SV NULL
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_SV NULL
 #define OPTION_VAL_PER_CART_SV NULL
@@ -55331,7 +55331,7 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_GUN_INPUT_LABEL_SV NULL
 #define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_SV NULL
-#define OPTION_VAL_LIGHTGUN_SV NULL
+#define OPTION_VAL_LIGHTGUN_SV "Ljuspistol"
 #define OPTION_VAL_TOUCHSCREEN_SV "Pekskärm"
 #define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_SV NULL
 #define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_SV NULL
@@ -55362,7 +55362,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_450_SV NULL
 #define OPTION_VAL_475_SV NULL
 #define OPTION_VAL_500_SV NULL
-#define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_SV NULL
+#define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_SV "Systemlåsningar"
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_SV NULL
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_SV NULL
