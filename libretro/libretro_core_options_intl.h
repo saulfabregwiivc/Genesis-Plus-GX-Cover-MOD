@@ -6380,7 +6380,7 @@ struct retro_core_options_v2 options_bg = {
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CA NULL
 #define OPTION_VAL_PER_BIOS_CA "Per BIOS"
 #define OPTION_VAL_PER_GAME_CA "Per joc"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_CA NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_CA "BRAM del sistema CD (Es requereix reinici)"
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CA NULL
 #define OPTION_VAL_PER_CART_CA "Per cartutx"
 #define GENESIS_PLUS_GX_CART_SIZE_LABEL_CA NULL
@@ -6391,7 +6391,7 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_1MEG_CA NULL
 #define OPTION_VAL_2MEG_CA NULL
 #define OPTION_VAL_4MEG_CA NULL
-#define GENESIS_PLUS_GX_ADD_ON_LABEL_CA NULL
+#define GENESIS_PLUS_GX_ADD_ON_LABEL_CA "Afegit de CD (Mode MD) (Es requereix reinici)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_CA NULL
 #define OPTION_VAL_SEGA_MEGA_CD_CA NULL
 #define OPTION_VAL_MEGASD_CA NULL
@@ -6485,7 +6485,7 @@ struct retro_core_options_v2 options_bg = {
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_CA NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_CA "Millorar el desplaçament vertical de tiles"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_CA NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_CA "Límit de millora del desplaçament vertical de tiles"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CA NULL
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_CA "Velocitat de la CPU"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_CA NULL
@@ -6524,17 +6524,17 @@ struct retro_core_options_v2 options_bg = {
 #define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_CA NULL
 #define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_CA "Volum del canal 3 del PSG %"
 #define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_CA "Volum del canal 0 de la Mega Drive/Genesis %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_CA "Volum del canal 1 de la Mega Drive/Genesis %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_CA "Volum del canal 2 de la Mega Drive/Genesis %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_CA "Volum del canal 3 de la Mega Drive/Genesis %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_CA "Volum del canal 4 de la Mega Drive/Genesis %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_CA "Volum del canal 5 de la Mega Drive/Genesis %"
 #define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_CA NULL
 #define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_CA NULL
 #define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_CA NULL
@@ -50555,7 +50555,7 @@ struct retro_core_options_v2 options_pt_pt = {
 #define GENESIS_PLUS_GX_LCD_FILTER_LABEL_RU "Ghosting-фильтр LCD"
 #define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_RU "Применяет к изображению ghosting-фильтр (эффект двоения) для имитации ЖК-дисплеев Game Gear и Genesis Nomad."
 #define GENESIS_PLUS_GX_RENDER_LABEL_RU "Вывод в Interlaced Mode 2"
-#define GENESIS_PLUS_GX_RENDER_INFO_0_RU "Interlaced Mode 2 позволяет Mega Drive/Genesis выводить изображение с удвоенной высотой 320x448 путём дорисовки в каждом кадре доп. строк развёртки (исп. в мультиплеере 'Sonic The Hedgehog 2' и 'Combat Cars'). Режим 'Два поля' имитирует ориг. консоль, с резким изображением и артефактами чересстрочности/мерцания. Режим 'Одно поле' исп. деинтерлейсинг, который стабилизирует изображение, но вносит небольшое размытие."
+#define GENESIS_PLUS_GX_RENDER_INFO_0_RU "Interlaced Mode 2 позволяет Mega Drive/Genesis выводить с удвоенной высотой 320x448 отрисовкой доп. строк развёртки (исп. в мультиплеере Sonic The Hedgehog 2 и Combat Cars). Режим 'Два поля' имитирует консоль, с чётким изображением и артефактами чересстрочности/мерцания. Режим 'Одно поле' применяет деинтерлейсинг, кот. стабилизирует изображение, но вносит небольшое размытие."
 #define OPTION_VAL_SINGLE_FIELD_RU "Одно поле"
 #define OPTION_VAL_DOUBLE_FIELD_RU "Два поля"
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_RU "Пропуск кадров"
@@ -50570,7 +50570,7 @@ struct retro_core_options_v2 options_pt_pt = {
 #define OPTION_VAL_MAME_RU NULL
 #define OPTION_VAL_NUKED_RU NULL
 #define GENESIS_PLUS_GX_YM2612_LABEL_RU NULL
-#define GENESIS_PLUS_GX_YM2612_INFO_0_RU "Выбор метода эмуляции FM-синтезатора Mega Drive/Genesis. Режимы 'MAME' обеспечивают высокую скорость без замедлений на большинстве устройств. 'Nuked' обеспечивают потактовую точность с очень высоким качеством, но предъявляют повышенные требования к CPU. Чип YM2612 исп. в ориг. Mega Drive/Genesis модели 1, а YM3438 в более поздних моделях Mega Drive/Genesis."
+#define GENESIS_PLUS_GX_YM2612_INFO_0_RU "Метод эмуляции FM-синтезатора Mega Drive/Genesis. Режимы 'MAME' обеспечивают высокую скорость на большинстве устройств. 'Nuked' обеспечивают потактовую точность с очень высоким качеством, но предъявляют повышенные требования к CPU. Чип YM2612 исп. в ориг. Mega Drive/Genesis Model 1, а YM3438 в более поздних ревизиях консоли."
 #define GENESIS_PLUS_GX_YM2612_INFO_1_RU "Выбор метода эмуляции FM-синтезатора (основного генератора звука) Mega Drive/Genesis. Микросхема YM2612 используется в оригинальной Mega Drive/Genesis модели 1, а YM3438 в более поздних моделях Mega Drive/Genesis."
 #define OPTION_VAL_MAME_YM2612_RU NULL
 #define OPTION_VAL_MAME_ASIC_YM3438_RU NULL
