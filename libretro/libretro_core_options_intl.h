@@ -6343,19 +6343,19 @@ struct retro_core_options_v2 options_bg = {
 /* RETRO_LANGUAGE_CA */
 
 #define CATEGORY_SYSTEM_LABEL_CA "Sistema"
-#define CATEGORY_SYSTEM_INFO_0_CA NULL
+#define CATEGORY_SYSTEM_INFO_0_CA "Modifica les opcions del maquinari base, la regió, la bios i el fitxer de desat de Sega CD/Mega-CD."
 #define CATEGORY_VIDEO_LABEL_CA "Vídeo"
 #define CATEGORY_VIDEO_INFO_0_CA "Canvia la relació d'aspecte, retalls de la imatge, filtre de vídeo i l'omissió de fotogrames."
 #define CATEGORY_AUDIO_LABEL_CA "Àudio"
 #define CATEGORY_AUDIO_INFO_0_CA "Canviar les opcions del mesclador d'àudio."
 #define CATEGORY_INPUT_LABEL_CA "Entrada"
-#define CATEGORY_INPUT_INFO_0_CA NULL
+#define CATEGORY_INPUT_INFO_0_CA "Canvia les opcions de la pistola de llum o de la senyal d'entrada del ratolí."
 #define CATEGORY_HACKS_LABEL_CA "Correccions de l'emulació"
-#define CATEGORY_HACKS_INFO_0_CA NULL
+#define CATEGORY_HACKS_INFO_0_CA "Canvia les opcions de velocitat i precisió de l'emulador que afecten el rendiment a baix nivell i la compatibilitat."
 #define CATEGORY_CHANNEL_VOLUME_LABEL_CA "Configuració avançada del volum dels canals"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_CA "Canvia el volum dels canals de so del maquinari."
 #define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_CA "Maquinari del sistema"
-#define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_CA "Executa contingut carregat fent servir un model específic de consola. L'opció 'Automàtica' seleccionarà l'emulador més apropiat pel joc."
 #define OPTION_VAL_AUTO_CA "Automàtic"
 #define OPTION_VAL_SG_1000_CA NULL
 #define OPTION_VAL_SG_1000_II_CA NULL
@@ -6366,25 +6366,25 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_GAME_GEAR_CA NULL
 #define OPTION_VAL_MEGA_DRIVE_GENESIS_CA NULL
 #define GENESIS_PLUS_GX_REGION_DETECT_LABEL_CA "Regió del sistema"
-#define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_CA "Especifica la regió per la qual s'ha fabricat el sistema. A excepció de la Game Gear, PAL mostrarà imatges a 50 Hz, mentre que NTSC les mostrarà a 60 Hz. Si selecciones una regió incorrecta, els jocs poden mostrar-se més ràpid o més lent."
 #define OPTION_VAL_NTSC_U_CA NULL
 #define OPTION_VAL_PAL_CA NULL
 #define OPTION_VAL_NTSC_J_CA NULL
 #define GENESIS_PLUS_GX_VDP_MODE_LABEL_CA "Forçar mode VDP"
-#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_CA "Canvia al mode VDP per forçar a executar-lo en el mode NTSC a 60 Hz o en el mode PAL a 50 Hz sense tenir en compte la regió del sistema."
 #define OPTION_VAL_60HZ_CA "NTSC (60 Hz)"
 #define OPTION_VAL_50HZ_CA "PAL (50 Hz)"
 #define GENESIS_PLUS_GX_BIOS_LABEL_CA "ROM d'arrencada del sistema"
-#define GENESIS_PLUS_GX_BIOS_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_BIOS_INFO_0_CA "Fes servir la BIOS oficial pel maquinari emulat si es troba en la carpeta de sistema de RetroArch. Es mostrarà la seqüència específica d'inici de la consola i després s'executarà el joc carregat."
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_CA "BRAM del sistema CD (Es requereix reinici)"
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_CA "En executar contingut de Sega CD/Mega-CD, especifica si s'ha de compartir un sol fitxer de desat entre tots els jocs de la mateixa regió o si cal crear un fitxer individual per cada joc. Nota: la Mega-CD/Sega Cd té un espai d'emmagatzematge limitat, suficient per uns quants jocs. Es recomana escollir 'Un fitxer per cada joc' per a que no et quedis sense espai lliure."
 #define OPTION_VAL_PER_BIOS_CA "Per BIOS"
 #define OPTION_VAL_PER_GAME_CA "Per joc"
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_CA "BRAM del sistema CD (Es requereix reinici)"
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_CA "En executar continguts per Mega-CD/Sega CD, s'especifica si s'ha de compartir un cartutx de memòria RAM pels estats desats de tots els jocs d'una mateixa regió o si cal crear un fitxer individual per cada joc."
 #define OPTION_VAL_PER_CART_CA "Per cartutx"
-#define GENESIS_PLUS_GX_CART_SIZE_LABEL_CA NULL
-#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_CA "Mida del BRAM del sistema CD (Es requereix reinici)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_CA "Estableix la mida del cartutx de memòria BRAM pels continguts de Sega CD/Mega-CD. Aquest ajustament és ideal per configurar les BRAM de memòria perquè hi hagi una per cada joc i evitar tenir diferents cartutxs amb una mida massa gran."
 #define OPTION_VAL_128K_CA NULL
 #define OPTION_VAL_256K_CA NULL
 #define OPTION_VAL_512K_CA NULL
@@ -6392,12 +6392,12 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_2MEG_CA NULL
 #define OPTION_VAL_4MEG_CA NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_CA "Afegit de CD (Mode MD) (Es requereix reinici)"
-#define GENESIS_PLUS_GX_ADD_ON_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_ADD_ON_INFO_0_CA "Especifica el mòdul que cal utilitzar per a la reproducció de so de CD en els jocs compatibles amb Mega Drive/Genesis."
 #define OPTION_VAL_SEGA_MEGA_CD_CA NULL
 #define OPTION_VAL_MEGASD_CA NULL
 #define OPTION_VAL_NONE_CA "Cap"
 #define GENESIS_PLUS_GX_LOCK_ON_LABEL_CA "Bloqueig de cartutx"
-#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_CA "La tecnologia Lock-On és una característica de la Mega Drive/Genesis que permetia a un joc antic connectar-se a un cartutx especial per alterar o ampliar el seu contingut. Aquesta opció especifica quin tipus de Lock-On és emulat. És necessari incloure el fitxer de la BIOS corresponent en la carpeta del sistema de RetroArch."
 #define OPTION_VAL_GAME_GENIE_CA NULL
 #define OPTION_VAL_ACTION_REPLAY_PRO_CA NULL
 #define OPTION_VAL_SONIC_KNUCKLES_CA NULL
@@ -6408,16 +6408,16 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_4_3_CA NULL
 #define OPTION_VAL_UNCORRECTED_CA "Sense corregir"
 #define GENESIS_PLUS_GX_OVERSCAN_LABEL_CA "Vores"
-#define GENESIS_PLUS_GX_OVERSCAN_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_OVERSCAN_INFO_0_CA "Activa aquesta opció per mostrar les zones de sobreescombrat superior/inferior i dreta/esquerra de la pantalla. Un monitor estàndard de televisió acostuma a amagar aquestes zones a les vores de la pantalla."
 #define OPTION_VAL_TOP_BOTTOM_CA "Superior/Inferior"
 #define OPTION_VAL_LEFT_RIGHT_CA "Esquerre/Dreta"
 #define OPTION_VAL_FULL_CA "Complet"
 #define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_CA "Amaga les vores de Master System"
-#define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_CA "Retalla 8 píxels en la part esquerra de la pantalla o als dos costats en executar jocs de Master System."
 #define OPTION_VAL_LEFT_BORDER_CA "Només la vora esquerre"
 #define OPTION_VAL_LEFT_RIGHT_BORDERS_CA "Vores esquerra i dreta"
 #define GENESIS_PLUS_GX_GG_EXTRA_LABEL_CA "Pantalla ampliada de la Game Gear"
-#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_CA "Força als jocs de Game Gear a executar-se en el mode SMS amb una resolució augmentada de 256x192. Potser es mostren més continguts, però el més normal és que es mostri una vora a les imatges."
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_CA "Filtre Blargg NTSC"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_CA "Aplica un filtre de vídeo per imitar el senyal de les televisions NTSC."
 #define OPTION_VAL_MONOCHROME_CA "Monocrom"
@@ -6425,9 +6425,9 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_SVIDEO_CA NULL
 #define OPTION_VAL_RGB_CA NULL
 #define GENESIS_PLUS_GX_LCD_FILTER_LABEL_CA "Filtre d'efecte fantasma del LCD"
-#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_CA "Aplica un filtre d'efecte fantasma a la imatge per simular les característiques dels panells LCD de Game Gear i Nomad."
 #define GENESIS_PLUS_GX_RENDER_LABEL_CA "Mode d'entrellaçament de vídeo 2"
-#define GENESIS_PLUS_GX_RENDER_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_RENDER_INFO_0_CA "El mode d'entrellaçament de vídeo 2 permet a la Mega Drive/Genesis generar una imatge que suplica l'altura original fins 320x448 (alta resolució) dibuixant línies d'escombrat alternatives en cada fotograma (es fa servir en els modes multijugador de Sonic the Hedgehog 2 i Combat Cars). 'Dos camps' imita el maquinari original: produeix una imatge nítida amb parpalleig o entrellaçament. 'Un camp' aplica un filtre de desentrellaçament per estabilitzar la imatge, però quedarà una mica borrosa."
 #define OPTION_VAL_SINGLE_FIELD_CA "Camp únic"
 #define OPTION_VAL_DOUBLE_FIELD_CA "Dos camps"
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_CA "Ometre fotogrames"
@@ -6436,14 +6436,14 @@ struct retro_core_options_v2 options_bg = {
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_CA "Llindar d'omissió de fotogrames (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_CA "Si l'omissió de fotogrames està fixada a 'Manual', aquesta opció selecciona el llindar inferior de la memòria intermèdia de l'àudio (en percentatge) per sota del no s'ometrà cap fotograma. Un valor més alt redueix el risc dels errors d'àudio, ometent fotogrames amb més freqüència."
 #define GENESIS_PLUS_GX_YM2413_LABEL_CA NULL
-#define GENESIS_PLUS_GX_YM2413_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_YM2413_INFO_0_CA "Activa l'emulació de la unitat de so FM que fan servir alguns jocs concrets com Sega Mark III/Master System per millorar la sortida d'àudio."
 #define GENESIS_PLUS_GX_YM2413_CORE_LABEL_CA "Nucli del Master System FM (YM2413)"
-#define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_CA "Selecciona el mètode utilitzar per emular la unitat de so FM de la Sega Mark III/Master System. 'MAME' és ràpid i s'executa a la màxima velocitat en gran part dels sistemes. 'Nuked' ofereix una emulació més precisa, amb més qualitat però amb més requisits de CPU."
 #define OPTION_VAL_MAME_CA NULL
 #define OPTION_VAL_NUKED_CA NULL
 #define GENESIS_PLUS_GX_YM2612_LABEL_CA NULL
-#define GENESIS_PLUS_GX_YM2612_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_YM2612_INFO_1_CA NULL
+#define GENESIS_PLUS_GX_YM2612_INFO_0_CA "Selecciona el mètode amb el qual emular el sintetitzador FM de la Mega Drive/Genesis. L'opció MAME és més ràpida i s'executa a la màxima velocitat en gran part dels sistemes. L'opció Nuked ofereix una emulació més precisa, amb més qualitat però amb més requisits de CPU. El xip YM26132 és el que fa servir el Model 1 original de Mega Drive/Genesis. El xip YM 3438 és el que fan servir les versions posteriors de Mega Drive/Genesis."
+#define GENESIS_PLUS_GX_YM2612_INFO_1_CA "Selecciona el mètode utilitzat per emular el sintetitzador FM de la Mega Drive/Genesis. El xip YM26132 és el que fan servir els Model 1 originals de Mega Drive/Genesis. El xip YM3438 és el que es va fer servir en versions posteriors de Mega Drive/Genesis."
 #define OPTION_VAL_MAME_YM2612_CA NULL
 #define OPTION_VAL_MAME_ASIC_YM3438_CA NULL
 #define OPTION_VAL_MAME_ENHANCED_YM3438_CA NULL
@@ -6454,19 +6454,19 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_STEREO_CA "Estèreo"
 #define OPTION_VAL_MONO_CA NULL
 #define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_CA "Filtre d'àudio"
-#define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_CA "Habilita el filtre passabaix per simular millor el so característic del model 1 de Mega Drive/Genesis."
 #define OPTION_VAL_LOW_PASS_CA "Passabaix"
 #define OPTION_VAL_EQ_CA NULL
 #define GENESIS_PLUS_GX_LOWPASS_RANGE_LABEL_CA "Filtre passabaix %"
-#define GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_CA "Especifica el tall de freqüència del filtre d'àudio passabaix. Un valor alt es pot captar com un filtre amb més força, perquè esmorteeix un rang més gran de freqüències altes."
 #define GENESIS_PLUS_GX_PSG_PREAMP_LABEL_CA "Nivell de preamplificador de PSG"
-#define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_CA "Ajusta el nivell de preamplificació de so del PSG (generador programable de sons) SN76496 de quatre canals que fan servir les consoles SG-1000, Sega Mark III, Master System, Game Gear i Mega Drive/Genesis."
 #define GENESIS_PLUS_GX_FM_PREAMP_LABEL_CA "Nivell de preamplificació de FM"
-#define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_CA "Ajusta el nivell de preamplificador d'àudio en el sintetitzador de so FM de la Mega Drive/Genesis o de la unitat de so FM de les Sega Mark III/Master System."
 #define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_CA "Volum de CD-DA"
-#define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_CA "Ajusta el volum de la mescla de la sortida d'àudio del CD emulat."
 #define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_CA "Volum PCM"
-#define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_CA "Ajusta la mescla de so de la sortida d'àudio del generador PCM RF5C164 emulat de la Sega CD/Mega-Cd."
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_CA "EQ Greus"
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_CA "Ajusta el rang baix de l'equalitzador d'àudio."
 #define GENESIS_PLUS_GX_AUDIO_EQ_MID_LABEL_CA "EQ Mitjos"
@@ -6478,17 +6478,17 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_LIGHTGUN_CA "Pistola de llum"
 #define OPTION_VAL_TOUCHSCREEN_CA "Pantalla tàctil"
 #define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_CA "Mostrar el mira de les pistoles de llum"
-#define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_CA "Mostra la creueta de la pistola de llum en fer servir els dispositius MD Menacer, MD Justifiers i MS Light Phaser."
 #define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_CA "Invertir l'eix Y del ratolí"
-#define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_CA "Inverteix l'eix vertical del dispositiu d'entrada MD Mouse."
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_CA "Volum del canal 3 del PSG %"
-#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_CA "Elimina el límit de vuit sprites per línia d'escaneig que tenia el maquinari original. Redueix el parpelleig, però pot provocar alguns errors gràfics, perquè alguns jocs feien servir aquesta limitació per generar efectes especials."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_CA "Millorar el desplaçament vertical de tiles"
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_CA "Permet que cada cel·la individual es pugui desplaçar verticalment en comptes de fer-ho per parelles de 16 píxels, fent un càlcul del valor vscroll de les cel·les contigües. Aquesta correcció només s'aplica a alguns jocs que fan servir el mètode desplaçament vertical per parelles de cel·les."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_CA "Límit de millora del desplaçament vertical de tiles"
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_CA "Aquesta opció només s'aplicarà si la millora del desplaçament vertical per fila està activada. Ajusta el límit d'aquesta millora. Si la diferència entre el valor de vscroll entre cel·les contigües és superior a aquest límit, es desactiva la millora."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_CA "Velocitat de la CPU"
-#define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_CA "Augmenta la velocitat de la CPU emulada. Pot reduir els alentiments, però també pot provocar errors gràfics."
 #define OPTION_VAL_100_CA NULL
 #define OPTION_VAL_125_CA NULL
 #define OPTION_VAL_150_CA NULL
@@ -6507,53 +6507,53 @@ struct retro_core_options_v2 options_bg = {
 #define OPTION_VAL_475_CA NULL
 #define OPTION_VAL_500_CA NULL
 #define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_CA "Bloquejos del sistema"
-#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_CA "Simula els bloquejos del sistema que es poden produir en el maquinari real arran de realitzar lectures de memòria no permeses. Només s'ha de desactivar aquesta opció en executar demos o aplicacions homebrew que necessiten aquesta opció activada per funcionar correctament."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_CA "Error d'adreça 68K"
-#define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_CA "La CPU principal de la Mega Drive/Genesis (el xip Motorola 68000) genera una excepció d'error de memòria al intentar accedir a una memòria no alineada. Activa aquesta opció per simular aquest comportament. Només s'ha de desactivar per jugar a jocs amb modificacions, perquè es desenvolupen amb emuladors menys precisos i poden dependre d'accessos a memòria RAM no vàlids per poder funcionar correctament."
 #define GENESIS_PLUS_GX_CD_LATENCY_LABEL_CA "Temps d'accés al CD"
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_CA "Simula la latència del lector original de CD en iniciar una lectura o una cerca en una ubicació concreta del disc. És necessari per a alguns jocs en format CD que es quedaran penjats si les dades arriben massa aviat i també corregeix problemes de desincronització de l'àudio del CD en alguns jocs. Desactivar aquesta opció pot ser positiu per a alguns jocs MSU-MD, fent que els bucles de pistes del CD siguin més uniformes."
 #define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_CA "Memòria intermèdia de la imatge de CD"
-#define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_CA NULL
-#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_CA "Carrega la imatge de CD en inciar l'emulació. Només s'admeten imatges CHD. Es requereix reinici."
+#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_CA "Mostra la configuració avançada d'àudio (Torna a obrir el menú)"
+#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_CA "Habilita la configuració dels paràmetres dels canals de so a baix nivell. NOTA: És necessari sortir i tornar a entrar en el menú ràpid perquè el canvi tingui efecte."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_CA "Volum del canal 0 del PSG %"
-#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_CA "Redueix el volum del canal de so 0 de PSG."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_CA "Volum del canal 1 del PSG %"
-#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_CA "Redueix el volum del canal de so 1 de PSG."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_CA "Volum del canal 2 del PSG %"
-#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_CA "Redueix el volum del canal de so 2 de PSG."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_CA "Volum del canal 3 del PSG %"
-#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_CA "Redueix el volum del canal de so 3 de PSG."
 #define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_CA "Volum del canal 0 de la Mega Drive/Genesis %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_CA "Redueix el volum del canal 0 de FM de la Mega Drive/Genesis. Només funciona amb els emuladors MAME de FM."
 #define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_CA "Volum del canal 1 de la Mega Drive/Genesis %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_CA "Redueix el volum del canal 1 de FM de la Mega Drive/Genesis. Només funciona amb els emuladors MAME de FM."
 #define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_CA "Volum del canal 2 de la Mega Drive/Genesis %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_CA "Redueix el volum del canal 2 de FM de la Mega Drive/Genesis. Només funciona amb els emuladors MAME de FM."
 #define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_CA "Volum del canal 3 de la Mega Drive/Genesis %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_CA "Redueix el volum del canal 3 de FM de la Mega Drive/Genesis. Només funciona amb els emuladors MAME de FM."
 #define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_CA "Volum del canal 4 de la Mega Drive/Genesis %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_CA "Redueix el volum del canal 4 de FM de la Mega Drive/Genesis. Només funciona amb els emuladors MAME de FM."
 #define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_CA "Volum del canal 5 de la Mega Drive/Genesis %"
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_CA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_CA NULL
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_CA "Redueix el volum del canal 5 de FM de la Mega Drive/Genesis. Només funciona amb els emuladors MAME de FM."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_CA "Volum del canal 0 FM de Master System (%)"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_CA "Redueix el volum del canal de so 0 de PSG."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_CA "Volum del canal 1 FM de Master System (%)"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_CA "Redueix el volum del canal de so 1 de PSG."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_CA "Volum del canal 2 FM de Master System (%)"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_CA "Redueix el volum del canal de so 2 de PSG."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_CA "Volum del canal 3 FM de Master System (%)"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_CA "Redueix el volum del canal de so 3 de PSG."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_CA "Volum del canal 4 FM de Master System (%)"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_CA "Redueix el volum del canal de so 4 de PSG."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_CA "Volum del canal 5 FM de Master System (%)"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_CA "Redueix el volum del canal de so 5 de PSG."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_CA "Volum del canal 6 FM de Master System (%)"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_CA "Redueix el volum del canal de so 6 de PSG."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_CA "Volum del canal 7 FM de Master System (%)"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_CA "Redueix el volum del canal de so 7 de PSG."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_CA "Volum del canal 8 FM de Master System (%)"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_CA "Redueix el volum del canal de so 8 de PSG."
 
 struct retro_core_option_v2_category option_cats_ca[] = {
    {
