@@ -11078,7 +11078,7 @@ struct retro_core_options_v2 options_cht = {
 #define CATEGORY_AUDIO_INFO_0_CS "Změna nastavení zvukového zařízení."
 #define CATEGORY_INPUT_LABEL_CS "Vstup"
 #define CATEGORY_INPUT_INFO_0_CS "Změna nastavení světelné pistole a/nebo vstupu myši."
-#define CATEGORY_HACKS_LABEL_CS NULL
+#define CATEGORY_HACKS_LABEL_CS "Emulace hacků"
 #define CATEGORY_HACKS_INFO_0_CS "Změna nastavení přetaktování procesoru a přesnosti emulace, které ovlivňují výkon a kompatibilitu na nízké úrovni."
 #define CATEGORY_CHANNEL_VOLUME_LABEL_CS "Rozšířené nastavení hlasitosti kanálů"
 #define CATEGORY_CHANNEL_VOLUME_INFO_0_CS "Změna hlasitosti jednotlivých hardwarových zvukových kanálů."
@@ -11098,8 +11098,8 @@ struct retro_core_options_v2 options_cht = {
 #define OPTION_VAL_NTSC_U_CS NULL
 #define OPTION_VAL_PAL_CS NULL
 #define OPTION_VAL_NTSC_J_CS NULL
-#define GENESIS_PLUS_GX_VDP_MODE_LABEL_CS NULL
-#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_CS NULL
+#define GENESIS_PLUS_GX_VDP_MODE_LABEL_CS "Vynucení režimu VDP"
+#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_CS "Přepíše režim VDP a přinutí jej běžet buď v režimu NTSC 60 Hz, nebo PAL 50 Hz, bez ohledu na oblast systému."
 #define OPTION_VAL_60HZ_CS NULL
 #define OPTION_VAL_50HZ_CS NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_CS "Systém Boot ROM"
@@ -11238,10 +11238,10 @@ struct retro_core_options_v2 options_cht = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_CS "Emulace zablokování systému, ke kterému dochází na skutečném hardwaru při provádění nelegálního přístupu k adrese. Tato funkce by měla být vypnuta pouze při přehrávání některých dem a homebrew, které se spoléhají na nelegální chování pro správnou funkci."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_CS "Chyba v Adrese 68K"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_CS "Hlavní procesor Mega Drive/Genesis (Motorola 68000) generuje při pokusu o nezarovnaný přístup do paměti výjimku Chyba Adresy (Výpadek). Povolením této funkce se toto chování simuluje. Měla by být vypnuta pouze při přehrávání hacků ROM, protože ty jsou obvykle vyvíjeny pomocí méně přesných emulátorů a mohou se spoléhat na neplatný přístup do RAM pro správnou funkci."
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_CS NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_CS "Doba přístupu na CD"
 #define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_CS "Simulace původního hardwarového zpoždění disku CD při zahájení čtení nebo vyhledávání určitého místa na nahraném disku. To je vyžadováno několika hrami na CD, které padají, pokud jsou data na CD dostupná příliš brzy, a také to řeší problémy s desynchronizací zvuku CD v některých hrách. Vypnutí této funkce může být užitečné u her s MSU-MD, protože díky ní jsou smyčky zvukových stop CD plynulejší."
-#define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_CS NULL
-#define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_CS NULL
+#define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_CS "Cache CD obrazu"
+#define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_CS "Načtení obrazu CD do paměti při spuštění. Podporováno pouze CHD. Nutný restart."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_CS "Zobrazit Pokročilé Nastavení Hlasitosti Zvuku (Znovu otevře Menu)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_CS "Povolení konfigurace parametrů nízkoúrovňového zvukového kanálu. POZNÁMKA: Aby se toto nastavení projevilo, musí být přepnuta rychlá nabídka."
 #define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_CS "Tónový Kanál PSG 0 Hlasitost %"
@@ -55231,13 +55231,13 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_60HZ_SV NULL
 #define OPTION_VAL_50HZ_SV NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_SV NULL
-#define GENESIS_PLUS_GX_BIOS_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_BIOS_INFO_0_SV "Använd officiell BIOS/bootloader för emulerad maskinvara, om den finns i RetroArchs systemkatalog. Visar konsolspecifik startsekvens/animation och kör sedan laddat innehåll."
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_SV "CD-System BRAM (Kräver omstart)"
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_SV "När du kör Sega CD/Mega-CD-innehåll anger du om en enda sparfil ska delas mellan alla spel från en viss region (Per-BIOS) eller om en separat sparfil ska skapas för varje spel (Per-Game). Observera att Sega CD/Mega-CD har ett begränsat internt lagringsutrymme, som endast räcker till en handfull titlar. För att undvika att utrymmet tar slut rekommenderas inställningen ”Per-Game”."
 #define OPTION_VAL_PER_BIOS_SV NULL
 #define OPTION_VAL_PER_GAME_SV "Per-Spel"
 #define GENESIS_PLUS_GX_CART_BRAM_LABEL_SV NULL
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_SV "När du kör Sega CD/Mega-CD-innehåll anger du om en enda ramkassett för säkerhetskopiering ska delas för alla spel (Per-Cart) eller om en separat ramkassett för säkerhetskopiering ska skapas för varje spel (Per-Game)."
 #define OPTION_VAL_PER_CART_SV NULL
 #define GENESIS_PLUS_GX_CART_SIZE_LABEL_SV NULL
 #define GENESIS_PLUS_GX_CART_SIZE_INFO_0_SV NULL
@@ -55283,7 +55283,7 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_LCD_FILTER_LABEL_SV "LCD-spökfilter"
 #define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_RENDER_LABEL_SV NULL
-#define GENESIS_PLUS_GX_RENDER_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_RENDER_INFO_0_SV "Interlaced Mode 2 gör att Mega Drive/Genesis kan ge en 320x448-bild med dubbel höjd (hög upplösning) genom att rita alternativa scanlinjer varje bildruta (detta används av Sonic the Hedgehog 2 och Combat Cars flerspelarlägen). ”Double Field” efterliknar originalhårdvaran och ger en skarp bild med flimmer/interlacing-artefakter. ”Single Field” använder ett deinterlacing-filter som stabiliserar bilden men orsakar lätt oskärpa."
 #define OPTION_VAL_SINGLE_FIELD_SV NULL
 #define OPTION_VAL_DOUBLE_FIELD_SV NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_SV NULL
@@ -55298,8 +55298,8 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_MAME_SV NULL
 #define OPTION_VAL_NUKED_SV NULL
 #define GENESIS_PLUS_GX_YM2612_LABEL_SV NULL
-#define GENESIS_PLUS_GX_YM2612_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_YM2612_INFO_1_SV NULL
+#define GENESIS_PLUS_GX_YM2612_INFO_0_SV "Välj metod som används för att emulera FM-syntesen (huvudljudgeneratorn) i Mega Drive/Genesis. ”MAME\"-alternativen är snabba och körs i full hastighet på de flesta system. 'Nuked'-alternativen är cykelnoggranna, av mycket hög kvalitet och har betydande CPU-krav. YM2612-chipet används av den ursprungliga Model 1 Mega Drive/Genesis. YM3438 används i senare versioner av Mega Drive/Genesis."
+#define GENESIS_PLUS_GX_YM2612_INFO_1_SV "Välj metod som används för att emulera FM-syntesen (huvudljudgeneratorn) i Mega Drive/Genesis. YM2612-chipet används av den ursprungliga Model 1 Mega Drive/Genesis. YM3438 används i senare versioner av Mega Drive/Genesis."
 #define OPTION_VAL_MAME_YM2612_SV NULL
 #define OPTION_VAL_MAME_ASIC_YM3438_SV NULL
 #define OPTION_VAL_MAME_ENHANCED_YM3438_SV NULL
@@ -55365,9 +55365,9 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_SV "Systemlåsningar"
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_SV NULL
-#define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_SV "Mega Drive/Genesis huvudprocessor (Motorola 68000) genererar ett Address Error-undantag (krasch) när den försöker utföra ojusterad minnesåtkomst. Om du aktiverar detta kommer du att simulera detta beteende. Det bör endast inaktiveras när du spelar ROM-hack, eftersom dessa vanligtvis utvecklas med mindre exakta emulatorer och kan förlita sig på ogiltig RAM-åtkomst för korrekt funktion."
 #define GENESIS_PLUS_GX_CD_LATENCY_LABEL_SV NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_SV "Simulera den ursprungliga CD-maskinvarans latens när du initierar en läsning eller sökning till en specifik plats på den inlästa skivan. Detta krävs av några CD-spel som kraschar om CD-data är tillgängliga för tidigt och åtgärdar även problem med desynkronisering av CD-ljud i vissa spel. Att inaktivera detta kan vara användbart med MSU-MD-spel eftersom det gör CD-ljudspårsloopar mer sömlösa."
 #define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_SV NULL
 #define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_SV "Läs in cd-avbildning till minnet vid uppstart. CHD stöds endast. Kräver omstart."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_SV "Visa avancerade inställningar för ljudvolym (Öppnar menyn igen)"
