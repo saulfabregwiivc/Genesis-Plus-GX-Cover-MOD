@@ -55203,15 +55203,15 @@ struct retro_core_options_v2 options_sr = {
 #define CATEGORY_VIDEO_LABEL_SV NULL
 #define CATEGORY_VIDEO_INFO_0_SV "Ändra bildformat, beskärning, videofilter och inställningar för bildruteskippning."
 #define CATEGORY_AUDIO_LABEL_SV "Ljud"
-#define CATEGORY_AUDIO_INFO_0_SV NULL
+#define CATEGORY_AUDIO_INFO_0_SV "Ändra inställningar för ljudenhet."
 #define CATEGORY_INPUT_LABEL_SV "Inmatning"
 #define CATEGORY_INPUT_INFO_0_SV NULL
 #define CATEGORY_HACKS_LABEL_SV "Emulator Hacks"
-#define CATEGORY_HACKS_INFO_0_SV NULL
+#define CATEGORY_HACKS_INFO_0_SV "Ändra inställningar för processoröverklockning och emuleringsnoggrannhet som påverkar prestanda och kompatibilitet på låg nivå."
 #define CATEGORY_CHANNEL_VOLUME_LABEL_SV "Avancerade inställningar för kanalvolym"
-#define CATEGORY_CHANNEL_VOLUME_INFO_0_SV NULL
+#define CATEGORY_CHANNEL_VOLUME_INFO_0_SV "Ändra volymen för enskilda ljudkanaler i hårdvaran."
 #define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_SV "Systemhårdvara"
-#define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_SV "Kör inläst innehåll med en specifik emulerad konsol. ”Auto” väljer det system som är mest lämpligt för det aktuella spelet."
 #define OPTION_VAL_AUTO_SV NULL
 #define OPTION_VAL_SG_1000_SV NULL
 #define OPTION_VAL_SG_1000_II_SV NULL
@@ -55222,12 +55222,12 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_GAME_GEAR_SV NULL
 #define OPTION_VAL_MEGA_DRIVE_GENESIS_SV NULL
 #define GENESIS_PLUS_GX_REGION_DETECT_LABEL_SV "Systemregion"
-#define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_SV "Ange vilken region systemet kommer från. För andra konsoler än Game Gear är ”PAL” 50 Hz, medan ”NTSC” är 60 Hz. Spel kan köras snabbare eller långsammare än normalt om fel region väljs."
 #define OPTION_VAL_NTSC_U_SV NULL
 #define OPTION_VAL_PAL_SV NULL
 #define OPTION_VAL_NTSC_J_SV NULL
 #define GENESIS_PLUS_GX_VDP_MODE_LABEL_SV "Tvinga VDP-läge"
-#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_SV "Åsidosätter VDP-läget för att tvinga det att köras med antingen NTSC 60Hz eller PAL 50Hz, oavsett systemregion."
 #define OPTION_VAL_60HZ_SV NULL
 #define OPTION_VAL_50HZ_SV NULL
 #define GENESIS_PLUS_GX_BIOS_LABEL_SV NULL
@@ -55270,22 +55270,22 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_FULL_SV NULL
 #define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_SV NULL
 #define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_SV NULL
-#define OPTION_VAL_LEFT_BORDER_SV NULL
-#define OPTION_VAL_LEFT_RIGHT_BORDERS_SV NULL
+#define OPTION_VAL_LEFT_BORDER_SV "Endast vänster ram"
+#define OPTION_VAL_LEFT_RIGHT_BORDERS_SV "Vänstra och högra ramar"
 #define GENESIS_PLUS_GX_GG_EXTRA_LABEL_SV NULL
-#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_SV "Tvingar Game Gear-titlar att köras i SMS-läge, med en ökad upplösning på 256x192. Kan visa ytterligare innehåll, men visar vanligtvis en kant av korrupt/olämplig bilddata."
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_SV "Blargg NTSC-filter"
-#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_SV "Använd ett videofilter för att efterlikna olika NTSC-TV-signaler."
 #define OPTION_VAL_MONOCHROME_SV "Monokrom"
 #define OPTION_VAL_COMPOSITE_SV "Komposit"
 #define OPTION_VAL_SVIDEO_SV NULL
 #define OPTION_VAL_RGB_SV NULL
 #define GENESIS_PLUS_GX_LCD_FILTER_LABEL_SV "LCD-spökfilter"
-#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_SV "Använd ett ”ghosting”-filter för att efterlikna LCD-skärmarna på Game Gear och Genesis Nomad."
 #define GENESIS_PLUS_GX_RENDER_LABEL_SV NULL
 #define GENESIS_PLUS_GX_RENDER_INFO_0_SV "Interlaced Mode 2 gör att Mega Drive/Genesis kan ge en 320x448-bild med dubbel höjd (hög upplösning) genom att rita alternativa scanlinjer varje bildruta (detta används av Sonic the Hedgehog 2 och Combat Cars flerspelarlägen). ”Double Field” efterliknar originalhårdvaran och ger en skarp bild med flimmer/interlacing-artefakter. ”Single Field” använder ett deinterlacing-filter som stabiliserar bilden men orsakar lätt oskärpa."
-#define OPTION_VAL_SINGLE_FIELD_SV NULL
-#define OPTION_VAL_DOUBLE_FIELD_SV NULL
+#define OPTION_VAL_SINGLE_FIELD_SV "Enkelt fält"
+#define OPTION_VAL_DOUBLE_FIELD_SV "Dubbelt fält"
 #define GENESIS_PLUS_GX_FRAMESKIP_LABEL_SV NULL
 #define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_SV "Hoppa över bildrutor för att undvika ljudbuffert-underkörning (sprakande). Förbättrar prestanda på bekostnad av visuell jämnhet. \"Automatiskt\" hoppar över bildrutor när det rekommenderas av gränssnittet. \"Manuell\" använder inställningen \"Bildrutetröskel (%)\" för att hoppa över bildrutor."
 #define OPTION_VAL_MANUAL_SV "Manuell"
@@ -55294,7 +55294,7 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_YM2413_LABEL_SV NULL
 #define GENESIS_PLUS_GX_YM2413_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_YM2413_CORE_LABEL_SV NULL
-#define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_SV "Välj metod som används för att emulera FM-ljudenheten i Sega Mark III/Master System. ”MAME\"-alternativet är snabbt och körs i full hastighet på de flesta system. Alternativet ”Nuked” är cykelnoggrannt, av mycket hög kvalitet och har betydande CPU-krav."
 #define OPTION_VAL_MAME_SV NULL
 #define OPTION_VAL_NUKED_SV NULL
 #define GENESIS_PLUS_GX_YM2612_LABEL_SV NULL
@@ -55306,11 +55306,11 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_NUKED_YM2612_SV NULL
 #define OPTION_VAL_NUKED_YM3438_SV NULL
 #define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_SV "Ljudutgång"
-#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_SV "Välj ljuduppspelning i stereo eller mono."
 #define OPTION_VAL_STEREO_SV NULL
 #define OPTION_VAL_MONO_SV NULL
 #define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_SV "Ljudfilter"
-#define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_SV "Aktivera ett lågpassljudfilter för att bättre simulera det karakteristiska ljudet från en Model 1 Mega Drive/Genesis."
 #define OPTION_VAL_LOW_PASS_SV "Lågpass"
 #define OPTION_VAL_EQ_SV NULL
 #define GENESIS_PLUS_GX_LOWPASS_RANGE_LABEL_SV NULL
@@ -55334,7 +55334,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_LIGHTGUN_SV "Ljuspistol"
 #define OPTION_VAL_TOUCHSCREEN_SV "Pekskärm"
 #define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_SV NULL
-#define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_SV "Visa hårkorset för ljuspistoler när du använder inmatningsenhetstyperna MD Menacer, MD Justifiers och MS Light Phaser."
 #define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_SV "Invertera musens Y-axel"
 #define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_SV "Ta bort blockfigursgräns per rad"
@@ -55363,53 +55363,53 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_475_SV NULL
 #define OPTION_VAL_500_SV NULL
 #define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_SV "Systemlåsningar"
-#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_SV NULL
+#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_SV "Emulera systemlåsningar som inträffar på riktig hårdvara när man utför olaglig adressåtkomst. Detta bör endast inaktiveras när du spelar vissa demos och homebrew som förlitar sig på otillåtet beteende för korrekt funktion."
+#define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_SV "68K-adressfel"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_SV "Mega Drive/Genesis huvudprocessor (Motorola 68000) genererar ett Address Error-undantag (krasch) när den försöker utföra ojusterad minnesåtkomst. Om du aktiverar detta kommer du att simulera detta beteende. Det bör endast inaktiveras när du spelar ROM-hack, eftersom dessa vanligtvis utvecklas med mindre exakta emulatorer och kan förlita sig på ogiltig RAM-åtkomst för korrekt funktion."
 #define GENESIS_PLUS_GX_CD_LATENCY_LABEL_SV NULL
 #define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_SV "Simulera den ursprungliga CD-maskinvarans latens när du initierar en läsning eller sökning till en specifik plats på den inlästa skivan. Detta krävs av några CD-spel som kraschar om CD-data är tillgängliga för tidigt och åtgärdar även problem med desynkronisering av CD-ljud i vissa spel. Att inaktivera detta kan vara användbart med MSU-MD-spel eftersom det gör CD-ljudspårsloopar mer sömlösa."
 #define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_SV NULL
 #define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_SV "Läs in cd-avbildning till minnet vid uppstart. CHD stöds endast. Kräver omstart."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_SV "Visa avancerade inställningar för ljudvolym (Öppnar menyn igen)"
-#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_SV NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_SV "Aktiverar konfiguration av parametrar för lågnivå-ljudkanaler. OBS: Snabbmenyn måste vara aktiverad för att den här inställningen ska träda i kraft."
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_SV "Volym för PSG Tone-kanal 0 i %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_SV "Sänk volymen för PSG Tone-kanal 0."
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_SV "Volym för PSG Tone-kanal 1 i %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_SV "Sänk volymen för PSG Tone-kanal 1."
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_SV "Volym för PSG Tone-kanal 2 i %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_SV "Sänk volymen för PSG Tone-kanal 2."
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_SV "Volym för PSG Noise-kanal 3 i %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_SV "Sänk volymen för PSG Noise-kanal 3."
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_SV "Volym för Mega Drive/Genesis FM-kanal 0 i %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_SV "Sänk volymen på Mega Drive/Genesis FM-kanal 0. Fungerar endast med MAME FM-emulatorer."
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_SV "Volym för Mega Drive/Genesis FM-kanal 1 i %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_SV "Sänk volymen på Mega Drive/Genesis FM-kanal 1. Fungerar endast med MAME FM-emulatorer."
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_SV "Volym för Mega Drive/Genesis FM-kanal 2 i %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_SV "Sänk volymen på Mega Drive/Genesis FM-kanal 2. Fungerar endast med MAME FM-emulatorer."
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_SV "Volym för Mega Drive/Genesis FM-kanal 3 i %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_SV "Sänk volymen på Mega Drive/Genesis FM-kanal 3. Fungerar endast med MAME FM-emulatorer."
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_SV "Volym för Mega Drive/Genesis FM-kanal 4 i %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_SV "Sänk volymen på Mega Drive/Genesis FM-kanal 4. Fungerar endast med MAME FM-emulatorer."
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_SV "Volym för Mega Drive/Genesis FM-kanal 5 i %"
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_SV "Sänk volymen på Mega Drive/Genesis FM-kanal 5. Fungerar endast med MAME FM-emulatorer."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_SV "Volym för Master System FM-kanal 0 (YM2413) i %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_SV "Sänk volymen på Master System FM-kanal 0."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_SV "Volym för Master System FM-kanal 1 (YM2413) i %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_SV "Sänk volymen på Master System FM-kanal 1."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_SV "Volym för Master System FM-kanal 2 (YM2413) i %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_SV "Sänk volymen på Master System FM-kanal 2."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_SV "Volym för Master System FM-kanal 3 (YM2413) i %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_SV "Sänk volymen på Master System FM-kanal 3."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_SV "Volym för Master System FM-kanal 4 (YM2413) i %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_SV "Sänk volymen på Master System FM-kanal 4."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_SV "Volym för Master System FM-kanal 5 (YM2413) i %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_SV "Sänk volymen på Master System FM-kanal 5."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_SV "Volym för Master System FM-kanal 6 (YM2413) i %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_SV "Sänk volymen på Master System FM-kanal 6."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_SV "Volym för Master System FM-kanal 7 (YM2413) i %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_SV "Sänk volymen på Master System FM-kanal 7."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_SV "Volym för Master System FM-kanal 8 (YM2413) i %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_SV "Sänk volymen på Master System FM-kanal 8."
 
 struct retro_core_option_v2_category option_cats_sv[] = {
    {
