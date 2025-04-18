@@ -55253,7 +55253,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_MEGASD_SV NULL
 #define OPTION_VAL_NONE_SV "Ingen"
 #define GENESIS_PLUS_GX_LOCK_ON_LABEL_SV NULL
-#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_SV "Lock-On Technology är en Mega Drive/Genesis-funktion som gjorde det möjligt för ett äldre spel att ansluta till pass-through-porten på en speciell kassett för utökad eller förändrad speltid. Detta alternativ anger vilken typ av speciell ”lock-on”-kassett som ska emuleras. En motsvarande bios-fil måste finnas i RetroArchs systemkatalog."
 #define OPTION_VAL_GAME_GENIE_SV NULL
 #define OPTION_VAL_ACTION_REPLAY_PRO_SV NULL
 #define OPTION_VAL_SONIC_KNUCKLES_SV NULL
@@ -55320,7 +55320,7 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_FM_PREAMP_LABEL_SV NULL
 #define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_SV "CD-DA-volym"
-#define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_SV "Justera mixningsvolymen för den emulerade uppspelningen av CD-ljud."
 #define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_SV "PCM-volym"
 #define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_SV "EQ låg"
@@ -55330,10 +55330,10 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_LABEL_SV "EQ hög"
 #define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_GUN_INPUT_LABEL_SV "Inmatning för ljuspistol"
-#define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_SV "Använd en musstyrd 'ljuspistol' eller 'pekskärm'."
 #define OPTION_VAL_LIGHTGUN_SV "Ljuspistol"
 #define OPTION_VAL_TOUCHSCREEN_SV "Pekskärm"
-#define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_SV NULL
+#define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_SV "Visa hårkors för ljuspistol"
 #define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_SV "Visa hårkorset för ljuspistoler när du använder inmatningsenhetstyperna MD Menacer, MD Justifiers och MS Light Phaser."
 #define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_SV "Invertera musens Y-axel"
 #define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_SV NULL
@@ -55344,7 +55344,7 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_SV NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_SV "CPU-hastighet"
-#define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_SV "Överklocka den emulerade processorn. Kan minska långsamheter, men kan orsaka glitchar."
 #define OPTION_VAL_100_SV NULL
 #define OPTION_VAL_125_SV NULL
 #define OPTION_VAL_150_SV NULL
