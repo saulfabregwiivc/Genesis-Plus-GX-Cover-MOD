@@ -55205,7 +55205,7 @@ struct retro_core_options_v2 options_sr = {
 #define CATEGORY_AUDIO_LABEL_SV "Ljud"
 #define CATEGORY_AUDIO_INFO_0_SV "Ändra inställningar för ljudenhet."
 #define CATEGORY_INPUT_LABEL_SV "Inmatning"
-#define CATEGORY_INPUT_INFO_0_SV NULL
+#define CATEGORY_INPUT_INFO_0_SV "Ändra inmatningsinställningar för ljuspistol och/eller mus."
 #define CATEGORY_HACKS_LABEL_SV "Emulator Hacks"
 #define CATEGORY_HACKS_INFO_0_SV "Ändra inställningar för processoröverklockning och emuleringsnoggrannhet som påverkar prestanda och kompatibilitet på låg nivå."
 #define CATEGORY_CHANNEL_VOLUME_LABEL_SV "Avancerade inställningar för kanalvolym"
@@ -55265,10 +55265,10 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_UNCORRECTED_SV "Okorrigerad"
 #define GENESIS_PLUS_GX_OVERSCAN_LABEL_SV "Ramar"
 #define GENESIS_PLUS_GX_OVERSCAN_INFO_0_SV NULL
-#define OPTION_VAL_TOP_BOTTOM_SV NULL
+#define OPTION_VAL_TOP_BOTTOM_SV "Topp/Botten"
 #define OPTION_VAL_LEFT_RIGHT_SV "Vänster/Höger"
 #define OPTION_VAL_FULL_SV NULL
-#define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_SV NULL
+#define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_SV "Dölj sidokanter för Master System"
 #define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_SV NULL
 #define OPTION_VAL_LEFT_BORDER_SV "Endast vänster ram"
 #define OPTION_VAL_LEFT_RIGHT_BORDERS_SV "Vänstra och högra ramar"
