@@ -55264,15 +55264,15 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_4_3_SV NULL
 #define OPTION_VAL_UNCORRECTED_SV "Okorrigerad"
 #define GENESIS_PLUS_GX_OVERSCAN_LABEL_SV "Ramar"
-#define GENESIS_PLUS_GX_OVERSCAN_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_OVERSCAN_INFO_0_SV "Aktivera detta för att visa överskanningsområdena längst upp/ned och/eller till vänster/höger på skärmen. Dessa skulle normalt vara dolda av ramen runt kanten på en standard-Tv."
 #define OPTION_VAL_TOP_BOTTOM_SV "Topp/Botten"
 #define OPTION_VAL_LEFT_RIGHT_SV "Vänster/Höger"
 #define OPTION_VAL_FULL_SV NULL
 #define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_SV "Dölj sidokanter för Master System"
-#define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_SV "Skär bort 8 bildpunkter från antingen vänster sida av skärmen eller från både vänster och höger sida när Master System-spel körs."
 #define OPTION_VAL_LEFT_BORDER_SV "Endast vänster ram"
 #define OPTION_VAL_LEFT_RIGHT_BORDERS_SV "Vänstra och högra ramar"
-#define GENESIS_PLUS_GX_GG_EXTRA_LABEL_SV NULL
+#define GENESIS_PLUS_GX_GG_EXTRA_LABEL_SV "Utökad skärm för Game Gear"
 #define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_SV "Tvingar Game Gear-titlar att köras i SMS-läge, med en ökad upplösning på 256x192. Kan visa ytterligare innehåll, men visar vanligtvis en kant av korrupt/olämplig bilddata."
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_SV "Blargg NTSC-filter"
 #define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_SV "Använd ett videofilter för att efterlikna olika NTSC-TV-signaler."
@@ -55292,7 +55292,7 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_SV "Frameskip Tröskelvärde (%)"
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_SV "När 'Frameskip' är satt till 'Manuell', ange ljudbuffertens tröskel (i procent) under vilka ramar som kommer att hoppas över. Högre värden minskar risken för hackigt ljud genom att bildrutor tappas oftare."
 #define GENESIS_PLUS_GX_YM2413_LABEL_SV NULL
-#define GENESIS_PLUS_GX_YM2413_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_YM2413_INFO_0_SV "Aktivera emulering av FM-ljudkortet som används av vissa Sega Mark III/Master System-spel för förbättrad ljudutgång."
 #define GENESIS_PLUS_GX_YM2413_CORE_LABEL_SV NULL
 #define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_SV "Välj metod som används för att emulera FM-ljudenheten i Sega Mark III/Master System. ”MAME\"-alternativet är snabbt och körs i full hastighet på de flesta system. Alternativet ”Nuked” är cykelnoggrannt, av mycket hög kvalitet och har betydande CPU-krav."
 #define OPTION_VAL_MAME_SV NULL
@@ -55324,11 +55324,11 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_SV "PCM-volym"
 #define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_SV "EQ låg"
-#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_SV "Justera det låga frekvensområdet för den interna ljudequalizern."
 #define GENESIS_PLUS_GX_AUDIO_EQ_MID_LABEL_SV "EQ mid"
-#define GENESIS_PLUS_GX_AUDIO_EQ_MID_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_MID_INFO_0_SV "Justera det mellersta frekvensområdet för den interna ljudequalizern."
 #define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_LABEL_SV "EQ hög"
-#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_SV "Justera det höga frekvensområdet för den interna ljudequalizern."
 #define GENESIS_PLUS_GX_GUN_INPUT_LABEL_SV "Inmatning för ljuspistol"
 #define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_SV "Använd en musstyrd 'ljuspistol' eller 'pekskärm'."
 #define OPTION_VAL_LIGHTGUN_SV "Ljuspistol"
@@ -55340,7 +55340,7 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_SV "Ta bort blockfigursgräns per rad"
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_SV NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_SV "Gör det möjligt att bläddra vertikalt i varje enskild cell, istället för 16px 2-cell, genom att beräkna genomsnittet med vscroll-värdet för den angränsande cellen. Detta hack gäller endast för ett fåtal spel som använder 2-cell vertikalt bläddringsläge."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_SV NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_SV NULL
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_SV "CPU-hastighet"
