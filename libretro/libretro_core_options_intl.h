@@ -55199,7 +55199,7 @@ struct retro_core_options_v2 options_sr = {
 /* RETRO_LANGUAGE_SV */
 
 #define CATEGORY_SYSTEM_LABEL_SV NULL
-#define CATEGORY_SYSTEM_INFO_0_SV NULL
+#define CATEGORY_SYSTEM_INFO_0_SV "Ändra val av basmaskinvara, region, BIOS och inställningar för Sega CD/Mega-CD-sparfil."
 #define CATEGORY_VIDEO_LABEL_SV NULL
 #define CATEGORY_VIDEO_INFO_0_SV "Ändra bildformat, beskärning, videofilter och inställningar för bildruteskippning."
 #define CATEGORY_AUDIO_LABEL_SV "Ljud"
@@ -55313,16 +55313,16 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_SV "Aktivera ett lågpassljudfilter för att bättre simulera det karakteristiska ljudet från en Model 1 Mega Drive/Genesis."
 #define OPTION_VAL_LOW_PASS_SV "Lågpass"
 #define OPTION_VAL_EQ_SV NULL
-#define GENESIS_PLUS_GX_LOWPASS_RANGE_LABEL_SV NULL
-#define GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_SV NULL
-#define GENESIS_PLUS_GX_PSG_PREAMP_LABEL_SV NULL
-#define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_LOWPASS_RANGE_LABEL_SV "Lågpassfilter %"
+#define GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_SV "Ange gränsfrekvensen för ljudets lågpassfilter. Ett högre värde ökar den upplevda ”styrkan” hos filtret, eftersom ett bredare spektrum av höga frekvenser dämpas."
+#define GENESIS_PLUS_GX_PSG_PREAMP_LABEL_SV "PSG-förförstärkarens nivå"
+#define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_SV "Ställ in ljudförförstärkarnivån för den emulerade SN76496 4-kanals programmerbara ljudgeneratorn som finns i SG-1000, Sega Mark III, Master System, Game Gear och Mega Drive/Genesis."
 #define GENESIS_PLUS_GX_FM_PREAMP_LABEL_SV NULL
-#define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_SV "Ställ in ljudförförstärkarens nivå för den emulerade Mega Drive/Genesis FM-ljudsyntetisatorn eller Sega Mark III/Master System FM-ljudkällan."
 #define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_SV "CD-DA-volym"
 #define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_SV "Justera mixningsvolymen för den emulerade uppspelningen av CD-ljud."
 #define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_SV "PCM-volym"
-#define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_SV "Justera mixningsvolymen för den emulerade Sega CD/Mega-CD RF5C164 PCM-ljudgeneratorns utgång."
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_SV "EQ låg"
 #define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_SV "Justera det låga frekvensområdet för den interna ljudequalizern."
 #define GENESIS_PLUS_GX_AUDIO_EQ_MID_LABEL_SV "EQ mid"
@@ -55336,9 +55336,9 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_SV "Visa hårkors för ljuspistol"
 #define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_SV "Visa hårkorset för ljuspistoler när du använder inmatningsenhetstyperna MD Menacer, MD Justifiers och MS Light Phaser."
 #define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_SV "Invertera musens Y-axel"
-#define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_SV "Inverterar Y-axeln för inmatningsenhetstypen MD Mouse."
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_SV "Ta bort blockfigursgräns per rad"
-#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_SV "Tar bort den ursprungliga hårdvarubegränsningen för sprite per skanlinje. Detta minskar flimret men kan orsaka visuella störningar, eftersom vissa spel utnyttjar hårdvarubegränsningen för att skapa specialeffekter."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_SV NULL
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_SV "Gör det möjligt att bläddra vertikalt i varje enskild cell, istället för 16px 2-cell, genom att beräkna genomsnittet med vscroll-värdet för den angränsande cellen. Detta hack gäller endast för ett fåtal spel som använder 2-cell vertikalt bläddringsläge."
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_SV NULL
@@ -55366,9 +55366,9 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_SV "Emulera systemlåsningar som inträffar på riktig hårdvara när man utför olaglig adressåtkomst. Detta bör endast inaktiveras när du spelar vissa demos och homebrew som förlitar sig på otillåtet beteende för korrekt funktion."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_SV "68K-adressfel"
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_SV "Mega Drive/Genesis huvudprocessor (Motorola 68000) genererar ett Address Error-undantag (krasch) när den försöker utföra ojusterad minnesåtkomst. Om du aktiverar detta kommer du att simulera detta beteende. Det bör endast inaktiveras när du spelar ROM-hack, eftersom dessa vanligtvis utvecklas med mindre exakta emulatorer och kan förlita sig på ogiltig RAM-åtkomst för korrekt funktion."
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_SV NULL
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_SV "CD-åtkomsttid"
 #define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_SV "Simulera den ursprungliga CD-maskinvarans latens när du initierar en läsning eller sökning till en specifik plats på den inlästa skivan. Detta krävs av några CD-spel som kraschar om CD-data är tillgängliga för tidigt och åtgärdar även problem med desynkronisering av CD-ljud i vissa spel. Att inaktivera detta kan vara användbart med MSU-MD-spel eftersom det gör CD-ljudspårsloopar mer sömlösa."
-#define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_SV NULL
+#define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_SV "CD-avbildningscache"
 #define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_SV "Läs in cd-avbildning till minnet vid uppstart. CHD stöds endast. Kräver omstart."
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_SV "Visa avancerade inställningar för ljudvolym (Öppnar menyn igen)"
 #define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_SV "Aktiverar konfiguration av parametrar för lågnivå-ljudkanaler. OBS: Snabbmenyn måste vara aktiverad för att den här inställningen ska träda i kraft."
