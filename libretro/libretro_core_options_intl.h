@@ -55247,7 +55247,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_1MEG_SV NULL
 #define OPTION_VAL_2MEG_SV NULL
 #define OPTION_VAL_4MEG_SV NULL
-#define GENESIS_PLUS_GX_ADD_ON_LABEL_SV NULL
+#define GENESIS_PLUS_GX_ADD_ON_LABEL_SV "CD-tillägg (MD-läge) (kräver omstart)"
 #define GENESIS_PLUS_GX_ADD_ON_INFO_0_SV NULL
 #define OPTION_VAL_SEGA_MEGA_CD_SV NULL
 #define OPTION_VAL_MEGASD_SV NULL
