@@ -55248,7 +55248,7 @@ struct retro_core_options_v2 options_sr = {
 #define OPTION_VAL_2MEG_SV NULL
 #define OPTION_VAL_4MEG_SV NULL
 #define GENESIS_PLUS_GX_ADD_ON_LABEL_SV "CD-tillägg (MD-läge) (kräver omstart)"
-#define GENESIS_PLUS_GX_ADD_ON_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_ADD_ON_INFO_0_SV "Ange vilket tillägg som ska användas för uppspelning av CD-ljud med Mega Drive/Genesis-spel som stöds."
 #define OPTION_VAL_SEGA_MEGA_CD_SV NULL
 #define OPTION_VAL_MEGASD_SV NULL
 #define OPTION_VAL_NONE_SV "Ingen"
@@ -55293,7 +55293,7 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_SV "När 'Frameskip' är satt till 'Manuell', ange ljudbuffertens tröskel (i procent) under vilka ramar som kommer att hoppas över. Högre värden minskar risken för hackigt ljud genom att bildrutor tappas oftare."
 #define GENESIS_PLUS_GX_YM2413_LABEL_SV NULL
 #define GENESIS_PLUS_GX_YM2413_INFO_0_SV "Aktivera emulering av FM-ljudkortet som används av vissa Sega Mark III/Master System-spel för förbättrad ljudutgång."
-#define GENESIS_PLUS_GX_YM2413_CORE_LABEL_SV NULL
+#define GENESIS_PLUS_GX_YM2413_CORE_LABEL_SV "Kärna för Master System FM (YM2413)"
 #define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_SV "Välj metod som används för att emulera FM-ljudenheten i Sega Mark III/Master System. ”MAME\"-alternativet är snabbt och körs i full hastighet på de flesta system. Alternativet ”Nuked” är cykelnoggrannt, av mycket hög kvalitet och har betydande CPU-krav."
 #define OPTION_VAL_MAME_SV NULL
 #define OPTION_VAL_NUKED_SV NULL
@@ -55317,7 +55317,7 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_SV "Ange gränsfrekvensen för ljudets lågpassfilter. Ett högre värde ökar den upplevda ”styrkan” hos filtret, eftersom ett bredare spektrum av höga frekvenser dämpas."
 #define GENESIS_PLUS_GX_PSG_PREAMP_LABEL_SV "PSG-förförstärkarens nivå"
 #define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_SV "Ställ in ljudförförstärkarnivån för den emulerade SN76496 4-kanals programmerbara ljudgeneratorn som finns i SG-1000, Sega Mark III, Master System, Game Gear och Mega Drive/Genesis."
-#define GENESIS_PLUS_GX_FM_PREAMP_LABEL_SV NULL
+#define GENESIS_PLUS_GX_FM_PREAMP_LABEL_SV "FM-förförstärkarnivå"
 #define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_SV "Ställ in ljudförförstärkarens nivå för den emulerade Mega Drive/Genesis FM-ljudsyntetisatorn eller Sega Mark III/Master System FM-ljudkällan."
 #define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_SV "CD-DA-volym"
 #define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_SV "Justera mixningsvolymen för den emulerade uppspelningen av CD-ljud."
@@ -55339,10 +55339,10 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_SV "Inverterar Y-axeln för inmatningsenhetstypen MD Mouse."
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_SV "Ta bort blockfigursgräns per rad"
 #define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_SV "Tar bort den ursprungliga hårdvarubegränsningen för sprite per skanlinje. Detta minskar flimret men kan orsaka visuella störningar, eftersom vissa spel utnyttjar hårdvarubegränsningen för att skapa specialeffekter."
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_SV NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_SV "Förbättrad vertikal rullning per ruta"
 #define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_SV "Gör det möjligt att bläddra vertikalt i varje enskild cell, istället för 16px 2-cell, genom att beräkna genomsnittet med vscroll-värdet för den angränsande cellen. Detta hack gäller endast för ett fåtal spel som använder 2-cell vertikalt bläddringsläge."
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_SV NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_SV NULL
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_SV "Förbättrad vertikal rullningsgräns per ruta"
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_SV "Endast när Förbättrad vertikal rullning per ruta är aktiverat. Justerar gränsen för förbättrad vertikal rullning. När skillnaden i vertikal rullning mellan angränsande rutor är större än denna gräns inaktiveras förbättringen."
 #define GENESIS_PLUS_GX_OVERCLOCK_LABEL_SV "CPU-hastighet"
 #define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_SV "Överklocka den emulerade processorn. Kan minska långsamheter, men kan orsaka glitchar."
 #define OPTION_VAL_100_SV NULL
