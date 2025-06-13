@@ -1779,7 +1779,7 @@ struct retro_core_options_v2 options_ar = {
 #define OPTION_VAL_475_AST NULL
 #define OPTION_VAL_500_AST NULL
 #define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_AST "Bloqueos del sistema"
-#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_AST "Emula los bloqueos del sistema que se producen nel hardware real cuando s'accede a direiciones illegales. Esta opción namás habría desactivase cuando se xueguen ciertes demos y programes homebrew que s'enconten nel comportamientu illegal pa funcionar correutamente."
+#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_AST "Emula los bloqueos del sistema que se producen nel hardware real cuando s'accede a direiciones illegales. Esta opción namás habría desactivase cuando se xueguen ciertes demos ya programes homebrew que s'enconten nel comportamientu illegal pa funcionar correutamente."
 #define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_AST NULL
 #define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_AST NULL
 #define GENESIS_PLUS_GX_CD_LATENCY_LABEL_AST NULL
@@ -55236,11 +55236,11 @@ struct retro_core_options_v2 options_sr = {
 #define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_SV "När du kör Sega CD/Mega-CD-innehåll anger du om en enda sparfil ska delas mellan alla spel från en viss region (Per-BIOS) eller om en separat sparfil ska skapas för varje spel (Per-Game). Observera att Sega CD/Mega-CD har ett begränsat internt lagringsutrymme, som endast räcker till en handfull titlar. För att undvika att utrymmet tar slut rekommenderas inställningen ”Per-Game”."
 #define OPTION_VAL_PER_BIOS_SV NULL
 #define OPTION_VAL_PER_GAME_SV "Per-Spel"
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_SV NULL
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_SV "CD Backup Cart BRAM (kräver omstart)"
 #define GENESIS_PLUS_GX_CART_BRAM_INFO_0_SV "När du kör Sega CD/Mega-CD-innehåll anger du om en enda ramkassett för säkerhetskopiering ska delas för alla spel (Per-Cart) eller om en separat ramkassett för säkerhetskopiering ska skapas för varje spel (Per-Game)."
-#define OPTION_VAL_PER_CART_SV NULL
-#define GENESIS_PLUS_GX_CART_SIZE_LABEL_SV NULL
-#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_SV NULL
+#define OPTION_VAL_PER_CART_SV "Per-kassett"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_SV "CD Backup Cart BRAM-storlek (kräver omstart)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_SV "Ställer in storleken på backup-ramkortet när du kör Sega CD/Mega-CD-innehåll. Användbart när du ställer in backup-ramkortet på Per spel för att undvika flera större kortstorlekar."
 #define OPTION_VAL_128K_SV NULL
 #define OPTION_VAL_256K_SV NULL
 #define OPTION_VAL_512K_SV NULL
