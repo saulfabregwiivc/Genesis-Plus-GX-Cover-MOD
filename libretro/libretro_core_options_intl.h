@@ -28406,21 +28406,21 @@ struct retro_core_options_v2 options_fr = {
 
 /* RETRO_LANGUAGE_GA */
 
-#define CATEGORY_SYSTEM_LABEL_GA NULL
-#define CATEGORY_SYSTEM_INFO_0_GA NULL
+#define CATEGORY_SYSTEM_LABEL_GA "Córas"
+#define CATEGORY_SYSTEM_INFO_0_GA "Athraigh an rogha crua-earraí bunúsach, an réigiún, an BIOS agus socruithe comhaid sábhála Sega CD/Mega-CD."
 #define CATEGORY_VIDEO_LABEL_GA "Físeán"
-#define CATEGORY_VIDEO_INFO_0_GA NULL
+#define CATEGORY_VIDEO_INFO_0_GA "Athraigh cóimheas gné, bearradh taispeána, scagaire físe agus socruithe scipeála frámaí."
 #define CATEGORY_AUDIO_LABEL_GA "Fuaim"
-#define CATEGORY_AUDIO_INFO_0_GA NULL
+#define CATEGORY_AUDIO_INFO_0_GA "Athraigh socruithe gléis fuaime."
 #define CATEGORY_INPUT_LABEL_GA "Ionchur"
-#define CATEGORY_INPUT_INFO_0_GA NULL
-#define CATEGORY_HACKS_LABEL_GA NULL
-#define CATEGORY_HACKS_INFO_0_GA NULL
-#define CATEGORY_CHANNEL_VOLUME_LABEL_GA NULL
-#define CATEGORY_CHANNEL_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_GA NULL
-#define OPTION_VAL_AUTO_GA NULL
+#define CATEGORY_INPUT_INFO_0_GA "Athraigh socruithe ionchuir an ghunna solais agus/nó an luiche."
+#define CATEGORY_HACKS_LABEL_GA "Cleasanna Aithrise"
+#define CATEGORY_HACKS_INFO_0_GA "Athraigh socruithe róchlogála agus cruinneas aithrise próiseálaí a mbíonn tionchar acu ar fheidhmíocht agus comhoiriúnacht íseal-leibhéil."
+#define CATEGORY_CHANNEL_VOLUME_LABEL_GA "Socruithe Ardleibhéil Imleabhair Cainéal"
+#define CATEGORY_CHANNEL_VOLUME_INFO_0_GA "Athraigh toirt na gcainéal fuaime crua-earraí aonair."
+#define GENESIS_PLUS_GX_SYSTEM_HW_LABEL_GA "Crua-earraí an Chórais"
+#define GENESIS_PLUS_GX_SYSTEM_HW_INFO_0_GA "Rith ábhar luchtaithe le consól aithriste ar leith. Roghnóidh 'Auto' an córas is oiriúnaí don chluiche reatha."
+#define OPTION_VAL_AUTO_GA "Uathoibríoch"
 #define OPTION_VAL_SG_1000_GA NULL
 #define OPTION_VAL_SG_1000_II_GA NULL
 #define OPTION_VAL_SG_1000_II_RAM_EXT_GA NULL
@@ -28429,130 +28429,130 @@ struct retro_core_options_v2 options_fr = {
 #define OPTION_VAL_MASTER_SYSTEM_II_GA NULL
 #define OPTION_VAL_GAME_GEAR_GA NULL
 #define OPTION_VAL_MEGA_DRIVE_GENESIS_GA NULL
-#define GENESIS_PLUS_GX_REGION_DETECT_LABEL_GA NULL
-#define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_GA NULL
+#define GENESIS_PLUS_GX_REGION_DETECT_LABEL_GA "Réigiún an Chórais"
+#define GENESIS_PLUS_GX_REGION_DETECT_INFO_0_GA "Sonraigh cén réigiún as a bhfuil an córas. I gcás consóil seachas an Game Gear, is é 50 Hz an 'PAL', agus is é 60 Hz an 'NTSC'. Féadfaidh cluichí rith níos tapúla nó níos moille ná mar is gnách má roghnaítear an réigiún mícheart."
 #define OPTION_VAL_NTSC_U_GA NULL
 #define OPTION_VAL_PAL_GA NULL
 #define OPTION_VAL_NTSC_J_GA NULL
-#define GENESIS_PLUS_GX_VDP_MODE_LABEL_GA NULL
-#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_GA NULL
+#define GENESIS_PLUS_GX_VDP_MODE_LABEL_GA "Mód VDP Fórsála"
+#define GENESIS_PLUS_GX_VDP_MODE_INFO_0_GA "Sáraíonn sé an modh VDP chun é a chur ag rith ag NTSC 60Hz nó PAL 50Hz, beag beann ar réigiún an chórais."
 #define OPTION_VAL_60HZ_GA NULL
 #define OPTION_VAL_50HZ_GA NULL
-#define GENESIS_PLUS_GX_BIOS_LABEL_GA NULL
-#define GENESIS_PLUS_GX_BIOS_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_GA NULL
-#define OPTION_VAL_PER_BIOS_GA NULL
-#define OPTION_VAL_PER_GAME_GA NULL
-#define GENESIS_PLUS_GX_CART_BRAM_LABEL_GA NULL
-#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_GA NULL
-#define OPTION_VAL_PER_CART_GA NULL
-#define GENESIS_PLUS_GX_CART_SIZE_LABEL_GA NULL
-#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_GA NULL
+#define GENESIS_PLUS_GX_BIOS_LABEL_GA "ROM Tosaithe Córais"
+#define GENESIS_PLUS_GX_BIOS_INFO_0_GA "Bain úsáid as an BIOS/tosaitheoir oifigiúil le haghaidh crua-earraí aithriste, má tá sé i láthair in eolaire córais RetroArch. Taispeánann sé seicheamh/beochan tosaithe atá sainiúil don chonsól, agus ansin ritheann sé ábhar luchtaithe."
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_LABEL_GA "Córas CD BRAM (Atosú Éilitheach)"
+#define GENESIS_PLUS_GX_SYSTEM_BRAM_INFO_0_GA "Agus ábhar Sega CD/Mega-CD á rith, sonraítear an ndéanfar comhad sábhála aonair a roinnt idir na cluichí go léir ó réigiún ar leith (In aghaidh an BIOS) nó comhad sábhála ar leith a chruthú do gach cluiche (In aghaidh an Chluiche). Tabhair faoi deara go bhfuil stóráil inmheánach theoranta ag an Sega CD/Mega-CD, nach leor ach do roinnt teidil. Chun nach rithfidh tú as spás, moltar an socrú 'In aghaidh an Chluiche'."
+#define OPTION_VAL_PER_BIOS_GA "In aghaidh an BIOS"
+#define OPTION_VAL_PER_GAME_GA "In aghaidh an Chluiche"
+#define GENESIS_PLUS_GX_CART_BRAM_LABEL_GA "Cairt Cúltaca CD BRAM (Atosú Éilitheach)"
+#define GENESIS_PLUS_GX_CART_BRAM_INFO_0_GA "Agus ábhar Sega CD/Mega-CD á rith, sonraítear ann an ndéanfar cairt RAM cúltaca aonair a roinnt do gach cluiche (In aghaidh an Chairt) nó cairt RAM cúltaca ar leith a chruthú do gach cluiche (In aghaidh an Chluiche)."
+#define OPTION_VAL_PER_CART_GA "In aghaidh an cartúis"
+#define GENESIS_PLUS_GX_CART_SIZE_LABEL_GA "Méid BRAM Cairt Cúltaca CD (Atosú Éilitheach)"
+#define GENESIS_PLUS_GX_CART_SIZE_INFO_0_GA "Socraíonn sé seo méid an chairt reithe cúltaca agus ábhar Sega CD/Mega-CD á rith. Úsáideach nuair a shocraítear an chairt reithe cúltaca go In aghaidh an Chluiche chun méideanna cairte níos mó iolracha a sheachaint."
 #define OPTION_VAL_128K_GA NULL
 #define OPTION_VAL_256K_GA NULL
 #define OPTION_VAL_512K_GA NULL
 #define OPTION_VAL_1MEG_GA NULL
 #define OPTION_VAL_2MEG_GA NULL
 #define OPTION_VAL_4MEG_GA NULL
-#define GENESIS_PLUS_GX_ADD_ON_LABEL_GA NULL
-#define GENESIS_PLUS_GX_ADD_ON_INFO_0_GA NULL
+#define GENESIS_PLUS_GX_ADD_ON_LABEL_GA "Breiseán CD (mód MD) (Éilíonn Atosú)"
+#define GENESIS_PLUS_GX_ADD_ON_INFO_0_GA "Sonraigh cén breiseán atá le húsáid le haghaidh athsheinm fuaime CD le cluichí Mega Drive/Genesis a dtacaítear leo."
 #define OPTION_VAL_SEGA_MEGA_CD_GA NULL
 #define OPTION_VAL_MEGASD_GA NULL
-#define OPTION_VAL_NONE_GA NULL
-#define GENESIS_PLUS_GX_LOCK_ON_LABEL_GA NULL
-#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_GA NULL
+#define OPTION_VAL_NONE_GA "Dada"
+#define GENESIS_PLUS_GX_LOCK_ON_LABEL_GA "Glasáil Cartús-Ar"
+#define GENESIS_PLUS_GX_LOCK_ON_INFO_0_GA "Is gné Mega Drive/Genesis í an Teicneolaíocht Glasála a chuir ar chumas cluiche níos sine ceangal le port pas-trí cartús speisialta le haghaidh súgartha sínte nó athraithe. Sonraíonn an rogha seo cén cineál cartús speisialta 'glasála' atá le haithris. Ní mór comhad bios comhfhreagrach a bheith i láthair in eolaire córais RetroArch."
 #define OPTION_VAL_GAME_GENIE_GA NULL
 #define OPTION_VAL_ACTION_REPLAY_PRO_GA NULL
 #define OPTION_VAL_SONIC_KNUCKLES_GA NULL
-#define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_GA NULL
-#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_GA NULL
+#define GENESIS_PLUS_GX_ASPECT_RATIO_LABEL_GA "Cóimheas Gnéithe arna Sholáthrú ag an gCroí"
+#define GENESIS_PLUS_GX_ASPECT_RATIO_INFO_0_GA "Roghnaigh an cóimheas gné ábhair is fearr leat. Ní bheidh feidhm ag seo ach amháin nuair a bheidh cóimheas gné RetroArch socraithe go 'Croílár curtha ar fáil' sna socruithe Físeáin."
 #define OPTION_VAL_NTSC_PAR_GA NULL
 #define OPTION_VAL_PAL_PAR_GA NULL
 #define OPTION_VAL_4_3_GA NULL
-#define OPTION_VAL_UNCORRECTED_GA NULL
-#define GENESIS_PLUS_GX_OVERSCAN_LABEL_GA NULL
-#define GENESIS_PLUS_GX_OVERSCAN_INFO_0_GA NULL
-#define OPTION_VAL_TOP_BOTTOM_GA NULL
-#define OPTION_VAL_LEFT_RIGHT_GA NULL
-#define OPTION_VAL_FULL_GA NULL
-#define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_GA NULL
-#define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_GA NULL
-#define OPTION_VAL_LEFT_BORDER_GA NULL
-#define OPTION_VAL_LEFT_RIGHT_BORDERS_GA NULL
-#define GENESIS_PLUS_GX_GG_EXTRA_LABEL_GA NULL
-#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_GA NULL
-#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_GA NULL
-#define OPTION_VAL_MONOCHROME_GA NULL
-#define OPTION_VAL_COMPOSITE_GA NULL
-#define OPTION_VAL_SVIDEO_GA NULL
+#define OPTION_VAL_UNCORRECTED_GA "Gan cheartú"
+#define GENESIS_PLUS_GX_OVERSCAN_LABEL_GA "Teorainneacha"
+#define GENESIS_PLUS_GX_OVERSCAN_INFO_0_GA "Cumasaigh é seo chun na réigiúin ró-scan a thaispeáint ag barr/bun agus/nó ar chlé/ar dheis an scáileáin. De ghnáth, bheadh ​​siad seo i bhfolach ag an mbezel timpeall imeall teilifíse caighdeánach sainmhínithe."
+#define OPTION_VAL_TOP_BOTTOM_GA "Barr/Bun"
+#define OPTION_VAL_LEFT_RIGHT_GA "Clé/Deas"
+#define OPTION_VAL_FULL_GA "Lán"
+#define GENESIS_PLUS_GX_LEFT_BORDER_LABEL_GA "Folaigh Teorainneacha Taobh an Mháistirchórais"
+#define GENESIS_PLUS_GX_LEFT_BORDER_INFO_0_GA "Gearrann sé 8 bpicteil ó thaobh clé an scáileáin, nó ón dá thaobh clé agus deas agus cluichí Master System á reáchtáil."
+#define OPTION_VAL_LEFT_BORDER_GA "Imeall Clé Amháin"
+#define OPTION_VAL_LEFT_RIGHT_BORDERS_GA "Teorainneacha Clé & Deis"
+#define GENESIS_PLUS_GX_GG_EXTRA_LABEL_GA "Scáileán Leathnaithe Game Gear"
+#define GENESIS_PLUS_GX_GG_EXTRA_INFO_0_GA "Éiríonn sé seo le teidil Game Gear a rith i mód SMS, le taifeach méadaithe de 256x192. Féadfaidh sé ábhar breise a thaispeáint, ach de ghnáth taispeánann sé teorainn de shonraí íomhá truaillithe/nach dteastaíonn."
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_LABEL_GA "Scagaire NTSC Blargg"
+#define GENESIS_PLUS_GX_BLARGG_NTSC_FILTER_INFO_0_GA "Cuir scagaire físe i bhfeidhm chun comharthaí teilifíse NTSC éagsúla a aithris."
+#define OPTION_VAL_MONOCHROME_GA "Monacrómach"
+#define OPTION_VAL_COMPOSITE_GA "Ilchodach"
+#define OPTION_VAL_SVIDEO_GA "S-Físeán"
 #define OPTION_VAL_RGB_GA NULL
-#define GENESIS_PLUS_GX_LCD_FILTER_LABEL_GA NULL
-#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_RENDER_LABEL_GA NULL
-#define GENESIS_PLUS_GX_RENDER_INFO_0_GA NULL
-#define OPTION_VAL_SINGLE_FIELD_GA NULL
-#define OPTION_VAL_DOUBLE_FIELD_GA NULL
-#define GENESIS_PLUS_GX_FRAMESKIP_LABEL_GA NULL
-#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_GA NULL
-#define OPTION_VAL_MANUAL_GA NULL
-#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_GA NULL
-#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_GA NULL
+#define GENESIS_PLUS_GX_LCD_FILTER_LABEL_GA "Scagaire Taibhse LCD"
+#define GENESIS_PLUS_GX_LCD_FILTER_INFO_0_GA "Cuir scagaire 'taibhsithe' íomhá i bhfeidhm chun tréithe taispeána phainéil LCD Game Gear agus Genesis Nomad a aithris."
+#define GENESIS_PLUS_GX_RENDER_LABEL_GA "Aschur Mód Idirfhite 2"
+#define GENESIS_PLUS_GX_RENDER_INFO_0_GA "Ligeann Mód Idirfhite 2 don Mega Drive/Genesis íomhá 320x448 airde dhúbailte (ardtaifigh) a aschur trí línte scanadh malartacha a tharraingt i ngach fráma (úsáideann modhanna il-imreora Sonic the Hedgehog 2 agus Combat Cars é seo). Déanann 'Double Field' aithris ar chrua-earraí bunaidh, ag táirgeadh íomhá ghéar le déantáin splancacha/idirfhite. Cuireann 'Single Field' scagaire dí-idirfhite i bhfeidhm, rud a chobhsaíonn an íomhá ach a chruthaíonn doiléiriú beag."
+#define OPTION_VAL_SINGLE_FIELD_GA "Réimse Aonair"
+#define OPTION_VAL_DOUBLE_FIELD_GA "Réimse Dúbailte"
+#define GENESIS_PLUS_GX_FRAMESKIP_LABEL_GA "Fráma-léim"
+#define GENESIS_PLUS_GX_FRAMESKIP_INFO_0_GA "Léim frámaí chun fo-rith maoláin fuaime (crágáil) a sheachaint. Feabhsaíonn sé feidhmíocht ar chostas réidhe amhairc. Léimeann 'Uath' frámaí nuair a thugann an tosaitheoir comhairle. Úsáideann 'Lámhleabhar' an socrú 'Tairseach Léim Frámaí (%)'."
+#define OPTION_VAL_MANUAL_GA "Lámhleabhar"
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_LABEL_GA "Tairseach Léim Fráma (%)"
+#define GENESIS_PLUS_GX_FRAMESKIP_THRESHOLD_INFO_0_GA "Nuair a shocraítear 'Frameskip' go 'Lámhleabhar', sonraítear an tairseach áitíochta maoláin fuaime (céatadán) faoina mbeidh frámaí á scipeáil. Laghdaíonn luachanna níos airde an baol go mbeidh frámaí ag scoilteadh trína chur faoi deara go gcaillfear frámaí níos minice."
 #define GENESIS_PLUS_GX_YM2413_LABEL_GA NULL
-#define GENESIS_PLUS_GX_YM2413_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_YM2413_CORE_LABEL_GA NULL
-#define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_GA NULL
+#define GENESIS_PLUS_GX_YM2413_INFO_0_GA "Cumasaigh aithris ar an Aonad Fuaime FM a úsáideann cluichí áirithe Sega Mark III/Master System le haghaidh aschur fuaime feabhsaithe."
+#define GENESIS_PLUS_GX_YM2413_CORE_LABEL_GA "Croílár an Mháistirchórais FM (YM2413)"
+#define GENESIS_PLUS_GX_YM2413_CORE_INFO_0_GA "Roghnaigh an modh a úsáidtear chun Aonad Fuaime FM an Chórais Sega Mark III/Master a aithris. Tá an rogha 'MAME' gasta, agus ritheann sé ar lánluas ar fhormhór na gcóras. Tá an rogha 'Nuked' cruinn ó thaobh timthrialla de, ardchaighdeáin, agus tá riachtanais shuntasacha LAP aige."
 #define OPTION_VAL_MAME_GA NULL
 #define OPTION_VAL_NUKED_GA NULL
 #define GENESIS_PLUS_GX_YM2612_LABEL_GA NULL
-#define GENESIS_PLUS_GX_YM2612_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_YM2612_INFO_1_GA NULL
+#define GENESIS_PLUS_GX_YM2612_INFO_0_GA "Roghnaigh an modh a úsáidtear chun sintéiseoir FM (príomhghineadóir fuaime) an Mega Drive/Genesis a aithris. Tá roghanna 'MAME' gasta, agus ritheann siad ar lánluas ar fhormhór na gcóras. Tá roghanna 'Nuked' cruinn ó thaobh timthrialla de, ardchaighdeáin, agus tá riachtanais shuntasacha LAP acu. Úsáideann an Model 1 Mega Drive/Genesis bunaidh an tslis YM2612. Úsáidtear an YM3438 in athbhreithnithe níos déanaí ar Mega Drive/Genesis."
+#define GENESIS_PLUS_GX_YM2612_INFO_1_GA "Roghnaigh an modh a úsáidtear chun sintéiseoir FM (príomhghineadóir fuaime) an Mega Drive/Genesis a aithris. Úsáideann an Mega Drive/Genesis bunaidh an tslis YM2612. Úsáidtear an YM3438 in athbhreithnithe níos déanaí ar an Mega Drive/Genesis."
 #define OPTION_VAL_MAME_YM2612_GA NULL
 #define OPTION_VAL_MAME_ASIC_YM3438_GA NULL
-#define OPTION_VAL_MAME_ENHANCED_YM3438_GA NULL
+#define OPTION_VAL_MAME_ENHANCED_YM3438_GA "MAME (YM3438 Feabhsaithe)"
 #define OPTION_VAL_NUKED_YM2612_GA NULL
 #define OPTION_VAL_NUKED_YM3438_GA NULL
-#define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_GA NULL
-#define OPTION_VAL_STEREO_GA NULL
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_LABEL_GA "Aschur Fuaime"
+#define GENESIS_PLUS_GX_SOUND_OUTPUT_INFO_0_GA "Roghnaigh athsheinm fuaime steiréó nó mona."
+#define OPTION_VAL_STEREO_GA "Steiréó"
 #define OPTION_VAL_MONO_GA NULL
-#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_GA NULL
-#define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_GA NULL
-#define OPTION_VAL_LOW_PASS_GA NULL
+#define GENESIS_PLUS_GX_AUDIO_FILTER_LABEL_GA "Scagaire Fuaime"
+#define GENESIS_PLUS_GX_AUDIO_FILTER_INFO_0_GA "Cumasaigh scagaire fuaime ísealpas chun fuaim shainiúil Model 1 Mega Drive/Genesis a insamhladh níos fearr."
+#define OPTION_VAL_LOW_PASS_GA "Íseal-Phas"
 #define OPTION_VAL_EQ_GA NULL
-#define GENESIS_PLUS_GX_LOWPASS_RANGE_LABEL_GA NULL
-#define GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_PSG_PREAMP_LABEL_GA NULL
-#define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_FM_PREAMP_LABEL_GA NULL
-#define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_GA NULL
-#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_AUDIO_EQ_MID_LABEL_GA NULL
-#define GENESIS_PLUS_GX_AUDIO_EQ_MID_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_LABEL_GA NULL
-#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_GUN_INPUT_LABEL_GA NULL
-#define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_GA NULL
-#define OPTION_VAL_LIGHTGUN_GA NULL
-#define OPTION_VAL_TOUCHSCREEN_GA NULL
-#define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_GA NULL
-#define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_GA NULL
-#define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_GA NULL
-#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_GA NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_GA NULL
-#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_OVERCLOCK_LABEL_GA NULL
-#define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_GA NULL
+#define GENESIS_PLUS_GX_LOWPASS_RANGE_LABEL_GA "Scagaire Íseal-Phas %"
+#define GENESIS_PLUS_GX_LOWPASS_RANGE_INFO_0_GA "Sonraigh minicíocht scoite an scagaire íseal-phas fuaime. Méadaíonn luach níos airde 'neart' braite an scagaire, ós rud é go laghdaítear raon níos leithne den speictream ardmhinicíochta."
+#define GENESIS_PLUS_GX_PSG_PREAMP_LABEL_GA "Leibhéal Réamh-Amp PSG"
+#define GENESIS_PLUS_GX_PSG_PREAMP_INFO_0_GA "Socraigh leibhéal an réamh-aimplitheora fuaime don Ghineadóir Fuaime In-ríomhchláraithe 4-chainéil SN76496 aithriste atá le fáil sa SG-1000, Sega Mark III, Master System, Game Gear agus Mega Drive/Genesis."
+#define GENESIS_PLUS_GX_FM_PREAMP_LABEL_GA "Leibhéal Réamh-Aimplitheoir FM"
+#define GENESIS_PLUS_GX_FM_PREAMP_INFO_0_GA "Socraigh leibhéal an réamh-aimplitheora fuaime don sintéiseoir fuaime aithrisithe Mega Drive/Genesis FM nó don Aonad Fuaime FM Sega Mark III/Master System."
+#define GENESIS_PLUS_GX_CDDA_VOLUME_LABEL_GA "Imleabhar CD-DA"
+#define GENESIS_PLUS_GX_CDDA_VOLUME_INFO_0_GA "Coigeartaigh toirt mheasctha aschur athsheinm fuaime an CD aithrisithe."
+#define GENESIS_PLUS_GX_PCM_VOLUME_LABEL_GA "Imleabhar PCM"
+#define GENESIS_PLUS_GX_PCM_VOLUME_INFO_0_GA "Coigeartaigh toirt mheasctha aschur gineadóir fuaime Sega CD/Mega-CD RF5C164 PCM aithrisithe."
+#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_LABEL_GA "Cothromóir Íseal"
+#define GENESIS_PLUS_GX_AUDIO_EQ_LOW_INFO_0_GA "Coigeartaigh an banda íseal-raoin den chothromóir fuaime inmheánaigh."
+#define GENESIS_PLUS_GX_AUDIO_EQ_MID_LABEL_GA "EQ Lár"
+#define GENESIS_PLUS_GX_AUDIO_EQ_MID_INFO_0_GA "Coigeartaigh banda lár-raoin an chothromóra fuaime inmheánaigh."
+#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_LABEL_GA "Ard-EQ"
+#define GENESIS_PLUS_GX_AUDIO_EQ_HIGH_INFO_0_GA "Coigeartaigh an banda ard-raoin den chothromóir fuaime inmheánaigh."
+#define GENESIS_PLUS_GX_GUN_INPUT_LABEL_GA "Ionchur Gunna Solais"
+#define GENESIS_PLUS_GX_GUN_INPUT_INFO_0_GA "Bain úsáid as ionchur 'Gunna Solais' nó 'Scáileán Tadhaill' atá rialaithe ag an luch."
+#define OPTION_VAL_LIGHTGUN_GA "Gunna Solais"
+#define OPTION_VAL_TOUCHSCREEN_GA "Scáileán tadhaill"
+#define GENESIS_PLUS_GX_GUN_CURSOR_LABEL_GA "Taispeáin Crosghruaig Gunna Solais"
+#define GENESIS_PLUS_GX_GUN_CURSOR_INFO_0_GA "Taispeáin crosrianta gunna solais agus na cineálacha gléasanna ionchuir MD Menacer, MD Justifiers agus MS Light Phaser in úsáid."
+#define GENESIS_PLUS_GX_INVERT_MOUSE_LABEL_GA "Inbhéartaigh Ais-Y na Luiche"
+#define GENESIS_PLUS_GX_INVERT_MOUSE_INFO_0_GA "Déanann sé ais-Y an chineáil gléis ionchuir Luch MD a aisiompú."
+#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_LABEL_GA "Bain Teorainn Sprite In Aghaidh na Líne"
+#define GENESIS_PLUS_GX_NO_SPRITE_LIMIT_INFO_0_GA "Baintear an teorainn crua-earraí bunaidh sprite-in-aghaidh-scannánlíne. Laghdaíonn sé seo an caochadh ach is féidir leis fabhtanna amhairc a chur faoi deara, toisc go mbaintear leas as an teorainn crua-earraí i roinnt cluichí chun éifeachtaí speisialta a ghiniúint."
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LABEL_GA "Scrollaigh ingearach feabhsaithe in aghaidh an tíle"
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_INFO_0_GA "Ceadaíonn sé seo gach cill aonair a scrollú go hingearach, in ionad 16px 2-chill, trí mheán a bhaint amach le luach vscroll na cille comharsanachta. Ní bhaineann an cleas seo ach le cúpla cluiche a úsáideann mód scrollú ingearach 2-chill."
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_LABEL_GA "Teorainn scrollaithe ingearach feabhsaithe in aghaidh an tíle"
+#define GENESIS_PLUS_GX_ENHANCED_VSCROLL_LIMIT_INFO_0_GA "Nuair a bhíonn scrolla ingearach feabhsaithe in aghaidh an tíle cumasaithe amháin. Coigeartaíonn sé teorainn an fheabhsaithe scrolla ingearach. Nuair a bhíonn an difríocht vscroll idir tíleanna comharsanacha níos mó ná an teorainn seo, díchumasaítear an feabhsú."
+#define GENESIS_PLUS_GX_OVERCLOCK_LABEL_GA "Luas LAP"
+#define GENESIS_PLUS_GX_OVERCLOCK_INFO_0_GA "Róchlogáil an LAP aithrisithe. Is féidir leis an moilliú a laghdú, ach d'fhéadfadh sé go mbeadh teipeanna mar thoradh air."
 #define OPTION_VAL_100_GA NULL
 #define OPTION_VAL_125_GA NULL
 #define OPTION_VAL_150_GA NULL
@@ -28570,54 +28570,54 @@ struct retro_core_options_v2 options_fr = {
 #define OPTION_VAL_450_GA NULL
 #define OPTION_VAL_475_GA NULL
 #define OPTION_VAL_500_GA NULL
-#define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_GA NULL
-#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_GA NULL
-#define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_GA NULL
-#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_GA NULL
-#define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_GA NULL
-#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_GA NULL
+#define GENESIS_PLUS_GX_FORCE_DTACK_LABEL_GA "Glasálacha Córais"
+#define GENESIS_PLUS_GX_FORCE_DTACK_INFO_0_GA "Déan aithris ar ghlasálacha córais a tharlaíonn ar chrua-earraí fíor agus rochtain neamhdhleathach seoltaí á déanamh. Níor cheart é seo a dhíchumasú ach amháin agus taispeántais agus grúdaireacht bhaile áirithe á n-imirt a bhraitheann ar iompar neamhdhleathach le haghaidh oibriú ceart."
+#define GENESIS_PLUS_GX_ADDR_ERROR_LABEL_GA "Earráid Seoladh 68K"
+#define GENESIS_PLUS_GX_ADDR_ERROR_INFO_0_GA "Gineann príomh-LAP Mega Drive/Genesis (Motorola 68000) eisceacht Earráid Seolta (tuairteáil) agus iarracht á déanamh rochtain neamhailínithe ar chuimhne. Má chumasaítear é seo, déanfar an t-iompar seo a insamhladh. Níor cheart é a dhíchumasú ach amháin agus hacks ROM á n-imirt, ós rud é go bhforbraítear iad seo de ghnáth ag baint úsáide as aithriseoirí nach bhfuil chomh cruinn agus go bhféadfadh siad brath ar rochtain RAM neamhbhailí le haghaidh oibriú ceart."
+#define GENESIS_PLUS_GX_CD_LATENCY_LABEL_GA "Am Rochtana CD"
+#define GENESIS_PLUS_GX_CD_LATENCY_INFO_0_GA "Insamhladh a dhéanamh ar mhoill chrua-earraí bunaidh CD agus léamh á thosú nó nuair a bhíonn suíomh ar leith á lorg ar dhiosca luchtaithe. Tá sé seo riachtanach i gcás roinnt cluichí CD a thuairteálann má bhíonn sonraí CD ar fáil ró-luath agus réitíonn sé fadhbanna díshioncrónaithe fuaime CD i roinnt cluichí freisin. Is féidir é seo a dhíchumasú a bheith úsáideach le cluichí MSU-MD mar go ndéanann sé lúba rianta fuaime CD níos gan uaim."
+#define GENESIS_PLUS_GX_CD_PRECACHE_LABEL_GA "Taisce Íomhá CD"
+#define GENESIS_PLUS_GX_CD_PRECACHE_INFO_0_GA "Luchtaigh íomhá CD isteach sa chuimhne ag am tosaithe. Tacaítear le CHD amháin. Atosú Riachtanach."
+#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_LABEL_GA "Taispeáin Socruithe Ardleibhéil Imleabhair Fuaime (Athoscail an roghchlár)"
+#define GENESIS_PLUS_GX_SHOW_ADVANCED_AUDIO_SETTINGS_INFO_0_GA "Cumasaigh cumraíocht paraiméadair chainéil fuaime íseal-leibhéil. TABHAIR FAOI DEARA: Ní mór an Roghchlár Tapa a athrú chun go dtiocfaidh an socrú seo i bhfeidhm."
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_LABEL_GA "Cainéal Ton PSG 0 Imleabhar %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_0_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal Tóin PSG 0."
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_LABEL_GA "% Imleabhar Cainéal 1 Ton PSG"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_1_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal 1 Tóin PSG."
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_LABEL_GA "% Imleabhar Cainéal 2 Ton PSG"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_2_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal 2 Tone PSG."
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_LABEL_GA "Torann PSG Cainéal 3 Imleabhar %"
+#define GENESIS_PLUS_GX_PSG_CHANNEL_3_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal Torainn PSG 3."
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_LABEL_GA "Cainéal Mega Drive/Genesis FM 0 % Imleabhar"
+#define GENESIS_PLUS_GX_MD_CHANNEL_0_VOLUME_INFO_0_GA "Laghdaigh toirt Cainéal 0 Mega Drive/Genesis FM. Ní oibríonn sé ach le hinslitheoirí MAME FM."
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_LABEL_GA "Cainéal 1 Mega Drive/Genesis FM % Toirt"
+#define GENESIS_PLUS_GX_MD_CHANNEL_1_VOLUME_INFO_0_GA "Laghdaigh toirt Cainéal 1 Mega Drive/Genesis FM. Ní oibríonn sé ach le hinslitheoirí MAME FM."
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_LABEL_GA "Cainéal 2 Mega Drive/Genesis FM % Toirt"
+#define GENESIS_PLUS_GX_MD_CHANNEL_2_VOLUME_INFO_0_GA "Laghdaigh toirt Cainéal 2 Mega Drive/Genesis FM. Ní oibríonn sé ach le hinslitheoirí MAME FM."
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_LABEL_GA "Cainéal 3 Mega Drive/Genesis FM % Toirt"
+#define GENESIS_PLUS_GX_MD_CHANNEL_3_VOLUME_INFO_0_GA "Laghdaigh toirt Cainéal 3 Mega Drive/Genesis FM. Ní oibríonn sé ach le hinslitheoirí MAME FM."
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_LABEL_GA "Mega Drive/Genesis FM Cainéal 4 % Toirt"
+#define GENESIS_PLUS_GX_MD_CHANNEL_4_VOLUME_INFO_0_GA "Laghdaigh toirt Cainéal 4 Mega Drive/Genesis FM. Ní oibríonn sé ach le hinslitheoirí MAME FM."
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_LABEL_GA "Cainéal 5 Mega Drive/Genesis FM % Toirt"
+#define GENESIS_PLUS_GX_MD_CHANNEL_5_VOLUME_INFO_0_GA "Laghdaigh toirt Cainéal 5 Mega Drive/Genesis FM. Ní oibríonn sé ach le hinslitheoirí MAME FM."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_LABEL_GA "Córas Máistir FM (YM2413) Cainéal 0 Imleabhar %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_0_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal FM 0 an Mháistirchórais."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_LABEL_GA "Córas Máistir FM (YM2413) Cainéal 1 Imleabhar %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_1_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal 1 FM an Mháistirchórais."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_LABEL_GA "Córas Máistir FM (YM2413) Cainéal 2 Imleabhar %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_2_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal 2 FM an Mháistirchórais."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_LABEL_GA "Córas Máistir FM (YM2413) Cainéal 3 Imleabhar %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_3_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal 3 FM an Mháistirchórais."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_LABEL_GA "Córas Máistir FM (YM2413) Cainéal 4 Imleabhar %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_4_VOLUME_INFO_0_GA "Laghdaigh toirt Cainéal 4 FM an Mháistirchórais."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_LABEL_GA "Córas Máistir FM (YM2413) Cainéal 5 Imleabhar %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_5_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal 5 FM an Mháistirchórais."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_LABEL_GA "Córas Máistir FM (YM2413) Cainéal 6 Imleabhar %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_6_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal 6 FM an Mháistirchórais."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_LABEL_GA "Córas Máistir FM (YM2413) Cainéal 7 Imleabhar %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_7_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal 7 FM an Mháistirchórais."
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_LABEL_GA "Córas Máistir FM (YM2413) Cainéal 8 Imleabhar %"
+#define GENESIS_PLUS_GX_SMS_FM_CHANNEL_8_VOLUME_INFO_0_GA "Laghdaigh toirt Chainéal 8 FM an Mháistirchórais."
 
 struct retro_core_option_v2_category option_cats_ga[] = {
    {
