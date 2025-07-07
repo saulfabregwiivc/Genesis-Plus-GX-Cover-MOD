@@ -64657,4 +64657,4 @@ struct retro_core_options_v2 options_vn = {
 }
 #endif
 
-#endif
+#endif   
