@@ -157,12 +157,12 @@ static const char extensions[SUPPORTED_EXT][16] =
 
 static int seek64_wrap(void *f,ogg_int64_t off,int whence)
 #if defined(__LIBRETRO__)
-	{ return fseek(f, off, whence); }
+	{ return seek64_wrap(f, off, whence); }
 static size_t cdStreamRead(void *buf, size_t sz, size_t n, void *f)
-	{ return fread(buf, sz, n, f); }
+	{ return cdStreamRead(buf, sz, n, f); }
 static long cdStreamTell(void *f)
-	{ return ftell(f); }
-static ov_callbacks ogg_cb = { cdStreamRead, seek64_wrap, NULL /*cdStreamClose*/, cdStreamTell };
+	{ return cdStreamTell(f); }
+static ov_callbacks cb = { cdStreamRead, seek64_wrap, NULL /*cdStreamClose*/, cdStreamTell };
 #else
 {
   return cdStreamSeek(f,off,whence);
