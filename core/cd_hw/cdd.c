@@ -155,7 +155,16 @@ static const char extensions[SUPPORTED_EXT][16] =
 
 #if defined(USE_LIBTREMOR) || defined(USE_LIBVORBIS)
 
-static int seek64_wrap(void *f,ogg_int64_t off,int whence){
+static int seek64_wrap(void *f,ogg_int64_t off,int whence)
+#if defined(__LIBRETRO__)
+	{ return fseek(f, off, whence); }
+static size_t cdStreamRead(void *buf, size_t sz, size_t n, void *f)
+	{ return fread(buf, sz, n, f); }
+static long cdStreamTell(void *f)
+	{ return ftell(f); }
+static ov_callbacks ogg_cb = { cdStreamRead, seek64_wrap, NULL /*cdStreamClose*/, cdStreamTell };
+#else
+{
   return cdStreamSeek(f,off,whence);
 }
 
@@ -166,6 +175,7 @@ static ov_callbacks cb =
   (int (*)(void *))                             cdStreamClose,
   (long (*)(void *))                            cdStreamTell
 };
+#endif
 
 #ifdef DISABLE_MANY_OGG_OPEN_FILES
 static void ogg_free(int i)
