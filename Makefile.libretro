@@ -1,9 +1,12 @@
 DEBUG = 0
 LOGSOUND = 0
-FRONTEND_SUPPORTS_RGB565 = 1
+FRONTEND_SUPPORTS_RGB565 = 0
+# on Wii RGBA8 possibly is RGB888
+FRONTEND_SUPPORTS_RGB888 = 1
 HAVE_CHD = 1
 HAVE_SYS_PARAM = 1
 HOOK_CPU = 0
+LTO ?= -flto
 
 CORE_DIR := .
 
@@ -560,8 +563,8 @@ endif
 CFLAGS += -O2 -DNDEBUG
 CXXFLAGS += -O2 -DNDEBUG
 else
-	CFLAGS += -O2 -DNDEBUG
-	CXXFLAGS += -O2 -DNDEBUG
+	CFLAGS += -O3 -DNDEBUG
+	CXXFLAGS += -O3 -DNDEBUG
 endif
 endif
 
@@ -594,11 +597,14 @@ else
 DEFINES += -Dflac_max=MAX -Dflac_min=MIN -Dfseeko=fseek -Dftello=ftell
 endif
 
-CFLAGS += $(fpic) $(DEFINES) $(CODE_DEFINES) $(FLAGS)
+CFLAGS += $(fpic) $(DEFINES) $(CODE_DEFINES) $(FLAGS) -MMD
 
 ifeq ($(FRONTEND_SUPPORTS_RGB565), 1)
    # if you have a new frontend that supports RGB565
    BPP_DEFINES = -DUSE_16BPP_RENDERING -DFRONTEND_SUPPORTS_RGB565
+else ifeq ($(FRONTEND_SUPPORTS_RGB888), 1)
+   # if you have a new frontend that supports RGB888
+   BPP_DEFINES = -DUSE_32BPP_RENDERING -DFRONTEND_SUPPORTS_RGB888
 else
    BPP_DEFINES = -DUSE_15BPP_RENDERING
 endif
@@ -668,3 +674,6 @@ endif
 
 print-%:
 	@echo '$*=$($*)'
+
+DEPENDS = ${OBJECTS:.o=.d}    # substitutes ".o" with ".d"
+-include ${DEPENDS}           # copies files x.d, y.d, z.d (if they exist)
